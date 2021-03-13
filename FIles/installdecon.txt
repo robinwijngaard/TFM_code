@@ -1,1 +1,13 @@
-Change route to R v 3.1.2 in setup.sh 
+Change route to R v 3.1.2 in setup.sh:
+	
+	/home/robin/Downloads/R-3.1.2/bin/Rscript
+
+Run setup.sh script:
+	bash setup.sh
+
+
+Add manually missing packages in the route: /home/robin/Documents/Project/TFM_code/DECoN-master/Linux/packrat/src (download from CRAN)
+	VGAM (0.9-8)
+	digest (0.6.8)
+	scales (0.2.4)
+	ggplot2 (1.0.1)
