@@ -1,12 +1,14 @@
 #!/bin/bash
 
-find ~/Documents/Project/Samples/example/bam_ex -name *.bam > bamfiles.txt
-
 #paths
 
-bams="/home/robin/Documents/Project/TFM_code/FIles"
+bams="/home/robin/Documents/Project/Samples/example/bam_ex"
 bed="/home/robin/Documents/Project/Samples/bedfiles"
 ref="/home/robin/Documents/Project/Samples/hg38new"
+
+
+find "$bams" -name *.bam > "$bams"/bamfiles.txt
+
 
 
 ##/home/robin/Documents/Project/TFM_code/DECoN-master/Linux/
