@@ -5,6 +5,7 @@
 bams="/home/robin/Documents/Project/Samples/example/bam_ex"
 bed="/home/robin/Documents/Project/Samples/bedfiles"
 ref="/home/robin/Documents/Project/Samples/hg38new"
+output="//home/robin/Documents/Project/Results/DeCON"
 
 
 find "$bams" -name *.bam > "$bams"/bamfiles.txt
