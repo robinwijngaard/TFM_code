@@ -5,3 +5,10 @@ bwa index -p hg38index -a bwtsw hg38.fa
 
 #without changing name of file
 bwa index -a bwtsw hg38.fa
+
+
+
+Finally indexing (needs for DeCON containing header with only > and N (N = NUMBER OF CHROMOSOME))
+
+	cat chr??.fa > hg38.fa
+	sed -i "1s/.*/>N/" chrN.txt
