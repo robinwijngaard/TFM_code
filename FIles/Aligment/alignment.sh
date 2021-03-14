@@ -1,18 +1,21 @@
 #!/bin/bash
 
-# Obtain filelist.txt: 
-
-ls "/home/robin/Documents/Project/Samples/example/fastq_ex/" | cat | sed 's/_.*//g' | sort | uniq > filelist.txt
-
-#Obtain BAM
 
 ## Define routes
 
-hg38="/home/robin/Documents/Project/Samples/hg38new"
+hg38="/home/robin/Documents/Project/Samples/hg38"
 fastq="/home/robin/Documents/Project/Samples/example/fastq_ex"
 bam="/home/robin/Documents/Project/Samples/example/bam_ex"
 
-for file in `cat filelist.txt`
+# Obtain filelist.txt: 
+
+ls "$fastq" | cat | sed 's/_.*//g' | sort | uniq > "$fastq"/fastqlist.txt
+
+#Obtain BAM
+
+
+
+for file in `cat "$fastq"/fastqlist.txt`
 do
 	R1=`echo $file | sed 's/$/_R1.fastq.gz/g'`
 	R2=`echo $file | sed 's/$/_R2.fastq.gz/g'`

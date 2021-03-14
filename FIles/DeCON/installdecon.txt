@@ -11,3 +11,15 @@ Add manually missing packages in the route: /home/robin/Documents/Project/TFM_co
 	digest (0.6.8)
 	scales (0.2.4)
 	ggplot2 (1.0.1)
+
+Reference genome:
+
+DeCON requires the reference genome in a fasta file with the following headings: >1, >2... Therefore, i've created a new reference genome, only containing chr files from UCSC and changing headings by:
+
+	cat chr??.fa > hg38.fa
+	sed -i "1s/.*/>N/" chrN.txt
+
+To run scripts from decon, its necessary to:
+	Run from the DeCON directory (cd in bash script)
+	Use R-3.1.2 version adding: /home/robin/Downloads/R-3.1.2/bin/Rscript
+	Ref genome & bed files without "chr"
