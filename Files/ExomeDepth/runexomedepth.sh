@@ -5,7 +5,7 @@
 bams="/home/robin/Documents/Project/Samples/example/bam_ex"                                                                   #location of bam files; can be a directory containing only bam files to be processed or the name of a file containing a list of bam files to be processed.
 bed="/home/robin/Documents/Project/Samples/bedfiles"                                                                       #name of bed file
 ref="/home/robin/Documents/Project/Samples/hg38"                                                                     #name of fasta file
-exonfile="/home/robin/Documents/Project/TFM_code/Files/ExomeDepth"
+exonfile="/home/robin/Documents/Project/Samples/bedfiles"
 output="/home/robin/Documents/Project/Results/ExomeDepth"
 
 
