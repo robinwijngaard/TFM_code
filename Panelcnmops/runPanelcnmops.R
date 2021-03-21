@@ -20,3 +20,28 @@ output="/home/robin/Documents/Project/Results/panelcnmops"
 
 # Input
 countWindow <- getWindows(exonfile)
+
+
+# Count BamReads
+
+bams<-list.files(bam_file,pattern=".bam",full.names=T)  
+bais<-grep("bai",bams)
+if(length(bais)>0){
+  bams<-bams[-bais]
+}
+
+### Sample names
+``
+multi_strsplit<-function(x,splits,y){                                                  
+  X<-x
+  for(i in 1:length(splits)){X=strsplit(X,splits[i])[[1]][y[i]]}
+  return(X)
+}
+
+a<-length(strsplit(bams[1],"/")[[1]])                                                  
+sample.names<-sapply(bams,multi_strsplit,c("/",".bam"),c(a,1))                       
+names(sample.names)<-NULL
+
+
+bamCount <- countBamListInGRanges(countWindows = countWindow,
+                                  bam.files = bams, read.width = FALSE)

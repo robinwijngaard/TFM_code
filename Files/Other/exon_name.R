@@ -24,6 +24,6 @@ write.table(exons_hg38, file = "exons_hg38.bed", quote=FALSE, sep="\t", row.name
 
 ICR96_hg38_bed$X7 <- paste0(ICR96_hg38_bed$X4, ".E", ICR96_hg38_bed$x)
 
-exons.hg38 <- ICR96_hg38_bed[, c(1:4,7)]
+exons.hg38 <- ICR96_hg38_bed[, c(1:3,7)]
 
 write.table(exons.hg38, file = "exons.hg38.bed", quote=FALSE, sep="\t", row.names=FALSE, col.names = FALSE)

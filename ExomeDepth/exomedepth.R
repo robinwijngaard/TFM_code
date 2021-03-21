@@ -12,11 +12,11 @@ fasta=args$fasta
 exonfile=args$exon
 output=args$out
 
-#bam_file="/home/robin/Documents/Project/Samples/example/bam_ex"                                                                   #location of bam files; can be a directory containing only bam files to be processed or the name of a file containing a list of bam files to be processed.
-#bedfile="/home/robin/Documents/Project/Samples/bedfiles/ICR96_hg38.bed"                                                                       #name of bed file
-#fasta="/home/robin/Documents/Project/Samples/hg38/hg38.fa"                                                                     #name of fasta file
-#exonfile="/home/robin/Documents/Project/TFM_code/Files/ExomeDepth/exons_hg38.bed"
-#output="/home/robin/Documents/Project/Results/ExomeDepth"
+bam_file="/home/robin/Documents/Project/Samples/example/bam_ex"                                                                   #location of bam files; can be a directory containing only bam files to be processed or the name of a file containing a list of bam files to be processed.
+bedfile="/home/robin/Documents/Project/Samples/bedfiles/ICR96_hg38.bed"                                                                       #name of bed file
+fasta="/home/robin/Documents/Project/Samples/hg38/hg38.fa"                                                                     #name of fasta file
+exonfile="/home/robin/Documents/Project/Samples/bedfiles/exons_hg38.bed"
+output="/home/robin/Documents/Project/Results/ExomeDepth"
 
 
 # Create count data
@@ -35,6 +35,19 @@ my.counts <- getBamCounts(bed.frame = bed.file,
                           referenceFasta = fasta)
 
 ExomeCount.dafr <- as(my.counts, "data.frame")
+
+
+# Obtain sample names
+
+multi_strsplit<-function(x,splits,y){                                                  
+  X<-x
+  for(i in 1:length(splits)){X=strsplit(X,splits[i])[[1]][y[i]]}
+  return(X)
+}
+
+a<-length(strsplit(bams[1],"/")[[1]])                                                  
+sample.names<-sapply(bams,multi_strsplit,c("/",".bam"),c(a,1))                       
+names(sample.names)<-NULL
 
 
 # Pipeline
@@ -99,7 +112,7 @@ for (i in 1:nsamples){
                              min.overlap = 0.0001,
                              column.name = 'exons.hg38')
   
-  output.file <- paste('Exome_', i, '.csv', sep = '')
+  output.file <- paste(sample.names[i], '.csv', sep = '')
   
   write.csv(file = file.path(output, output.file), x = all.exons@CNV.calls, row.names = FALSE)
   
