@@ -1,0 +1,34 @@
+
+
+Seguir codi de la vignette
+
+
+Per obtenir els exon names del hg38: exportar exons hg19 de R (Conrad.hg19 data)
+
+#data(Conrad.hg19)
+#write.table(exons.hg19, "exons.hg19.txt",sep = "\t", row.names = FALSE, quote = FALSE)
+
+Add chr to first column:
+awk '{print "chr"$0}' exons.hg19.txt > exons.hg19.bed
+
+
+
+USCS:  Liftover
+
+Successfully converted 181251 records: View Conversions
+Conversion failed on 3879 records.  
+
+
+Eliminate chr from new exonfile
+
+sed 's/^chr//g' file
+
+
+Delete exons from random sequences
+
+awk '!/_random/' exons.hg38.bed > exonshg38.bed
+awk '{print $1}' exonshg38.bed | sort | uniq
+
+
+
+Al final no he fet això, sino que he afegit una columna al bed file amb el número d'exó i faig servir aquest per anotar.
