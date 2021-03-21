@@ -1,0 +1,29 @@
+
+
+INSTALL CONDA
+
+source ~/.bashrc
+
+GITHUB (CNVKIT)
+
+conda config --add channels defaults
+conda config --add channels bioconda
+conda config --add channels conda-forge
+
+conda create -n cnvkit cnvkit 
+conda activate ~/anaconda3/envs/cnvkit
+
+INSTALL CNVKIT
+
+git clone https://github.com/etal/cnvkit
+cd cnvkit/
+pip install -e .
+
+cd test/
+make
+
+
+PIPELINE
+
+https://cnvkit.readthedocs.io/en/stable/pipeline.html
+
