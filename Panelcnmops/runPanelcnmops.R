@@ -15,15 +15,8 @@ library(GenomicRanges)
 bam_file="/home/robin/Documents/Project/Samples/example/bam_ex"                                                                   #location of bam files; can be a directory containing only bam files to be processed or the name of a file containing a list of bam files to be processed.
 bedfile="/home/robin/Documents/Project/Samples/bedfiles/ICR96_hg38.bed"                                                                       #name of bed file
 fasta="/home/robin/Documents/Project/Samples/hg38/hg38.fa"                                                                     #name of fasta file
-exonfile="/home/robin/Documents/Project/Samples/bedfiles/exons_hg38.bed"
+exonfile="/home/robin/Documents/Project/Samples/bedfiles/exons.hg38.bed"
 output="/home/robin/Documents/Project/Results/panelcnmops"
 
-exon.bed<-read.table(paste(exonfile))                                             
-exons <- exon.bed$V5
-
-out <- strsplit(exons, "_")
-do.call(rbind, out)
-
 # Input
-countWindow <- getWindows(bedfile)
-
+countWindow <- getWindows(exonfile)
