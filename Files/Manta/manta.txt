@@ -1,0 +1,31 @@
+wget https://github.com/Illumina/manta/releases/download/v${MANTA_VERSION}/manta-${MANTA_VERSION}.release_src.tar.bz2
+tar -xjf manta-1.6.0.release_src.tar.bz2
+
+mkdir build && cd build
+
+../manta-1.6.0.release_src/configure --jobs=4 --prefix=./
+make -j4 install
+
+
+manta s'ha de correr amb python2! fer environment
+
+
+
+#!/bin/bash
+
+#paths
+
+# Germline configuration examples
+
+bams="/home/robin/Documents/Project/Samples/example/bam_ex"
+bed="/home/robin/Documents/Project/Samples/bedfiles"
+ref="/home/robin/Documents/Project/Samples/hg38"
+output="/home/robin/Documents/Project/Results/DeCON"
+
+manta_install=""
+manta_run=""
+
+${MANTA_INSTALL_PATH}/bin/configManta.py \
+--bam NA12878_S1.bam \
+--referenceFasta hg19.fa \
+--runDir ${MANTA_ANALYSIS_PATH}
