@@ -1,3 +1,5 @@
+Installation
+
 wget https://github.com/Illumina/manta/releases/download/v${MANTA_VERSION}/manta-${MANTA_VERSION}.release_src.tar.bz2
 tar -xjf manta-1.6.0.release_src.tar.bz2
 
@@ -16,6 +18,14 @@ COrrer demo
 conda activate ~/anaconda3/envs/mantaenv/
 python bin/runMantaWorkflowDemo.py
 
+
+
+
+
+
+
+Configuration
+
 change in advanced conf options: (in configManta.py.ini file)
 
 minEdgeObservations = 2
@@ -29,3 +39,26 @@ Bedfile: canviat a .bed.tbi
 Per els bams: s'han d'especificar un per un, per la qual hem creat un array amb els bams duna carpeta que recullim en un .txt en la carpeta results manta. El problema està que s'han d'espeficiar un per un en el bash.
 
 LA primera part es crear el fitxer de configuració mitjançant el script runmanta.sh. que requereix un argument ($1) que será el nom del projecte.
+
+Additional options informations:
+
+python2 configManta.py --allHelp
+
+
+
+
+
+
+
+
+
+
+
+
+Execution
+
+Extra infor variables execution
+
+python2 runWorkflow.py -h
+
+Run exectution with exemanta.sh + $1 (s)
