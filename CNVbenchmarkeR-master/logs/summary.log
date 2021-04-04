@@ -1,0 +1,8 @@
+
+[1] "algorithms.yaml" "datasets.yaml"  
+
+Loading dataset1 Dataset validated results
+Error in h(simpleError(msg, call)) : 
+  error in evaluating the argument 'x' in selecting a method for function 'unique': undefined columns selected
+Calls: <Anonymous> ... getSamplesWithResults -> unique -> [ -> [.data.frame
+Execution halted

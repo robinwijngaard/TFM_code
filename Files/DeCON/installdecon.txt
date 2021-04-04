@@ -23,3 +23,51 @@ To run scripts from decon, its necessary to:
 	Run from the DeCON directory (cd in bash script)
 	Use R-3.1.2 version adding: /home/robin/Downloads/R-3.1.2/bin/Rscript
 	Ref genome & bed files without "chr"
+
+
+
+
+
+
+New option:
+
+packrat::set_opts(symlink.system.packages = TRUE) in ReadinBams, IDnetifyFAilure and makeCNVcalls file to run with current R version (R-vversion 4.0).
+
+PRoblems with packages installed with R version 3.1.2: 
+
+Therefore:
+In: /home/robin/Documents/Project/TFM_code/DECoN-master/Linux/packrat/lib/x86_64-pc-linux-gnu/4.0.5
+COpy packages installed in R 4-0 with are in file:
+
+‘/home/robin/R/x86_64-pc-linux-gnu-library/4.0’.
+
+(copy all and delete those present)
+
+
+Changes in IdentifyFailures.R / makeCNVcalls.R
+
+- Error during running CNVbenchmark due to error in:
+
+#ExomeCount$chromosome <- gsub(as.character(ExomeCount$space),pattern = 'chr',replacement = '').
+Cancceled this line (52 & 54, respectively) with #
+
+
+
+Change in IdentifyFailures.R / makeCNVcalls.R: +6 to +5
+colnames(ExomeCount)[1:length(sample.names)+5]=sample.names	
+
+
+
+
+In makeCNVCalls.R change (line 78)
+
+chromosome = ExomeCount$space to chromosome = ExomeCount$chromosome (space doesn't exist) and name = ExomeCount$exon (no name exist)
+
+     all.exons <- CallCNVs(x = all.exons, chromosome = ExomeCount$chromosome2, start = ExomeCount$start, end = ExomeCount$end, name = ExomeCount$exon, transition.probability = trans_prob)	#fits a HMM with 3 states to read depth data; transition.probability - transition probability for HMM from normal to del/dup. Returns ExomeDepth object with CNVcalls
+
+
+
+MakeCNVcall.R
+
+Line 303. Add:         Data1$testref<-factor(Data1$testref) 
+Error si no es un factor prèviament

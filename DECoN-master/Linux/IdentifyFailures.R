@@ -1,7 +1,14 @@
 packrat::on()
+packrat::set_opts(symlink.system.packages = TRUE) 
 
 print("BEGIN IdentifyFailures.R")
 
+#setwd("~/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/decon-dataset1")
+#count_data="~/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/decon-dataset1/output.bams.RData"
+#Custom=FALSE
+#BRCA2=FALSE
+#cov_thresh=100
+#corr_thresh=0.98
 
 library(R.utils)
 
@@ -25,11 +32,12 @@ cov_thresh=as.numeric(args$mincov)
 
 if(length(cov_thresh)==0){cov_thresh=100}
 
-
 exon_numbers=args$exons
 
 Custom=as.logical(args$custom)
 if(length(Custom)==0){Custom=FALSE}
+
+
 
 BRCA=as.logical(args$BRCA)
 if(length(BRCA)==0){BRCA=FALSE}
@@ -41,9 +49,10 @@ library(ExomeDepth)
 
 ExomeCount<-as(counts, 'data.frame')											#converts counts, a ranged data object, to a data frame
 
-ExomeCount$chromosome <- gsub(as.character(ExomeCount$space),pattern = 'chr',replacement = '') 
+#ExomeCount$chromosome <- gsub(as.character(ExomeCount$space),pattern = 'chr',replacement = '') 
 																				#remove any chr letters, and coerce to a string.
-colnames(ExomeCount)[1:length(sample.names)+6]=sample.names						#assigns the sample names to each column 
+
+colnames(ExomeCount)[1:length(sample.names)+5]=sample.names						#assigns the sample names to each column 
 
 ReadDepths<-ExomeCount[,sample.names]											#extracts just the read depths
 
@@ -111,33 +120,33 @@ for(i in 1:length(ExonMedian)){													#tests median coverage for each exon
 	
 }
 
-#N_all<-length(Types)
+N_all<-length(Types)
 
-#for(i in 1:nrow(ReadDepths)){
+for(i in 1:nrow(ReadDepths)){
 	
-#	if(!i%in%Exon[1:N_all]){
+	if(!i%in%Exon[1:N_all]){
 		
-#		for(j in 1:ncol(ReadDepths)){
+		for(j in 1:ncol(ReadDepths)){
 		
-#		if(!sample.names[j]%in%Sample[1:N_all]){
+		if(!sample.names[j]%in%Sample[1:N_all]){
 			
-#			if(ReadDepths[i,j]<100){
+			if(ReadDepths[i,j]<100){
 					
-#					Sample<-c(Sample,sample.names[j])
-#					Exon<-c(Exon,i)
-#					Types<-c(Types,"Single")
-#					Details<-c(Details,paste("Low read depth (FPKM): ",ReadDepths[i,j],sep=""))
-#					Gene<-c(Gene,paste(bed.file[i,4]))
+					Sample<-c(Sample,sample.names[j])
+					Exon<-c(Exon,i)
+					Types<-c(Types,"Single")
+					Details<-c(Details,paste("Low read depth (FPKM): ",ReadDepths[i,j],sep=""))
+					Gene<-c(Gene,paste(bed.file[i,4]))
 					
-#			}
+			}
 			
-#			}
+			}
 		
-#		}
+		}
 	
-#	}
+	}
 	
-#}
+}
 
 
 if(!is.null(exon_numbers)&any(Exon!="All")){

@@ -1,10 +1,19 @@
 packrat::on()
+packrat::set_opts(symlink.system.packages = TRUE) 
 
 library(R.utils)
 
 print("BEGIN makeCNVCalls.R")
 
-
+#setwd("~/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/decon-dataset1")
+#count_data="~/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/decon-dataset1/output.bams.RData"
+#trans_prob=0.01
+#Custom=FALSE
+#b1b2Calls=FALSE
+#plotOutput="All"
+#out="DECoNResults"
+#plotFolder="DECoNPlots"
+#if(!file.exists(plotFolder)){dir.create(plotFolder)}
 
 ######Parsing input options and setting defaults########
 
@@ -50,9 +59,9 @@ library(ggplot2)
 
 ExomeCount<-as(counts, 'data.frame')											#converts counts, a ranged data object, to a data frame
 
-ExomeCount$chromosome <- gsub(as.character(ExomeCount$space),pattern = 'chr',replacement = '') 
+#ExomeCount$chromosome <- gsub(as.character(ExomeCount$space),pattern = 'chr',replacement = '') 
 																				#remove any chr letters, and coerce to a string.
-colnames(ExomeCount)[1:length(sample.names)+6]=sample.names						#assigns the sample names to each column 
+colnames(ExomeCount)[1:length(sample.names)+5]=sample.names						#assigns the sample names to each column 
 
 cnv.calls = NULL
 refs<-list()
@@ -69,7 +78,7 @@ for(i in 1:length(sample.names)){												#for each sample:
     my.reference.selected <- apply(X = my.matrix,MAR = 1,FUN = sum)				#sums the selected samples across each exon
 
     all.exons <- new('ExomeDepth', test = my.test, reference = my.reference.selected, formula = 'cbind(test, reference) ~ 1')       #creates ExomeDepth object containing test data, reference data, and linear relationship between them. Automatically calculates likelihoods
-    all.exons <- CallCNVs(x = all.exons, transition.probability = trans_prob, chromosome = ExomeCount$space, start = ExomeCount$start, end = ExomeCount$end, name = ExomeCount$names)	#fits a HMM with 3 states to read depth data; transition.probability - transition probability for HMM from normal to del/dup. Returns ExomeDepth object with CNVcalls
+    all.exons <- CallCNVs(x = all.exons, chromosome = ExomeCount$chromosome, start = ExomeCount$start, end = ExomeCount$end, name = ExomeCount$exon, transition.probability = trans_prob)	#fits a HMM with 3 states to read depth data; transition.probability - transition probability for HMM from normal to del/dup. Returns ExomeDepth object with CNVcalls
 
     my.ref.counts <- apply(my.matrix, MAR = 1, FUN = sum)
     
@@ -291,6 +300,7 @@ if(plotOutput!="None"){
         testref<-rep("gray",nrow(Data1))
         testref[Data1$variable==Sample]="blue"
         Data1<-data.frame(Data1,testref)
+        Data1$testref<-factor(Data1$testref)
         levels(Data1$variable)=c(levels(Data1$variable),"VAR")
         levels(Data1$testref)=c(levels(Data1$testref),"red")
 

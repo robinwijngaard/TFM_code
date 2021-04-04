@@ -1,4 +1,6 @@
+
 packrat::on()
+packrat::set_opts(symlink.system.packages = TRUE)
 print("BEGIN ReadInBams.R")
 
 library(R.utils)

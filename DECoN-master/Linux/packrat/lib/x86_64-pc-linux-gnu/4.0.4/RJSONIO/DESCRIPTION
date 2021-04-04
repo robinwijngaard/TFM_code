@@ -30,7 +30,7 @@ Packaged: 2014-07-28 15:19:10 UTC; ripley
 NeedsCompilation: yes
 Repository: CRAN
 Date/Publication: 2014-07-28 17:26:19
-Built: R 4.0.4; x86_64-pc-linux-gnu; 2021-02-28 18:50:53 UTC; unix
+Built: R 3.1.2; x86_64-unknown-linux-gnu; 2021-03-13 08:49:26 UTC; unix
 InstallAgent: packrat 0.4.4
 InstallSource: CRAN
 Hash: fb672e20eb6f3010a3639f855d8ef6de

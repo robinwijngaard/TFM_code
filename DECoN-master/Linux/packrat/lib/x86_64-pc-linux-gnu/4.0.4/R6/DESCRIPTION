@@ -21,7 +21,7 @@ Maintainer: "Winston Chang" <winston@stdout.org>
 NeedsCompilation: no
 Repository: CRAN
 Date/Publication: 2014-10-29 19:20:28
-Built: R 4.0.4; ; 2021-02-28 18:50:49 UTC; unix
+Built: R 3.1.2; ; 2021-03-13 08:49:25 UTC; unix
 InstallAgent: packrat 0.4.4
 InstallSource: CRAN
 Hash: 40dff191bf683de95a0b131f9509647e
