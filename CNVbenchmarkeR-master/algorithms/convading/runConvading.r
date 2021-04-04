@@ -39,7 +39,7 @@ saveFailedROIs <- function(outputFolder){
 processConvadingBody <- function(launchFile, inputFolder, controlsFolder, targetQcList, params){
 
   # from .txt tp select best control samples
-  system(paste("perl", launchFile, "-mode StartWithMatchScore", "-inputDir" , inputFolder, "-controlsDir" , controlsFolder, "-outputDir", inputFolder))
+  system(paste("perl", launchFile, "-mode StartWithMatchScore", "-inputDir" , inputFolder, "-controlsDir" , controlsFolder, "-outputDir", inputFolder, "-controlSamples", params$controlSamples))
 
   # cnv calling
   system(paste("perl", launchFile, "-mode StartWithBestScore", "-inputDir" , inputFolder,

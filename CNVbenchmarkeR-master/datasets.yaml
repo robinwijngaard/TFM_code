@@ -6,6 +6,6 @@ dataset1:
   bams_dir: "/home/robin/Documents/Project/Samples/example/bam_ex" # folder where bams files (.bai indexes) are stored
   bed_file: "/home/robin/Documents/Project/Samples/bedfiles/ICR96_hg38_noSNP.bed" # bed file defining ROIs. It must be sortered by chr and start position, and 4th column must contain only gene symbol. (See examples folder)
   fasta_file: "/home/robin/Documents/Project/Samples/hg38/hg38.fa"  # genome fasta file
-  validated_results_file: "/home/robin/Documents/Project/Samples/validatedresults/validated_results_ICR96.csv"    # file containing results obtained using a orthogonal method (MLPA or aCGH) (See examples folder)
+  validated_results_file: "/home/robin/Documents/Project/Samples/validatedresults/ICR96_validated_regions38.txt"    # file containing results obtained using a orthogonal method (MLPA or aCGH) (See examples folder)
   validated_results_file_format: "icr"   # format of validated results file: icr or panelcn
   read_length: 101   # read length used when sequencing

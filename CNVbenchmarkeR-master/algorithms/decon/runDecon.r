@@ -45,8 +45,6 @@ saveExonFailures <- function(deconFailuresFile, bedFile, bamsFolder, outputFolde
   write.table(output, outputFile, sep="\t", row.names=FALSE, quote = FALSE)
 }
 
-
-
 # Read args
 args <- commandArgs(TRUE)
 print(args)
@@ -132,7 +130,7 @@ for (name in names(datasets)) {
         
         # Save results in GRanges format
         message("Saving CNV GenomicRanges and Failures results")
-        saveResultsFileToGR(outputFolder, "calls_all.txt", chrColumn = "Chromosome")
+        saveResultsFileToGR(outputFolder, "calls_all.txt", chrColumn = "Chromosome", startColumn = "Start.b", endColumn = "End.b")
         saveExonFailures(file.path(outputFolder, "failures_Failures.txt"), bedFile, bamsDir, outputFolder)
 
         print(paste("DECoN for", name, "dataset finished", sep=" "))
@@ -143,3 +141,13 @@ for (name in names(datasets)) {
 print(paste("Finishing at", endTime <- Sys.time()))
 cat("\nElapsed time:")
 print(endTime - startTime)
+
+
+################test
+#setwd("~/Documents/Project/TFM_code/CNVbenchmarkeR-master/algorithms/decon")
+
+#outputF
+
+#saveResultsFileToGR(outputFolder, "calls_all.txt", chrColumn = "Chromosome")
+#saveExonFailures(file.path(outputFolder, "failures_Failures.txt"), bedFile, bamsDir, outputFolder)
+

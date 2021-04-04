@@ -1,4 +1,4 @@
-[1] "Starting at 2021-04-04 14:17:26"
+[1] "Starting at 2021-04-04 18:53:01"
 [1] "./algorithms/decon/deconParams.yaml" "datasets.yaml"                      
 Warning message:
 In readLines(con) :
@@ -42,14 +42,19 @@ The following objects are masked from ‘package:base’:
 
 [1] "/home/robin/Documents/Project/Samples/example/bam_ex"
 Reference fasta file provided so ExomeDepth will compute the GC content in each window
-Parse 7 BAM files
-[1] "/home/robin/Documents/Project/Samples/example/bam_ex/17296.bam"
-[2] "/home/robin/Documents/Project/Samples/example/bam_ex/17297.bam"
-[3] "/home/robin/Documents/Project/Samples/example/bam_ex/17298.bam"
-[4] "/home/robin/Documents/Project/Samples/example/bam_ex/17299.bam"
-[5] "/home/robin/Documents/Project/Samples/example/bam_ex/17300.bam"
-[6] "/home/robin/Documents/Project/Samples/example/bam_ex/17301.bam"
-[7] "/home/robin/Documents/Project/Samples/example/bam_ex/17302.bam"
+Parse 12 BAM files
+ [1] "/home/robin/Documents/Project/Samples/example/bam_ex/17296.bam"
+ [2] "/home/robin/Documents/Project/Samples/example/bam_ex/17297.bam"
+ [3] "/home/robin/Documents/Project/Samples/example/bam_ex/17298.bam"
+ [4] "/home/robin/Documents/Project/Samples/example/bam_ex/17299.bam"
+ [5] "/home/robin/Documents/Project/Samples/example/bam_ex/17300.bam"
+ [6] "/home/robin/Documents/Project/Samples/example/bam_ex/17301.bam"
+ [7] "/home/robin/Documents/Project/Samples/example/bam_ex/17302.bam"
+ [8] "/home/robin/Documents/Project/Samples/example/bam_ex/17303.bam"
+ [9] "/home/robin/Documents/Project/Samples/example/bam_ex/17304.bam"
+[10] "/home/robin/Documents/Project/Samples/example/bam_ex/17305.bam"
+[11] "/home/robin/Documents/Project/Samples/example/bam_ex/17306.bam"
+[12] "/home/robin/Documents/Project/Samples/example/bam_ex/17307.bam"
 Now parsing /home/robin/Documents/Project/Samples/example/bam_ex/17296.bam
 Parsing chromosome 1
 Parsing chromosome 2
@@ -225,6 +230,131 @@ Parsing chromosome 22
 Parsing chromosome X
 Parsing chromosome Y
 Number of counted fragments : 1755677
+Now parsing /home/robin/Documents/Project/Samples/example/bam_ex/17303.bam
+Parsing chromosome 1
+Parsing chromosome 2
+Parsing chromosome 3
+Parsing chromosome 4
+Parsing chromosome 5
+Parsing chromosome 6
+Parsing chromosome 7
+Parsing chromosome 8
+Parsing chromosome 9
+Parsing chromosome 10
+Parsing chromosome 11
+Parsing chromosome 12
+Parsing chromosome 13
+Parsing chromosome 14
+Parsing chromosome 15
+Parsing chromosome 16
+Parsing chromosome 17
+Parsing chromosome 18
+Parsing chromosome 19
+Parsing chromosome 21
+Parsing chromosome 22
+Parsing chromosome X
+Parsing chromosome Y
+Number of counted fragments : 2752365
+Now parsing /home/robin/Documents/Project/Samples/example/bam_ex/17304.bam
+Parsing chromosome 1
+Parsing chromosome 2
+Parsing chromosome 3
+Parsing chromosome 4
+Parsing chromosome 5
+Parsing chromosome 6
+Parsing chromosome 7
+Parsing chromosome 8
+Parsing chromosome 9
+Parsing chromosome 10
+Parsing chromosome 11
+Parsing chromosome 12
+Parsing chromosome 13
+Parsing chromosome 14
+Parsing chromosome 15
+Parsing chromosome 16
+Parsing chromosome 17
+Parsing chromosome 18
+Parsing chromosome 19
+Parsing chromosome 21
+Parsing chromosome 22
+Parsing chromosome X
+Parsing chromosome Y
+Number of counted fragments : 2387019
+Now parsing /home/robin/Documents/Project/Samples/example/bam_ex/17305.bam
+Parsing chromosome 1
+Parsing chromosome 2
+Parsing chromosome 3
+Parsing chromosome 4
+Parsing chromosome 5
+Parsing chromosome 6
+Parsing chromosome 7
+Parsing chromosome 8
+Parsing chromosome 9
+Parsing chromosome 10
+Parsing chromosome 11
+Parsing chromosome 12
+Parsing chromosome 13
+Parsing chromosome 14
+Parsing chromosome 15
+Parsing chromosome 16
+Parsing chromosome 17
+Parsing chromosome 18
+Parsing chromosome 19
+Parsing chromosome 21
+Parsing chromosome 22
+Parsing chromosome X
+Parsing chromosome Y
+Number of counted fragments : 2917541
+Now parsing /home/robin/Documents/Project/Samples/example/bam_ex/17306.bam
+Parsing chromosome 1
+Parsing chromosome 2
+Parsing chromosome 3
+Parsing chromosome 4
+Parsing chromosome 5
+Parsing chromosome 6
+Parsing chromosome 7
+Parsing chromosome 8
+Parsing chromosome 9
+Parsing chromosome 10
+Parsing chromosome 11
+Parsing chromosome 12
+Parsing chromosome 13
+Parsing chromosome 14
+Parsing chromosome 15
+Parsing chromosome 16
+Parsing chromosome 17
+Parsing chromosome 18
+Parsing chromosome 19
+Parsing chromosome 21
+Parsing chromosome 22
+Parsing chromosome X
+Parsing chromosome Y
+Number of counted fragments : 2562429
+Now parsing /home/robin/Documents/Project/Samples/example/bam_ex/17307.bam
+Parsing chromosome 1
+Parsing chromosome 2
+Parsing chromosome 3
+Parsing chromosome 4
+Parsing chromosome 5
+Parsing chromosome 6
+Parsing chromosome 7
+Parsing chromosome 8
+Parsing chromosome 9
+Parsing chromosome 10
+Parsing chromosome 11
+Parsing chromosome 12
+Parsing chromosome 13
+Parsing chromosome 14
+Parsing chromosome 15
+Parsing chromosome 16
+Parsing chromosome 17
+Parsing chromosome 18
+Parsing chromosome 19
+Parsing chromosome 21
+Parsing chromosome 22
+Parsing chromosome X
+Parsing chromosome Y
+Number of counted fragments : 2177521
 [1] "END ReadInBams.R"
 [1] "ReadInBams.R finished"
 [1] "Rscript IdentifyFailures.R --Rdata /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/decon-dataset1/output.bams.RData --mincorr 0.98 --mincov 100 --out /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/decon-dataset1/failures"
@@ -297,9 +427,9 @@ The following objects are masked from ‘package:base’:
     warnings
 
 [1] "BEGIN makeCNVCalls.R"
-[1] "Processing sample: 17296 1/7"
+[1] "Processing sample: 17296 1/12"
 Optimization of the choice of aggregate reference set, this process can take some time
-Number of selected bins: 1236
+Number of selected bins: 1237
 Now fitting the beta-binomial model on a data frame with 1487 rows : this step can take a few minutes.
 Now computing the likelihood for the different copy number states
 Correlation between reference and tests count is 0.99755
@@ -313,90 +443,147 @@ Number of calls for chromosome 8 : 1
 Number of calls for chromosome 10 : 1
 Number of calls for chromosome 16 : 3
 Number of calls for chromosome 17 : 1
-[1] "Processing sample: 17297 2/7"
+[1] "Processing sample: 17297 2/12"
 Optimization of the choice of aggregate reference set, this process can take some time
-Number of selected bins: 1236
+Number of selected bins: 1237
 Now fitting the beta-binomial model on a data frame with 1487 rows : this step can take a few minutes.
 Now computing the likelihood for the different copy number states
-Correlation between reference and tests count is 0.99658
+Correlation between reference and tests count is 0.99442
 To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
 Number of calls for chromosome 1 : 1
 Number of calls for chromosome 3 : 1
-Number of calls for chromosome 16 : 1
-[1] "Processing sample: 17298 3/7"
+Number of calls for chromosome X : 1
+Number of calls for chromosome Y : 1
+[1] "Processing sample: 17298 3/12"
 Optimization of the choice of aggregate reference set, this process can take some time
-Number of selected bins: 1236
+Number of selected bins: 1237
 Now fitting the beta-binomial model on a data frame with 1487 rows : this step can take a few minutes.
 Now computing the likelihood for the different copy number states
-Correlation between reference and tests count is 0.99711
+Correlation between reference and tests count is 0.99806
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 7 : 1
+Number of calls for chromosome 22 : 1
+[1] "Processing sample: 17299 4/12"
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 1237
+Now fitting the beta-binomial model on a data frame with 1487 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Correlation between reference and tests count is 0.99776
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 7 : 1
+Number of calls for chromosome 8 : 1
+Number of calls for chromosome 11 : 1
+[1] "Processing sample: 17300 5/12"
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 1237
+Now fitting the beta-binomial model on a data frame with 1487 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Correlation between reference and tests count is 0.99533
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome X : 1
+Number of calls for chromosome Y : 1
+[1] "Processing sample: 17301 6/12"
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 1237
+Now fitting the beta-binomial model on a data frame with 1487 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Correlation between reference and tests count is 0.9986
 To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
 Number of calls for chromosome 2 : 1
-Number of calls for chromosome 6 : 1
 Number of calls for chromosome 7 : 1
+Number of calls for chromosome 8 : 1
+Number of calls for chromosome 9 : 1
+Number of calls for chromosome 10 : 1
+Number of calls for chromosome 16 : 1
+Number of calls for chromosome Y : 1
+[1] "Processing sample: 17302 7/12"
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 1237
+Now fitting the beta-binomial model on a data frame with 1487 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Correlation between reference and tests count is 0.99814
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 7 : 2
+Number of calls for chromosome 8 : 1
+Number of calls for chromosome 9 : 1
+Number of calls for chromosome 10 : 1
+Number of calls for chromosome 11 : 1
+Number of calls for chromosome 12 : 1
+Number of calls for chromosome 13 : 1
+Number of calls for chromosome 16 : 1
+Number of calls for chromosome 17 : 2
+Number of calls for chromosome Y : 1
+[1] "Processing sample: 17303 8/12"
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 1237
+Now fitting the beta-binomial model on a data frame with 1487 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Correlation between reference and tests count is 0.9941
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 1 : 2
+Number of calls for chromosome 2 : 2
+Number of calls for chromosome 3 : 2
+Number of calls for chromosome 6 : 1
+Number of calls for chromosome 7 : 2
 Number of calls for chromosome 8 : 1
 Number of calls for chromosome 9 : 1
 Number of calls for chromosome 10 : 3
+Number of calls for chromosome 13 : 1
+Number of calls for chromosome 16 : 3
+Number of calls for chromosome 17 : 1
+Number of calls for chromosome 19 : 2
+Number of calls for chromosome X : 1
+Number of calls for chromosome Y : 1
+[1] "Processing sample: 17304 9/12"
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 1237
+Now fitting the beta-binomial model on a data frame with 1487 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Correlation between reference and tests count is 0.99899
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 7 : 1
+Number of calls for chromosome 16 : 1
+[1] "Processing sample: 17305 10/12"
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 1237
+Now fitting the beta-binomial model on a data frame with 1487 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Correlation between reference and tests count is 0.99895
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 7 : 1
+Number of calls for chromosome 13 : 1
+[1] "Processing sample: 17306 11/12"
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 1237
+Now fitting the beta-binomial model on a data frame with 1487 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Correlation between reference and tests count is 0.99882
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 7 : 1
+Number of calls for chromosome 8 : 1
+Number of calls for chromosome 17 : 1
+[1] "Processing sample: 17307 12/12"
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 1237
+Now fitting the beta-binomial model on a data frame with 1487 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Correlation between reference and tests count is 0.99857
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 3 : 1
+Number of calls for chromosome 8 : 1
 Number of calls for chromosome 11 : 1
 Number of calls for chromosome 13 : 1
-Number of calls for chromosome 16 : 2
-Number of calls for chromosome 17 : 2
-[1] "Processing sample: 17299 4/7"
-Optimization of the choice of aggregate reference set, this process can take some time
-Number of selected bins: 1236
-Now fitting the beta-binomial model on a data frame with 1487 rows : this step can take a few minutes.
-Now computing the likelihood for the different copy number states
-Correlation between reference and tests count is 0.99659
-To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
-Number of calls for chromosome 1 : 1
-Number of calls for chromosome 2 : 1
-Number of calls for chromosome 3 : 1
-Number of calls for chromosome 7 : 2
-Number of calls for chromosome 8 : 2
-Number of calls for chromosome 9 : 1
-Number of calls for chromosome 10 : 2
-Number of calls for chromosome 13 : 1
-Number of calls for chromosome 16 : 2
-Number of calls for chromosome 17 : 1
-[1] "Processing sample: 17300 5/7"
-Optimization of the choice of aggregate reference set, this process can take some time
-Number of selected bins: 1236
-Now fitting the beta-binomial model on a data frame with 1487 rows : this step can take a few minutes.
-Now computing the likelihood for the different copy number states
-Correlation between reference and tests count is 0.99578
-To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
-Number of calls for chromosome 1 : 2
-Number of calls for chromosome 8 : 1
-Number of calls for chromosome 10 : 1
-Number of calls for chromosome X : 1
-Number of calls for chromosome Y : 1
-[1] "Processing sample: 17301 6/7"
-Optimization of the choice of aggregate reference set, this process can take some time
-Number of selected bins: 1236
-Now fitting the beta-binomial model on a data frame with 1487 rows : this step can take a few minutes.
-Now computing the likelihood for the different copy number states
-Correlation between reference and tests count is 0.998
-To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
-Number of calls for chromosome 2 : 1
-Number of calls for chromosome 7 : 1
-Number of calls for chromosome X : 1
-Number of calls for chromosome Y : 1
-[1] "Processing sample: 17302 7/7"
-Optimization of the choice of aggregate reference set, this process can take some time
-Number of selected bins: 1236
-Now fitting the beta-binomial model on a data frame with 1487 rows : this step can take a few minutes.
-Now computing the likelihood for the different copy number states
-Correlation between reference and tests count is 0.9978
-To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
-Number of calls for chromosome 3 : 1
-Number of calls for chromosome 7 : 1
-Number of calls for chromosome 8 : 1
-Number of calls for chromosome 9 : 1
-Number of calls for chromosome 10 : 1
-Number of calls for chromosome 12 : 1
-Number of calls for chromosome 13 : 1
-Number of calls for chromosome 17 : 2
-Number of calls for chromosome Y : 1
+Number of calls for chromosome 16 : 1
+Number of calls for chromosome 22 : 1
 There were 50 or more warnings (use warnings() to see the first 50)
+geom_path: Each group consists of only one observation. Do you need to adjust
+the group aesthetic?
+geom_path: Each group consists of only one observation. Do you need to adjust
+the group aesthetic?
+geom_path: Each group consists of only one observation. Do you need to adjust
+the group aesthetic?
+geom_path: Each group consists of only one observation. Do you need to adjust
+the group aesthetic?
 geom_path: Each group consists of only one observation. Do you need to adjust
 the group aesthetic?
 geom_path: Each group consists of only one observation. Do you need to adjust
@@ -420,6 +607,12 @@ Error: Failure type not recognised
 Error: Failure type not recognised
 Error: Failure type not recognised
 Error: Failure type not recognised
+Error: Failure type not recognised
+Error: Failure type not recognised
+Error: Failure type not recognised
+Error: Failure type not recognised
+Error: Failure type not recognised
+Error: Failure type not recognised
 [1] "DECoN for dataset1 dataset finished"
 
 
@@ -427,22 +620,40 @@ Error: Failure type not recognised
 Warning messages:
 1: In .Seqinfo.mergexy(x, y) :
   Each of the 2 combined objects has sequence levels not in the other:
-  - in 'x': 1, 3
-  - in 'y': 9, 11, 13
+  - in 'x': 2, 6, 7, 8, 10, 16, 17
+  - in 'y': X, Y
   Make sure to always combine/compare objects based on the same reference
   genome (use suppressWarnings() to suppress this warning).
 2: In .Seqinfo.mergexy(x, y) :
   Each of the 2 combined objects has sequence levels not in the other:
-  - in 'x': 2, 3, 6, 7, 16, 17, 9, 11, 13
-  - in 'y': X, Y
+  - in 'x': 1, 2, 3, 6, 8, 10, 16, 17, X, Y
+  - in 'y': 22
   Make sure to always combine/compare objects based on the same reference
   genome (use suppressWarnings() to suppress this warning).
 3: In .Seqinfo.mergexy(x, y) :
   Each of the 2 combined objects has sequence levels not in the other:
-  - in 'x': 1, 2, 6, 16, 11, X
-  - in 'y': 12
+  - in 'x': 1, 2, 3, 6, 10, 16, 17, X, Y, 22
+  - in 'y': 11
   Make sure to always combine/compare objects based on the same reference
   genome (use suppressWarnings() to suppress this warning).
-[1] "Finishing at 2021-04-04 14:19:32"
+4: In .Seqinfo.mergexy(x, y) :
+  Each of the 2 combined objects has sequence levels not in the other:
+  - in 'x': 1, 3, 6, 17, X, 22, 11
+  - in 'y': 9
+  Make sure to always combine/compare objects based on the same reference
+  genome (use suppressWarnings() to suppress this warning).
+5: In .Seqinfo.mergexy(x, y) :
+  Each of the 2 combined objects has sequence levels not in the other:
+  - in 'x': 1, 2, 3, 6, X, 22
+  - in 'y': 12, 13
+  Make sure to always combine/compare objects based on the same reference
+  genome (use suppressWarnings() to suppress this warning).
+6: In .Seqinfo.mergexy(x, y) :
+  Each of the 2 combined objects has sequence levels not in the other:
+  - in 'x': 22, 11, 12
+  - in 'y': 19
+  Make sure to always combine/compare objects based on the same reference
+  genome (use suppressWarnings() to suppress this warning).
+[1] "Finishing at 2021-04-04 18:56:34"
 
-Elapsed time:Time difference of 2.101978 mins
+Elapsed time:Time difference of 3.539917 mins

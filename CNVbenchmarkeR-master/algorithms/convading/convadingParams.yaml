@@ -1,4 +1,4 @@
-convadingFolder: /yourPath/CoNVaDING-1.2.1
+convadingFolder: "/home/robin/Documents/Project/TFM_code/CoNVaDING-master"
 defineControlsByIndication: false   # true for removing samples with the same clinical indication from controls to the one being tested (very high time consuming)
 
 regionThreshold: 20
@@ -8,4 +8,5 @@ zScoreCutOffLow: -3
 zScoreCutOffHigh: 3
 sampleRatioScore: 0.09
 percentageLessReliableTargets: 20
+controlSamples: 10
 

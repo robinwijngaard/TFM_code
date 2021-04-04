@@ -1,1 +1,59 @@
 Adaptar els yaml, tant del dataset com dels tools que es volen executar
+
+En el script: cnvStat.R
+He canviat: X5PrimeExon37 a X5PrimeExon38 (canvi a hg38)
+
+
+cnvStat change (add if statement, otherwise error if fixed positives nrwo 0)
+ 
+if(nrow(fixedPositives) > 0) {colnames(fixedPositives) <- c("chr", "start", "end", "gene", "sample", "cnvType") }
+
+
+
+
+In runExomeDepthalg.R
+
+Chnages (47-53)
+
+    all_exons = CallCNVs(x = all_exons,
+                         transition.probability = params$transition.probability,
+                         expected.CNV.length = params$expected.CNV.length,
+                         chromosome = countsDef$chromosome, #not space
+                         start = countsDef$start,
+                         end = countsDef$end,
+                         name = countsDef$exon) # not name
+
+
+
+195-199
+
+      all <- processExomedepthBody(testCountsDF = countsDF[6:ncol(countsDF)],     # not 7
+                                   controlCountsDF = countsDF[6:ncol(countsDF)],   # ot 7
+                                   countsDef = countsDF[1:5], # not 1 to 6
+                                   params = params)
+
+
+
+
+In runBenchmark.sh
+
+Add:
+
+export LC_ALL=en_US.UTF-8 to convading:
+
+if [ "$pars_algorithms_convading" == "true" ]; then
+    echo "[$(date)] Executing CoNVaDING"
+    export LC_ALL=en_US.UTF-8
+  Rscript ./algorithms/convading/runConvading.r ./algorithms/convading/convadingParams.yaml datasets.yaml  > logs/convading.log 2>&1
+fi
+
+
+
+For convading:
+
+Add new parameterin yaml:
+controlSamples: 10
+
+in runConvading.R (line 42)
+
+system(paste("perl", launchFile, "-mode StartWithMatchScore", "-inputDir" , inputFolder, "-controlsDir" , controlsFolder, "-outputDir", inputFolder, "-controlSamples", params$controlSamples))

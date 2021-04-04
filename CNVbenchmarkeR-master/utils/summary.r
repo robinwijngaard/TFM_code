@@ -42,3 +42,10 @@ for (dName in names(datasets)) {
     ss$writeCSVresults(file.path(getwd(), "output", "summary", paste0("results-", dName, ".csv")), dName)
   }
 }  
+
+
+
+
+setwd("/home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master")
+algorithmsParamsFile<-"/home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/algorithms.yaml"
+datasetsParamsFile<-"/home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/datasets.yaml"

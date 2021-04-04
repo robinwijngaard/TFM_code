@@ -32,6 +32,7 @@ fi
 
 if [ "$pars_algorithms_convading" == "true" ]; then
     echo "[$(date)] Executing CoNVaDING"
+    export LC_ALL=en_US.UTF-8
 	Rscript ./algorithms/convading/runConvading.r ./algorithms/convading/convadingParams.yaml datasets.yaml  > logs/convading.log 2>&1
 fi
 

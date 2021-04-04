@@ -67,7 +67,7 @@ SummaryStats <- setRefClass("SummaryStats",
 
                                 # Create new data frame
                                 newData <- data.frame(matrix(ncol = 6, nrow = 0))
-                                colnames(newData) <- c("SampleID", "Chromosome", "X5PrimeExon37", "X3PrimeExon37", "ExonCNVType", "Gene")
+                                colnames(newData) <- c("SampleID", "Chromosome", "X5PrimeExon38", "X3PrimeExon38", "ExonCNVType", "Gene")
 
                                 # Fill new data frame
                                 sampleIds <- unique(data["SampleID"])[[1]]
@@ -133,8 +133,8 @@ SummaryStats <- setRefClass("SummaryStats",
                                     } else if (rows[pos,]$MLPAResult %in% c("CN3", "CN4"))
                                       cnvType <- "Duplication"
 
-                                    row <- data.frame(SampleID = as.character(id), Chromosome = chr, X5PrimeExon37 = start,
-                                                      X3PrimeExon37 = end, ExonCNVType = as.character(cnvType), Gene = gene)
+                                    row <- data.frame(SampleID = as.character(id), Chromosome = chr, X5PrimeExon38 = start,
+                                                      X3PrimeExon38 = end, ExonCNVType = as.character(cnvType), Gene = gene)
                                     newData <- rbind(newData, row)
                                   }
                                 }
@@ -170,7 +170,7 @@ SummaryStats <- setRefClass("SummaryStats",
 
                                       # get matching data
                                       events <- subset(data, SampleID == id & ExonCNVType == cnvType & Gene == gene)
-                                      grEvents <- GRanges(seqnames = events[["Chromosome"]], ranges = IRanges(start=events[["X5PrimeExon37"]], end=events[["X3PrimeExon37"]]))
+                                      grEvents <- GRanges(seqnames = events[["Chromosome"]], ranges = IRanges(start=events[["X5PrimeExon38"]], end=events[["X3PrimeExon38"]]))
                                       overlaps <- countOverlaps(bedDataGR, grEvents, type = "any")
                                       aux <- bedData[overlaps != 0,]
 
@@ -284,7 +284,7 @@ SummaryStats <- setRefClass("SummaryStats",
                                     }
                                   }
                                 }
-                                colnames(fixedPositives) <- c("chr", "start", "end", "gene", "sample", "cnvType")
+                                if(nrow(fixedPositives) > 0) {colnames(fixedPositives) <- c("chr", "start", "end", "gene", "sample", "cnvType") }
 
                                 # extract sample names
                                 sampleIds <- unique(fixedPositives$sample)

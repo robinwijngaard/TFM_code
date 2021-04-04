@@ -1,0 +1,2285 @@
+[1] "Starting at 2021-04-04 21:49:03"
+[1] "./algorithms/convading/convadingParams.yaml"
+[2] "datasets.yaml"                              
+[1] "Params for this execution: list(convadingFolder = \"/home/robin/Documents/Project/TFM_code/CoNVaDING-master\", defineControlsByIndication = FALSE, regionThreshold = 20, ratioCutOffLow = 0.65, ratioCutOffHigh = 1.4, zScoreCutOffLow = -3, zScoreCutOffHigh = 3, sampleRatioScore = 0.09, percentageLessReliableTargets = 20, controlSamples = 10)"
+[1] "Starting convading for dataset1 dataset"
+
+#######################################
+COMMANDLINE OPTIONS IN AFFECT:
+-mode
+StartWithBam
+-inputDir
+/home/robin/Documents/Project/Samples/example/bam_ex
+-useSampleAsControl
+-controlsDir
+/home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/convading-dataset1/controls
+-bed
+/home/robin/Documents/Project/Samples/bedfiles/ICR96_hg38_noSNP.bed
+-outputDir
+/home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/convading-dataset1
+#######################################
+
+Starting analysis Sun Apr  4 21:49:03 2021
+Reading BAM files to process..
+Starting counts analysis..
+Finished processing file: /home/robin/Documents/Project/Samples/example/bam_ex/17306.bam
+
+Writing normalized coverage counts to: /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/convading-dataset1/17306.normalized.coverage.txt
+
+
+Starting counts analysis..
+Finished processing file: /home/robin/Documents/Project/Samples/example/bam_ex/17303.bam
+
+Writing normalized coverage counts to: /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/convading-dataset1/17303.normalized.coverage.txt
+
+
+Starting counts analysis..
+Finished processing file: /home/robin/Documents/Project/Samples/example/bam_ex/17298.bam
+
+Writing normalized coverage counts to: /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/convading-dataset1/17298.normalized.coverage.txt
+
+
+Starting counts analysis..
+Finished processing file: /home/robin/Documents/Project/Samples/example/bam_ex/17304.bam
+
+Writing normalized coverage counts to: /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/convading-dataset1/17304.normalized.coverage.txt
+
+
+Starting counts analysis..
+Finished processing file: /home/robin/Documents/Project/Samples/example/bam_ex/17300.bam
+
+Writing normalized coverage counts to: /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/convading-dataset1/17300.normalized.coverage.txt
+
+
+Starting counts analysis..
+Finished processing file: /home/robin/Documents/Project/Samples/example/bam_ex/17302.bam
+
+Writing normalized coverage counts to: /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/convading-dataset1/17302.normalized.coverage.txt
+
+
+Starting counts analysis..
+Finished processing file: /home/robin/Documents/Project/Samples/example/bam_ex/17305.bam
+
+Writing normalized coverage counts to: /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/convading-dataset1/17305.normalized.coverage.txt
+
+
+Starting counts analysis..
+Finished processing file: /home/robin/Documents/Project/Samples/example/bam_ex/17296.bam
+
+Writing normalized coverage counts to: /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/convading-dataset1/17296.normalized.coverage.txt
+
+
+Starting counts analysis..
+Finished processing file: /home/robin/Documents/Project/Samples/example/bam_ex/17301.bam
+
+Writing normalized coverage counts to: /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/convading-dataset1/17301.normalized.coverage.txt
+
+
+Starting counts analysis..
+Finished processing file: /home/robin/Documents/Project/Samples/example/bam_ex/17297.bam
+
+Writing normalized coverage counts to: /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/convading-dataset1/17297.normalized.coverage.txt
+
+
+Starting counts analysis..
+Finished processing file: /home/robin/Documents/Project/Samples/example/bam_ex/17299.bam
+
+Writing normalized coverage counts to: /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/convading-dataset1/17299.normalized.coverage.txt
+
+
+Starting counts analysis..
+Finished processing file: /home/robin/Documents/Project/Samples/example/bam_ex/17307.bam
+
+Writing normalized coverage counts to: /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/convading-dataset1/17307.normalized.coverage.txt
+
+
+
+Finished analysis Sun Apr  4 22:08:49 2021
+
+#######################################
+COMMANDLINE OPTIONS IN AFFECT:
+-mode
+StartWithMatchScore
+-inputDir
+/home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/convading-dataset1
+-controlsDir
+/home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/convading-dataset1/controls
+-outputDir
+/home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/convading-dataset1
+-controlSamples
+10
+#######################################
+
+Starting analysis Sun Apr  4 22:08:50 2021
+Starting search for best match scores..
+Reading count files..
+Starting match score analysis..
+
+Analyzing sample: 17304.normalized.coverage.txt..
+Control: 17306.normalized.coverage.txt			Avg abs diff autosomal: 0.0502623964749787	Avg abs diff incl sex: 0.0500279372210299
+Control: 17301.normalized.coverage.txt			Avg abs diff autosomal: 0.0465280550149469	Avg abs diff incl sex: 0.0463055312594139
+Control: 17296.normalized.coverage.txt			Avg abs diff autosomal: 0.070131852037315	Avg abs diff incl sex: 0.0697827676532657
+Control: 17299.normalized.coverage.txt			Avg abs diff autosomal: 0.0639470252872481	Avg abs diff incl sex: 0.0635536480952189
+Control: 17303.normalized.coverage.txt			Avg abs diff autosomal: 0.0541619405991104	Avg abs diff incl sex: 0.0554156178746096
+Control: 17298.normalized.coverage.txt			Avg abs diff autosomal: 0.0693511224230991	Avg abs diff incl sex: 0.0690171435556778
+Control: 17307.normalized.coverage.txt			Avg abs diff autosomal: 0.0643286833050786	Avg abs diff incl sex: 0.0640575854132262
+Control: 17305.normalized.coverage.txt			Avg abs diff autosomal: 0.0441304922899516	Avg abs diff incl sex: 0.0439232543953886
+Control: 17300.normalized.coverage.txt			Avg abs diff autosomal: 0.0498940857766342	Avg abs diff incl sex: 0.0501932801777905
+Control: 17302.normalized.coverage.txt			Avg abs diff autosomal: 0.0563997509290287	Avg abs diff incl sex: 0.0561263323420036
+Control: 17297.normalized.coverage.txt			Avg abs diff autosomal: 0.0565549821579776	Avg abs diff incl sex: 0.0568971227153442
+
+#######################################
+Selecting best 10 control samples for analysis..
+#######################################
+Control: 17305.normalized.coverage.txt			Avg abs diff: 0.0441304922899516
+Control: 17301.normalized.coverage.txt			Avg abs diff: 0.0465280550149469
+Control: 17300.normalized.coverage.txt			Avg abs diff: 0.0498940857766342
+Control: 17306.normalized.coverage.txt			Avg abs diff: 0.0502623964749787
+Control: 17303.normalized.coverage.txt			Avg abs diff: 0.0541619405991104
+Control: 17302.normalized.coverage.txt			Avg abs diff: 0.0563997509290287
+Control: 17297.normalized.coverage.txt			Avg abs diff: 0.0565549821579776
+Control: 17299.normalized.coverage.txt			Avg abs diff: 0.0639470252872481
+Control: 17307.normalized.coverage.txt			Avg abs diff: 0.0643286833050786
+Control: 17298.normalized.coverage.txt			Avg abs diff: 0.0693511224230991
+#######################################
+
+
+Analyzing sample: 17306.normalized.coverage.txt..
+Control: 17304.normalized.coverage.txt			Avg abs diff autosomal: 0.0502623964749787	Avg abs diff incl sex: 0.0500279372210299
+Control: 17301.normalized.coverage.txt			Avg abs diff autosomal: 0.0595401245972933	Avg abs diff incl sex: 0.0592608191257236
+Control: 17296.normalized.coverage.txt			Avg abs diff autosomal: 0.0869455633274376	Avg abs diff incl sex: 0.086518906744599
+Control: 17299.normalized.coverage.txt			Avg abs diff autosomal: 0.05357806857355	Avg abs diff incl sex: 0.0531987081224622
+Control: 17303.normalized.coverage.txt			Avg abs diff autosomal: 0.0650198284301961	Avg abs diff incl sex: 0.066416806506711
+Control: 17298.normalized.coverage.txt			Avg abs diff autosomal: 0.0583586978985795	Avg abs diff incl sex: 0.0580725172707624
+Control: 17307.normalized.coverage.txt			Avg abs diff autosomal: 0.049720065416466	Avg abs diff incl sex: 0.0494754715824308
+Control: 17305.normalized.coverage.txt			Avg abs diff autosomal: 0.0445874934403114	Avg abs diff incl sex: 0.0443475421305618
+Control: 17300.normalized.coverage.txt			Avg abs diff autosomal: 0.0570434180283158	Avg abs diff incl sex: 0.0576837603243317
+Control: 17302.normalized.coverage.txt			Avg abs diff autosomal: 0.0575780386943079	Avg abs diff incl sex: 0.0572851299173761
+Control: 17297.normalized.coverage.txt			Avg abs diff autosomal: 0.0497784347022313	Avg abs diff incl sex: 0.0506720597894785
+
+#######################################
+Selecting best 10 control samples for analysis..
+#######################################
+Control: 17305.normalized.coverage.txt			Avg abs diff: 0.0445874934403114
+Control: 17307.normalized.coverage.txt			Avg abs diff: 0.049720065416466
+Control: 17297.normalized.coverage.txt			Avg abs diff: 0.0497784347022313
+Control: 17304.normalized.coverage.txt			Avg abs diff: 0.0502623964749787
+Control: 17299.normalized.coverage.txt			Avg abs diff: 0.05357806857355
+Control: 17300.normalized.coverage.txt			Avg abs diff: 0.0570434180283158
+Control: 17302.normalized.coverage.txt			Avg abs diff: 0.0575780386943079
+Control: 17298.normalized.coverage.txt			Avg abs diff: 0.0583586978985795
+Control: 17301.normalized.coverage.txt			Avg abs diff: 0.0595401245972933
+Control: 17303.normalized.coverage.txt			Avg abs diff: 0.0650198284301961
+#######################################
+
+
+Analyzing sample: 17301.normalized.coverage.txt..
+Control: 17304.normalized.coverage.txt			Avg abs diff autosomal: 0.0465280550149469	Avg abs diff incl sex: 0.0463055312594139
+Control: 17306.normalized.coverage.txt			Avg abs diff autosomal: 0.0595401245972933	Avg abs diff incl sex: 0.0592608191257236
+Control: 17296.normalized.coverage.txt			Avg abs diff autosomal: 0.0541017011334464	Avg abs diff incl sex: 0.0538333956804458
+Control: 17299.normalized.coverage.txt			Avg abs diff autosomal: 0.0699630936649662	Avg abs diff incl sex: 0.0696058208828789
+Control: 17303.normalized.coverage.txt			Avg abs diff autosomal: 0.053803950964806	Avg abs diff incl sex: 0.0552275216346512
+Control: 17298.normalized.coverage.txt			Avg abs diff autosomal: 0.0818653854837596	Avg abs diff incl sex: 0.0814694730180138
+Control: 17307.normalized.coverage.txt			Avg abs diff autosomal: 0.0762770870260671	Avg abs diff incl sex: 0.0759362965505161
+Control: 17305.normalized.coverage.txt			Avg abs diff autosomal: 0.0513296645887827	Avg abs diff incl sex: 0.0510947524422344
+Control: 17300.normalized.coverage.txt			Avg abs diff autosomal: 0.0450244806813208	Avg abs diff incl sex: 0.0451929886767813
+Control: 17302.normalized.coverage.txt			Avg abs diff autosomal: 0.0708121653236648	Avg abs diff incl sex: 0.0704607514405187
+Control: 17297.normalized.coverage.txt			Avg abs diff autosomal: 0.0613412198057223	Avg abs diff incl sex: 0.0617254265847157
+
+#######################################
+Selecting best 10 control samples for analysis..
+#######################################
+Control: 17300.normalized.coverage.txt			Avg abs diff: 0.0450244806813208
+Control: 17304.normalized.coverage.txt			Avg abs diff: 0.0465280550149469
+Control: 17305.normalized.coverage.txt			Avg abs diff: 0.0513296645887827
+Control: 17303.normalized.coverage.txt			Avg abs diff: 0.053803950964806
+Control: 17296.normalized.coverage.txt			Avg abs diff: 0.0541017011334464
+Control: 17306.normalized.coverage.txt			Avg abs diff: 0.0595401245972933
+Control: 17297.normalized.coverage.txt			Avg abs diff: 0.0613412198057223
+Control: 17299.normalized.coverage.txt			Avg abs diff: 0.0699630936649662
+Control: 17302.normalized.coverage.txt			Avg abs diff: 0.0708121653236648
+Control: 17307.normalized.coverage.txt			Avg abs diff: 0.0762770870260671
+#######################################
+
+
+Analyzing sample: 17296.normalized.coverage.txt..
+Control: 17304.normalized.coverage.txt			Avg abs diff autosomal: 0.070131852037315	Avg abs diff incl sex: 0.0697827676532657
+Control: 17306.normalized.coverage.txt			Avg abs diff autosomal: 0.0869455633274376	Avg abs diff incl sex: 0.086518906744599
+Control: 17301.normalized.coverage.txt			Avg abs diff autosomal: 0.0541017011334464	Avg abs diff incl sex: 0.0538333956804458
+Control: 17299.normalized.coverage.txt			Avg abs diff autosomal: 0.0905854044397611	Avg abs diff incl sex: 0.0901663590959517
+Control: 17303.normalized.coverage.txt			Avg abs diff autosomal: 0.0698581250099927	Avg abs diff incl sex: 0.0703747558936839
+Control: 17298.normalized.coverage.txt			Avg abs diff autosomal: 0.107455906437401	Avg abs diff incl sex: 0.106913891199983
+Control: 17307.normalized.coverage.txt			Avg abs diff autosomal: 0.103192331063674	Avg abs diff incl sex: 0.102705795935767
+Control: 17305.normalized.coverage.txt			Avg abs diff autosomal: 0.0737017415691171	Avg abs diff incl sex: 0.0733436884852163
+Control: 17300.normalized.coverage.txt			Avg abs diff autosomal: 0.0652672267580056	Avg abs diff incl sex: 0.0649039266442074
+Control: 17302.normalized.coverage.txt			Avg abs diff autosomal: 0.0938063839856207	Avg abs diff incl sex: 0.0933452372623637
+Control: 17297.normalized.coverage.txt			Avg abs diff autosomal: 0.0880659341353816	Avg abs diff incl sex: 0.0882180841979734
+
+#######################################
+Selecting best 10 control samples for analysis..
+#######################################
+Control: 17301.normalized.coverage.txt			Avg abs diff: 0.0541017011334464
+Control: 17300.normalized.coverage.txt			Avg abs diff: 0.0652672267580056
+Control: 17303.normalized.coverage.txt			Avg abs diff: 0.0698581250099927
+Control: 17304.normalized.coverage.txt			Avg abs diff: 0.070131852037315
+Control: 17305.normalized.coverage.txt			Avg abs diff: 0.0737017415691171
+Control: 17306.normalized.coverage.txt			Avg abs diff: 0.0869455633274376
+Control: 17297.normalized.coverage.txt			Avg abs diff: 0.0880659341353816
+Control: 17299.normalized.coverage.txt			Avg abs diff: 0.0905854044397611
+Control: 17302.normalized.coverage.txt			Avg abs diff: 0.0938063839856207
+Control: 17307.normalized.coverage.txt			Avg abs diff: 0.103192331063674
+#######################################
+
+
+Analyzing sample: 17299.normalized.coverage.txt..
+Control: 17304.normalized.coverage.txt			Avg abs diff autosomal: 0.0639470252872481	Avg abs diff incl sex: 0.0635536480952189
+Control: 17306.normalized.coverage.txt			Avg abs diff autosomal: 0.05357806857355	Avg abs diff incl sex: 0.0531987081224622
+Control: 17301.normalized.coverage.txt			Avg abs diff autosomal: 0.0699630936649662	Avg abs diff incl sex: 0.0696058208828789
+Control: 17296.normalized.coverage.txt			Avg abs diff autosomal: 0.0905854044397611	Avg abs diff incl sex: 0.0901663590959517
+Control: 17303.normalized.coverage.txt			Avg abs diff autosomal: 0.07249108442712	Avg abs diff incl sex: 0.0734537356166848
+Control: 17298.normalized.coverage.txt			Avg abs diff autosomal: 0.0690042515999672	Avg abs diff incl sex: 0.0685078506870881
+Control: 17307.normalized.coverage.txt			Avg abs diff autosomal: 0.0574657265041704	Avg abs diff incl sex: 0.0570880972879808
+Control: 17305.normalized.coverage.txt			Avg abs diff autosomal: 0.0502322642477835	Avg abs diff incl sex: 0.0499563378651651
+Control: 17300.normalized.coverage.txt			Avg abs diff autosomal: 0.0668252512377101	Avg abs diff incl sex: 0.0667007622673538
+Control: 17302.normalized.coverage.txt			Avg abs diff autosomal: 0.067329427466497	Avg abs diff incl sex: 0.0669668412245519
+Control: 17297.normalized.coverage.txt			Avg abs diff autosomal: 0.059363878746542	Avg abs diff incl sex: 0.0598772505610034
+
+#######################################
+Selecting best 10 control samples for analysis..
+#######################################
+Control: 17305.normalized.coverage.txt			Avg abs diff: 0.0502322642477835
+Control: 17306.normalized.coverage.txt			Avg abs diff: 0.05357806857355
+Control: 17307.normalized.coverage.txt			Avg abs diff: 0.0574657265041704
+Control: 17297.normalized.coverage.txt			Avg abs diff: 0.059363878746542
+Control: 17304.normalized.coverage.txt			Avg abs diff: 0.0639470252872481
+Control: 17300.normalized.coverage.txt			Avg abs diff: 0.0668252512377101
+Control: 17302.normalized.coverage.txt			Avg abs diff: 0.067329427466497
+Control: 17298.normalized.coverage.txt			Avg abs diff: 0.0690042515999672
+Control: 17301.normalized.coverage.txt			Avg abs diff: 0.0699630936649662
+Control: 17303.normalized.coverage.txt			Avg abs diff: 0.07249108442712
+#######################################
+
+
+Analyzing sample: 17303.normalized.coverage.txt..
+Control: 17304.normalized.coverage.txt			Avg abs diff autosomal: 0.0541619405991104	Avg abs diff incl sex: 0.0554156178746096
+Control: 17306.normalized.coverage.txt			Avg abs diff autosomal: 0.0650198284301961	Avg abs diff incl sex: 0.066416806506711
+Control: 17301.normalized.coverage.txt			Avg abs diff autosomal: 0.053803950964806	Avg abs diff incl sex: 0.0552275216346512
+Control: 17296.normalized.coverage.txt			Avg abs diff autosomal: 0.0698581250099927	Avg abs diff incl sex: 0.0703747558936839
+Control: 17299.normalized.coverage.txt			Avg abs diff autosomal: 0.07249108442712	Avg abs diff incl sex: 0.0734537356166848
+Control: 17298.normalized.coverage.txt			Avg abs diff autosomal: 0.0849021185651968	Avg abs diff incl sex: 0.0862516505928038
+Control: 17307.normalized.coverage.txt			Avg abs diff autosomal: 0.0781889808177881	Avg abs diff incl sex: 0.0794845230574778
+Control: 17305.normalized.coverage.txt			Avg abs diff autosomal: 0.0566251563155944	Avg abs diff incl sex: 0.0577789133550175
+Control: 17300.normalized.coverage.txt			Avg abs diff autosomal: 0.0571431951783581	Avg abs diff incl sex: 0.0572980921640022
+Control: 17302.normalized.coverage.txt			Avg abs diff autosomal: 0.0659279264604004	Avg abs diff incl sex: 0.0665551615960929
+Control: 17297.normalized.coverage.txt			Avg abs diff autosomal: 0.0618650136939577	Avg abs diff incl sex: 0.0620159103783839
+
+#######################################
+Selecting best 10 control samples for analysis..
+#######################################
+Control: 17301.normalized.coverage.txt			Avg abs diff: 0.053803950964806
+Control: 17304.normalized.coverage.txt			Avg abs diff: 0.0541619405991104
+Control: 17305.normalized.coverage.txt			Avg abs diff: 0.0566251563155944
+Control: 17300.normalized.coverage.txt			Avg abs diff: 0.0571431951783581
+Control: 17297.normalized.coverage.txt			Avg abs diff: 0.0618650136939577
+Control: 17306.normalized.coverage.txt			Avg abs diff: 0.0650198284301961
+Control: 17302.normalized.coverage.txt			Avg abs diff: 0.0659279264604004
+Control: 17296.normalized.coverage.txt			Avg abs diff: 0.0698581250099927
+Control: 17299.normalized.coverage.txt			Avg abs diff: 0.07249108442712
+Control: 17307.normalized.coverage.txt			Avg abs diff: 0.0781889808177881
+#######################################
+
+
+Analyzing sample: 17298.normalized.coverage.txt..
+Control: 17304.normalized.coverage.txt			Avg abs diff autosomal: 0.0693511224230991	Avg abs diff incl sex: 0.0690171435556778
+Control: 17306.normalized.coverage.txt			Avg abs diff autosomal: 0.0583586978985795	Avg abs diff incl sex: 0.0580725172707624
+Control: 17301.normalized.coverage.txt			Avg abs diff autosomal: 0.0818653854837596	Avg abs diff incl sex: 0.0814694730180138
+Control: 17296.normalized.coverage.txt			Avg abs diff autosomal: 0.107455906437401	Avg abs diff incl sex: 0.106913891199983
+Control: 17299.normalized.coverage.txt			Avg abs diff autosomal: 0.0690042515999672	Avg abs diff incl sex: 0.0685078506870881
+Control: 17303.normalized.coverage.txt			Avg abs diff autosomal: 0.0849021185651968	Avg abs diff incl sex: 0.0862516505928038
+Control: 17307.normalized.coverage.txt			Avg abs diff autosomal: 0.0564008464630029	Avg abs diff incl sex: 0.0561100311408455
+Control: 17305.normalized.coverage.txt			Avg abs diff autosomal: 0.064671148258928	Avg abs diff incl sex: 0.0643155002206241
+Control: 17300.normalized.coverage.txt			Avg abs diff autosomal: 0.0777621758167096	Avg abs diff incl sex: 0.0784872316708321
+Control: 17302.normalized.coverage.txt			Avg abs diff autosomal: 0.0581925299371819	Avg abs diff incl sex: 0.0578941229405075
+Control: 17297.normalized.coverage.txt			Avg abs diff autosomal: 0.0677749322383818	Avg abs diff incl sex: 0.0686729639834553
+
+#######################################
+Selecting best 10 control samples for analysis..
+#######################################
+Control: 17307.normalized.coverage.txt			Avg abs diff: 0.0564008464630029
+Control: 17302.normalized.coverage.txt			Avg abs diff: 0.0581925299371819
+Control: 17306.normalized.coverage.txt			Avg abs diff: 0.0583586978985795
+Control: 17305.normalized.coverage.txt			Avg abs diff: 0.064671148258928
+Control: 17297.normalized.coverage.txt			Avg abs diff: 0.0677749322383818
+Control: 17299.normalized.coverage.txt			Avg abs diff: 0.0690042515999672
+Control: 17304.normalized.coverage.txt			Avg abs diff: 0.0693511224230991
+Control: 17300.normalized.coverage.txt			Avg abs diff: 0.0777621758167096
+Control: 17301.normalized.coverage.txt			Avg abs diff: 0.0818653854837596
+Control: 17303.normalized.coverage.txt			Avg abs diff: 0.0849021185651968
+#######################################
+
+
+Analyzing sample: 17307.normalized.coverage.txt..
+Control: 17304.normalized.coverage.txt			Avg abs diff autosomal: 0.0643286833050786	Avg abs diff incl sex: 0.0640575854132262
+Control: 17306.normalized.coverage.txt			Avg abs diff autosomal: 0.049720065416466	Avg abs diff incl sex: 0.0494754715824308
+Control: 17301.normalized.coverage.txt			Avg abs diff autosomal: 0.0762770870260671	Avg abs diff incl sex: 0.0759362965505161
+Control: 17296.normalized.coverage.txt			Avg abs diff autosomal: 0.103192331063674	Avg abs diff incl sex: 0.102705795935767
+Control: 17299.normalized.coverage.txt			Avg abs diff autosomal: 0.0574657265041704	Avg abs diff incl sex: 0.0570880972879808
+Control: 17303.normalized.coverage.txt			Avg abs diff autosomal: 0.0781889808177881	Avg abs diff incl sex: 0.0794845230574778
+Control: 17298.normalized.coverage.txt			Avg abs diff autosomal: 0.0564008464630029	Avg abs diff incl sex: 0.0561100311408455
+Control: 17305.normalized.coverage.txt			Avg abs diff autosomal: 0.0565850186253943	Avg abs diff incl sex: 0.0562987671619478
+Control: 17300.normalized.coverage.txt			Avg abs diff autosomal: 0.0728427372748764	Avg abs diff incl sex: 0.073448318330918
+Control: 17302.normalized.coverage.txt			Avg abs diff autosomal: 0.0559836721794017	Avg abs diff incl sex: 0.0557192720019002
+Control: 17297.normalized.coverage.txt			Avg abs diff autosomal: 0.0592722915730125	Avg abs diff incl sex: 0.0598621861546185
+
+#######################################
+Selecting best 10 control samples for analysis..
+#######################################
+Control: 17306.normalized.coverage.txt			Avg abs diff: 0.049720065416466
+Control: 17302.normalized.coverage.txt			Avg abs diff: 0.0559836721794017
+Control: 17298.normalized.coverage.txt			Avg abs diff: 0.0564008464630029
+Control: 17305.normalized.coverage.txt			Avg abs diff: 0.0565850186253943
+Control: 17299.normalized.coverage.txt			Avg abs diff: 0.0574657265041704
+Control: 17297.normalized.coverage.txt			Avg abs diff: 0.0592722915730125
+Control: 17304.normalized.coverage.txt			Avg abs diff: 0.0643286833050786
+Control: 17300.normalized.coverage.txt			Avg abs diff: 0.0728427372748764
+Control: 17301.normalized.coverage.txt			Avg abs diff: 0.0762770870260671
+Control: 17303.normalized.coverage.txt			Avg abs diff: 0.0781889808177881
+#######################################
+
+
+Analyzing sample: 17305.normalized.coverage.txt..
+Control: 17304.normalized.coverage.txt			Avg abs diff autosomal: 0.0441304922899516	Avg abs diff incl sex: 0.0439232543953886
+Control: 17306.normalized.coverage.txt			Avg abs diff autosomal: 0.0445874934403114	Avg abs diff incl sex: 0.0443475421305618
+Control: 17301.normalized.coverage.txt			Avg abs diff autosomal: 0.0513296645887827	Avg abs diff incl sex: 0.0510947524422344
+Control: 17296.normalized.coverage.txt			Avg abs diff autosomal: 0.0737017415691171	Avg abs diff incl sex: 0.0733436884852163
+Control: 17299.normalized.coverage.txt			Avg abs diff autosomal: 0.0502322642477835	Avg abs diff incl sex: 0.0499563378651651
+Control: 17303.normalized.coverage.txt			Avg abs diff autosomal: 0.0566251563155944	Avg abs diff incl sex: 0.0577789133550175
+Control: 17298.normalized.coverage.txt			Avg abs diff autosomal: 0.064671148258928	Avg abs diff incl sex: 0.0643155002206241
+Control: 17307.normalized.coverage.txt			Avg abs diff autosomal: 0.0565850186253943	Avg abs diff incl sex: 0.0562987671619478
+Control: 17300.normalized.coverage.txt			Avg abs diff autosomal: 0.0519822712019964	Avg abs diff incl sex: 0.0523411473952577
+Control: 17302.normalized.coverage.txt			Avg abs diff autosomal: 0.0594246288906453	Avg abs diff incl sex: 0.0591249476505447
+Control: 17297.normalized.coverage.txt			Avg abs diff autosomal: 0.0491684562059887	Avg abs diff incl sex: 0.0499725389306922
+
+#######################################
+Selecting best 10 control samples for analysis..
+#######################################
+Control: 17304.normalized.coverage.txt			Avg abs diff: 0.0441304922899516
+Control: 17306.normalized.coverage.txt			Avg abs diff: 0.0445874934403114
+Control: 17297.normalized.coverage.txt			Avg abs diff: 0.0491684562059887
+Control: 17299.normalized.coverage.txt			Avg abs diff: 0.0502322642477835
+Control: 17301.normalized.coverage.txt			Avg abs diff: 0.0513296645887827
+Control: 17300.normalized.coverage.txt			Avg abs diff: 0.0519822712019964
+Control: 17307.normalized.coverage.txt			Avg abs diff: 0.0565850186253943
+Control: 17303.normalized.coverage.txt			Avg abs diff: 0.0566251563155944
+Control: 17302.normalized.coverage.txt			Avg abs diff: 0.0594246288906453
+Control: 17298.normalized.coverage.txt			Avg abs diff: 0.064671148258928
+#######################################
+
+
+Analyzing sample: 17300.normalized.coverage.txt..
+Control: 17304.normalized.coverage.txt			Avg abs diff autosomal: 0.0498940857766342	Avg abs diff incl sex: 0.0501932801777905
+Control: 17306.normalized.coverage.txt			Avg abs diff autosomal: 0.0570434180283158	Avg abs diff incl sex: 0.0576837603243317
+Control: 17301.normalized.coverage.txt			Avg abs diff autosomal: 0.0450244806813208	Avg abs diff incl sex: 0.0451929886767813
+Control: 17296.normalized.coverage.txt			Avg abs diff autosomal: 0.0652672267580056	Avg abs diff incl sex: 0.0649039266442074
+Control: 17299.normalized.coverage.txt			Avg abs diff autosomal: 0.0668252512377101	Avg abs diff incl sex: 0.0667007622673538
+Control: 17303.normalized.coverage.txt			Avg abs diff autosomal: 0.0571431951783581	Avg abs diff incl sex: 0.0572980921640022
+Control: 17298.normalized.coverage.txt			Avg abs diff autosomal: 0.0777621758167096	Avg abs diff incl sex: 0.0784872316708321
+Control: 17307.normalized.coverage.txt			Avg abs diff autosomal: 0.0728427372748764	Avg abs diff incl sex: 0.073448318330918
+Control: 17305.normalized.coverage.txt			Avg abs diff autosomal: 0.0519822712019964	Avg abs diff incl sex: 0.0523411473952577
+Control: 17302.normalized.coverage.txt			Avg abs diff autosomal: 0.0717343752281504	Avg abs diff incl sex: 0.0716068870081683
+Control: 17297.normalized.coverage.txt			Avg abs diff autosomal: 0.0563816582757216	Avg abs diff incl sex: 0.0565419687424465
+
+#######################################
+Selecting best 10 control samples for analysis..
+#######################################
+Control: 17301.normalized.coverage.txt			Avg abs diff: 0.0450244806813208
+Control: 17304.normalized.coverage.txt			Avg abs diff: 0.0498940857766342
+Control: 17305.normalized.coverage.txt			Avg abs diff: 0.0519822712019964
+Control: 17297.normalized.coverage.txt			Avg abs diff: 0.0563816582757216
+Control: 17306.normalized.coverage.txt			Avg abs diff: 0.0570434180283158
+Control: 17303.normalized.coverage.txt			Avg abs diff: 0.0571431951783581
+Control: 17296.normalized.coverage.txt			Avg abs diff: 0.0652672267580056
+Control: 17299.normalized.coverage.txt			Avg abs diff: 0.0668252512377101
+Control: 17302.normalized.coverage.txt			Avg abs diff: 0.0717343752281504
+Control: 17307.normalized.coverage.txt			Avg abs diff: 0.0728427372748764
+#######################################
+
+
+Analyzing sample: 17302.normalized.coverage.txt..
+Control: 17304.normalized.coverage.txt			Avg abs diff autosomal: 0.0563997509290287	Avg abs diff incl sex: 0.0561263323420036
+Control: 17306.normalized.coverage.txt			Avg abs diff autosomal: 0.0575780386943079	Avg abs diff incl sex: 0.0572851299173761
+Control: 17301.normalized.coverage.txt			Avg abs diff autosomal: 0.0708121653236648	Avg abs diff incl sex: 0.0704607514405187
+Control: 17296.normalized.coverage.txt			Avg abs diff autosomal: 0.0938063839856207	Avg abs diff incl sex: 0.0933452372623637
+Control: 17299.normalized.coverage.txt			Avg abs diff autosomal: 0.067329427466497	Avg abs diff incl sex: 0.0669668412245519
+Control: 17303.normalized.coverage.txt			Avg abs diff autosomal: 0.0659279264604004	Avg abs diff incl sex: 0.0665551615960929
+Control: 17298.normalized.coverage.txt			Avg abs diff autosomal: 0.0581925299371819	Avg abs diff incl sex: 0.0578941229405075
+Control: 17307.normalized.coverage.txt			Avg abs diff autosomal: 0.0559836721794017	Avg abs diff incl sex: 0.0557192720019002
+Control: 17305.normalized.coverage.txt			Avg abs diff autosomal: 0.0594246288906453	Avg abs diff incl sex: 0.0591249476505447
+Control: 17300.normalized.coverage.txt			Avg abs diff autosomal: 0.0717343752281504	Avg abs diff incl sex: 0.0716068870081683
+Control: 17297.normalized.coverage.txt			Avg abs diff autosomal: 0.0601480264277626	Avg abs diff incl sex: 0.0605346249762939
+
+#######################################
+Selecting best 10 control samples for analysis..
+#######################################
+Control: 17307.normalized.coverage.txt			Avg abs diff: 0.0559836721794017
+Control: 17304.normalized.coverage.txt			Avg abs diff: 0.0563997509290287
+Control: 17306.normalized.coverage.txt			Avg abs diff: 0.0575780386943079
+Control: 17298.normalized.coverage.txt			Avg abs diff: 0.0581925299371819
+Control: 17305.normalized.coverage.txt			Avg abs diff: 0.0594246288906453
+Control: 17297.normalized.coverage.txt			Avg abs diff: 0.0601480264277626
+Control: 17303.normalized.coverage.txt			Avg abs diff: 0.0659279264604004
+Control: 17299.normalized.coverage.txt			Avg abs diff: 0.067329427466497
+Control: 17301.normalized.coverage.txt			Avg abs diff: 0.0708121653236648
+Control: 17300.normalized.coverage.txt			Avg abs diff: 0.0717343752281504
+#######################################
+
+
+Analyzing sample: 17297.normalized.coverage.txt..
+Control: 17304.normalized.coverage.txt			Avg abs diff autosomal: 0.0565549821579776	Avg abs diff incl sex: 0.0568971227153442
+Control: 17306.normalized.coverage.txt			Avg abs diff autosomal: 0.0497784347022313	Avg abs diff incl sex: 0.0506720597894785
+Control: 17301.normalized.coverage.txt			Avg abs diff autosomal: 0.0613412198057223	Avg abs diff incl sex: 0.0617254265847157
+Control: 17296.normalized.coverage.txt			Avg abs diff autosomal: 0.0880659341353816	Avg abs diff incl sex: 0.0882180841979734
+Control: 17299.normalized.coverage.txt			Avg abs diff autosomal: 0.059363878746542	Avg abs diff incl sex: 0.0598772505610034
+Control: 17303.normalized.coverage.txt			Avg abs diff autosomal: 0.0618650136939577	Avg abs diff incl sex: 0.0620159103783839
+Control: 17298.normalized.coverage.txt			Avg abs diff autosomal: 0.0677749322383818	Avg abs diff incl sex: 0.0686729639834553
+Control: 17307.normalized.coverage.txt			Avg abs diff autosomal: 0.0592722915730125	Avg abs diff incl sex: 0.0598621861546185
+Control: 17305.normalized.coverage.txt			Avg abs diff autosomal: 0.0491684562059887	Avg abs diff incl sex: 0.0499725389306922
+Control: 17300.normalized.coverage.txt			Avg abs diff autosomal: 0.0563816582757216	Avg abs diff incl sex: 0.0565419687424465
+Control: 17302.normalized.coverage.txt			Avg abs diff autosomal: 0.0601480264277626	Avg abs diff incl sex: 0.0605346249762939
+
+#######################################
+Selecting best 10 control samples for analysis..
+#######################################
+Control: 17305.normalized.coverage.txt			Avg abs diff: 0.0491684562059887
+Control: 17306.normalized.coverage.txt			Avg abs diff: 0.0497784347022313
+Control: 17300.normalized.coverage.txt			Avg abs diff: 0.0563816582757216
+Control: 17304.normalized.coverage.txt			Avg abs diff: 0.0565549821579776
+Control: 17307.normalized.coverage.txt			Avg abs diff: 0.0592722915730125
+Control: 17299.normalized.coverage.txt			Avg abs diff: 0.059363878746542
+Control: 17302.normalized.coverage.txt			Avg abs diff: 0.0601480264277626
+Control: 17301.normalized.coverage.txt			Avg abs diff: 0.0613412198057223
+Control: 17303.normalized.coverage.txt			Avg abs diff: 0.0618650136939577
+Control: 17298.normalized.coverage.txt			Avg abs diff: 0.0677749322383818
+#######################################
+
+
+Finished analysis Sun Apr  4 22:08:52 2021
+Unknown option: 3
+
+#######################################
+COMMANDLINE OPTIONS IN AFFECT:
+-mode
+StartWithBestScore
+-inputDir
+/home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/convading-dataset1
+-regionThreshold
+20
+-ratioCutOffLow
+0.65
+-ratioCutOffHigh
+1.4
+-zScoreCutOffLow
+-3
+-zScoreCutOffHigh
+3
+-outputDir
+/home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/convading-dataset1
+#######################################
+
+Starting analysis Sun Apr  4 22:08:52 2021
+Starting search for best scores..
+Reading best match score files..
+Starting best score analysis..
+
+Analyzing sample: 17303.best.match.score.txt..
+
+##### WARNING ##### WARNING #####
+5:177133913-177133964	NSD1
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+5:177133913-177133964	NSD1
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+11:22624685-22625811	FANCF
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+12:132673652-132673676	POLE_L424V
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+17:60662994-60663553	PPM1D
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+19:33301337-33302415	CEBPA
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+19:50406432-50406456	POLD1_L474P
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+19:50406444-50406468	POLD1_S478N
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+#######################################
+
+Sample CV: 0.127656276965152
+Mean average best match score of all control samples: 0.0635085201897324
+#######################################
+
+Argument "" isn't numeric in numeric lt (<) at
+	/home/robin/Documents/Project/TFM_code/CoNVaDING-master/CoNVaDING.pl line 1342 (#1)
+    (W numeric) The indicated string was fed as an argument to an operator
+    that expected a numeric value instead.  If you're fortunate the message
+    will identify which operator was so unfortunate.
+    
+    Note that for the Inf and NaN (infinity and not-a-number) the
+    definition of "numeric" is somewhat unusual: the strings themselves
+    (like "Inf") are considered numeric, and anything following them is
+    considered non-numeric.
+    
+
+Analyzing sample: 17300.best.match.score.txt..
+
+##### WARNING ##### WARNING #####
+5:177133913-177133964	NSD1
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+5:177133913-177133964	NSD1
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+11:22624685-22625811	FANCF
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+12:132673652-132673676	POLE_L424V
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+17:60662994-60663553	PPM1D
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+19:33301337-33302415	CEBPA
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+19:50406432-50406456	POLD1_L474P
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+19:50406444-50406468	POLD1_S478N
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+#######################################
+
+Sample CV: 0.084504159577596
+Mean average best match score of all control samples: 0.0594138699641089
+#######################################
+
+
+Analyzing sample: 17306.best.match.score.txt..
+
+##### WARNING ##### WARNING #####
+5:177133913-177133964	NSD1
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+5:177133913-177133964	NSD1
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+11:22624685-22625811	FANCF
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+12:132673652-132673676	POLE_L424V
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+17:60662994-60663553	PPM1D
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+19:33301337-33302415	CEBPA
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+19:50406432-50406456	POLD1_L474P
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+19:50406444-50406468	POLD1_S478N
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+#######################################
+
+Sample CV: 0.0567806272876162
+Mean average best match score of all control samples: 0.054546656625623
+#######################################
+
+
+Analyzing sample: 17298.best.match.score.txt..
+
+##### WARNING ##### WARNING #####
+5:177133913-177133964	NSD1
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+5:177133913-177133964	NSD1
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+11:22624685-22625811	FANCF
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+12:132673652-132673676	POLE_L424V
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+17:60662994-60663553	PPM1D
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+19:33301337-33302415	CEBPA
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+19:50406432-50406456	POLD1_L474P
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+19:50406444-50406468	POLD1_S478N
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+#######################################
+
+Sample CV: 0.0816362518302277
+Mean average best match score of all control samples: 0.0688283208684806
+#######################################
+
+
+Analyzing sample: 17304.best.match.score.txt..
+
+##### WARNING ##### WARNING #####
+5:177133913-177133964	NSD1
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+5:177133913-177133964	NSD1
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+11:22624685-22625811	FANCF
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+12:132673652-132673676	POLE_L424V
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+17:60662994-60663553	PPM1D
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+19:33301337-33302415	CEBPA
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+19:50406432-50406456	POLD1_L474P
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+19:50406444-50406468	POLD1_S478N
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+#######################################
+
+Sample CV: 0.0577491874804121
+Mean average best match score of all control samples: 0.0555558534258054
+#######################################
+
+
+Analyzing sample: 17297.best.match.score.txt..
+
+##### WARNING ##### WARNING #####
+5:177133913-177133964	NSD1
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+5:177133913-177133964	NSD1
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+11:22624685-22625811	FANCF
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+12:132673652-132673676	POLE_L424V
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+17:60662994-60663553	PPM1D
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+19:33301337-33302415	CEBPA
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+19:50406432-50406456	POLD1_L474P
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+19:50406444-50406468	POLD1_S478N
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+#######################################
+
+Sample CV: 0.110421628029953
+Mean average best match score of all control samples: 0.0581648893827298
+#######################################
+
+
+Analyzing sample: 17296.best.match.score.txt..
+
+##### WARNING ##### WARNING #####
+5:177133913-177133964	NSD1
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+5:177133913-177133964	NSD1
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+11:22624685-22625811	FANCF
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+12:132673652-132673676	POLE_L424V
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+17:60662994-60663553	PPM1D
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+19:33301337-33302415	CEBPA
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+19:50406432-50406456	POLD1_L474P
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+19:50406444-50406468	POLD1_S478N
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+#######################################
+
+Sample CV: 0.104765801351649
+Mean average best match score of all control samples: 0.0795656263459752
+#######################################
+
+
+Analyzing sample: 17301.best.match.score.txt..
+
+##### WARNING ##### WARNING #####
+5:177133913-177133964	NSD1
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+5:177133913-177133964	NSD1
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+11:22624685-22625811	FANCF
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+12:132673652-132673676	POLE_L424V
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+17:60662994-60663553	PPM1D
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+19:33301337-33302415	CEBPA
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+19:50406432-50406456	POLD1_L474P
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+19:50406444-50406468	POLD1_S478N
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+#######################################
+
+Sample CV: 0.058236340664193
+Mean average best match score of all control samples: 0.0588721542801017
+#######################################
+
+
+Analyzing sample: 17299.best.match.score.txt..
+
+##### WARNING ##### WARNING #####
+5:177133913-177133964	NSD1
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+5:177133913-177133964	NSD1
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+11:22624685-22625811	FANCF
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+12:132673652-132673676	POLE_L424V
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+17:60662994-60663553	PPM1D
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+19:33301337-33302415	CEBPA
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+19:50406432-50406456	POLD1_L474P
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+19:50406444-50406468	POLD1_S478N
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+#######################################
+
+Sample CV: 0.0852626005980134
+Mean average best match score of all control samples: 0.0630200071755555
+#######################################
+
+
+Analyzing sample: 17305.best.match.score.txt..
+
+##### WARNING ##### WARNING #####
+5:177133913-177133964	NSD1
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+5:177133913-177133964	NSD1
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+11:22624685-22625811	FANCF
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+12:132673652-132673676	POLE_L424V
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+17:60662994-60663553	PPM1D
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+19:33301337-33302415	CEBPA
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+19:50406432-50406456	POLD1_L474P
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+19:50406444-50406468	POLD1_S478N
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+#######################################
+
+Sample CV: 0.0530010225599962
+Mean average best match score of all control samples: 0.0528736594065376
+#######################################
+
+
+Analyzing sample: 17302.best.match.score.txt..
+
+##### WARNING ##### WARNING #####
+5:177133913-177133964	NSD1
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+5:177133913-177133964	NSD1
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+11:22624685-22625811	FANCF
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+12:132673652-132673676	POLE_L424V
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+17:60662994-60663553	PPM1D
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+19:33301337-33302415	CEBPA
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+19:50406432-50406456	POLD1_L474P
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+19:50406444-50406468	POLD1_S478N
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+#######################################
+
+Sample CV: 0.0726135610913825
+Mean average best match score of all control samples: 0.0623530541537041
+#######################################
+
+
+Analyzing sample: 17307.best.match.score.txt..
+
+##### WARNING ##### WARNING #####
+5:177133913-177133964	NSD1
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+5:177133913-177133964	NSD1
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+11:22624685-22625811	FANCF
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+12:132673652-132673676	POLE_L424V
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+17:60662994-60663553	PPM1D
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+19:33301337-33302415	CEBPA
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+19:50406432-50406456	POLD1_L474P
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+19:50406444-50406468	POLD1_S478N
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+#######################################
+
+Sample CV: 0.0757613379110664
+Mean average best match score of all control samples: 0.0627065109185258
+#######################################
+
+
+Finished analysis Sun Apr  4 22:08:54 2021
+Unknown option: 3
+
+#######################################
+COMMANDLINE OPTIONS IN AFFECT:
+-mode
+GenerateTargetQcList
+-inputDir
+/home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/convading-dataset1
+-controlsDir
+/home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/convading-dataset1/controls
+-regionThreshold
+20
+-ratioCutOffLow
+0.65
+-ratioCutOffHigh
+1.4
+-zScoreCutOffLow
+-3
+-zScoreCutOffHigh
+3
+-sampleRatioScore
+0.09
+-outputDir
+/home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/convading-dataset1
+#######################################
+
+Starting analysis Sun Apr  4 22:08:54 2021
+Reading controls directory..
+
+Analyzing sample: 17304.normalized.coverage.txt..
+Control: 17306.normalized.coverage.txt			Avg abs diff autosomal: 0.0502623964749787	Avg abs diff incl sex: 0.0500279372210299
+Control: 17301.normalized.coverage.txt			Avg abs diff autosomal: 0.0465280550149469	Avg abs diff incl sex: 0.0463055312594139
+Control: 17296.normalized.coverage.txt			Avg abs diff autosomal: 0.070131852037315	Avg abs diff incl sex: 0.0697827676532657
+Control: 17299.normalized.coverage.txt			Avg abs diff autosomal: 0.0639470252872481	Avg abs diff incl sex: 0.0635536480952189
+Control: 17303.normalized.coverage.txt			Avg abs diff autosomal: 0.0541619405991104	Avg abs diff incl sex: 0.0554156178746096
+Control: 17298.normalized.coverage.txt			Avg abs diff autosomal: 0.0693511224230991	Avg abs diff incl sex: 0.0690171435556778
+Control: 17307.normalized.coverage.txt			Avg abs diff autosomal: 0.0643286833050786	Avg abs diff incl sex: 0.0640575854132262
+Control: 17305.normalized.coverage.txt			Avg abs diff autosomal: 0.0441304922899516	Avg abs diff incl sex: 0.0439232543953886
+Control: 17300.normalized.coverage.txt			Avg abs diff autosomal: 0.0498940857766342	Avg abs diff incl sex: 0.0501932801777905
+Control: 17302.normalized.coverage.txt			Avg abs diff autosomal: 0.0563997509290287	Avg abs diff incl sex: 0.0561263323420036
+Control: 17297.normalized.coverage.txt			Avg abs diff autosomal: 0.0565549821579776	Avg abs diff incl sex: 0.0568971227153442
+Use of uninitialized value in concatenation (.) or string at
+	/home/robin/Documents/Project/TFM_code/CoNVaDING-master/CoNVaDING.pl line 860 (#1)
+    (W uninitialized) An undefined value was used as if it were already
+    defined.  It was interpreted as a "" or a 0, but maybe it was a mistake.
+    To suppress this warning assign a defined value to your variables.
+    
+    To help you figure out what was undefined, perl will try to tell you
+    the name of the variable (if any) that was undefined.  In some cases
+    it cannot do this, so it also tells you what operation you used the
+    undefined value in.  Note, however, that perl optimizes your program
+    and the operation displayed in the warning may not necessarily appear
+    literally in your program.  For example, "that $foo" is usually
+    optimized into "that " . $foo, and the warning will refer to the
+    concatenation (.) operator, even though there is no . in
+    your program.
+    
+Use of uninitialized value in concatenation (.) or string at
+	/home/robin/Documents/Project/TFM_code/CoNVaDING-master/CoNVaDING.pl line 861 (#1)
+
+#######################################
+Selecting best 30 control samples for analysis..
+#######################################
+Control: 17305.normalized.coverage.txt			Avg abs diff: 0.0441304922899516
+Control: 17301.normalized.coverage.txt			Avg abs diff: 0.0465280550149469
+Control: 17300.normalized.coverage.txt			Avg abs diff: 0.0498940857766342
+Control: 17306.normalized.coverage.txt			Avg abs diff: 0.0502623964749787
+Control: 17303.normalized.coverage.txt			Avg abs diff: 0.0541619405991104
+Control: 17302.normalized.coverage.txt			Avg abs diff: 0.0563997509290287
+Control: 17297.normalized.coverage.txt			Avg abs diff: 0.0565549821579776
+Control: 17299.normalized.coverage.txt			Avg abs diff: 0.0639470252872481
+Control: 17307.normalized.coverage.txt			Avg abs diff: 0.0643286833050786
+Control: 17298.normalized.coverage.txt			Avg abs diff: 0.0693511224230991
+Control: 17296.normalized.coverage.txt			Avg abs diff: 0.070131852037315
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+#######################################
+
+
+Analyzing sample: 17306.normalized.coverage.txt..
+Control: 17304.normalized.coverage.txt			Avg abs diff autosomal: 0.0502623964749787	Avg abs diff incl sex: 0.0500279372210299
+Control: 17301.normalized.coverage.txt			Avg abs diff autosomal: 0.0595401245972933	Avg abs diff incl sex: 0.0592608191257236
+Control: 17296.normalized.coverage.txt			Avg abs diff autosomal: 0.0869455633274376	Avg abs diff incl sex: 0.086518906744599
+Control: 17299.normalized.coverage.txt			Avg abs diff autosomal: 0.05357806857355	Avg abs diff incl sex: 0.0531987081224622
+Control: 17303.normalized.coverage.txt			Avg abs diff autosomal: 0.0650198284301961	Avg abs diff incl sex: 0.066416806506711
+Control: 17298.normalized.coverage.txt			Avg abs diff autosomal: 0.0583586978985795	Avg abs diff incl sex: 0.0580725172707624
+Control: 17307.normalized.coverage.txt			Avg abs diff autosomal: 0.049720065416466	Avg abs diff incl sex: 0.0494754715824308
+Control: 17305.normalized.coverage.txt			Avg abs diff autosomal: 0.0445874934403114	Avg abs diff incl sex: 0.0443475421305618
+Control: 17300.normalized.coverage.txt			Avg abs diff autosomal: 0.0570434180283158	Avg abs diff incl sex: 0.0576837603243317
+Control: 17302.normalized.coverage.txt			Avg abs diff autosomal: 0.0575780386943079	Avg abs diff incl sex: 0.0572851299173761
+Control: 17297.normalized.coverage.txt			Avg abs diff autosomal: 0.0497784347022313	Avg abs diff incl sex: 0.0506720597894785
+
+#######################################
+Selecting best 30 control samples for analysis..
+#######################################
+Control: 17305.normalized.coverage.txt			Avg abs diff: 0.0445874934403114
+Control: 17307.normalized.coverage.txt			Avg abs diff: 0.049720065416466
+Control: 17297.normalized.coverage.txt			Avg abs diff: 0.0497784347022313
+Control: 17304.normalized.coverage.txt			Avg abs diff: 0.0502623964749787
+Control: 17299.normalized.coverage.txt			Avg abs diff: 0.05357806857355
+Control: 17300.normalized.coverage.txt			Avg abs diff: 0.0570434180283158
+Control: 17302.normalized.coverage.txt			Avg abs diff: 0.0575780386943079
+Control: 17298.normalized.coverage.txt			Avg abs diff: 0.0583586978985795
+Control: 17301.normalized.coverage.txt			Avg abs diff: 0.0595401245972933
+Control: 17303.normalized.coverage.txt			Avg abs diff: 0.0650198284301961
+Control: 17296.normalized.coverage.txt			Avg abs diff: 0.0869455633274376
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+#######################################
+
+
+Analyzing sample: 17301.normalized.coverage.txt..
+Control: 17304.normalized.coverage.txt			Avg abs diff autosomal: 0.0465280550149469	Avg abs diff incl sex: 0.0463055312594139
+Control: 17306.normalized.coverage.txt			Avg abs diff autosomal: 0.0595401245972933	Avg abs diff incl sex: 0.0592608191257236
+Control: 17296.normalized.coverage.txt			Avg abs diff autosomal: 0.0541017011334464	Avg abs diff incl sex: 0.0538333956804458
+Control: 17299.normalized.coverage.txt			Avg abs diff autosomal: 0.0699630936649662	Avg abs diff incl sex: 0.0696058208828789
+Control: 17303.normalized.coverage.txt			Avg abs diff autosomal: 0.053803950964806	Avg abs diff incl sex: 0.0552275216346512
+Control: 17298.normalized.coverage.txt			Avg abs diff autosomal: 0.0818653854837596	Avg abs diff incl sex: 0.0814694730180138
+Control: 17307.normalized.coverage.txt			Avg abs diff autosomal: 0.0762770870260671	Avg abs diff incl sex: 0.0759362965505161
+Control: 17305.normalized.coverage.txt			Avg abs diff autosomal: 0.0513296645887827	Avg abs diff incl sex: 0.0510947524422344
+Control: 17300.normalized.coverage.txt			Avg abs diff autosomal: 0.0450244806813208	Avg abs diff incl sex: 0.0451929886767813
+Control: 17302.normalized.coverage.txt			Avg abs diff autosomal: 0.0708121653236648	Avg abs diff incl sex: 0.0704607514405187
+Control: 17297.normalized.coverage.txt			Avg abs diff autosomal: 0.0613412198057223	Avg abs diff incl sex: 0.0617254265847157
+
+#######################################
+Selecting best 30 control samples for analysis..
+#######################################
+Control: 17300.normalized.coverage.txt			Avg abs diff: 0.0450244806813208
+Control: 17304.normalized.coverage.txt			Avg abs diff: 0.0465280550149469
+Control: 17305.normalized.coverage.txt			Avg abs diff: 0.0513296645887827
+Control: 17303.normalized.coverage.txt			Avg abs diff: 0.053803950964806
+Control: 17296.normalized.coverage.txt			Avg abs diff: 0.0541017011334464
+Control: 17306.normalized.coverage.txt			Avg abs diff: 0.0595401245972933
+Control: 17297.normalized.coverage.txt			Avg abs diff: 0.0613412198057223
+Control: 17299.normalized.coverage.txt			Avg abs diff: 0.0699630936649662
+Control: 17302.normalized.coverage.txt			Avg abs diff: 0.0708121653236648
+Control: 17307.normalized.coverage.txt			Avg abs diff: 0.0762770870260671
+Control: 17298.normalized.coverage.txt			Avg abs diff: 0.0818653854837596
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+#######################################
+
+
+Analyzing sample: 17296.normalized.coverage.txt..
+Control: 17304.normalized.coverage.txt			Avg abs diff autosomal: 0.070131852037315	Avg abs diff incl sex: 0.0697827676532657
+Control: 17306.normalized.coverage.txt			Avg abs diff autosomal: 0.0869455633274376	Avg abs diff incl sex: 0.086518906744599
+Control: 17301.normalized.coverage.txt			Avg abs diff autosomal: 0.0541017011334464	Avg abs diff incl sex: 0.0538333956804458
+Control: 17299.normalized.coverage.txt			Avg abs diff autosomal: 0.0905854044397611	Avg abs diff incl sex: 0.0901663590959517
+Control: 17303.normalized.coverage.txt			Avg abs diff autosomal: 0.0698581250099927	Avg abs diff incl sex: 0.0703747558936839
+Control: 17298.normalized.coverage.txt			Avg abs diff autosomal: 0.107455906437401	Avg abs diff incl sex: 0.106913891199983
+Control: 17307.normalized.coverage.txt			Avg abs diff autosomal: 0.103192331063674	Avg abs diff incl sex: 0.102705795935767
+Control: 17305.normalized.coverage.txt			Avg abs diff autosomal: 0.0737017415691171	Avg abs diff incl sex: 0.0733436884852163
+Control: 17300.normalized.coverage.txt			Avg abs diff autosomal: 0.0652672267580056	Avg abs diff incl sex: 0.0649039266442074
+Control: 17302.normalized.coverage.txt			Avg abs diff autosomal: 0.0938063839856207	Avg abs diff incl sex: 0.0933452372623637
+Control: 17297.normalized.coverage.txt			Avg abs diff autosomal: 0.0880659341353816	Avg abs diff incl sex: 0.0882180841979734
+
+#######################################
+Selecting best 30 control samples for analysis..
+#######################################
+Control: 17301.normalized.coverage.txt			Avg abs diff: 0.0541017011334464
+Control: 17300.normalized.coverage.txt			Avg abs diff: 0.0652672267580056
+Control: 17303.normalized.coverage.txt			Avg abs diff: 0.0698581250099927
+Control: 17304.normalized.coverage.txt			Avg abs diff: 0.070131852037315
+Control: 17305.normalized.coverage.txt			Avg abs diff: 0.0737017415691171
+Control: 17306.normalized.coverage.txt			Avg abs diff: 0.0869455633274376
+Control: 17297.normalized.coverage.txt			Avg abs diff: 0.0880659341353816
+Control: 17299.normalized.coverage.txt			Avg abs diff: 0.0905854044397611
+Control: 17302.normalized.coverage.txt			Avg abs diff: 0.0938063839856207
+Control: 17307.normalized.coverage.txt			Avg abs diff: 0.103192331063674
+Control: 17298.normalized.coverage.txt			Avg abs diff: 0.107455906437401
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+#######################################
+
+
+Analyzing sample: 17299.normalized.coverage.txt..
+Control: 17304.normalized.coverage.txt			Avg abs diff autosomal: 0.0639470252872481	Avg abs diff incl sex: 0.0635536480952189
+Control: 17306.normalized.coverage.txt			Avg abs diff autosomal: 0.05357806857355	Avg abs diff incl sex: 0.0531987081224622
+Control: 17301.normalized.coverage.txt			Avg abs diff autosomal: 0.0699630936649662	Avg abs diff incl sex: 0.0696058208828789
+Control: 17296.normalized.coverage.txt			Avg abs diff autosomal: 0.0905854044397611	Avg abs diff incl sex: 0.0901663590959517
+Control: 17303.normalized.coverage.txt			Avg abs diff autosomal: 0.07249108442712	Avg abs diff incl sex: 0.0734537356166848
+Control: 17298.normalized.coverage.txt			Avg abs diff autosomal: 0.0690042515999672	Avg abs diff incl sex: 0.0685078506870881
+Control: 17307.normalized.coverage.txt			Avg abs diff autosomal: 0.0574657265041704	Avg abs diff incl sex: 0.0570880972879808
+Control: 17305.normalized.coverage.txt			Avg abs diff autosomal: 0.0502322642477835	Avg abs diff incl sex: 0.0499563378651651
+Control: 17300.normalized.coverage.txt			Avg abs diff autosomal: 0.0668252512377101	Avg abs diff incl sex: 0.0667007622673538
+Control: 17302.normalized.coverage.txt			Avg abs diff autosomal: 0.067329427466497	Avg abs diff incl sex: 0.0669668412245519
+Control: 17297.normalized.coverage.txt			Avg abs diff autosomal: 0.059363878746542	Avg abs diff incl sex: 0.0598772505610034
+
+#######################################
+Selecting best 30 control samples for analysis..
+#######################################
+Control: 17305.normalized.coverage.txt			Avg abs diff: 0.0502322642477835
+Control: 17306.normalized.coverage.txt			Avg abs diff: 0.05357806857355
+Control: 17307.normalized.coverage.txt			Avg abs diff: 0.0574657265041704
+Control: 17297.normalized.coverage.txt			Avg abs diff: 0.059363878746542
+Control: 17304.normalized.coverage.txt			Avg abs diff: 0.0639470252872481
+Control: 17300.normalized.coverage.txt			Avg abs diff: 0.0668252512377101
+Control: 17302.normalized.coverage.txt			Avg abs diff: 0.067329427466497
+Control: 17298.normalized.coverage.txt			Avg abs diff: 0.0690042515999672
+Control: 17301.normalized.coverage.txt			Avg abs diff: 0.0699630936649662
+Control: 17303.normalized.coverage.txt			Avg abs diff: 0.07249108442712
+Control: 17296.normalized.coverage.txt			Avg abs diff: 0.0905854044397611
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+#######################################
+
+
+Analyzing sample: 17303.normalized.coverage.txt..
+Control: 17304.normalized.coverage.txt			Avg abs diff autosomal: 0.0541619405991104	Avg abs diff incl sex: 0.0554156178746096
+Control: 17306.normalized.coverage.txt			Avg abs diff autosomal: 0.0650198284301961	Avg abs diff incl sex: 0.066416806506711
+Control: 17301.normalized.coverage.txt			Avg abs diff autosomal: 0.053803950964806	Avg abs diff incl sex: 0.0552275216346512
+Control: 17296.normalized.coverage.txt			Avg abs diff autosomal: 0.0698581250099927	Avg abs diff incl sex: 0.0703747558936839
+Control: 17299.normalized.coverage.txt			Avg abs diff autosomal: 0.07249108442712	Avg abs diff incl sex: 0.0734537356166848
+Control: 17298.normalized.coverage.txt			Avg abs diff autosomal: 0.0849021185651968	Avg abs diff incl sex: 0.0862516505928038
+Control: 17307.normalized.coverage.txt			Avg abs diff autosomal: 0.0781889808177881	Avg abs diff incl sex: 0.0794845230574778
+Control: 17305.normalized.coverage.txt			Avg abs diff autosomal: 0.0566251563155944	Avg abs diff incl sex: 0.0577789133550175
+Control: 17300.normalized.coverage.txt			Avg abs diff autosomal: 0.0571431951783581	Avg abs diff incl sex: 0.0572980921640022
+Control: 17302.normalized.coverage.txt			Avg abs diff autosomal: 0.0659279264604004	Avg abs diff incl sex: 0.0665551615960929
+Control: 17297.normalized.coverage.txt			Avg abs diff autosomal: 0.0618650136939577	Avg abs diff incl sex: 0.0620159103783839
+
+#######################################
+Selecting best 30 control samples for analysis..
+#######################################
+Control: 17301.normalized.coverage.txt			Avg abs diff: 0.053803950964806
+Control: 17304.normalized.coverage.txt			Avg abs diff: 0.0541619405991104
+Control: 17305.normalized.coverage.txt			Avg abs diff: 0.0566251563155944
+Control: 17300.normalized.coverage.txt			Avg abs diff: 0.0571431951783581
+Control: 17297.normalized.coverage.txt			Avg abs diff: 0.0618650136939577
+Control: 17306.normalized.coverage.txt			Avg abs diff: 0.0650198284301961
+Control: 17302.normalized.coverage.txt			Avg abs diff: 0.0659279264604004
+Control: 17296.normalized.coverage.txt			Avg abs diff: 0.0698581250099927
+Control: 17299.normalized.coverage.txt			Avg abs diff: 0.07249108442712
+Control: 17307.normalized.coverage.txt			Avg abs diff: 0.0781889808177881
+Control: 17298.normalized.coverage.txt			Avg abs diff: 0.0849021185651968
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+#######################################
+
+
+Analyzing sample: 17298.normalized.coverage.txt..
+Control: 17304.normalized.coverage.txt			Avg abs diff autosomal: 0.0693511224230991	Avg abs diff incl sex: 0.0690171435556778
+Control: 17306.normalized.coverage.txt			Avg abs diff autosomal: 0.0583586978985795	Avg abs diff incl sex: 0.0580725172707624
+Control: 17301.normalized.coverage.txt			Avg abs diff autosomal: 0.0818653854837596	Avg abs diff incl sex: 0.0814694730180138
+Control: 17296.normalized.coverage.txt			Avg abs diff autosomal: 0.107455906437401	Avg abs diff incl sex: 0.106913891199983
+Control: 17299.normalized.coverage.txt			Avg abs diff autosomal: 0.0690042515999672	Avg abs diff incl sex: 0.0685078506870881
+Control: 17303.normalized.coverage.txt			Avg abs diff autosomal: 0.0849021185651968	Avg abs diff incl sex: 0.0862516505928038
+Control: 17307.normalized.coverage.txt			Avg abs diff autosomal: 0.0564008464630029	Avg abs diff incl sex: 0.0561100311408455
+Control: 17305.normalized.coverage.txt			Avg abs diff autosomal: 0.064671148258928	Avg abs diff incl sex: 0.0643155002206241
+Control: 17300.normalized.coverage.txt			Avg abs diff autosomal: 0.0777621758167096	Avg abs diff incl sex: 0.0784872316708321
+Control: 17302.normalized.coverage.txt			Avg abs diff autosomal: 0.0581925299371819	Avg abs diff incl sex: 0.0578941229405075
+Control: 17297.normalized.coverage.txt			Avg abs diff autosomal: 0.0677749322383818	Avg abs diff incl sex: 0.0686729639834553
+
+#######################################
+Selecting best 30 control samples for analysis..
+#######################################
+Control: 17307.normalized.coverage.txt			Avg abs diff: 0.0564008464630029
+Control: 17302.normalized.coverage.txt			Avg abs diff: 0.0581925299371819
+Control: 17306.normalized.coverage.txt			Avg abs diff: 0.0583586978985795
+Control: 17305.normalized.coverage.txt			Avg abs diff: 0.064671148258928
+Control: 17297.normalized.coverage.txt			Avg abs diff: 0.0677749322383818
+Control: 17299.normalized.coverage.txt			Avg abs diff: 0.0690042515999672
+Control: 17304.normalized.coverage.txt			Avg abs diff: 0.0693511224230991
+Control: 17300.normalized.coverage.txt			Avg abs diff: 0.0777621758167096
+Control: 17301.normalized.coverage.txt			Avg abs diff: 0.0818653854837596
+Control: 17303.normalized.coverage.txt			Avg abs diff: 0.0849021185651968
+Control: 17296.normalized.coverage.txt			Avg abs diff: 0.107455906437401
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+#######################################
+
+
+Analyzing sample: 17307.normalized.coverage.txt..
+Control: 17304.normalized.coverage.txt			Avg abs diff autosomal: 0.0643286833050786	Avg abs diff incl sex: 0.0640575854132262
+Control: 17306.normalized.coverage.txt			Avg abs diff autosomal: 0.049720065416466	Avg abs diff incl sex: 0.0494754715824308
+Control: 17301.normalized.coverage.txt			Avg abs diff autosomal: 0.0762770870260671	Avg abs diff incl sex: 0.0759362965505161
+Control: 17296.normalized.coverage.txt			Avg abs diff autosomal: 0.103192331063674	Avg abs diff incl sex: 0.102705795935767
+Control: 17299.normalized.coverage.txt			Avg abs diff autosomal: 0.0574657265041704	Avg abs diff incl sex: 0.0570880972879808
+Control: 17303.normalized.coverage.txt			Avg abs diff autosomal: 0.0781889808177881	Avg abs diff incl sex: 0.0794845230574778
+Control: 17298.normalized.coverage.txt			Avg abs diff autosomal: 0.0564008464630029	Avg abs diff incl sex: 0.0561100311408455
+Control: 17305.normalized.coverage.txt			Avg abs diff autosomal: 0.0565850186253943	Avg abs diff incl sex: 0.0562987671619478
+Control: 17300.normalized.coverage.txt			Avg abs diff autosomal: 0.0728427372748764	Avg abs diff incl sex: 0.073448318330918
+Control: 17302.normalized.coverage.txt			Avg abs diff autosomal: 0.0559836721794017	Avg abs diff incl sex: 0.0557192720019002
+Control: 17297.normalized.coverage.txt			Avg abs diff autosomal: 0.0592722915730125	Avg abs diff incl sex: 0.0598621861546185
+
+#######################################
+Selecting best 30 control samples for analysis..
+#######################################
+Control: 17306.normalized.coverage.txt			Avg abs diff: 0.049720065416466
+Control: 17302.normalized.coverage.txt			Avg abs diff: 0.0559836721794017
+Control: 17298.normalized.coverage.txt			Avg abs diff: 0.0564008464630029
+Control: 17305.normalized.coverage.txt			Avg abs diff: 0.0565850186253943
+Control: 17299.normalized.coverage.txt			Avg abs diff: 0.0574657265041704
+Control: 17297.normalized.coverage.txt			Avg abs diff: 0.0592722915730125
+Control: 17304.normalized.coverage.txt			Avg abs diff: 0.0643286833050786
+Control: 17300.normalized.coverage.txt			Avg abs diff: 0.0728427372748764
+Control: 17301.normalized.coverage.txt			Avg abs diff: 0.0762770870260671
+Control: 17303.normalized.coverage.txt			Avg abs diff: 0.0781889808177881
+Control: 17296.normalized.coverage.txt			Avg abs diff: 0.103192331063674
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+#######################################
+
+
+Analyzing sample: 17305.normalized.coverage.txt..
+Control: 17304.normalized.coverage.txt			Avg abs diff autosomal: 0.0441304922899516	Avg abs diff incl sex: 0.0439232543953886
+Control: 17306.normalized.coverage.txt			Avg abs diff autosomal: 0.0445874934403114	Avg abs diff incl sex: 0.0443475421305618
+Control: 17301.normalized.coverage.txt			Avg abs diff autosomal: 0.0513296645887827	Avg abs diff incl sex: 0.0510947524422344
+Control: 17296.normalized.coverage.txt			Avg abs diff autosomal: 0.0737017415691171	Avg abs diff incl sex: 0.0733436884852163
+Control: 17299.normalized.coverage.txt			Avg abs diff autosomal: 0.0502322642477835	Avg abs diff incl sex: 0.0499563378651651
+Control: 17303.normalized.coverage.txt			Avg abs diff autosomal: 0.0566251563155944	Avg abs diff incl sex: 0.0577789133550175
+Control: 17298.normalized.coverage.txt			Avg abs diff autosomal: 0.064671148258928	Avg abs diff incl sex: 0.0643155002206241
+Control: 17307.normalized.coverage.txt			Avg abs diff autosomal: 0.0565850186253943	Avg abs diff incl sex: 0.0562987671619478
+Control: 17300.normalized.coverage.txt			Avg abs diff autosomal: 0.0519822712019964	Avg abs diff incl sex: 0.0523411473952577
+Control: 17302.normalized.coverage.txt			Avg abs diff autosomal: 0.0594246288906453	Avg abs diff incl sex: 0.0591249476505447
+Control: 17297.normalized.coverage.txt			Avg abs diff autosomal: 0.0491684562059887	Avg abs diff incl sex: 0.0499725389306922
+
+#######################################
+Selecting best 30 control samples for analysis..
+#######################################
+Control: 17304.normalized.coverage.txt			Avg abs diff: 0.0441304922899516
+Control: 17306.normalized.coverage.txt			Avg abs diff: 0.0445874934403114
+Control: 17297.normalized.coverage.txt			Avg abs diff: 0.0491684562059887
+Control: 17299.normalized.coverage.txt			Avg abs diff: 0.0502322642477835
+Control: 17301.normalized.coverage.txt			Avg abs diff: 0.0513296645887827
+Control: 17300.normalized.coverage.txt			Avg abs diff: 0.0519822712019964
+Control: 17307.normalized.coverage.txt			Avg abs diff: 0.0565850186253943
+Control: 17303.normalized.coverage.txt			Avg abs diff: 0.0566251563155944
+Control: 17302.normalized.coverage.txt			Avg abs diff: 0.0594246288906453
+Control: 17298.normalized.coverage.txt			Avg abs diff: 0.064671148258928
+Control: 17296.normalized.coverage.txt			Avg abs diff: 0.0737017415691171
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+#######################################
+
+
+Analyzing sample: 17300.normalized.coverage.txt..
+Control: 17304.normalized.coverage.txt			Avg abs diff autosomal: 0.0498940857766342	Avg abs diff incl sex: 0.0501932801777905
+Control: 17306.normalized.coverage.txt			Avg abs diff autosomal: 0.0570434180283158	Avg abs diff incl sex: 0.0576837603243317
+Control: 17301.normalized.coverage.txt			Avg abs diff autosomal: 0.0450244806813208	Avg abs diff incl sex: 0.0451929886767813
+Control: 17296.normalized.coverage.txt			Avg abs diff autosomal: 0.0652672267580056	Avg abs diff incl sex: 0.0649039266442074
+Control: 17299.normalized.coverage.txt			Avg abs diff autosomal: 0.0668252512377101	Avg abs diff incl sex: 0.0667007622673538
+Control: 17303.normalized.coverage.txt			Avg abs diff autosomal: 0.0571431951783581	Avg abs diff incl sex: 0.0572980921640022
+Control: 17298.normalized.coverage.txt			Avg abs diff autosomal: 0.0777621758167096	Avg abs diff incl sex: 0.0784872316708321
+Control: 17307.normalized.coverage.txt			Avg abs diff autosomal: 0.0728427372748764	Avg abs diff incl sex: 0.073448318330918
+Control: 17305.normalized.coverage.txt			Avg abs diff autosomal: 0.0519822712019964	Avg abs diff incl sex: 0.0523411473952577
+Control: 17302.normalized.coverage.txt			Avg abs diff autosomal: 0.0717343752281504	Avg abs diff incl sex: 0.0716068870081683
+Control: 17297.normalized.coverage.txt			Avg abs diff autosomal: 0.0563816582757216	Avg abs diff incl sex: 0.0565419687424465
+
+#######################################
+Selecting best 30 control samples for analysis..
+#######################################
+Control: 17301.normalized.coverage.txt			Avg abs diff: 0.0450244806813208
+Control: 17304.normalized.coverage.txt			Avg abs diff: 0.0498940857766342
+Control: 17305.normalized.coverage.txt			Avg abs diff: 0.0519822712019964
+Control: 17297.normalized.coverage.txt			Avg abs diff: 0.0563816582757216
+Control: 17306.normalized.coverage.txt			Avg abs diff: 0.0570434180283158
+Control: 17303.normalized.coverage.txt			Avg abs diff: 0.0571431951783581
+Control: 17296.normalized.coverage.txt			Avg abs diff: 0.0652672267580056
+Control: 17299.normalized.coverage.txt			Avg abs diff: 0.0668252512377101
+Control: 17302.normalized.coverage.txt			Avg abs diff: 0.0717343752281504
+Control: 17307.normalized.coverage.txt			Avg abs diff: 0.0728427372748764
+Control: 17298.normalized.coverage.txt			Avg abs diff: 0.0777621758167096
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+#######################################
+
+
+Analyzing sample: 17302.normalized.coverage.txt..
+Control: 17304.normalized.coverage.txt			Avg abs diff autosomal: 0.0563997509290287	Avg abs diff incl sex: 0.0561263323420036
+Control: 17306.normalized.coverage.txt			Avg abs diff autosomal: 0.0575780386943079	Avg abs diff incl sex: 0.0572851299173761
+Control: 17301.normalized.coverage.txt			Avg abs diff autosomal: 0.0708121653236648	Avg abs diff incl sex: 0.0704607514405187
+Control: 17296.normalized.coverage.txt			Avg abs diff autosomal: 0.0938063839856207	Avg abs diff incl sex: 0.0933452372623637
+Control: 17299.normalized.coverage.txt			Avg abs diff autosomal: 0.067329427466497	Avg abs diff incl sex: 0.0669668412245519
+Control: 17303.normalized.coverage.txt			Avg abs diff autosomal: 0.0659279264604004	Avg abs diff incl sex: 0.0665551615960929
+Control: 17298.normalized.coverage.txt			Avg abs diff autosomal: 0.0581925299371819	Avg abs diff incl sex: 0.0578941229405075
+Control: 17307.normalized.coverage.txt			Avg abs diff autosomal: 0.0559836721794017	Avg abs diff incl sex: 0.0557192720019002
+Control: 17305.normalized.coverage.txt			Avg abs diff autosomal: 0.0594246288906453	Avg abs diff incl sex: 0.0591249476505447
+Control: 17300.normalized.coverage.txt			Avg abs diff autosomal: 0.0717343752281504	Avg abs diff incl sex: 0.0716068870081683
+Control: 17297.normalized.coverage.txt			Avg abs diff autosomal: 0.0601480264277626	Avg abs diff incl sex: 0.0605346249762939
+
+#######################################
+Selecting best 30 control samples for analysis..
+#######################################
+Control: 17307.normalized.coverage.txt			Avg abs diff: 0.0559836721794017
+Control: 17304.normalized.coverage.txt			Avg abs diff: 0.0563997509290287
+Control: 17306.normalized.coverage.txt			Avg abs diff: 0.0575780386943079
+Control: 17298.normalized.coverage.txt			Avg abs diff: 0.0581925299371819
+Control: 17305.normalized.coverage.txt			Avg abs diff: 0.0594246288906453
+Control: 17297.normalized.coverage.txt			Avg abs diff: 0.0601480264277626
+Control: 17303.normalized.coverage.txt			Avg abs diff: 0.0659279264604004
+Control: 17299.normalized.coverage.txt			Avg abs diff: 0.067329427466497
+Control: 17301.normalized.coverage.txt			Avg abs diff: 0.0708121653236648
+Control: 17300.normalized.coverage.txt			Avg abs diff: 0.0717343752281504
+Control: 17296.normalized.coverage.txt			Avg abs diff: 0.0938063839856207
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+#######################################
+
+
+Analyzing sample: 17297.normalized.coverage.txt..
+Control: 17304.normalized.coverage.txt			Avg abs diff autosomal: 0.0565549821579776	Avg abs diff incl sex: 0.0568971227153442
+Control: 17306.normalized.coverage.txt			Avg abs diff autosomal: 0.0497784347022313	Avg abs diff incl sex: 0.0506720597894785
+Control: 17301.normalized.coverage.txt			Avg abs diff autosomal: 0.0613412198057223	Avg abs diff incl sex: 0.0617254265847157
+Control: 17296.normalized.coverage.txt			Avg abs diff autosomal: 0.0880659341353816	Avg abs diff incl sex: 0.0882180841979734
+Control: 17299.normalized.coverage.txt			Avg abs diff autosomal: 0.059363878746542	Avg abs diff incl sex: 0.0598772505610034
+Control: 17303.normalized.coverage.txt			Avg abs diff autosomal: 0.0618650136939577	Avg abs diff incl sex: 0.0620159103783839
+Control: 17298.normalized.coverage.txt			Avg abs diff autosomal: 0.0677749322383818	Avg abs diff incl sex: 0.0686729639834553
+Control: 17307.normalized.coverage.txt			Avg abs diff autosomal: 0.0592722915730125	Avg abs diff incl sex: 0.0598621861546185
+Control: 17305.normalized.coverage.txt			Avg abs diff autosomal: 0.0491684562059887	Avg abs diff incl sex: 0.0499725389306922
+Control: 17300.normalized.coverage.txt			Avg abs diff autosomal: 0.0563816582757216	Avg abs diff incl sex: 0.0565419687424465
+Control: 17302.normalized.coverage.txt			Avg abs diff autosomal: 0.0601480264277626	Avg abs diff incl sex: 0.0605346249762939
+
+#######################################
+Selecting best 30 control samples for analysis..
+#######################################
+Control: 17305.normalized.coverage.txt			Avg abs diff: 0.0491684562059887
+Control: 17306.normalized.coverage.txt			Avg abs diff: 0.0497784347022313
+Control: 17300.normalized.coverage.txt			Avg abs diff: 0.0563816582757216
+Control: 17304.normalized.coverage.txt			Avg abs diff: 0.0565549821579776
+Control: 17307.normalized.coverage.txt			Avg abs diff: 0.0592722915730125
+Control: 17299.normalized.coverage.txt			Avg abs diff: 0.059363878746542
+Control: 17302.normalized.coverage.txt			Avg abs diff: 0.0601480264277626
+Control: 17301.normalized.coverage.txt			Avg abs diff: 0.0613412198057223
+Control: 17303.normalized.coverage.txt			Avg abs diff: 0.0618650136939577
+Control: 17298.normalized.coverage.txt			Avg abs diff: 0.0677749322383818
+Control: 17296.normalized.coverage.txt			Avg abs diff: 0.0880659341353816
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+Control: 			Avg abs diff: 
+#######################################
+
+Starting search for best scores..
+Reading best match score files..
+Starting best score analysis..
+Use of uninitialized value $controlFile[0] in uc at
+	/home/robin/Documents/Project/TFM_code/CoNVaDING-master/CoNVaDING.pl line 977 (#1)
+Use of uninitialized value $ele in addition (+) at
+	/home/robin/Documents/Project/TFM_code/CoNVaDING-master/CoNVaDING.pl line 2191 (#1)
+Use of uninitialized value $ele in subtraction (-) at
+	/home/robin/Documents/Project/TFM_code/CoNVaDING-master/CoNVaDING.pl line 2199 (#1)
+Use of uninitialized value $controlRatio in subtraction (-) at
+	/home/robin/Documents/Project/TFM_code/CoNVaDING-master/CoNVaDING.pl line 1080 (#1)
+
+Analyzing sample: 17303.best.match.score.txt..
+
+##### WARNING ##### WARNING #####
+5:177133913-177133964	NSD1
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+5:177133913-177133964	NSD1
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+#######################################
+
+Sample CV: 0.129343966173692
+Mean average best match score of all control samples: 0.0239995773487507
+#######################################
+
+
+Argument "" isn't numeric in numeric lt (<) at
+	/home/robin/Documents/Project/TFM_code/CoNVaDING-master/CoNVaDING.pl line 1342 (#2)
+    (W numeric) The indicated string was fed as an argument to an operator
+    that expected a numeric value instead.  If you're fortunate the message
+    will identify which operator was so unfortunate.
+    
+    Note that for the Inf and NaN (infinity and not-a-number) the
+    definition of "numeric" is somewhat unusual: the strings themselves
+    (like "Inf") are considered numeric, and anything following them is
+    considered non-numeric.
+    
+Argument "NA" isn't numeric in numeric lt (<) at
+	/home/robin/Documents/Project/TFM_code/CoNVaDING-master/CoNVaDING.pl line 1521 (#2)
+Argument "NA" isn't numeric in numeric lt (<) at
+	/home/robin/Documents/Project/TFM_code/CoNVaDING-master/CoNVaDING.pl line 1561 (#2)
+Argument "NA" isn't numeric in numeric ge (>=) at
+	/home/robin/Documents/Project/TFM_code/CoNVaDING-master/CoNVaDING.pl line 1631 (#2)
+Argument "NA" isn't numeric in numeric ge (>=) at
+	/home/robin/Documents/Project/TFM_code/CoNVaDING-master/CoNVaDING.pl line 1714 (#2)
+
+Analyzing sample: 17300.best.match.score.txt..
+
+##### WARNING ##### WARNING #####
+5:177133913-177133964	NSD1
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+5:177133913-177133964	NSD1
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+#######################################
+
+Sample CV: 0.0853558296589876
+Mean average best match score of all control samples: 0.0223966958485933
+#######################################
+
+
+Analyzing sample: 17306.best.match.score.txt..
+
+##### WARNING ##### WARNING #####
+5:177133913-177133964	NSD1
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+5:177133913-177133964	NSD1
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+#######################################
+
+Sample CV: 0.0573706843305754
+Mean average best match score of all control samples: 0.0210804043194556
+#######################################
+
+
+Analyzing sample: 17298.best.match.score.txt..
+
+##### WARNING ##### WARNING #####
+5:177133913-177133964	NSD1
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+5:177133913-177133964	NSD1
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+#######################################
+
+Sample CV: 0.0863237422977207
+Mean average best match score of all control samples: 0.0265246371707403
+#######################################
+
+
+Analyzing sample: 17304.best.match.score.txt..
+
+##### WARNING ##### WARNING #####
+5:177133913-177133964	NSD1
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+5:177133913-177133964	NSD1
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+#######################################
+
+Sample CV: 0.0532368417472766
+Mean average best match score of all control samples: 0.0208563462098456
+#######################################
+
+
+Analyzing sample: 17297.best.match.score.txt..
+
+##### WARNING ##### WARNING #####
+5:177133913-177133964	NSD1
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+5:177133913-177133964	NSD1
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+#######################################
+
+Sample CV: 0.111649286517582
+Mean average best match score of all control samples: 0.022323827598756
+#######################################
+
+
+Analyzing sample: 17296.best.match.score.txt..
+
+##### WARNING ##### WARNING #####
+5:177133913-177133964	NSD1
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+5:177133913-177133964	NSD1
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+#######################################
+
+Sample CV: 0.107809589827502
+Mean average best match score of all control samples: 0.0301037389965718
+#######################################
+
+
+Analyzing sample: 17301.best.match.score.txt..
+
+##### WARNING ##### WARNING #####
+5:177133913-177133964	NSD1
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+5:177133913-177133964	NSD1
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+#######################################
+
+Sample CV: 0.0600714716569593
+Mean average best match score of all control samples: 0.0223528976094925
+#######################################
+
+
+Analyzing sample: 17299.best.match.score.txt..
+
+##### WARNING ##### WARNING #####
+5:177133913-177133964	NSD1
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+5:177133913-177133964	NSD1
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+#######################################
+
+Sample CV: 0.0833467165617644
+Mean average best match score of all control samples: 0.0240261825398439
+#######################################
+
+
+Analyzing sample: 17305.best.match.score.txt..
+
+##### WARNING ##### WARNING #####
+5:177133913-177133964	NSD1
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+5:177133913-177133964	NSD1
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+#######################################
+
+Sample CV: 0.050830663769687
+Mean average best match score of all control samples: 0.0200812778544831
+#######################################
+
+
+Analyzing sample: 17302.best.match.score.txt..
+
+##### WARNING ##### WARNING #####
+5:177133913-177133964	NSD1
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+5:177133913-177133964	NSD1
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+#######################################
+
+Sample CV: 0.0748964062727071
+Mean average best match score of all control samples: 0.0239112308507554
+#######################################
+
+
+Analyzing sample: 17307.best.match.score.txt..
+
+##### WARNING ##### WARNING #####
+5:177133913-177133964	NSD1
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+
+##### WARNING ##### WARNING #####
+5:177133913-177133964	NSD1
+Gene normalization route not available.
+Mean or Standard Deviation is 0.
+Can not calculate ratio, zscore and variation coefficient on this region
+#######################################
+
+Sample CV: 0.0791416077812057
+Mean average best match score of all control samples: 0.0243419146749644
+#######################################
+
+
+#######################################
+
+
+Samples failing sample CV threshold of 0.09:
+
+17303.best.score.log
+17297.best.score.log
+17296.best.score.log
+
+
+#######################################
+
+
+Generating target QC list..
+
+Done generating target QC list
+
+Finished analysis Sun Apr  4 22:14:37 2021
+
+#######################################
+COMMANDLINE OPTIONS IN AFFECT:
+-mode
+CreateFinalList
+-inputDir
+/home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/convading-dataset1
+-targetQcList
+/home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/convading-dataset1/targetQcList.txt
+-percentageLessReliableTargets
+20
+-outputDir
+/home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/convading-dataset1
+#######################################
+
+Starting analysis Sun Apr  4 22:14:37 2021
+Reading input directory..
+
+
+#######################################
+Analyzing sample: 17297.best.score.shortlist.txt..
+
+Event failing target QC: 1	241497827	241519723	FH	10	10	DEL
+#######################################
+
+
+
+#######################################
+Analyzing sample: 17302.best.score.shortlist.txt..
+
+Event failing target QC: 8	144515987	144517785	RECQL4	5	5	DEL
+
+Event failing target QC: 17	43091434	43106534	BRCA1	7	7	DEL
+#######################################
+
+
+
+#######################################
+Analyzing sample: 17305.best.score.shortlist.txt..
+
+Event failing target QC: 13	32319076	32319326	BRCA2	1	1	DEL
+#######################################
+
+
+
+#######################################
+Analyzing sample: 17300.best.score.shortlist.txt..
+#######################################
+
+
+
+#######################################
+Analyzing sample: 17299.best.score.shortlist.txt..
+#######################################
+
+
+
+#######################################
+Analyzing sample: 17296.best.score.shortlist.txt..
+
+Event failing target QC: 1	17053947	17054020	SDHB	1	1	DEL
+
+Event failing target QC: 2	29251104	29251268	ALK	1	1	DUP
+
+Event failing target QC: 8	144514935	144515073	RECQL4	1	1	DUP
+
+Event failing target QC: 9	35076723	35076871	FANCG	1	1	DUP
+
+Event failing target QC: 16	2071509	2071617	TSC2	1	1	DUP
+#######################################
+
+
+
+#######################################
+Analyzing sample: 17301.best.score.shortlist.txt..
+#######################################
+
+
+
+#######################################
+Analyzing sample: 17303.best.score.shortlist.txt..
+
+Event failing target QC: 2	47445547	47482950	MSH2	9	8	DEL
+
+Event failing target QC: 4	41745806	41746323	PHOX2B	1	1	DEL
+
+Event failing target QC: 8	144511430	144517785	RECQL4	21	20	DEL
+
+Event failing target QC: 17	17236900	17237151	FLCN	1	1	DEL
+
+Event failing target QC: 19	45370535	45370541	ERCC2	1	1	DEL
+#######################################
+
+
+
+#######################################
+Analyzing sample: 17306.best.score.shortlist.txt..
+
+Event failing target QC: 17	43057051	43057136	BRCA1	1	1	DEL
+#######################################
+
+
+
+#######################################
+Analyzing sample: 17307.best.score.shortlist.txt..
+
+Event failing target QC: 22	28724976	28734722	CHEK2	3	2	DEL
+#######################################
+
+
+
+#######################################
+Analyzing sample: 17298.best.score.shortlist.txt..
+
+Event failing target QC: 17	76471632	76472053	RHBDF2	1	1	DUP
+#######################################
+
+
+
+#######################################
+Analyzing sample: 17304.best.score.shortlist.txt..
+
+Event failing target QC: 16	23603458	23603670	PALB2	1	1	DEL
+#######################################
+
+
+Finished analysis Sun Apr  4 22:14:37 2021
+[1] "Adding CNV.type column to file  /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/convading-dataset1/17296.best.score.finallist.txt"
+[1] "Adding CNV.type column to file  /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/convading-dataset1/17296.best.score.longlist.txt"
+[1] "Adding CNV.type column to file  /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/convading-dataset1/17296.best.score.shortlist.txt"
+[1] "Adding CNV.type column to file  /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/convading-dataset1/17296.best.score.totallist.txt"
+[1] "Adding CNV.type column to file  /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/convading-dataset1/17297.best.score.finallist.txt"
+[1] "Adding CNV.type column to file  /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/convading-dataset1/17297.best.score.longlist.txt"
+[1] "Adding CNV.type column to file  /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/convading-dataset1/17297.best.score.shortlist.txt"
+[1] "Adding CNV.type column to file  /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/convading-dataset1/17297.best.score.totallist.txt"
+[1] "Adding CNV.type column to file  /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/convading-dataset1/17298.best.score.finallist.txt"
+[1] "Adding CNV.type column to file  /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/convading-dataset1/17298.best.score.longlist.txt"
+[1] "Adding CNV.type column to file  /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/convading-dataset1/17298.best.score.shortlist.txt"
+[1] "Adding CNV.type column to file  /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/convading-dataset1/17298.best.score.totallist.txt"
+[1] "Adding CNV.type column to file  /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/convading-dataset1/17299.best.score.finallist.txt"
+[1] "Adding CNV.type column to file  /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/convading-dataset1/17299.best.score.longlist.txt"
+[1] "Adding CNV.type column to file  /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/convading-dataset1/17299.best.score.shortlist.txt"
+[1] "Adding CNV.type column to file  /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/convading-dataset1/17299.best.score.totallist.txt"
+[1] "Adding CNV.type column to file  /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/convading-dataset1/17300.best.score.finallist.txt"
+[1] "Adding CNV.type column to file  /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/convading-dataset1/17300.best.score.longlist.txt"
+[1] "Adding CNV.type column to file  /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/convading-dataset1/17300.best.score.shortlist.txt"
+[1] "Adding CNV.type column to file  /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/convading-dataset1/17300.best.score.totallist.txt"
+[1] "Adding CNV.type column to file  /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/convading-dataset1/17301.best.score.finallist.txt"
+[1] "Adding CNV.type column to file  /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/convading-dataset1/17301.best.score.longlist.txt"
+[1] "Adding CNV.type column to file  /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/convading-dataset1/17301.best.score.shortlist.txt"
+[1] "Adding CNV.type column to file  /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/convading-dataset1/17301.best.score.totallist.txt"
+[1] "Adding CNV.type column to file  /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/convading-dataset1/17302.best.score.finallist.txt"
+[1] "Adding CNV.type column to file  /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/convading-dataset1/17302.best.score.longlist.txt"
+[1] "Adding CNV.type column to file  /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/convading-dataset1/17302.best.score.shortlist.txt"
+[1] "Adding CNV.type column to file  /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/convading-dataset1/17302.best.score.totallist.txt"
+[1] "Adding CNV.type column to file  /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/convading-dataset1/17303.best.score.finallist.txt"
+[1] "Adding CNV.type column to file  /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/convading-dataset1/17303.best.score.longlist.txt"
+[1] "Adding CNV.type column to file  /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/convading-dataset1/17303.best.score.shortlist.txt"
+[1] "Adding CNV.type column to file  /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/convading-dataset1/17303.best.score.totallist.txt"
+[1] "Adding CNV.type column to file  /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/convading-dataset1/17304.best.score.finallist.txt"
+[1] "Adding CNV.type column to file  /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/convading-dataset1/17304.best.score.longlist.txt"
+[1] "Adding CNV.type column to file  /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/convading-dataset1/17304.best.score.shortlist.txt"
+[1] "Adding CNV.type column to file  /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/convading-dataset1/17304.best.score.totallist.txt"
+[1] "Adding CNV.type column to file  /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/convading-dataset1/17305.best.score.finallist.txt"
+[1] "Adding CNV.type column to file  /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/convading-dataset1/17305.best.score.longlist.txt"
+[1] "Adding CNV.type column to file  /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/convading-dataset1/17305.best.score.shortlist.txt"
+[1] "Adding CNV.type column to file  /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/convading-dataset1/17305.best.score.totallist.txt"
+[1] "Adding CNV.type column to file  /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/convading-dataset1/17306.best.score.finallist.txt"
+[1] "Adding CNV.type column to file  /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/convading-dataset1/17306.best.score.longlist.txt"
+[1] "Adding CNV.type column to file  /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/convading-dataset1/17306.best.score.shortlist.txt"
+[1] "Adding CNV.type column to file  /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/convading-dataset1/17306.best.score.totallist.txt"
+[1] "Adding CNV.type column to file  /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/convading-dataset1/17307.best.score.finallist.txt"
+[1] "Adding CNV.type column to file  /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/convading-dataset1/17307.best.score.longlist.txt"
+[1] "Adding CNV.type column to file  /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/convading-dataset1/17307.best.score.shortlist.txt"
+[1] "Adding CNV.type column to file  /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/convading-dataset1/17307.best.score.totallist.txt"
+Saving GenomicRanges results
+[1] "convading for dataset1 dataset finished"
+
+
+
+Warning messages:
+1: In .Seqinfo.mergexy(x, y) :
+  Each of the 2 combined objects has sequence levels not in the other:
+  - in 'x': 2, 3, 6, 7, 9, 10, 11, 13, 16, 17, 19, Y
+  - in 'y': X
+  Make sure to always combine/compare objects based on the same reference
+  genome (use suppressWarnings() to suppress this warning).
+2: In .Seqinfo.mergexy(x, y) :
+  Each of the 2 combined objects has sequence levels not in the other:
+  - in 'x': 1, 2, 3, 6, 7, 8, 9, 10, 11, 13, 16, X
+  - in 'y': 12
+  Make sure to always combine/compare objects based on the same reference
+  genome (use suppressWarnings() to suppress this warning).
+3: In .Seqinfo.mergexy(x, y) :
+  Each of the 2 combined objects has sequence levels not in the other:
+  - in 'x': Y, 12
+  - in 'y': 4, 21
+  Make sure to always combine/compare objects based on the same reference
+  genome (use suppressWarnings() to suppress this warning).
+4: In .Seqinfo.mergexy(x, y) :
+  Each of the 2 combined objects has sequence levels not in the other:
+  - in 'x': 1, 2, 3, 6, 7, 8, 9, 10, 11, 13, 16, 19, X, 12, 4, 21
+  - in 'y': 22
+  Make sure to always combine/compare objects based on the same reference
+  genome (use suppressWarnings() to suppress this warning).
+[1] "Finishing at 2021-04-04 22:14:41"
+
+Elapsed time:Time difference of 25.6394 mins
