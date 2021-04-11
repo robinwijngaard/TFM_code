@@ -2,6 +2,8 @@
 algorithms:
   decon: false
   panelcn: false
-  convading: true
+  convading: false
   exomedepth: false
   codex2: false
+  manta: false
+  cnvkit: true

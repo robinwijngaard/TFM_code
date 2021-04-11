@@ -46,6 +46,6 @@ for (dName in names(datasets)) {
 
 
 
-setwd("/home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master")
-algorithmsParamsFile<-"/home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/algorithms.yaml"
-datasetsParamsFile<-"/home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/datasets.yaml"
+#setwd("/home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master")
+#algorithmsParamsFile<-"/home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/algorithms.yaml"
+#datasetsParamsFile<-"/home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/datasets.yaml"

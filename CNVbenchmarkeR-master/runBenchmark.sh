@@ -36,7 +36,17 @@ if [ "$pars_algorithms_convading" == "true" ]; then
 	Rscript ./algorithms/convading/runConvading.r ./algorithms/convading/convadingParams.yaml datasets.yaml  > logs/convading.log 2>&1
 fi
 
+if [ "$pars_algorithms_manta" == "true" ]; then
+    echo "[$(date)] Executing Manta"
+    Rscript ./algorithms/manta/runManta.r ./algorithms/manta/mantaParams.yaml datasets.yaml  > logs/manta.log 2>&1
+fi
 
-# Generate summary file
+if [ "$pars_algorithms_cnvkit" == "true" ]; then
+    echo "[$(date)] Executing CNVkit"
+    Rscript ./algorithms/cnvkit/runCNVkit.r ./algorithms/cnvkit/cnvkitParams.yaml datasets.yaml  > logs/cnvkit.log 2>&1
+fi
+
+
+Generate summary file
 echo "[$(date)] Generating summary file"
 Rscript ./utils/summary.r algorithms.yaml datasets.yaml  > logs/summary.log 2>&1

@@ -14,8 +14,7 @@ ref="/home/robin/Documents/Project/Samples/hg38"
 manta_conf="/home/robin/Documents/Project/manta/Install"
 manta_exe="/home/robin/Documents/Project/Results/Manta"
 
-
-# Bamfiles
+ulimit -n 75000
 
 cd "$manta_exe"
 ls /home/robin/Documents/Project/Samples/example/bam_ex/*.bam > bamfiles.txt
@@ -35,4 +34,10 @@ python "$manta_conf"/bin/configManta.py \
 --referenceFasta "$ref"/hg38.fa \
 --runDir "$manta_exe"/"$1" \
 --exome \
---callRegions "$bed"/ICR96_hg38.bed
+--callRegions "$bed"/ICR96_hg38_noSNP.bed.gz
+
+#--bam `echo "${line[7]}"` \
+#--bam `echo "${line[8]}"` \
+#--bam `echo "${line[9]}"` \
+#--bam `echo "${line[10]}"` \
+#--bam `echo "${line[11]}"` \

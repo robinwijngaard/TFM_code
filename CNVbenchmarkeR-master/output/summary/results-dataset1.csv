@@ -1,0 +1,5 @@
+TP	TN	FP	FN	total	no_calls	no_call_rate	sensitivity	specificity	PPV	NPV	F1	MCC	kappa	accuracy	algorithm	level
+26	28047	115	270	28458	0	0	0.0878	0.9959	0.1844	0.9905	0.119	0.121	0.1149	0.9865	cnvkit	roi
+26	28047	115	270	28473	0	0	0.0878	0.9959	0.1844	0.9905	0.119	0.121	0.1149	0.9865	cnvkit	roi_incNoCall
+8	1676	76	60	1820	0	0	0.1176	0.9566	0.0952	0.9654	0.1053	0.0671	0.067	0.9253	cnvkit	gene
+8	1676	76	60	1820	0	0	0.1176	0.9566	0.0952	0.9654	0.1053	0.0671	0.067	0.9253	cnvkit	whole_strategy

@@ -1,0 +1,280 @@
+[1] "Starting at 2021-04-11 21:37:53"
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+[1] "./algorithms/cnvkit/cnvkitParams.yaml"
+[2] "datasets.yaml"                        
+Warning message:
+In readLines(con) :
+  incomplete final line found on './algorithms/cnvkit/cnvkitParams.yaml'
+[1] "Params for this execution: list(cnvkitFolder = \"/home/robin/Documents/Project/TFM_code/cnvkit-master/\", refbamsDir = \"/home/robin/Documents/Project/Samples/refbams\", refFile = FALSE, refBams = FALSE)"
+[1] "Starting cnvkit for dataset1 dataset"
+Processing reads in 17296.bam
+Time: 14.721 seconds (163566 reads/sec, 101 bins/sec)
+Summary: #bins=1487, #reads=2407811, mean=1619.2410, min=0.0, max=65448.36633663366 
+Percent reads in regions: 43.417 (of 5545817 mapped)
+Wrote /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/cnvkit-dataset1/17296.bam.targetcoverage.cnn with 1487 regions
+Processing reads in 17297.bam
+Time: 14.379 seconds (168594 reads/sec, 103 bins/sec)
+Summary: #bins=1487, #reads=2424180, mean=1630.2492, min=0.0, max=61005.9702970297 
+Percent reads in regions: 45.208 (of 5362298 mapped)
+Wrote /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/cnvkit-dataset1/17297.bam.targetcoverage.cnn with 1487 regions
+Processing reads in 17298.bam
+Time: 10.406 seconds (169736 reads/sec, 143 bins/sec)
+Summary: #bins=1487, #reads=1766349, mean=1187.8611, min=0.0, max=41652.56435643564 
+Percent reads in regions: 46.372 (of 3809048 mapped)
+Wrote /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/cnvkit-dataset1/17298.bam.targetcoverage.cnn with 1487 regions
+Processing reads in 17299.bam
+Time: 15.558 seconds (170422 reads/sec, 96 bins/sec)
+Summary: #bins=1487, #reads=2651486, mean=1783.1111, min=0.0, max=68987.9405940594 
+Percent reads in regions: 45.334 (of 5848734 mapped)
+Wrote /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/cnvkit-dataset1/17299.bam.targetcoverage.cnn with 1487 regions
+Processing reads in 17300.bam
+Time: 15.111 seconds (166808 reads/sec, 98 bins/sec)
+Summary: #bins=1487, #reads=2520645, mean=1695.1214, min=0.0, max=66568.12871287129 
+Percent reads in regions: 44.222 (of 5700006 mapped)
+Wrote /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/cnvkit-dataset1/17300.bam.targetcoverage.cnn with 1487 regions
+Processing reads in 17301.bam
+Time: 23.514 seconds (166668 reads/sec, 63 bins/sec)
+Summary: #bins=1487, #reads=3919104, mean=2635.5778, min=0.0, max=101541.0099009901 
+Percent reads in regions: 44.401 (of 8826654 mapped)
+Wrote /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/cnvkit-dataset1/17301.bam.targetcoverage.cnn with 1487 regions
+Processing reads in 17302.bam
+Time: 12.734 seconds (169371 reads/sec, 117 bins/sec)
+Summary: #bins=1487, #reads=2156751, mean=1450.4045, min=0.0, max=51683.59405940594 
+Percent reads in regions: 46.399 (of 4648229 mapped)
+Wrote /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/cnvkit-dataset1/17302.bam.targetcoverage.cnn with 1487 regions
+Processing reads in 17303.bam
+Time: 19.489 seconds (166924 reads/sec, 76 bins/sec)
+Summary: #bins=1487, #reads=3253152, mean=2187.7288, min=0.0, max=83853.30693069307 
+Percent reads in regions: 44.097 (of 7377332 mapped)
+Wrote /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/cnvkit-dataset1/17303.bam.targetcoverage.cnn with 1487 regions
+Processing reads in 17304.bam
+Time: 16.950 seconds (169116 reads/sec, 88 bins/sec)
+Summary: #bins=1487, #reads=2866588, mean=1927.7663, min=0.0, max=70442.9801980198 
+Percent reads in regions: 45.636 (of 6281478 mapped)
+Wrote /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/cnvkit-dataset1/17304.bam.targetcoverage.cnn with 1487 regions
+Processing reads in 17305.bam
+Time: 20.302 seconds (171486 reads/sec, 73 bins/sec)
+Summary: #bins=1487, #reads=3481473, mean=2341.2732, min=0.0, max=87155.36633663367 
+Percent reads in regions: 45.634 (of 7629040 mapped)
+Wrote /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/cnvkit-dataset1/17305.bam.targetcoverage.cnn with 1487 regions
+Number of target and antitarget files: 10, 0
+Relative log2 coverage of X=0.702, Y=-29.6 (maleness=0.303 x 0.899 = 0.273) --> assuming female
+Relative log2 coverage of X=-0.3, Y=-0.213 (maleness=2.27 x 6.83 = 15.5) --> assuming male
+Relative log2 coverage of X=0.701, Y=-9.23 (maleness=0.469 x 0.68 = 0.319) --> assuming female
+Relative log2 coverage of X=0.831, Y=-29.8 (maleness=0.469 x 0.9 = 0.422) --> assuming female
+Relative log2 coverage of X=-0.278, Y=-0.121 (maleness=2.27 x 9.71 = 22.1) --> assuming male
+Relative log2 coverage of X=0.698, Y=-7.03 (maleness=0.303 x 0.583 = 0.177) --> assuming female
+Relative log2 coverage of X=0.731, Y=-29.5 (maleness=0.68 x 0.899 = 0.611) --> assuming female
+Relative log2 coverage of X=-0.278, Y=-0.0313 (maleness=1.47 x 11.8 = 17.3) --> assuming male
+Relative log2 coverage of X=0.709, Y=-29.9 (maleness=0.303 x 4.64e-05 = 1.41e-05) --> assuming female
+Relative log2 coverage of X=0.735, Y=-30.2 (maleness=0.303 x 0.901 = 0.273) --> assuming female
+Loading /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/cnvkit-dataset1/17296.bam.targetcoverage.cnn
+Calculating GC and RepeatMasker content in /home/robin/Documents/Project/Samples/hg38/hg38.fa ...
+Extracting sequences from chromosome 1
+Extracting sequences from chromosome 2
+Extracting sequences from chromosome 3
+Extracting sequences from chromosome 4
+Extracting sequences from chromosome 5
+Extracting sequences from chromosome 6
+Extracting sequences from chromosome 7
+Extracting sequences from chromosome 8
+Extracting sequences from chromosome 9
+Extracting sequences from chromosome 10
+Extracting sequences from chromosome 11
+Extracting sequences from chromosome 12
+Extracting sequences from chromosome 13
+Extracting sequences from chromosome 14
+Extracting sequences from chromosome 15
+Extracting sequences from chromosome 16
+Extracting sequences from chromosome 17
+Extracting sequences from chromosome 18
+Extracting sequences from chromosome 19
+Extracting sequences from chromosome 21
+Extracting sequences from chromosome 22
+Extracting sequences from chromosome X
+Extracting sequences from chromosome Y
+Correcting for GC bias...
+Loading /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/cnvkit-dataset1/17297.bam.targetcoverage.cnn
+Correcting for GC bias...
+Loading /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/cnvkit-dataset1/17298.bam.targetcoverage.cnn
+Correcting for GC bias...
+Loading /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/cnvkit-dataset1/17299.bam.targetcoverage.cnn
+Correcting for GC bias...
+Loading /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/cnvkit-dataset1/17300.bam.targetcoverage.cnn
+Correcting for GC bias...
+Loading /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/cnvkit-dataset1/17301.bam.targetcoverage.cnn
+Correcting for GC bias...
+Loading /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/cnvkit-dataset1/17302.bam.targetcoverage.cnn
+Correcting for GC bias...
+Loading /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/cnvkit-dataset1/17303.bam.targetcoverage.cnn
+Correcting for GC bias...
+Loading /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/cnvkit-dataset1/17304.bam.targetcoverage.cnn
+Correcting for GC bias...
+Loading /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/cnvkit-dataset1/17305.bam.targetcoverage.cnn
+Correcting for GC bias...
+Calculating average bin coverages
+Calculating bin spreads
+Targets: 5 (0.3362%) bins failed filters (log2 < -5.0, log2 > 5.0, spread > 1.0)
+  NSD1        5:177133914-177133964  log2=-28.583  spread=0.342
+  RECQL4      8:144517602-144517636  log2=-1.474  spread=1.047
+    "         8:144517701-144517785  log2=-1.424  spread=1.107
+  RHBDF2      17:76477180-76477299   log2=-6.343  spread=0.461
+  AMG_mid100  Y:6869912-6869912      log2=-1.154  spread=0.357
+Wrote /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/cnvkit-dataset1/ref-tas.cnn with 1487 regions
+Blank tab file?: /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/cnvkit-dataset1/MT
+Processing target: 17296.bam
+Keeping 1482 of 1487 bins
+Correcting for GC bias...
+Processing antitarget: MT
+Wrote /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/cnvkit-dataset1/17296.cnr with 1482 regions
+Segmenting with method 'cbs', significance threshold 0.0001, in 1 processes
+Smoothing overshot at 1 / 126 indices: (-0.5226568576132309, 0.33909723009318204) vs. original (-1.00912, 0.337074)
+Wrote /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/cnvkit-dataset1/17296.cns with 26 regions
+Blank tab file?: /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/cnvkit-dataset1/MT
+Processing target: 17297.bam
+Keeping 1482 of 1487 bins
+Correcting for GC bias...
+Processing antitarget: MT
+Wrote /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/cnvkit-dataset1/17297.cnr with 1482 regions
+Segmenting with method 'cbs', significance threshold 0.0001, in 1 processes
+Smoothing overshot at 1 / 130 indices: (-0.2774839303214966, 0.09972751324681875) vs. original (-0.269961, 0.253338)
+Wrote /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/cnvkit-dataset1/17297.cns with 29 regions
+Blank tab file?: /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/cnvkit-dataset1/MT
+Processing target: 17298.bam
+Keeping 1482 of 1487 bins
+Correcting for GC bias...
+Processing antitarget: MT
+Wrote /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/cnvkit-dataset1/17298.cnr with 1482 regions
+Segmenting with method 'cbs', significance threshold 0.0001, in 1 processes
+Wrote /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/cnvkit-dataset1/17298.cns with 26 regions
+Blank tab file?: /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/cnvkit-dataset1/MT
+Processing target: 17299.bam
+Keeping 1482 of 1487 bins
+Correcting for GC bias...
+Processing antitarget: MT
+Wrote /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/cnvkit-dataset1/17299.cnr with 1482 regions
+Segmenting with method 'cbs', significance threshold 0.0001, in 1 processes
+Wrote /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/cnvkit-dataset1/17299.cns with 26 regions
+Blank tab file?: /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/cnvkit-dataset1/MT
+Processing target: 17300.bam
+Keeping 1482 of 1487 bins
+Correcting for GC bias...
+Processing antitarget: MT
+Wrote /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/cnvkit-dataset1/17300.cnr with 1482 regions
+Segmenting with method 'cbs', significance threshold 0.0001, in 1 processes
+Wrote /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/cnvkit-dataset1/17300.cns with 26 regions
+Blank tab file?: /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/cnvkit-dataset1/MT
+Processing target: 17301.bam
+Keeping 1482 of 1487 bins
+Correcting for GC bias...
+Processing antitarget: MT
+Wrote /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/cnvkit-dataset1/17301.cnr with 1482 regions
+Segmenting with method 'cbs', significance threshold 0.0001, in 1 processes
+Wrote /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/cnvkit-dataset1/17301.cns with 26 regions
+Blank tab file?: /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/cnvkit-dataset1/MT
+Processing target: 17302.bam
+Keeping 1482 of 1487 bins
+Correcting for GC bias...
+Processing antitarget: MT
+Wrote /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/cnvkit-dataset1/17302.cnr with 1482 regions
+Segmenting with method 'cbs', significance threshold 0.0001, in 1 processes
+Wrote /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/cnvkit-dataset1/17302.cns with 26 regions
+Blank tab file?: /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/cnvkit-dataset1/MT
+Processing target: 17303.bam
+Keeping 1482 of 1487 bins
+Correcting for GC bias...
+Processing antitarget: MT
+Wrote /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/cnvkit-dataset1/17303.cnr with 1482 regions
+Segmenting with method 'cbs', significance threshold 0.0001, in 1 processes
+Smoothing overshot at 2 / 128 indices: (-1.071570946004215, 0.1348305988388822) vs. original (-1.02568, 0.28639)
+Wrote /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/cnvkit-dataset1/17303.cns with 28 regions
+Blank tab file?: /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/cnvkit-dataset1/MT
+Processing target: 17304.bam
+Keeping 1482 of 1487 bins
+Correcting for GC bias...
+Processing antitarget: MT
+Wrote /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/cnvkit-dataset1/17304.cnr with 1482 regions
+Segmenting with method 'cbs', significance threshold 0.0001, in 1 processes
+Wrote /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/cnvkit-dataset1/17304.cns with 26 regions
+Blank tab file?: /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/cnvkit-dataset1/MT
+Processing target: 17305.bam
+Keeping 1482 of 1487 bins
+Correcting for GC bias...
+Processing antitarget: MT
+Wrote /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/cnvkit-dataset1/17305.cnr with 1482 regions
+Segmenting with method 'cbs', significance threshold 0.0001, in 1 processes
+Wrote /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/cnvkit-dataset1/17305.cns with 26 regions
+Calling copy number with clonal ploidy 2
+Wrote /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/cnvkit-dataset1/17296.call.cns with 26 regions
+Calling copy number with clonal ploidy 2
+Wrote /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/cnvkit-dataset1/17297.call.cns with 29 regions
+Calling copy number with clonal ploidy 2
+Wrote /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/cnvkit-dataset1/17298.call.cns with 26 regions
+Calling copy number with clonal ploidy 2
+Wrote /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/cnvkit-dataset1/17299.call.cns with 26 regions
+Calling copy number with clonal ploidy 2
+Wrote /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/cnvkit-dataset1/17300.call.cns with 26 regions
+Calling copy number with clonal ploidy 2
+Wrote /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/cnvkit-dataset1/17301.call.cns with 26 regions
+Calling copy number with clonal ploidy 2
+Wrote /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/cnvkit-dataset1/17302.call.cns with 26 regions
+Calling copy number with clonal ploidy 2
+Wrote /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/cnvkit-dataset1/17303.call.cns with 28 regions
+Calling copy number with clonal ploidy 2
+Wrote /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/cnvkit-dataset1/17304.call.cns with 26 regions
+Calling copy number with clonal ploidy 2
+Wrote /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/cnvkit-dataset1/17305.call.cns with 26 regions
+Calling copy number with thresholds: -1.1 => 0, -0.25 => 1, 0.2 => 2, 0.7 => 3
+Wrote /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/cnvkit-dataset1/17296.call.cnr with 1482 regions
+Calling copy number with thresholds: -1.1 => 0, -0.25 => 1, 0.2 => 2, 0.7 => 3
+Wrote /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/cnvkit-dataset1/17297.call.cnr with 1482 regions
+Calling copy number with thresholds: -1.1 => 0, -0.25 => 1, 0.2 => 2, 0.7 => 3
+Wrote /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/cnvkit-dataset1/17298.call.cnr with 1482 regions
+Calling copy number with thresholds: -1.1 => 0, -0.25 => 1, 0.2 => 2, 0.7 => 3
+Wrote /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/cnvkit-dataset1/17299.call.cnr with 1482 regions
+Calling copy number with thresholds: -1.1 => 0, -0.25 => 1, 0.2 => 2, 0.7 => 3
+Wrote /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/cnvkit-dataset1/17300.call.cnr with 1482 regions
+Calling copy number with thresholds: -1.1 => 0, -0.25 => 1, 0.2 => 2, 0.7 => 3
+Wrote /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/cnvkit-dataset1/17301.call.cnr with 1482 regions
+Calling copy number with thresholds: -1.1 => 0, -0.25 => 1, 0.2 => 2, 0.7 => 3
+Wrote /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/cnvkit-dataset1/17302.call.cnr with 1482 regions
+Calling copy number with thresholds: -1.1 => 0, -0.25 => 1, 0.2 => 2, 0.7 => 3
+Wrote /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/cnvkit-dataset1/17303.call.cnr with 1482 regions
+Calling copy number with thresholds: -1.1 => 0, -0.25 => 1, 0.2 => 2, 0.7 => 3
+Wrote /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/cnvkit-dataset1/17304.call.cnr with 1482 regions
+Calling copy number with thresholds: -1.1 => 0, -0.25 => 1, 0.2 => 2, 0.7 => 3
+Wrote /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/cnvkit-dataset1/17305.call.cnr with 1482 regions
+Saving GenomicRanges results
+[1] "cnvkit for dataset1 dataset finished"
+
+
+
+Warning messages:
+1: In dir.create(outputFolder) :
+  '/home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/cnvkit-dataset1' already exists
+2: In dir.create(refFolder) :
+  '/home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/cnvkit-dataset1/reference' already exists
+3: In .Seqinfo.mergexy(x, y) :
+  Each of the 2 combined objects has sequence levels not in the other:
+  - in 'x': 4, 12, 14, 19, 21, 22
+  - in 'y': 15, X
+  Make sure to always combine/compare objects based on the same reference
+  genome (use suppressWarnings() to suppress this warning).
+4: In .Seqinfo.mergexy(x, y) :
+  Each of the 2 combined objects has sequence levels not in the other:
+  - in 'x': 21, X
+  - in 'y': 18
+  Make sure to always combine/compare objects based on the same reference
+  genome (use suppressWarnings() to suppress this warning).
+Error: unexpected '}' in "}"
+Execution halted
