@@ -100,6 +100,31 @@ for (name in names(datasets)) {
     
     # Execute Manta
     processMantaBody(launchFile, bamList, fastaFile, outputFolder, bedFile,configFile, params)
+    
+    # Decompress result VCF file
+    
+    system(paste("gzip -d", file.path(outputFolder, "results", "variants", "diploidSV.vcf.gz")))
+    
+    # read two times the vcf file, first for the columns names, second for the data
+    vcfFile <- readLines(file.path(outputFolder, "results", "variants", "diploidSV.vcf"))
+    vcfData <- read.table(file.path(outputFolder, "results", "variants", "diploidSV.vcf"), stringsAsFactors = FALSE)
+    
+    # filter for the columns names
+    vcfFile <- vcfFile[-(grep("#CHROM", vcfFile) + 1):-(length(vcfFile))]
+    vcf_names <- unlist(strsplit(vcfFile[length(vcfFile)], "\t"))
+    names(vcfData) <- vcf_names
+    
+    # Rename sample
+    
+    sampleNames <- sub(".bam", "", bamFiles)
+    nSamples <- length(sampleNames)
+    
+    # create CNV.Type
+    
+    vcfData$CNV.Type <- ifelse(grepl("DEL", vcfData$ID),"deletion", ifelse(grepl("DUP", vcfData$ID), "duplication", NA))
+    vcfData <- vcfData[complete.cases(vcfData), ]
+    
+    
   }
 }
 
