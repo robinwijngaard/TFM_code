@@ -8,5 +8,5 @@ zScoreCutOffLow: -3
 zScoreCutOffHigh: 3
 sampleRatioScore: 0.09
 percentageLessReliableTargets: 20
-controlSamples: 10
+controlSamples: 30
 
