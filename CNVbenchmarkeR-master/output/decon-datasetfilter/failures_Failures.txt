@@ -1,0 +1,28 @@
+Sample	Exon	Type	Gene	Info
+17323	All	Whole sample	All	Low correlation: 0.974915755466253
+17339	All	Whole sample	All	Low correlation: 0.849986790309808
+17342	All	Whole sample	All	Low correlation: 0.97249541378521
+17383	All	Whole sample	All	Low correlation: 0.973258623085641
+17394	All	Whole sample	All	Low correlation: 0.966559078165913
+All	125	Whole exon	NSD1	Low median read depth (FPKM): 0
+17296	35	Single	EPCAM	Low read depth (FPKM): 34
+17302	35	Single	EPCAM	Low read depth (FPKM): 75
+17303	35	Single	EPCAM	Low read depth (FPKM): 68
+17304	35	Single	EPCAM	Low read depth (FPKM): 89
+17356	35	Single	EPCAM	Low read depth (FPKM): 34
+17361	35	Single	EPCAM	Low read depth (FPKM): 88
+17362	35	Single	EPCAM	Low read depth (FPKM): 60
+17363	35	Single	EPCAM	Low read depth (FPKM): 37
+17364	35	Single	EPCAM	Low read depth (FPKM): 82
+17372	35	Single	EPCAM	Low read depth (FPKM): 81
+17304	148	Single	PMS2	Low read depth (FPKM): 3
+17308	148	Single	PMS2	Low read depth (FPKM): 6
+17336	148	Single	PMS2	Low read depth (FPKM): 6
+17356	334	Single	RB1	Low read depth (FPKM): 85
+17362	334	Single	RB1	Low read depth (FPKM): 94
+17363	334	Single	RB1	Low read depth (FPKM): 84
+17362	374	Single	CDH1	Low read depth (FPKM): 90
+17363	374	Single	CDH1	Low read depth (FPKM): 74
+17356	415	Single	NF1	Low read depth (FPKM): 78
+17362	415	Single	NF1	Low read depth (FPKM): 83
+17363	415	Single	NF1	Low read depth (FPKM): 51

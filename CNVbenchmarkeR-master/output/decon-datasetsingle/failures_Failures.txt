@@ -1,0 +1,66 @@
+Sample	Exon	Type	Gene	Info
+17339	All	Whole sample	All	Low correlation: 0.715157292475335
+All	339	Whole exon	NSD1	Low median read depth (FPKM): 0
+All	681	Whole exon	HRAS	Low median read depth (FPKM): 0
+All	682	Whole exon	HRAS	Low median read depth (FPKM): 0
+All	683	Whole exon	HRAS	Low median read depth (FPKM): 0
+All	684	Whole exon	HRAS	Low median read depth (FPKM): 0
+All	685	Whole exon	CDKN1C	Low median read depth (FPKM): 0
+All	686	Whole exon	CDKN1C	Low median read depth (FPKM): 46
+All	1369	Whole exon	RHBDF2	Low median read depth (FPKM): 65.5
+All	1431	Whole exon	SMARCB1	Low median read depth (FPKM): 0
+All	1432	Whole exon	SMARCB1	Low median read depth (FPKM): 0
+All	1433	Whole exon	SMARCB1	Low median read depth (FPKM): 0
+All	1434	Whole exon	SMARCB1	Low median read depth (FPKM): 0
+All	1435	Whole exon	SMARCB1	Low median read depth (FPKM): 0
+All	1436	Whole exon	SMARCB1	Low median read depth (FPKM): 0
+All	1437	Whole exon	SMARCB1	Low median read depth (FPKM): 0
+All	1438	Whole exon	SMARCB1	Low median read depth (FPKM): 0
+All	1439	Whole exon	SMARCB1	Low median read depth (FPKM): 0
+17296	87	Single	EPCAM	Low read depth (FPKM): 34
+17304	87	Single	EPCAM	Low read depth (FPKM): 89
+17356	87	Single	EPCAM	Low read depth (FPKM): 34
+17361	87	Single	EPCAM	Low read depth (FPKM): 88
+17362	87	Single	EPCAM	Low read depth (FPKM): 60
+17364	87	Single	EPCAM	Low read depth (FPKM): 82
+17304	372	Single	PMS2	Low read depth (FPKM): 3
+17308	372	Single	PMS2	Low read depth (FPKM): 6
+17296	539	Single	RECQL4	Low read depth (FPKM): 30
+17301	539	Single	RECQL4	Low read depth (FPKM): 81
+17304	539	Single	RECQL4	Low read depth (FPKM): 60
+17356	539	Single	RECQL4	Low read depth (FPKM): 9
+17360	539	Single	RECQL4	Low read depth (FPKM): 82
+17361	539	Single	RECQL4	Low read depth (FPKM): 38
+17362	539	Single	RECQL4	Low read depth (FPKM): 23
+17364	539	Single	RECQL4	Low read depth (FPKM): 57
+17370	539	Single	RECQL4	Low read depth (FPKM): 65
+17371	539	Single	RECQL4	Low read depth (FPKM): 52
+17296	540	Single	RECQL4	Low read depth (FPKM): 39
+17356	540	Single	RECQL4	Low read depth (FPKM): 17
+17360	540	Single	RECQL4	Low read depth (FPKM): 65
+17361	540	Single	RECQL4	Low read depth (FPKM): 60
+17362	540	Single	RECQL4	Low read depth (FPKM): 40
+17364	540	Single	RECQL4	Low read depth (FPKM): 49
+17370	540	Single	RECQL4	Low read depth (FPKM): 68
+17371	540	Single	RECQL4	Low read depth (FPKM): 53
+17362	625	Single	RET	Low read depth (FPKM): 86
+17298	698	Single	EXT2	Low read depth (FPKM): 71
+17300	698	Single	EXT2	Low read depth (FPKM): 92
+17304	698	Single	EXT2	Low read depth (FPKM): 84
+17373	698	Single	EXT2	Low read depth (FPKM): 94
+17398	698	Single	EXT2	Low read depth (FPKM): 99
+17356	869	Single	RB1	Low read depth (FPKM): 85
+17362	869	Single	RB1	Low read depth (FPKM): 94
+17362	1143	Single	CDH1	Low read depth (FPKM): 90
+17356	1201	Single	FANCA	Low read depth (FPKM): 97
+17356	1227	Single	NF1	Low read depth (FPKM): 78
+17362	1227	Single	NF1	Low read depth (FPKM): 83
+17298	1364	Single	RHBDF2	Low read depth (FPKM): 57
+17299	1364	Single	RHBDF2	Low read depth (FPKM): 87
+17304	1364	Single	RHBDF2	Low read depth (FPKM): 84
+17305	1364	Single	RHBDF2	Low read depth (FPKM): 90
+17312	1364	Single	RHBDF2	Low read depth (FPKM): 93
+17314	1364	Single	RHBDF2	Low read depth (FPKM): 93
+17315	1364	Single	RHBDF2	Low read depth (FPKM): 93
+17398	1364	Single	RHBDF2	Low read depth (FPKM): 97
+17399	1364	Single	RHBDF2	Low read depth (FPKM): 71

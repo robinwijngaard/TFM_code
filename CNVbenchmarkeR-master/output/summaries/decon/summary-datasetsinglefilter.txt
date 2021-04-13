@@ -1,0 +1,36 @@
+
+
+decon results on dataset datasetsinglefilter 
+	Stats per ROI: 
+		Sensitivity: 0.9167 
+		Specificity: 0.9996 
+		No-call rate: 2.3267 %  from a total of 10315 ROIs 
+	Stats per gene: 
+		Sensitivity: 0.9167 
+		Specificity: 0.9963 
+		No-call rate: 2.4605 %  from a total of 569 genes 
+		F1 Score: 0.9167 
+		Positive Predictive Value: 0.9167 
+		Negative Predictive Value: 0.9963 
+		Matthews correlation coefficient: 0.913 
+		Cohen's kappa: 0.9134 
+	Stats at whole strategy level (per gene and including no-calls): 
+		Sensitivity: 0.9167 
+		Specificity: 0.9725  ->  15 extra gene(s) have to be covered by MLPA, 530 genes saved 
+
+	False Negatives per gene: 
+		Sample 17298 1 false negative(s) 
+		Sample 17364 1 false negative(s) 
+
+	False Positives per gene: 
+		Sample 17356 2 false positives(s) 
+
+	False Negatives at whole strategy level: 
+		Sample 17298 1 false negative(s) 
+		Sample 17364 1 false negative(s) 
+
+	False Positives at whole strategy level: 
+		Sample 17339 13 false positives(s) 
+		Sample 17356 2 false positives(s) 
+
+Summary file generated at 2021-04-13 16:01:40

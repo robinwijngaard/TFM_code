@@ -1,0 +1,15 @@
+intersectBed -a diploidSV.vcf -b /home/robin/Documents/Project/Samples/bedfiles/ICR96_hg38_noSNP.bed -header > bedfilter.vcf
+intersectBed -a candidateSV.vcf -b /home/robin/Documents/Project/Samples/bedfiles/ICR96_hg38_noSNP.bed > bedfilterall.vcf
+
+
+
+
+gzip -d diploidSV.vcf.gz > diploidSV.vcf
+gzip -d candidateSV.vcf.gz
+
+vcftools --gzvcf diploidSV.vcf.gz --positions-overlap /home/robin/Documents/Project/Samples/bedfiles/ICR96_hg38_noSNP.bed --out filtered --recode --keep-INFO-all
+
+svTools
+
+python /home/robin/Documents/Project/TFM_code/Files/svtools-master/vcfToBedpe -i bedfilter.vcf -o bedpe 
+python /home/robin/Documents/Project/TFM_code/Files/svtools-master/vcfToBedpe -i bedfilterall.vcf -o bedpeall

@@ -130,7 +130,7 @@ for (name in names(datasets)) {
         
         # Save results in GRanges format
         message("Saving CNV GenomicRanges and Failures results")
-        saveResultsFileToGR(outputFolder, "calls_all.txt", chrColumn = "Chromosome", startColumn = "Start.b", endColumn = "End.b")
+        saveResultsFileToGR(outputFolder, "calls_all.txt", chrColumn = "Chromosome", startColumn = "Start", endColumn = "End")
         saveExonFailures(file.path(outputFolder, "failures_Failures.txt"), bedFile, bamsDir, outputFolder)
 
         print(paste("DECoN for", name, "dataset finished", sep=" "))
