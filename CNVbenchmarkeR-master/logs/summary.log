@@ -28,9 +28,12 @@ Loading datasetsingle Dataset validated results
 
 Loading datasetclinic Dataset validated results
   Loading decon results for datasetclinic dataset
+[1] "ROI in chr 7 and starting at 5973398  for sample 17371 was labeled as failed region because was defined by the algorithm as deletion and duplication."
   Loading panelcn results for datasetclinic dataset
   Loading convading results for datasetclinic dataset
   Loading exomedepth results for datasetclinic dataset
+[1] "ROI in chr 7 and starting at 5973398  for sample 17371 was labeled as failed region because was defined by the algorithm as deletion and duplication."
   Loading cnvkit results for datasetclinic dataset
   Generating summary file at /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/summary/summary-datasetclinic.txt 
   Generating CSV results file at /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/summary/results-datasetclinic.csv 
+There were 50 or more warnings (use warnings() to see the first 50)
