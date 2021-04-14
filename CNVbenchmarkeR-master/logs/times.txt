@@ -1,8 +1,46 @@
 cnvkit (4 datasets): 1.855096 hours
+- 96 mostres: 0,59h (35,4 min)
+- 54 mostres: 0,33h (19,8 min)
+- 1 mostra: 21,6s
+
+
 convading (4 datasets): 5.083273 hours
+- 96 mostres: 1,62h (1 hora i 37.2 min)
+- 54 mostres: 0,91h (54.6min)
+- 1 mostra: 1 min
+
 ExomeDepth (4 datasets): 1.273786 hours
+- 96 mostres: 0.41 (24.6 min)
+- 54 mostres: 0,23h (13.8 min)
+- 1 mostra: 14.4s
+
 panelcnmops (4 datasets): 32.36529 mins
+- 96 mostres: 10.35 min
+- 54 mostres: 5.8min
+- 1 mostra: 6,5s
+
+
 decon (4 datasets): 1.404498 hours
+- 96 mostres: 0.45h (27 min)
+- 54 mostres: 0.25h (15 min)
+- 1 mostra: 16.6s
+
 
 manta (dataall): 20:19:22 - 22:20:34 (2 hores)
+- 96 mostres 2 hores 1 minut
+- 1 mostra: 1,2 min
+
 manta (single): 44.78914 mins
+- 54 mostres: 44,8 min
+- 1 mostra: 49.2 s
+
+
+
+Times all samples on clinicdataset
+panelcnmops:  5.879434 min: 3.7s
+decon: 22.0544 mins: 13.8s
+exomedepth: 20.30736 mins: 12.7s
+convading: 38.58354 mins
+CNVkit: 22.59975 mins
+
+ 

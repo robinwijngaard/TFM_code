@@ -6,10 +6,10 @@ source ./utils/parse_yaml.sh
 eval $(parse_yaml algorithms.yaml "pars_")
 
 # create logs/output folder if not exists
-mkdir -p logs
-mkdir -p output
+#mkdir -p logs
+#mkdir -p output
 
-# Execute algorithms over selected datasets
+#Execute algorithms over selected datasets
 #if [ "$pars_algorithms_panelcn" == "true" ]; then
 #    echo "[$(date)] Executing panelcn.MOPS"
 #	Rscript ./algorithms/panelcnmops/runPanelcnmops.r ./algorithms/panelcnmops/panelcnmopsParams.yaml datasets.yaml  > logs/panelcnmops.log 2>&1
@@ -47,6 +47,6 @@ mkdir -p output
 #fi
 
 
-Generate summary file
+#Generate summary file
 echo "[$(date)] Generating summary file"
 Rscript ./utils/summary.r algorithms.yaml datasets.yaml  > logs/summary.log 2>&1

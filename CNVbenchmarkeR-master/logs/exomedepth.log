@@ -1,4 +1,4 @@
-[1] "Starting at 2021-04-14 00:54:57"
+[1] "Starting at 2021-04-14 07:15:47"
 [1] "./algorithms/exomedepth/exomedepthParams.yaml"
 [2] "datasets.yaml"                                
 Warning message:
@@ -6,62 +6,104 @@ In readLines(con) : incomplete final line found on 'datasets.yaml'
 [1] "Params for this execution: list(phi.bins = 1, transition.probability = 1e-04, expected.CNV.length = 50000)"
 [1] "Starting ExomeDepth for datasetclinic dataset"
 Reference fasta file provided so ExomeDepth will compute the GC content in each window
-Parse 54 BAM files
- [1] "/home/robin/Documents/Project/Samples/bam/single/17296.bam"
- [2] "/home/robin/Documents/Project/Samples/bam/single/17298.bam"
- [3] "/home/robin/Documents/Project/Samples/bam/single/17299.bam"
- [4] "/home/robin/Documents/Project/Samples/bam/single/17300.bam"
- [5] "/home/robin/Documents/Project/Samples/bam/single/17301.bam"
- [6] "/home/robin/Documents/Project/Samples/bam/single/17304.bam"
- [7] "/home/robin/Documents/Project/Samples/bam/single/17305.bam"
- [8] "/home/robin/Documents/Project/Samples/bam/single/17306.bam"
- [9] "/home/robin/Documents/Project/Samples/bam/single/17308.bam"
-[10] "/home/robin/Documents/Project/Samples/bam/single/17309.bam"
-[11] "/home/robin/Documents/Project/Samples/bam/single/17310.bam"
-[12] "/home/robin/Documents/Project/Samples/bam/single/17311.bam"
-[13] "/home/robin/Documents/Project/Samples/bam/single/17312.bam"
-[14] "/home/robin/Documents/Project/Samples/bam/single/17313.bam"
-[15] "/home/robin/Documents/Project/Samples/bam/single/17314.bam"
-[16] "/home/robin/Documents/Project/Samples/bam/single/17315.bam"
-[17] "/home/robin/Documents/Project/Samples/bam/single/17316.bam"
-[18] "/home/robin/Documents/Project/Samples/bam/single/17317.bam"
-[19] "/home/robin/Documents/Project/Samples/bam/single/17319.bam"
-[20] "/home/robin/Documents/Project/Samples/bam/single/17320.bam"
-[21] "/home/robin/Documents/Project/Samples/bam/single/17326.bam"
-[22] "/home/robin/Documents/Project/Samples/bam/single/17327.bam"
-[23] "/home/robin/Documents/Project/Samples/bam/single/17328.bam"
-[24] "/home/robin/Documents/Project/Samples/bam/single/17329.bam"
-[25] "/home/robin/Documents/Project/Samples/bam/single/17330.bam"
-[26] "/home/robin/Documents/Project/Samples/bam/single/17333.bam"
-[27] "/home/robin/Documents/Project/Samples/bam/single/17339.bam"
-[28] "/home/robin/Documents/Project/Samples/bam/single/17356.bam"
-[29] "/home/robin/Documents/Project/Samples/bam/single/17360.bam"
-[30] "/home/robin/Documents/Project/Samples/bam/single/17361.bam"
-[31] "/home/robin/Documents/Project/Samples/bam/single/17362.bam"
-[32] "/home/robin/Documents/Project/Samples/bam/single/17364.bam"
-[33] "/home/robin/Documents/Project/Samples/bam/single/17365.bam"
-[34] "/home/robin/Documents/Project/Samples/bam/single/17367.bam"
-[35] "/home/robin/Documents/Project/Samples/bam/single/17368.bam"
-[36] "/home/robin/Documents/Project/Samples/bam/single/17369.bam"
-[37] "/home/robin/Documents/Project/Samples/bam/single/17370.bam"
-[38] "/home/robin/Documents/Project/Samples/bam/single/17371.bam"
-[39] "/home/robin/Documents/Project/Samples/bam/single/17373.bam"
-[40] "/home/robin/Documents/Project/Samples/bam/single/17374.bam"
-[41] "/home/robin/Documents/Project/Samples/bam/single/17376.bam"
-[42] "/home/robin/Documents/Project/Samples/bam/single/17382.bam"
-[43] "/home/robin/Documents/Project/Samples/bam/single/17384.bam"
-[44] "/home/robin/Documents/Project/Samples/bam/single/17386.bam"
-[45] "/home/robin/Documents/Project/Samples/bam/single/17387.bam"
-[46] "/home/robin/Documents/Project/Samples/bam/single/17389.bam"
-[47] "/home/robin/Documents/Project/Samples/bam/single/17391.bam"
-[48] "/home/robin/Documents/Project/Samples/bam/single/17392.bam"
-[49] "/home/robin/Documents/Project/Samples/bam/single/17397.bam"
-[50] "/home/robin/Documents/Project/Samples/bam/single/17398.bam"
-[51] "/home/robin/Documents/Project/Samples/bam/single/17399.bam"
-[52] "/home/robin/Documents/Project/Samples/bam/single/17401.bam"
-[53] "/home/robin/Documents/Project/Samples/bam/single/17402.bam"
-[54] "/home/robin/Documents/Project/Samples/bam/single/17403.bam"
-Now parsing /home/robin/Documents/Project/Samples/bam/single/17296.bam
+Parse 96 BAM files
+ [1] "/home/robin/Documents/Project/Samples/bam/all/17296.bam"
+ [2] "/home/robin/Documents/Project/Samples/bam/all/17297.bam"
+ [3] "/home/robin/Documents/Project/Samples/bam/all/17298.bam"
+ [4] "/home/robin/Documents/Project/Samples/bam/all/17299.bam"
+ [5] "/home/robin/Documents/Project/Samples/bam/all/17300.bam"
+ [6] "/home/robin/Documents/Project/Samples/bam/all/17301.bam"
+ [7] "/home/robin/Documents/Project/Samples/bam/all/17302.bam"
+ [8] "/home/robin/Documents/Project/Samples/bam/all/17303.bam"
+ [9] "/home/robin/Documents/Project/Samples/bam/all/17304.bam"
+[10] "/home/robin/Documents/Project/Samples/bam/all/17305.bam"
+[11] "/home/robin/Documents/Project/Samples/bam/all/17306.bam"
+[12] "/home/robin/Documents/Project/Samples/bam/all/17307.bam"
+[13] "/home/robin/Documents/Project/Samples/bam/all/17308.bam"
+[14] "/home/robin/Documents/Project/Samples/bam/all/17309.bam"
+[15] "/home/robin/Documents/Project/Samples/bam/all/17310.bam"
+[16] "/home/robin/Documents/Project/Samples/bam/all/17311.bam"
+[17] "/home/robin/Documents/Project/Samples/bam/all/17312.bam"
+[18] "/home/robin/Documents/Project/Samples/bam/all/17313.bam"
+[19] "/home/robin/Documents/Project/Samples/bam/all/17314.bam"
+[20] "/home/robin/Documents/Project/Samples/bam/all/17315.bam"
+[21] "/home/robin/Documents/Project/Samples/bam/all/17316.bam"
+[22] "/home/robin/Documents/Project/Samples/bam/all/17317.bam"
+[23] "/home/robin/Documents/Project/Samples/bam/all/17318.bam"
+[24] "/home/robin/Documents/Project/Samples/bam/all/17319.bam"
+[25] "/home/robin/Documents/Project/Samples/bam/all/17320.bam"
+[26] "/home/robin/Documents/Project/Samples/bam/all/17321.bam"
+[27] "/home/robin/Documents/Project/Samples/bam/all/17322.bam"
+[28] "/home/robin/Documents/Project/Samples/bam/all/17323.bam"
+[29] "/home/robin/Documents/Project/Samples/bam/all/17324.bam"
+[30] "/home/robin/Documents/Project/Samples/bam/all/17325.bam"
+[31] "/home/robin/Documents/Project/Samples/bam/all/17326.bam"
+[32] "/home/robin/Documents/Project/Samples/bam/all/17327.bam"
+[33] "/home/robin/Documents/Project/Samples/bam/all/17328.bam"
+[34] "/home/robin/Documents/Project/Samples/bam/all/17329.bam"
+[35] "/home/robin/Documents/Project/Samples/bam/all/17330.bam"
+[36] "/home/robin/Documents/Project/Samples/bam/all/17331.bam"
+[37] "/home/robin/Documents/Project/Samples/bam/all/17332.bam"
+[38] "/home/robin/Documents/Project/Samples/bam/all/17333.bam"
+[39] "/home/robin/Documents/Project/Samples/bam/all/17334.bam"
+[40] "/home/robin/Documents/Project/Samples/bam/all/17335.bam"
+[41] "/home/robin/Documents/Project/Samples/bam/all/17336.bam"
+[42] "/home/robin/Documents/Project/Samples/bam/all/17337.bam"
+[43] "/home/robin/Documents/Project/Samples/bam/all/17338.bam"
+[44] "/home/robin/Documents/Project/Samples/bam/all/17339.bam"
+[45] "/home/robin/Documents/Project/Samples/bam/all/17340.bam"
+[46] "/home/robin/Documents/Project/Samples/bam/all/17341.bam"
+[47] "/home/robin/Documents/Project/Samples/bam/all/17342.bam"
+[48] "/home/robin/Documents/Project/Samples/bam/all/17343.bam"
+[49] "/home/robin/Documents/Project/Samples/bam/all/17356.bam"
+[50] "/home/robin/Documents/Project/Samples/bam/all/17357.bam"
+[51] "/home/robin/Documents/Project/Samples/bam/all/17358.bam"
+[52] "/home/robin/Documents/Project/Samples/bam/all/17359.bam"
+[53] "/home/robin/Documents/Project/Samples/bam/all/17360.bam"
+[54] "/home/robin/Documents/Project/Samples/bam/all/17361.bam"
+[55] "/home/robin/Documents/Project/Samples/bam/all/17362.bam"
+[56] "/home/robin/Documents/Project/Samples/bam/all/17363.bam"
+[57] "/home/robin/Documents/Project/Samples/bam/all/17364.bam"
+[58] "/home/robin/Documents/Project/Samples/bam/all/17365.bam"
+[59] "/home/robin/Documents/Project/Samples/bam/all/17366.bam"
+[60] "/home/robin/Documents/Project/Samples/bam/all/17367.bam"
+[61] "/home/robin/Documents/Project/Samples/bam/all/17368.bam"
+[62] "/home/robin/Documents/Project/Samples/bam/all/17369.bam"
+[63] "/home/robin/Documents/Project/Samples/bam/all/17370.bam"
+[64] "/home/robin/Documents/Project/Samples/bam/all/17371.bam"
+[65] "/home/robin/Documents/Project/Samples/bam/all/17372.bam"
+[66] "/home/robin/Documents/Project/Samples/bam/all/17373.bam"
+[67] "/home/robin/Documents/Project/Samples/bam/all/17374.bam"
+[68] "/home/robin/Documents/Project/Samples/bam/all/17375.bam"
+[69] "/home/robin/Documents/Project/Samples/bam/all/17376.bam"
+[70] "/home/robin/Documents/Project/Samples/bam/all/17377.bam"
+[71] "/home/robin/Documents/Project/Samples/bam/all/17378.bam"
+[72] "/home/robin/Documents/Project/Samples/bam/all/17379.bam"
+[73] "/home/robin/Documents/Project/Samples/bam/all/17380.bam"
+[74] "/home/robin/Documents/Project/Samples/bam/all/17381.bam"
+[75] "/home/robin/Documents/Project/Samples/bam/all/17382.bam"
+[76] "/home/robin/Documents/Project/Samples/bam/all/17383.bam"
+[77] "/home/robin/Documents/Project/Samples/bam/all/17384.bam"
+[78] "/home/robin/Documents/Project/Samples/bam/all/17385.bam"
+[79] "/home/robin/Documents/Project/Samples/bam/all/17386.bam"
+[80] "/home/robin/Documents/Project/Samples/bam/all/17387.bam"
+[81] "/home/robin/Documents/Project/Samples/bam/all/17388.bam"
+[82] "/home/robin/Documents/Project/Samples/bam/all/17389.bam"
+[83] "/home/robin/Documents/Project/Samples/bam/all/17390.bam"
+[84] "/home/robin/Documents/Project/Samples/bam/all/17391.bam"
+[85] "/home/robin/Documents/Project/Samples/bam/all/17392.bam"
+[86] "/home/robin/Documents/Project/Samples/bam/all/17393.bam"
+[87] "/home/robin/Documents/Project/Samples/bam/all/17394.bam"
+[88] "/home/robin/Documents/Project/Samples/bam/all/17395.bam"
+[89] "/home/robin/Documents/Project/Samples/bam/all/17396.bam"
+[90] "/home/robin/Documents/Project/Samples/bam/all/17397.bam"
+[91] "/home/robin/Documents/Project/Samples/bam/all/17398.bam"
+[92] "/home/robin/Documents/Project/Samples/bam/all/17399.bam"
+[93] "/home/robin/Documents/Project/Samples/bam/all/17400.bam"
+[94] "/home/robin/Documents/Project/Samples/bam/all/17401.bam"
+[95] "/home/robin/Documents/Project/Samples/bam/all/17402.bam"
+[96] "/home/robin/Documents/Project/Samples/bam/all/17403.bam"
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17296.bam
 Parsing chromosome 1
 Parsing chromosome 2
 Parsing chromosome 3
@@ -77,7 +119,23 @@ Parsing chromosome 18
 Parsing chromosome 19
 Parsing chromosome 22
 Number of counted fragments : 778956
-Now parsing /home/robin/Documents/Project/Samples/bam/single/17298.bam
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17297.bam
+Parsing chromosome 1
+Parsing chromosome 2
+Parsing chromosome 3
+Parsing chromosome 5
+Parsing chromosome 7
+Parsing chromosome 10
+Parsing chromosome 11
+Parsing chromosome 12
+Parsing chromosome 13
+Parsing chromosome 16
+Parsing chromosome 17
+Parsing chromosome 18
+Parsing chromosome 19
+Parsing chromosome 22
+Number of counted fragments : 779021
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17298.bam
 Parsing chromosome 1
 Parsing chromosome 2
 Parsing chromosome 3
@@ -93,7 +151,7 @@ Parsing chromosome 18
 Parsing chromosome 19
 Parsing chromosome 22
 Number of counted fragments : 530571
-Now parsing /home/robin/Documents/Project/Samples/bam/single/17299.bam
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17299.bam
 Parsing chromosome 1
 Parsing chromosome 2
 Parsing chromosome 3
@@ -109,7 +167,7 @@ Parsing chromosome 18
 Parsing chromosome 19
 Parsing chromosome 22
 Number of counted fragments : 827043
-Now parsing /home/robin/Documents/Project/Samples/bam/single/17300.bam
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17300.bam
 Parsing chromosome 1
 Parsing chromosome 2
 Parsing chromosome 3
@@ -125,7 +183,7 @@ Parsing chromosome 18
 Parsing chromosome 19
 Parsing chromosome 22
 Number of counted fragments : 813724
-Now parsing /home/robin/Documents/Project/Samples/bam/single/17301.bam
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17301.bam
 Parsing chromosome 1
 Parsing chromosome 2
 Parsing chromosome 3
@@ -141,7 +199,39 @@ Parsing chromosome 18
 Parsing chromosome 19
 Parsing chromosome 22
 Number of counted fragments : 1256782
-Now parsing /home/robin/Documents/Project/Samples/bam/single/17304.bam
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17302.bam
+Parsing chromosome 1
+Parsing chromosome 2
+Parsing chromosome 3
+Parsing chromosome 5
+Parsing chromosome 7
+Parsing chromosome 10
+Parsing chromosome 11
+Parsing chromosome 12
+Parsing chromosome 13
+Parsing chromosome 16
+Parsing chromosome 17
+Parsing chromosome 18
+Parsing chromosome 19
+Parsing chromosome 22
+Number of counted fragments : 647837
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17303.bam
+Parsing chromosome 1
+Parsing chromosome 2
+Parsing chromosome 3
+Parsing chromosome 5
+Parsing chromosome 7
+Parsing chromosome 10
+Parsing chromosome 11
+Parsing chromosome 12
+Parsing chromosome 13
+Parsing chromosome 16
+Parsing chromosome 17
+Parsing chromosome 18
+Parsing chromosome 19
+Parsing chromosome 22
+Number of counted fragments : 1027641
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17304.bam
 Parsing chromosome 1
 Parsing chromosome 2
 Parsing chromosome 3
@@ -157,7 +247,7 @@ Parsing chromosome 18
 Parsing chromosome 19
 Parsing chromosome 22
 Number of counted fragments : 878030
-Now parsing /home/robin/Documents/Project/Samples/bam/single/17305.bam
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17305.bam
 Parsing chromosome 1
 Parsing chromosome 2
 Parsing chromosome 3
@@ -173,7 +263,7 @@ Parsing chromosome 18
 Parsing chromosome 19
 Parsing chromosome 22
 Number of counted fragments : 1075277
-Now parsing /home/robin/Documents/Project/Samples/bam/single/17306.bam
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17306.bam
 Parsing chromosome 1
 Parsing chromosome 2
 Parsing chromosome 3
@@ -189,7 +279,23 @@ Parsing chromosome 18
 Parsing chromosome 19
 Parsing chromosome 22
 Number of counted fragments : 948359
-Now parsing /home/robin/Documents/Project/Samples/bam/single/17308.bam
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17307.bam
+Parsing chromosome 1
+Parsing chromosome 2
+Parsing chromosome 3
+Parsing chromosome 5
+Parsing chromosome 7
+Parsing chromosome 10
+Parsing chromosome 11
+Parsing chromosome 12
+Parsing chromosome 13
+Parsing chromosome 16
+Parsing chromosome 17
+Parsing chromosome 18
+Parsing chromosome 19
+Parsing chromosome 22
+Number of counted fragments : 806259
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17308.bam
 Parsing chromosome 1
 Parsing chromosome 2
 Parsing chromosome 3
@@ -205,7 +311,7 @@ Parsing chromosome 18
 Parsing chromosome 19
 Parsing chromosome 22
 Number of counted fragments : 1278910
-Now parsing /home/robin/Documents/Project/Samples/bam/single/17309.bam
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17309.bam
 Parsing chromosome 1
 Parsing chromosome 2
 Parsing chromosome 3
@@ -221,7 +327,7 @@ Parsing chromosome 18
 Parsing chromosome 19
 Parsing chromosome 22
 Number of counted fragments : 1240416
-Now parsing /home/robin/Documents/Project/Samples/bam/single/17310.bam
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17310.bam
 Parsing chromosome 1
 Parsing chromosome 2
 Parsing chromosome 3
@@ -237,7 +343,7 @@ Parsing chromosome 18
 Parsing chromosome 19
 Parsing chromosome 22
 Number of counted fragments : 1145189
-Now parsing /home/robin/Documents/Project/Samples/bam/single/17311.bam
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17311.bam
 Parsing chromosome 1
 Parsing chromosome 2
 Parsing chromosome 3
@@ -253,7 +359,7 @@ Parsing chromosome 18
 Parsing chromosome 19
 Parsing chromosome 22
 Number of counted fragments : 1326981
-Now parsing /home/robin/Documents/Project/Samples/bam/single/17312.bam
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17312.bam
 Parsing chromosome 1
 Parsing chromosome 2
 Parsing chromosome 3
@@ -269,7 +375,7 @@ Parsing chromosome 18
 Parsing chromosome 19
 Parsing chromosome 22
 Number of counted fragments : 855495
-Now parsing /home/robin/Documents/Project/Samples/bam/single/17313.bam
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17313.bam
 Parsing chromosome 1
 Parsing chromosome 2
 Parsing chromosome 3
@@ -285,7 +391,7 @@ Parsing chromosome 18
 Parsing chromosome 19
 Parsing chromosome 22
 Number of counted fragments : 1047684
-Now parsing /home/robin/Documents/Project/Samples/bam/single/17314.bam
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17314.bam
 Parsing chromosome 1
 Parsing chromosome 2
 Parsing chromosome 3
@@ -301,7 +407,7 @@ Parsing chromosome 18
 Parsing chromosome 19
 Parsing chromosome 22
 Number of counted fragments : 943400
-Now parsing /home/robin/Documents/Project/Samples/bam/single/17315.bam
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17315.bam
 Parsing chromosome 1
 Parsing chromosome 2
 Parsing chromosome 3
@@ -317,7 +423,7 @@ Parsing chromosome 18
 Parsing chromosome 19
 Parsing chromosome 22
 Number of counted fragments : 1100883
-Now parsing /home/robin/Documents/Project/Samples/bam/single/17316.bam
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17316.bam
 Parsing chromosome 1
 Parsing chromosome 2
 Parsing chromosome 3
@@ -333,7 +439,7 @@ Parsing chromosome 18
 Parsing chromosome 19
 Parsing chromosome 22
 Number of counted fragments : 1123350
-Now parsing /home/robin/Documents/Project/Samples/bam/single/17317.bam
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17317.bam
 Parsing chromosome 1
 Parsing chromosome 2
 Parsing chromosome 3
@@ -349,7 +455,23 @@ Parsing chromosome 18
 Parsing chromosome 19
 Parsing chromosome 22
 Number of counted fragments : 1217914
-Now parsing /home/robin/Documents/Project/Samples/bam/single/17319.bam
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17318.bam
+Parsing chromosome 1
+Parsing chromosome 2
+Parsing chromosome 3
+Parsing chromosome 5
+Parsing chromosome 7
+Parsing chromosome 10
+Parsing chromosome 11
+Parsing chromosome 12
+Parsing chromosome 13
+Parsing chromosome 16
+Parsing chromosome 17
+Parsing chromosome 18
+Parsing chromosome 19
+Parsing chromosome 22
+Number of counted fragments : 1217601
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17319.bam
 Parsing chromosome 1
 Parsing chromosome 2
 Parsing chromosome 3
@@ -365,7 +487,7 @@ Parsing chromosome 18
 Parsing chromosome 19
 Parsing chromosome 22
 Number of counted fragments : 1238333
-Now parsing /home/robin/Documents/Project/Samples/bam/single/17320.bam
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17320.bam
 Parsing chromosome 1
 Parsing chromosome 2
 Parsing chromosome 3
@@ -381,7 +503,87 @@ Parsing chromosome 18
 Parsing chromosome 19
 Parsing chromosome 22
 Number of counted fragments : 1148101
-Now parsing /home/robin/Documents/Project/Samples/bam/single/17326.bam
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17321.bam
+Parsing chromosome 1
+Parsing chromosome 2
+Parsing chromosome 3
+Parsing chromosome 5
+Parsing chromosome 7
+Parsing chromosome 10
+Parsing chromosome 11
+Parsing chromosome 12
+Parsing chromosome 13
+Parsing chromosome 16
+Parsing chromosome 17
+Parsing chromosome 18
+Parsing chromosome 19
+Parsing chromosome 22
+Number of counted fragments : 1418724
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17322.bam
+Parsing chromosome 1
+Parsing chromosome 2
+Parsing chromosome 3
+Parsing chromosome 5
+Parsing chromosome 7
+Parsing chromosome 10
+Parsing chromosome 11
+Parsing chromosome 12
+Parsing chromosome 13
+Parsing chromosome 16
+Parsing chromosome 17
+Parsing chromosome 18
+Parsing chromosome 19
+Parsing chromosome 22
+Number of counted fragments : 1208092
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17323.bam
+Parsing chromosome 1
+Parsing chromosome 2
+Parsing chromosome 3
+Parsing chromosome 5
+Parsing chromosome 7
+Parsing chromosome 10
+Parsing chromosome 11
+Parsing chromosome 12
+Parsing chromosome 13
+Parsing chromosome 16
+Parsing chromosome 17
+Parsing chromosome 18
+Parsing chromosome 19
+Parsing chromosome 22
+Number of counted fragments : 561975
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17324.bam
+Parsing chromosome 1
+Parsing chromosome 2
+Parsing chromosome 3
+Parsing chromosome 5
+Parsing chromosome 7
+Parsing chromosome 10
+Parsing chromosome 11
+Parsing chromosome 12
+Parsing chromosome 13
+Parsing chromosome 16
+Parsing chromosome 17
+Parsing chromosome 18
+Parsing chromosome 19
+Parsing chromosome 22
+Number of counted fragments : 1156108
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17325.bam
+Parsing chromosome 1
+Parsing chromosome 2
+Parsing chromosome 3
+Parsing chromosome 5
+Parsing chromosome 7
+Parsing chromosome 10
+Parsing chromosome 11
+Parsing chromosome 12
+Parsing chromosome 13
+Parsing chromosome 16
+Parsing chromosome 17
+Parsing chromosome 18
+Parsing chromosome 19
+Parsing chromosome 22
+Number of counted fragments : 1586770
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17326.bam
 Parsing chromosome 1
 Parsing chromosome 2
 Parsing chromosome 3
@@ -397,7 +599,7 @@ Parsing chromosome 18
 Parsing chromosome 19
 Parsing chromosome 22
 Number of counted fragments : 1319545
-Now parsing /home/robin/Documents/Project/Samples/bam/single/17327.bam
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17327.bam
 Parsing chromosome 1
 Parsing chromosome 2
 Parsing chromosome 3
@@ -413,7 +615,7 @@ Parsing chromosome 18
 Parsing chromosome 19
 Parsing chromosome 22
 Number of counted fragments : 1557810
-Now parsing /home/robin/Documents/Project/Samples/bam/single/17328.bam
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17328.bam
 Parsing chromosome 1
 Parsing chromosome 2
 Parsing chromosome 3
@@ -429,7 +631,7 @@ Parsing chromosome 18
 Parsing chromosome 19
 Parsing chromosome 22
 Number of counted fragments : 1095936
-Now parsing /home/robin/Documents/Project/Samples/bam/single/17329.bam
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17329.bam
 Parsing chromosome 1
 Parsing chromosome 2
 Parsing chromosome 3
@@ -445,7 +647,7 @@ Parsing chromosome 18
 Parsing chromosome 19
 Parsing chromosome 22
 Number of counted fragments : 1329565
-Now parsing /home/robin/Documents/Project/Samples/bam/single/17330.bam
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17330.bam
 Parsing chromosome 1
 Parsing chromosome 2
 Parsing chromosome 3
@@ -461,7 +663,39 @@ Parsing chromosome 18
 Parsing chromosome 19
 Parsing chromosome 22
 Number of counted fragments : 1366661
-Now parsing /home/robin/Documents/Project/Samples/bam/single/17333.bam
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17331.bam
+Parsing chromosome 1
+Parsing chromosome 2
+Parsing chromosome 3
+Parsing chromosome 5
+Parsing chromosome 7
+Parsing chromosome 10
+Parsing chromosome 11
+Parsing chromosome 12
+Parsing chromosome 13
+Parsing chromosome 16
+Parsing chromosome 17
+Parsing chromosome 18
+Parsing chromosome 19
+Parsing chromosome 22
+Number of counted fragments : 1402200
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17332.bam
+Parsing chromosome 1
+Parsing chromosome 2
+Parsing chromosome 3
+Parsing chromosome 5
+Parsing chromosome 7
+Parsing chromosome 10
+Parsing chromosome 11
+Parsing chromosome 12
+Parsing chromosome 13
+Parsing chromosome 16
+Parsing chromosome 17
+Parsing chromosome 18
+Parsing chromosome 19
+Parsing chromosome 22
+Number of counted fragments : 1570389
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17333.bam
 Parsing chromosome 1
 Parsing chromosome 2
 Parsing chromosome 3
@@ -477,7 +711,87 @@ Parsing chromosome 18
 Parsing chromosome 19
 Parsing chromosome 22
 Number of counted fragments : 2251272
-Now parsing /home/robin/Documents/Project/Samples/bam/single/17339.bam
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17334.bam
+Parsing chromosome 1
+Parsing chromosome 2
+Parsing chromosome 3
+Parsing chromosome 5
+Parsing chromosome 7
+Parsing chromosome 10
+Parsing chromosome 11
+Parsing chromosome 12
+Parsing chromosome 13
+Parsing chromosome 16
+Parsing chromosome 17
+Parsing chromosome 18
+Parsing chromosome 19
+Parsing chromosome 22
+Number of counted fragments : 1708824
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17335.bam
+Parsing chromosome 1
+Parsing chromosome 2
+Parsing chromosome 3
+Parsing chromosome 5
+Parsing chromosome 7
+Parsing chromosome 10
+Parsing chromosome 11
+Parsing chromosome 12
+Parsing chromosome 13
+Parsing chromosome 16
+Parsing chromosome 17
+Parsing chromosome 18
+Parsing chromosome 19
+Parsing chromosome 22
+Number of counted fragments : 1577010
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17336.bam
+Parsing chromosome 1
+Parsing chromosome 2
+Parsing chromosome 3
+Parsing chromosome 5
+Parsing chromosome 7
+Parsing chromosome 10
+Parsing chromosome 11
+Parsing chromosome 12
+Parsing chromosome 13
+Parsing chromosome 16
+Parsing chromosome 17
+Parsing chromosome 18
+Parsing chromosome 19
+Parsing chromosome 22
+Number of counted fragments : 1015699
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17337.bam
+Parsing chromosome 1
+Parsing chromosome 2
+Parsing chromosome 3
+Parsing chromosome 5
+Parsing chromosome 7
+Parsing chromosome 10
+Parsing chromosome 11
+Parsing chromosome 12
+Parsing chromosome 13
+Parsing chromosome 16
+Parsing chromosome 17
+Parsing chromosome 18
+Parsing chromosome 19
+Parsing chromosome 22
+Number of counted fragments : 1288472
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17338.bam
+Parsing chromosome 1
+Parsing chromosome 2
+Parsing chromosome 3
+Parsing chromosome 5
+Parsing chromosome 7
+Parsing chromosome 10
+Parsing chromosome 11
+Parsing chromosome 12
+Parsing chromosome 13
+Parsing chromosome 16
+Parsing chromosome 17
+Parsing chromosome 18
+Parsing chromosome 19
+Parsing chromosome 22
+Number of counted fragments : 1278996
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17339.bam
 Parsing chromosome 1
 Parsing chromosome 2
 Parsing chromosome 3
@@ -493,7 +807,71 @@ Parsing chromosome 18
 Parsing chromosome 19
 Parsing chromosome 22
 Number of counted fragments : 1263100
-Now parsing /home/robin/Documents/Project/Samples/bam/single/17356.bam
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17340.bam
+Parsing chromosome 1
+Parsing chromosome 2
+Parsing chromosome 3
+Parsing chromosome 5
+Parsing chromosome 7
+Parsing chromosome 10
+Parsing chromosome 11
+Parsing chromosome 12
+Parsing chromosome 13
+Parsing chromosome 16
+Parsing chromosome 17
+Parsing chromosome 18
+Parsing chromosome 19
+Parsing chromosome 22
+Number of counted fragments : 1162816
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17341.bam
+Parsing chromosome 1
+Parsing chromosome 2
+Parsing chromosome 3
+Parsing chromosome 5
+Parsing chromosome 7
+Parsing chromosome 10
+Parsing chromosome 11
+Parsing chromosome 12
+Parsing chromosome 13
+Parsing chromosome 16
+Parsing chromosome 17
+Parsing chromosome 18
+Parsing chromosome 19
+Parsing chromosome 22
+Number of counted fragments : 1388151
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17342.bam
+Parsing chromosome 1
+Parsing chromosome 2
+Parsing chromosome 3
+Parsing chromosome 5
+Parsing chromosome 7
+Parsing chromosome 10
+Parsing chromosome 11
+Parsing chromosome 12
+Parsing chromosome 13
+Parsing chromosome 16
+Parsing chromosome 17
+Parsing chromosome 18
+Parsing chromosome 19
+Parsing chromosome 22
+Number of counted fragments : 550284
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17343.bam
+Parsing chromosome 1
+Parsing chromosome 2
+Parsing chromosome 3
+Parsing chromosome 5
+Parsing chromosome 7
+Parsing chromosome 10
+Parsing chromosome 11
+Parsing chromosome 12
+Parsing chromosome 13
+Parsing chromosome 16
+Parsing chromosome 17
+Parsing chromosome 18
+Parsing chromosome 19
+Parsing chromosome 22
+Number of counted fragments : 1366721
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17356.bam
 Parsing chromosome 1
 Parsing chromosome 2
 Parsing chromosome 3
@@ -509,7 +887,55 @@ Parsing chromosome 18
 Parsing chromosome 19
 Parsing chromosome 22
 Number of counted fragments : 1523505
-Now parsing /home/robin/Documents/Project/Samples/bam/single/17360.bam
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17357.bam
+Parsing chromosome 1
+Parsing chromosome 2
+Parsing chromosome 3
+Parsing chromosome 5
+Parsing chromosome 7
+Parsing chromosome 10
+Parsing chromosome 11
+Parsing chromosome 12
+Parsing chromosome 13
+Parsing chromosome 16
+Parsing chromosome 17
+Parsing chromosome 18
+Parsing chromosome 19
+Parsing chromosome 22
+Number of counted fragments : 1336800
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17358.bam
+Parsing chromosome 1
+Parsing chromosome 2
+Parsing chromosome 3
+Parsing chromosome 5
+Parsing chromosome 7
+Parsing chromosome 10
+Parsing chromosome 11
+Parsing chromosome 12
+Parsing chromosome 13
+Parsing chromosome 16
+Parsing chromosome 17
+Parsing chromosome 18
+Parsing chromosome 19
+Parsing chromosome 22
+Number of counted fragments : 1243722
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17359.bam
+Parsing chromosome 1
+Parsing chromosome 2
+Parsing chromosome 3
+Parsing chromosome 5
+Parsing chromosome 7
+Parsing chromosome 10
+Parsing chromosome 11
+Parsing chromosome 12
+Parsing chromosome 13
+Parsing chromosome 16
+Parsing chromosome 17
+Parsing chromosome 18
+Parsing chromosome 19
+Parsing chromosome 22
+Number of counted fragments : 1180585
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17360.bam
 Parsing chromosome 1
 Parsing chromosome 2
 Parsing chromosome 3
@@ -525,7 +951,7 @@ Parsing chromosome 18
 Parsing chromosome 19
 Parsing chromosome 22
 Number of counted fragments : 1165301
-Now parsing /home/robin/Documents/Project/Samples/bam/single/17361.bam
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17361.bam
 Parsing chromosome 1
 Parsing chromosome 2
 Parsing chromosome 3
@@ -541,7 +967,7 @@ Parsing chromosome 18
 Parsing chromosome 19
 Parsing chromosome 22
 Number of counted fragments : 1392454
-Now parsing /home/robin/Documents/Project/Samples/bam/single/17362.bam
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17362.bam
 Parsing chromosome 1
 Parsing chromosome 2
 Parsing chromosome 3
@@ -557,7 +983,23 @@ Parsing chromosome 18
 Parsing chromosome 19
 Parsing chromosome 22
 Number of counted fragments : 1215718
-Now parsing /home/robin/Documents/Project/Samples/bam/single/17364.bam
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17363.bam
+Parsing chromosome 1
+Parsing chromosome 2
+Parsing chromosome 3
+Parsing chromosome 5
+Parsing chromosome 7
+Parsing chromosome 10
+Parsing chromosome 11
+Parsing chromosome 12
+Parsing chromosome 13
+Parsing chromosome 16
+Parsing chromosome 17
+Parsing chromosome 18
+Parsing chromosome 19
+Parsing chromosome 22
+Number of counted fragments : 1321622
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17364.bam
 Parsing chromosome 1
 Parsing chromosome 2
 Parsing chromosome 3
@@ -573,7 +1015,7 @@ Parsing chromosome 18
 Parsing chromosome 19
 Parsing chromosome 22
 Number of counted fragments : 1246605
-Now parsing /home/robin/Documents/Project/Samples/bam/single/17365.bam
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17365.bam
 Parsing chromosome 1
 Parsing chromosome 2
 Parsing chromosome 3
@@ -589,7 +1031,23 @@ Parsing chromosome 18
 Parsing chromosome 19
 Parsing chromosome 22
 Number of counted fragments : 1148800
-Now parsing /home/robin/Documents/Project/Samples/bam/single/17367.bam
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17366.bam
+Parsing chromosome 1
+Parsing chromosome 2
+Parsing chromosome 3
+Parsing chromosome 5
+Parsing chromosome 7
+Parsing chromosome 10
+Parsing chromosome 11
+Parsing chromosome 12
+Parsing chromosome 13
+Parsing chromosome 16
+Parsing chromosome 17
+Parsing chromosome 18
+Parsing chromosome 19
+Parsing chromosome 22
+Number of counted fragments : 1026962
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17367.bam
 Parsing chromosome 1
 Parsing chromosome 2
 Parsing chromosome 3
@@ -605,7 +1063,7 @@ Parsing chromosome 18
 Parsing chromosome 19
 Parsing chromosome 22
 Number of counted fragments : 1016056
-Now parsing /home/robin/Documents/Project/Samples/bam/single/17368.bam
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17368.bam
 Parsing chromosome 1
 Parsing chromosome 2
 Parsing chromosome 3
@@ -621,7 +1079,7 @@ Parsing chromosome 18
 Parsing chromosome 19
 Parsing chromosome 22
 Number of counted fragments : 997221
-Now parsing /home/robin/Documents/Project/Samples/bam/single/17369.bam
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17369.bam
 Parsing chromosome 1
 Parsing chromosome 2
 Parsing chromosome 3
@@ -637,7 +1095,7 @@ Parsing chromosome 18
 Parsing chromosome 19
 Parsing chromosome 22
 Number of counted fragments : 1129338
-Now parsing /home/robin/Documents/Project/Samples/bam/single/17370.bam
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17370.bam
 Parsing chromosome 1
 Parsing chromosome 2
 Parsing chromosome 3
@@ -653,7 +1111,7 @@ Parsing chromosome 18
 Parsing chromosome 19
 Parsing chromosome 22
 Number of counted fragments : 1056331
-Now parsing /home/robin/Documents/Project/Samples/bam/single/17371.bam
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17371.bam
 Parsing chromosome 1
 Parsing chromosome 2
 Parsing chromosome 3
@@ -669,7 +1127,23 @@ Parsing chromosome 18
 Parsing chromosome 19
 Parsing chromosome 22
 Number of counted fragments : 1356286
-Now parsing /home/robin/Documents/Project/Samples/bam/single/17373.bam
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17372.bam
+Parsing chromosome 1
+Parsing chromosome 2
+Parsing chromosome 3
+Parsing chromosome 5
+Parsing chromosome 7
+Parsing chromosome 10
+Parsing chromosome 11
+Parsing chromosome 12
+Parsing chromosome 13
+Parsing chromosome 16
+Parsing chromosome 17
+Parsing chromosome 18
+Parsing chromosome 19
+Parsing chromosome 22
+Number of counted fragments : 1079000
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17373.bam
 Parsing chromosome 1
 Parsing chromosome 2
 Parsing chromosome 3
@@ -685,7 +1159,7 @@ Parsing chromosome 18
 Parsing chromosome 19
 Parsing chromosome 22
 Number of counted fragments : 939883
-Now parsing /home/robin/Documents/Project/Samples/bam/single/17374.bam
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17374.bam
 Parsing chromosome 1
 Parsing chromosome 2
 Parsing chromosome 3
@@ -701,7 +1175,23 @@ Parsing chromosome 18
 Parsing chromosome 19
 Parsing chromosome 22
 Number of counted fragments : 861118
-Now parsing /home/robin/Documents/Project/Samples/bam/single/17376.bam
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17375.bam
+Parsing chromosome 1
+Parsing chromosome 2
+Parsing chromosome 3
+Parsing chromosome 5
+Parsing chromosome 7
+Parsing chromosome 10
+Parsing chromosome 11
+Parsing chromosome 12
+Parsing chromosome 13
+Parsing chromosome 16
+Parsing chromosome 17
+Parsing chromosome 18
+Parsing chromosome 19
+Parsing chromosome 22
+Number of counted fragments : 990548
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17376.bam
 Parsing chromosome 1
 Parsing chromosome 2
 Parsing chromosome 3
@@ -717,7 +1207,87 @@ Parsing chromosome 18
 Parsing chromosome 19
 Parsing chromosome 22
 Number of counted fragments : 1015437
-Now parsing /home/robin/Documents/Project/Samples/bam/single/17382.bam
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17377.bam
+Parsing chromosome 1
+Parsing chromosome 2
+Parsing chromosome 3
+Parsing chromosome 5
+Parsing chromosome 7
+Parsing chromosome 10
+Parsing chromosome 11
+Parsing chromosome 12
+Parsing chromosome 13
+Parsing chromosome 16
+Parsing chromosome 17
+Parsing chromosome 18
+Parsing chromosome 19
+Parsing chromosome 22
+Number of counted fragments : 1084216
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17378.bam
+Parsing chromosome 1
+Parsing chromosome 2
+Parsing chromosome 3
+Parsing chromosome 5
+Parsing chromosome 7
+Parsing chromosome 10
+Parsing chromosome 11
+Parsing chromosome 12
+Parsing chromosome 13
+Parsing chromosome 16
+Parsing chromosome 17
+Parsing chromosome 18
+Parsing chromosome 19
+Parsing chromosome 22
+Number of counted fragments : 1113614
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17379.bam
+Parsing chromosome 1
+Parsing chromosome 2
+Parsing chromosome 3
+Parsing chromosome 5
+Parsing chromosome 7
+Parsing chromosome 10
+Parsing chromosome 11
+Parsing chromosome 12
+Parsing chromosome 13
+Parsing chromosome 16
+Parsing chromosome 17
+Parsing chromosome 18
+Parsing chromosome 19
+Parsing chromosome 22
+Number of counted fragments : 1107451
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17380.bam
+Parsing chromosome 1
+Parsing chromosome 2
+Parsing chromosome 3
+Parsing chromosome 5
+Parsing chromosome 7
+Parsing chromosome 10
+Parsing chromosome 11
+Parsing chromosome 12
+Parsing chromosome 13
+Parsing chromosome 16
+Parsing chromosome 17
+Parsing chromosome 18
+Parsing chromosome 19
+Parsing chromosome 22
+Number of counted fragments : 933212
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17381.bam
+Parsing chromosome 1
+Parsing chromosome 2
+Parsing chromosome 3
+Parsing chromosome 5
+Parsing chromosome 7
+Parsing chromosome 10
+Parsing chromosome 11
+Parsing chromosome 12
+Parsing chromosome 13
+Parsing chromosome 16
+Parsing chromosome 17
+Parsing chromosome 18
+Parsing chromosome 19
+Parsing chromosome 22
+Number of counted fragments : 777040
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17382.bam
 Parsing chromosome 1
 Parsing chromosome 2
 Parsing chromosome 3
@@ -733,7 +1303,23 @@ Parsing chromosome 18
 Parsing chromosome 19
 Parsing chromosome 22
 Number of counted fragments : 954227
-Now parsing /home/robin/Documents/Project/Samples/bam/single/17384.bam
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17383.bam
+Parsing chromosome 1
+Parsing chromosome 2
+Parsing chromosome 3
+Parsing chromosome 5
+Parsing chromosome 7
+Parsing chromosome 10
+Parsing chromosome 11
+Parsing chromosome 12
+Parsing chromosome 13
+Parsing chromosome 16
+Parsing chromosome 17
+Parsing chromosome 18
+Parsing chromosome 19
+Parsing chromosome 22
+Number of counted fragments : 1016705
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17384.bam
 Parsing chromosome 1
 Parsing chromosome 2
 Parsing chromosome 3
@@ -749,7 +1335,23 @@ Parsing chromosome 18
 Parsing chromosome 19
 Parsing chromosome 22
 Number of counted fragments : 925921
-Now parsing /home/robin/Documents/Project/Samples/bam/single/17386.bam
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17385.bam
+Parsing chromosome 1
+Parsing chromosome 2
+Parsing chromosome 3
+Parsing chromosome 5
+Parsing chromosome 7
+Parsing chromosome 10
+Parsing chromosome 11
+Parsing chromosome 12
+Parsing chromosome 13
+Parsing chromosome 16
+Parsing chromosome 17
+Parsing chromosome 18
+Parsing chromosome 19
+Parsing chromosome 22
+Number of counted fragments : 1279282
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17386.bam
 Parsing chromosome 1
 Parsing chromosome 2
 Parsing chromosome 3
@@ -765,7 +1367,7 @@ Parsing chromosome 18
 Parsing chromosome 19
 Parsing chromosome 22
 Number of counted fragments : 1015954
-Now parsing /home/robin/Documents/Project/Samples/bam/single/17387.bam
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17387.bam
 Parsing chromosome 1
 Parsing chromosome 2
 Parsing chromosome 3
@@ -781,7 +1383,23 @@ Parsing chromosome 18
 Parsing chromosome 19
 Parsing chromosome 22
 Number of counted fragments : 1415948
-Now parsing /home/robin/Documents/Project/Samples/bam/single/17389.bam
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17388.bam
+Parsing chromosome 1
+Parsing chromosome 2
+Parsing chromosome 3
+Parsing chromosome 5
+Parsing chromosome 7
+Parsing chromosome 10
+Parsing chromosome 11
+Parsing chromosome 12
+Parsing chromosome 13
+Parsing chromosome 16
+Parsing chromosome 17
+Parsing chromosome 18
+Parsing chromosome 19
+Parsing chromosome 22
+Number of counted fragments : 1002887
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17389.bam
 Parsing chromosome 1
 Parsing chromosome 2
 Parsing chromosome 3
@@ -797,7 +1415,23 @@ Parsing chromosome 18
 Parsing chromosome 19
 Parsing chromosome 22
 Number of counted fragments : 999275
-Now parsing /home/robin/Documents/Project/Samples/bam/single/17391.bam
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17390.bam
+Parsing chromosome 1
+Parsing chromosome 2
+Parsing chromosome 3
+Parsing chromosome 5
+Parsing chromosome 7
+Parsing chromosome 10
+Parsing chromosome 11
+Parsing chromosome 12
+Parsing chromosome 13
+Parsing chromosome 16
+Parsing chromosome 17
+Parsing chromosome 18
+Parsing chromosome 19
+Parsing chromosome 22
+Number of counted fragments : 953767
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17391.bam
 Parsing chromosome 1
 Parsing chromosome 2
 Parsing chromosome 3
@@ -813,7 +1447,7 @@ Parsing chromosome 18
 Parsing chromosome 19
 Parsing chromosome 22
 Number of counted fragments : 942155
-Now parsing /home/robin/Documents/Project/Samples/bam/single/17392.bam
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17392.bam
 Parsing chromosome 1
 Parsing chromosome 2
 Parsing chromosome 3
@@ -829,7 +1463,71 @@ Parsing chromosome 18
 Parsing chromosome 19
 Parsing chromosome 22
 Number of counted fragments : 1062731
-Now parsing /home/robin/Documents/Project/Samples/bam/single/17397.bam
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17393.bam
+Parsing chromosome 1
+Parsing chromosome 2
+Parsing chromosome 3
+Parsing chromosome 5
+Parsing chromosome 7
+Parsing chromosome 10
+Parsing chromosome 11
+Parsing chromosome 12
+Parsing chromosome 13
+Parsing chromosome 16
+Parsing chromosome 17
+Parsing chromosome 18
+Parsing chromosome 19
+Parsing chromosome 22
+Number of counted fragments : 1296178
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17394.bam
+Parsing chromosome 1
+Parsing chromosome 2
+Parsing chromosome 3
+Parsing chromosome 5
+Parsing chromosome 7
+Parsing chromosome 10
+Parsing chromosome 11
+Parsing chromosome 12
+Parsing chromosome 13
+Parsing chromosome 16
+Parsing chromosome 17
+Parsing chromosome 18
+Parsing chromosome 19
+Parsing chromosome 22
+Number of counted fragments : 949501
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17395.bam
+Parsing chromosome 1
+Parsing chromosome 2
+Parsing chromosome 3
+Parsing chromosome 5
+Parsing chromosome 7
+Parsing chromosome 10
+Parsing chromosome 11
+Parsing chromosome 12
+Parsing chromosome 13
+Parsing chromosome 16
+Parsing chromosome 17
+Parsing chromosome 18
+Parsing chromosome 19
+Parsing chromosome 22
+Number of counted fragments : 1312910
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17396.bam
+Parsing chromosome 1
+Parsing chromosome 2
+Parsing chromosome 3
+Parsing chromosome 5
+Parsing chromosome 7
+Parsing chromosome 10
+Parsing chromosome 11
+Parsing chromosome 12
+Parsing chromosome 13
+Parsing chromosome 16
+Parsing chromosome 17
+Parsing chromosome 18
+Parsing chromosome 19
+Parsing chromosome 22
+Number of counted fragments : 958705
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17397.bam
 Parsing chromosome 1
 Parsing chromosome 2
 Parsing chromosome 3
@@ -845,7 +1543,7 @@ Parsing chromosome 18
 Parsing chromosome 19
 Parsing chromosome 22
 Number of counted fragments : 1005123
-Now parsing /home/robin/Documents/Project/Samples/bam/single/17398.bam
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17398.bam
 Parsing chromosome 1
 Parsing chromosome 2
 Parsing chromosome 3
@@ -861,7 +1559,7 @@ Parsing chromosome 18
 Parsing chromosome 19
 Parsing chromosome 22
 Number of counted fragments : 826550
-Now parsing /home/robin/Documents/Project/Samples/bam/single/17399.bam
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17399.bam
 Parsing chromosome 1
 Parsing chromosome 2
 Parsing chromosome 3
@@ -877,7 +1575,23 @@ Parsing chromosome 18
 Parsing chromosome 19
 Parsing chromosome 22
 Number of counted fragments : 835466
-Now parsing /home/robin/Documents/Project/Samples/bam/single/17401.bam
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17400.bam
+Parsing chromosome 1
+Parsing chromosome 2
+Parsing chromosome 3
+Parsing chromosome 5
+Parsing chromosome 7
+Parsing chromosome 10
+Parsing chromosome 11
+Parsing chromosome 12
+Parsing chromosome 13
+Parsing chromosome 16
+Parsing chromosome 17
+Parsing chromosome 18
+Parsing chromosome 19
+Parsing chromosome 22
+Number of counted fragments : 909070
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17401.bam
 Parsing chromosome 1
 Parsing chromosome 2
 Parsing chromosome 3
@@ -893,7 +1607,7 @@ Parsing chromosome 18
 Parsing chromosome 19
 Parsing chromosome 22
 Number of counted fragments : 937879
-Now parsing /home/robin/Documents/Project/Samples/bam/single/17402.bam
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17402.bam
 Parsing chromosome 1
 Parsing chromosome 2
 Parsing chromosome 3
@@ -909,7 +1623,7 @@ Parsing chromosome 18
 Parsing chromosome 19
 Parsing chromosome 22
 Number of counted fragments : 944714
-Now parsing /home/robin/Documents/Project/Samples/bam/single/17403.bam
+Now parsing /home/robin/Documents/Project/Samples/bam/all/17403.bam
 Parsing chromosome 1
 Parsing chromosome 2
 Parsing chromosome 3
@@ -939,7 +1653,13 @@ Optimization of the choice of aggregate reference set, this process can take som
 Number of selected bins: 427
 Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
 Now computing the likelihood for the different copy number states
-Correlation between reference and tests count is 0.99894
+Correlation between reference and tests count is 0.99933
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 427
+Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Correlation between reference and tests count is 0.99903
 To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
 Number of calls for chromosome 7 : 1
 Optimization of the choice of aggregate reference set, this process can take some time
@@ -954,9 +1674,8 @@ Optimization of the choice of aggregate reference set, this process can take som
 Number of selected bins: 427
 Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
 Now computing the likelihood for the different copy number states
-Correlation between reference and tests count is 0.99934
+Correlation between reference and tests count is 0.99935
 To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
-Number of calls for chromosome 7 : 1
 Number of calls for chromosome 13 : 1
 Optimization of the choice of aggregate reference set, this process can take some time
 Number of selected bins: 427
@@ -972,6 +1691,24 @@ Optimization of the choice of aggregate reference set, this process can take som
 Number of selected bins: 427
 Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
 Now computing the likelihood for the different copy number states
+Correlation between reference and tests count is 0.99885
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 3 : 1
+Number of calls for chromosome 7 : 1
+Number of calls for chromosome 17 : 2
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 427
+Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Correlation between reference and tests count is 0.99778
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 2 : 1
+Number of calls for chromosome 3 : 1
+Number of calls for chromosome 17 : 1
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 427
+Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
 Correlation between reference and tests count is 0.99927
 To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
 Number of calls for chromosome 7 : 1
@@ -981,7 +1718,7 @@ Optimization of the choice of aggregate reference set, this process can take som
 Number of selected bins: 427
 Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
 Now computing the likelihood for the different copy number states
-Correlation between reference and tests count is 0.99901
+Correlation between reference and tests count is 0.99904
 To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
 Number of calls for chromosome 7 : 1
 Number of calls for chromosome 13 : 1
@@ -989,14 +1726,21 @@ Optimization of the choice of aggregate reference set, this process can take som
 Number of selected bins: 427
 Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
 Now computing the likelihood for the different copy number states
-Correlation between reference and tests count is 0.99948
+Correlation between reference and tests count is 0.99946
 To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
 Number of calls for chromosome 17 : 1
 Optimization of the choice of aggregate reference set, this process can take some time
 Number of selected bins: 427
 Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
 Now computing the likelihood for the different copy number states
-Correlation between reference and tests count is 0.99969
+Correlation between reference and tests count is 0.99934
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 22 : 1
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 427
+Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Correlation between reference and tests count is 0.99964
 To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
 Number of calls for chromosome 7 : 1
 Optimization of the choice of aggregate reference set, this process can take some time
@@ -1010,7 +1754,7 @@ Optimization of the choice of aggregate reference set, this process can take som
 Number of selected bins: 427
 Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
 Now computing the likelihood for the different copy number states
-Correlation between reference and tests count is 0.99941
+Correlation between reference and tests count is 0.99948
 To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
 Number of calls for chromosome 7 : 1
 Optimization of the choice of aggregate reference set, this process can take some time
@@ -1023,7 +1767,7 @@ Optimization of the choice of aggregate reference set, this process can take som
 Number of selected bins: 427
 Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
 Now computing the likelihood for the different copy number states
-Correlation between reference and tests count is 0.99944
+Correlation between reference and tests count is 0.99949
 To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
 Number of calls for chromosome 7 : 1
 Optimization of the choice of aggregate reference set, this process can take some time
@@ -1032,33 +1776,39 @@ Now fitting the beta-binomial model on a data frame with 512 rows : this step ca
 Now computing the likelihood for the different copy number states
 Correlation between reference and tests count is 0.99949
 To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
-Number of calls for chromosome 7 : 1
 Optimization of the choice of aggregate reference set, this process can take some time
 Number of selected bins: 427
 Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
 Now computing the likelihood for the different copy number states
-Correlation between reference and tests count is 0.99953
+Correlation between reference and tests count is 0.99954
 To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
 Optimization of the choice of aggregate reference set, this process can take some time
 Number of selected bins: 427
 Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
 Now computing the likelihood for the different copy number states
-Correlation between reference and tests count is 0.99876
+Correlation between reference and tests count is 0.99885
 To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
 Optimization of the choice of aggregate reference set, this process can take some time
 Number of selected bins: 427
 Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
 Now computing the likelihood for the different copy number states
-Correlation between reference and tests count is 0.99922
+Correlation between reference and tests count is 0.99923
 To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
 Number of calls for chromosome 2 : 1
 Optimization of the choice of aggregate reference set, this process can take some time
 Number of selected bins: 427
 Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
 Now computing the likelihood for the different copy number states
-Correlation between reference and tests count is 0.99938
+Correlation between reference and tests count is 0.99943
 To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
 Number of calls for chromosome 17 : 1
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 427
+Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Correlation between reference and tests count is 0.98953
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 2 : 1
 Optimization of the choice of aggregate reference set, this process can take some time
 Number of selected bins: 427
 Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
@@ -1077,8 +1827,44 @@ Optimization of the choice of aggregate reference set, this process can take som
 Number of selected bins: 427
 Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
 Now computing the likelihood for the different copy number states
-Correlation between reference and tests count is 0.99917
+Correlation between reference and tests count is 0.99966
 To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 427
+Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Correlation between reference and tests count is 0.99526
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 7 : 1
+Number of calls for chromosome 13 : 1
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 427
+Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Correlation between reference and tests count is 0.99395
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 427
+Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Correlation between reference and tests count is 0.99429
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 17 : 1
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 427
+Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Correlation between reference and tests count is 0.99909
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 7 : 1
+Number of calls for chromosome 13 : 1
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 427
+Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Correlation between reference and tests count is 0.9992
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 7 : 1
 Number of calls for chromosome 17 : 1
 Optimization of the choice of aggregate reference set, this process can take some time
 Number of selected bins: 427
@@ -1097,66 +1883,176 @@ Optimization of the choice of aggregate reference set, this process can take som
 Number of selected bins: 427
 Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
 Now computing the likelihood for the different copy number states
-Correlation between reference and tests count is 0.9996
+Correlation between reference and tests count is 0.99961
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 427
+Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Correlation between reference and tests count is 0.99967
 To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
 Number of calls for chromosome 13 : 1
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 427
+Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Correlation between reference and tests count is 0.99913
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 7 : 1
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 427
+Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Correlation between reference and tests count is 0.99874
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 22 : 1
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 427
+Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Correlation between reference and tests count is 0.99918
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 13 : 1
+Number of calls for chromosome 17 : 1
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 427
+Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Correlation between reference and tests count is 0.99939
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 7 : 1
+Number of calls for chromosome 11 : 1
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 427
+Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Correlation between reference and tests count is 0.9889
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 10 : 1
+Number of calls for chromosome 13 : 2
+Number of calls for chromosome 17 : 1
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 427
+Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Correlation between reference and tests count is 0.99902
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 7 : 1
+Number of calls for chromosome 13 : 1
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 427
+Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Correlation between reference and tests count is 0.99671
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 3 : 1
+Number of calls for chromosome 13 : 2
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 427
+Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Correlation between reference and tests count is 0.99792
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 17 : 1
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 427
+Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Correlation between reference and tests count is 0.81496
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 427
+Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Correlation between reference and tests count is 0.99637
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 7 : 1
+Number of calls for chromosome 17 : 1
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 427
+Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Correlation between reference and tests count is 0.99941
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 7 : 1
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 427
+Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Correlation between reference and tests count is 0.95051
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 13 : 1
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 427
+Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Correlation between reference and tests count is 0.99921
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 2 : 1
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 427
+Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Correlation between reference and tests count is 0.99832
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 17 : 1
+Number of calls for chromosome 22 : 1
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 427
+Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Correlation between reference and tests count is 0.99933
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 13 : 1
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 427
+Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Correlation between reference and tests count is 0.99503
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 1 : 1
+Number of calls for chromosome 7 : 1
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 427
+Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Correlation between reference and tests count is 0.99881
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 2 : 1
 Optimization of the choice of aggregate reference set, this process can take some time
 Number of selected bins: 427
 Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
 Now computing the likelihood for the different copy number states
 Correlation between reference and tests count is 0.99956
 To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
-Number of calls for chromosome 13 : 1
 Optimization of the choice of aggregate reference set, this process can take some time
 Number of selected bins: 427
 Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
 Now computing the likelihood for the different copy number states
-Correlation between reference and tests count is 0.99919
-To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
-Number of calls for chromosome 13 : 1
-Number of calls for chromosome 17 : 1
-Optimization of the choice of aggregate reference set, this process can take some time
-Number of selected bins: 427
-Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
-Now computing the likelihood for the different copy number states
-Correlation between reference and tests count is 0.6838
-To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
-Optimization of the choice of aggregate reference set, this process can take some time
-Number of selected bins: 427
-Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
-Now computing the likelihood for the different copy number states
-Correlation between reference and tests count is 0.99771
+Correlation between reference and tests count is 0.9991
 To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
 Number of calls for chromosome 3 : 1
-Number of calls for chromosome 13 : 2
-Number of calls for chromosome 17 : 2
-Number of calls for chromosome 19 : 1
-Optimization of the choice of aggregate reference set, this process can take some time
-Number of selected bins: 427
-Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
-Now computing the likelihood for the different copy number states
-Correlation between reference and tests count is 0.99951
-To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
 Number of calls for chromosome 16 : 1
-Optimization of the choice of aggregate reference set, this process can take some time
-Number of selected bins: 427
-Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
-Now computing the likelihood for the different copy number states
-Correlation between reference and tests count is 0.99922
-To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
 Number of calls for chromosome 17 : 1
 Optimization of the choice of aggregate reference set, this process can take some time
 Number of selected bins: 427
 Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
 Now computing the likelihood for the different copy number states
-Correlation between reference and tests count is 0.99885
+Correlation between reference and tests count is 0.99897
 To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
 Number of calls for chromosome 3 : 1
+Number of calls for chromosome 7 : 1
 Number of calls for chromosome 10 : 1
-Number of calls for chromosome 13 : 1
-Number of calls for chromosome 16 : 1
-Number of calls for chromosome 17 : 3
-Number of calls for chromosome 19 : 1
+Number of calls for chromosome 17 : 2
+Number of calls for chromosome 22 : 1
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 427
+Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Correlation between reference and tests count is 0.99908
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 7 : 1
+Number of calls for chromosome 22 : 1
 Optimization of the choice of aggregate reference set, this process can take some time
 Number of selected bins: 427
 Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
@@ -1164,15 +2060,23 @@ Now computing the likelihood for the different copy number states
 Correlation between reference and tests count is 0.99948
 To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
 Number of calls for chromosome 7 : 1
+Number of calls for chromosome 13 : 1
 Optimization of the choice of aggregate reference set, this process can take some time
 Number of selected bins: 427
 Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
 Now computing the likelihood for the different copy number states
-Correlation between reference and tests count is 0.99927
+Correlation between reference and tests count is 0.99926
 To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
 Number of calls for chromosome 7 : 1
 Number of calls for chromosome 13 : 1
 Number of calls for chromosome 17 : 1
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 427
+Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Correlation between reference and tests count is 0.99694
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 2 : 1
 Optimization of the choice of aggregate reference set, this process can take some time
 Number of selected bins: 427
 Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
@@ -1190,7 +2094,7 @@ Optimization of the choice of aggregate reference set, this process can take som
 Number of selected bins: 427
 Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
 Now computing the likelihood for the different copy number states
-Correlation between reference and tests count is 0.99864
+Correlation between reference and tests count is 0.99877
 To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
 Number of calls for chromosome 7 : 1
 Number of calls for chromosome 17 : 1
@@ -1206,23 +2110,40 @@ Optimization of the choice of aggregate reference set, this process can take som
 Number of selected bins: 427
 Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
 Now computing the likelihood for the different copy number states
-Correlation between reference and tests count is 0.99956
+Correlation between reference and tests count is 0.99951
 To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
-Number of calls for chromosome 7 : 1
+Number of calls for chromosome 7 : 2
 Number of calls for chromosome 16 : 1
-Number of calls for chromosome 17 : 2
+Number of calls for chromosome 17 : 1
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 427
+Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Correlation between reference and tests count is 0.99876
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 3 : 1
+Number of calls for chromosome 7 : 1
+Number of calls for chromosome 17 : 1
 Optimization of the choice of aggregate reference set, this process can take some time
 Number of selected bins: 427
 Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
 Now computing the likelihood for the different copy number states
 Correlation between reference and tests count is 0.99962
 To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 7 : 1
 Optimization of the choice of aggregate reference set, this process can take some time
 Number of selected bins: 427
 Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
 Now computing the likelihood for the different copy number states
-Correlation between reference and tests count is 0.99734
+Correlation between reference and tests count is 0.99763
 To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 427
+Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Correlation between reference and tests count is 0.99867
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 22 : 1
 Optimization of the choice of aggregate reference set, this process can take some time
 Number of selected bins: 427
 Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
@@ -1233,8 +2154,55 @@ Optimization of the choice of aggregate reference set, this process can take som
 Number of selected bins: 427
 Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
 Now computing the likelihood for the different copy number states
-Correlation between reference and tests count is 0.99942
+Correlation between reference and tests count is 0.99924
 To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 11 : 1
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 427
+Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Correlation between reference and tests count is 0.99937
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 13 : 1
+Number of calls for chromosome 22 : 1
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 427
+Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Correlation between reference and tests count is 0.99943
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 7 : 2
+Number of calls for chromosome 13 : 1
+Number of calls for chromosome 16 : 1
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 427
+Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Correlation between reference and tests count is 0.99879
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 13 : 1
+Number of calls for chromosome 16 : 1
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 427
+Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Correlation between reference and tests count is 0.99676
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 427
+Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Correlation between reference and tests count is 0.99946
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 7 : 1
+Number of calls for chromosome 13 : 1
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 427
+Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Correlation between reference and tests count is 0.98409
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 1 : 1
 Number of calls for chromosome 7 : 1
 Number of calls for chromosome 13 : 1
 Optimization of the choice of aggregate reference set, this process can take some time
@@ -1248,21 +2216,44 @@ Optimization of the choice of aggregate reference set, this process can take som
 Number of selected bins: 427
 Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
 Now computing the likelihood for the different copy number states
-Correlation between reference and tests count is 0.99906
+Correlation between reference and tests count is 0.99922
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 2 : 1
+Number of calls for chromosome 7 : 1
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 427
+Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Correlation between reference and tests count is 0.99911
 To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
 Number of calls for chromosome 2 : 1
 Optimization of the choice of aggregate reference set, this process can take some time
 Number of selected bins: 427
 Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
 Now computing the likelihood for the different copy number states
-Correlation between reference and tests count is 0.9994
+Correlation between reference and tests count is 0.99955
 To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
 Optimization of the choice of aggregate reference set, this process can take some time
 Number of selected bins: 427
 Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
 Now computing the likelihood for the different copy number states
-Correlation between reference and tests count is 0.99952
+Correlation between reference and tests count is 0.99902
 To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 17 : 1
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 427
+Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Correlation between reference and tests count is 0.99948
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 13 : 1
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 427
+Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Correlation between reference and tests count is 0.99638
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 2 : 1
 Number of calls for chromosome 7 : 1
 Optimization of the choice of aggregate reference set, this process can take some time
 Number of selected bins: 427
@@ -1275,20 +2266,52 @@ Optimization of the choice of aggregate reference set, this process can take som
 Number of selected bins: 427
 Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
 Now computing the likelihood for the different copy number states
-Correlation between reference and tests count is 0.99939
+Correlation between reference and tests count is 0.99946
 To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
 Number of calls for chromosome 10 : 1
 Optimization of the choice of aggregate reference set, this process can take some time
 Number of selected bins: 427
 Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
 Now computing the likelihood for the different copy number states
-Correlation between reference and tests count is 0.9994
+Correlation between reference and tests count is 0.99854
 To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 7 : 1
+Number of calls for chromosome 13 : 1
 Optimization of the choice of aggregate reference set, this process can take some time
 Number of selected bins: 427
 Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
 Now computing the likelihood for the different copy number states
-Correlation between reference and tests count is 0.99817
+Correlation between reference and tests count is 0.96466
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 5 : 1
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 427
+Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Correlation between reference and tests count is 0.99953
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 7 : 1
+Number of calls for chromosome 17 : 1
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 427
+Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Correlation between reference and tests count is 0.99813
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 13 : 1
+Number of calls for chromosome 17 : 1
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 427
+Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Correlation between reference and tests count is 0.99947
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 7 : 1
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 427
+Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Correlation between reference and tests count is 0.99853
 To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
 Number of calls for chromosome 17 : 1
 Optimization of the choice of aggregate reference set, this process can take some time
@@ -1297,6 +2320,13 @@ Now fitting the beta-binomial model on a data frame with 512 rows : this step ca
 Now computing the likelihood for the different copy number states
 Correlation between reference and tests count is 0.99926
 To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Optimization of the choice of aggregate reference set, this process can take some time
+Number of selected bins: 427
+Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
+Now computing the likelihood for the different copy number states
+Correlation between reference and tests count is 0.99825
+To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
+Number of calls for chromosome 17 : 1
 Optimization of the choice of aggregate reference set, this process can take some time
 Number of selected bins: 427
 Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
@@ -1307,7 +2337,7 @@ Optimization of the choice of aggregate reference set, this process can take som
 Number of selected bins: 427
 Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
 Now computing the likelihood for the different copy number states
-Correlation between reference and tests count is 0.99926
+Correlation between reference and tests count is 0.9993
 To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
 Number of calls for chromosome 7 : 1
 Number of calls for chromosome 13 : 1
@@ -1315,7 +2345,7 @@ Optimization of the choice of aggregate reference set, this process can take som
 Number of selected bins: 427
 Now fitting the beta-binomial model on a data frame with 512 rows : this step can take a few minutes.
 Now computing the likelihood for the different copy number states
-Correlation between reference and tests count is 0.99917
+Correlation between reference and tests count is 0.99941
 To get meaningful result, this correlation should really be above 0.97. If this is not the case, consider the output of ExomeDepth as less reliable (i.e. most likely a high false positive rate)
 Number of calls for chromosome 17 : 1
 Saving GenomicRanges results
@@ -1324,6 +2354,6 @@ Saving GenomicRanges results
 
 
 There were 50 or more warnings (use warnings() to see the first 50)
-[1] "Finishing at 2021-04-14 01:06:17"
+[1] "Finishing at 2021-04-14 07:36:06"
 
-Elapsed time:Time difference of 11.3416 mins
+Elapsed time:Time difference of 20.30736 mins
