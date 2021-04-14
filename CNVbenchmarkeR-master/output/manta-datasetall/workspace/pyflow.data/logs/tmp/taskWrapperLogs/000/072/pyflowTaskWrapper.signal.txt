@@ -1,0 +1,4 @@
+[2021-04-13T18:21:24.947145Z] [fritz] [2156_1] [pyflowTaskWrapper:getAlignmentStats_generateStats_071] [wrapperSignal] wrapperStart
+[2021-04-13T18:21:24.970923Z] [fritz] [2156_1] [pyflowTaskWrapper:getAlignmentStats_generateStats_071] [wrapperSignal] taskStart
+[2021-04-13T18:21:41.225539Z] [fritz] [2156_1] [pyflowTaskWrapper:getAlignmentStats_generateStats_071] [wrapperSignal] taskExitCode 0
+[2021-04-13T18:21:41.263732Z] [fritz] [2156_1] [pyflowTaskWrapper:getAlignmentStats_generateStats_071] [wrapperSignal] taskElapsedSec 16
