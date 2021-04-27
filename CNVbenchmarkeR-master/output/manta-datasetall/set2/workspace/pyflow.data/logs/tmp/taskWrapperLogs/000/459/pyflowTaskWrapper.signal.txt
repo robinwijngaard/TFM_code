@@ -1,0 +1,4 @@
+[2021-04-26T12:36:39.610594Z] [fritz] [100010_1] [pyflowTaskWrapper:makeLocusGraph_chromId_245_19_0001] [wrapperSignal] wrapperStart
+[2021-04-26T12:36:39.617495Z] [fritz] [100010_1] [pyflowTaskWrapper:makeLocusGraph_chromId_245_19_0001] [wrapperSignal] taskStart
+[2021-04-26T12:36:40.286197Z] [fritz] [100010_1] [pyflowTaskWrapper:makeLocusGraph_chromId_245_19_0001] [wrapperSignal] taskExitCode 0
+[2021-04-26T12:36:40.291755Z] [fritz] [100010_1] [pyflowTaskWrapper:makeLocusGraph_chromId_245_19_0001] [wrapperSignal] taskElapsedSec 0

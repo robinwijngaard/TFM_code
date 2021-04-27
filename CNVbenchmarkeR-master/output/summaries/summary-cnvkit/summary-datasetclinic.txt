@@ -1,0 +1,133 @@
+
+
+cnvkit2 results on dataset datasetclinic 
+	Stats per ROI: 
+		Sensitivity: 0.4426 
+		Specificity: 0.9928 
+		No-call rate: 3.8687 %  from a total of 25590 ROIs 
+	Stats per gene: 
+		Sensitivity: 0.7797 
+		Specificity: 0.9546 
+		No-call rate: 45.6678 %  from a total of 1535 genes 
+		F1 Score: 0.5349 
+		Positive Predictive Value: 0.4071 
+		Negative Predictive Value: 0.9909 
+		Matthews correlation coefficient: 0.5405 
+		Cohen's kappa: 0.5103 
+	Stats at whole strategy level (per gene and including no-calls): 
+		Sensitivity: 0.8136 
+		Specificity: 0.5244  ->  702 extra gene(s) have to be covered by MLPA, 774 genes saved 
+
+	False Negatives per gene: 
+		Sample 17375 1 false negative(s) 
+		Sample 17337 1 false negative(s) 
+		Sample 17332 1 false negative(s) 
+		Sample 17301 1 false negative(s) 
+		Sample 17298 1 false negative(s) 
+		Sample 17390 1 false negative(s) 
+		Sample 17394 1 false negative(s) 
+		Sample 17316 1 false negative(s) 
+		Sample 17366 2 false negative(s) 
+		Sample 17319 1 false negative(s) 
+		Sample 17364 1 false negative(s) 
+		Sample 17320 1 false negative(s) 
+
+	False Positives per gene: 
+		Sample 17339 15 false positives(s) 
+		Sample 17337 1 false positives(s) 
+		Sample 17318 2 false positives(s) 
+		Sample 17324 5 false positives(s) 
+		Sample 17335 7 false positives(s) 
+		Sample 17303 4 false positives(s) 
+		Sample 17400 2 false positives(s) 
+		Sample 17361 2 false positives(s) 
+		Sample 17342 6 false positives(s) 
+		Sample 17356 8 false positives(s) 
+		Sample 17393 1 false positives(s) 
+		Sample 17394 13 false positives(s) 
+		Sample 17371 1 false positives(s) 
+
+	False Negatives at whole strategy level: 
+		Sample 17375 1 false negative(s) 
+		Sample 17337 1 false negative(s) 
+		Sample 17332 1 false negative(s) 
+		Sample 17301 1 false negative(s) 
+		Sample 17298 1 false negative(s) 
+		Sample 17394 1 false negative(s) 
+		Sample 17316 1 false negative(s) 
+		Sample 17366 2 false negative(s) 
+		Sample 17364 1 false negative(s) 
+		Sample 17320 1 false negative(s) 
+
+	False Positives at whole strategy level: 
+		Sample 17327 10 false positives(s) 
+		Sample 17328 10 false positives(s) 
+		Sample 17329 10 false positives(s) 
+		Sample 17330 10 false positives(s) 
+		Sample 17398 9 false positives(s) 
+		Sample 17334 10 false positives(s) 
+		Sample 17341 9 false positives(s) 
+		Sample 17375 10 false positives(s) 
+		Sample 17299 10 false positives(s) 
+		Sample 17308 10 false positives(s) 
+		Sample 17304 9 false positives(s) 
+		Sample 17343 10 false positives(s) 
+		Sample 17305 9 false positives(s) 
+		Sample 17306 9 false positives(s) 
+		Sample 17339 18 false positives(s) 
+		Sample 17337 10 false positives(s) 
+		Sample 17310 10 false positives(s) 
+		Sample 17332 10 false positives(s) 
+		Sample 17311 10 false positives(s) 
+		Sample 17312 10 false positives(s) 
+		Sample 17313 10 false positives(s) 
+		Sample 17314 10 false positives(s) 
+		Sample 17318 11 false positives(s) 
+		Sample 17315 10 false positives(s) 
+		Sample 17340 8 false positives(s) 
+		Sample 17324 12 false positives(s) 
+		Sample 17335 12 false positives(s) 
+		Sample 17317 9 false positives(s) 
+		Sample 17331 9 false positives(s) 
+		Sample 17303 12 false positives(s) 
+		Sample 17307 10 false positives(s) 
+		Sample 17301 10 false positives(s) 
+		Sample 17309 10 false positives(s) 
+		Sample 17302 9 false positives(s) 
+		Sample 17300 10 false positives(s) 
+		Sample 17388 10 false positives(s) 
+		Sample 17387 10 false positives(s) 
+		Sample 17402 9 false positives(s) 
+		Sample 17400 10 false positives(s) 
+		Sample 17298 9 false positives(s) 
+		Sample 17373 10 false positives(s) 
+		Sample 17376 10 false positives(s) 
+		Sample 17382 10 false positives(s) 
+		Sample 17397 10 false positives(s) 
+		Sample 17360 10 false positives(s) 
+		Sample 17399 10 false positives(s) 
+		Sample 17392 10 false positives(s) 
+		Sample 17361 11 false positives(s) 
+		Sample 17342 12 false positives(s) 
+		Sample 17356 14 false positives(s) 
+		Sample 17377 10 false positives(s) 
+		Sample 17386 10 false positives(s) 
+		Sample 17390 9 false positives(s) 
+		Sample 17378 10 false positives(s) 
+		Sample 17401 10 false positives(s) 
+		Sample 17370 10 false positives(s) 
+		Sample 17379 9 false positives(s) 
+		Sample 17393 10 false positives(s) 
+		Sample 17385 9 false positives(s) 
+		Sample 17391 10 false positives(s) 
+		Sample 17389 10 false positives(s) 
+		Sample 17367 10 false positives(s) 
+		Sample 17368 10 false positives(s) 
+		Sample 17359 10 false positives(s) 
+		Sample 17394 17 false positives(s) 
+		Sample 17396 10 false positives(s) 
+		Sample 17369 8 false positives(s) 
+		Sample 17316 10 false positives(s) 
+		Sample 17371 10 false positives(s) 
+
+Summary file generated at 2021-04-27 00:27:32

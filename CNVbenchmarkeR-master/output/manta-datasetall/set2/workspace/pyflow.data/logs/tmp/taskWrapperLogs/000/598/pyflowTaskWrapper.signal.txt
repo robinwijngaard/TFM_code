@@ -1,0 +1,4 @@
+[2021-04-26T12:36:46.523816Z] [fritz] [100010_1] [pyflowTaskWrapper:checkLocusGraph] [wrapperSignal] wrapperStart
+[2021-04-26T12:36:46.531935Z] [fritz] [100010_1] [pyflowTaskWrapper:checkLocusGraph] [wrapperSignal] taskStart
+[2021-04-26T12:36:46.553716Z] [fritz] [100010_1] [pyflowTaskWrapper:checkLocusGraph] [wrapperSignal] taskExitCode 0
+[2021-04-26T12:36:46.568130Z] [fritz] [100010_1] [pyflowTaskWrapper:checkLocusGraph] [wrapperSignal] taskElapsedSec 0

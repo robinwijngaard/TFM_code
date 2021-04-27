@@ -10,15 +10,6 @@ datasetall:
   validated_results_file_format: "icr"   # format of validated results file: icr or panelcn
   read_length: 101   # read length used when sequencing
 
-datasetfilter:
-  include: false   # true to include this dataset in the analysis, false otherwise
-  bams_dir: "/home/robin/Documents/Project/Samples/bam/all" # folder where bams files (.bai indexes) are stored
-  bed_file: "/home/robin/Documents/Project/Samples/bedfiles/ICR96_hg38_noSNP_filter.bed" # bed file defining ROIs. It must be sortered by chr and start position, and 4th column must contain only gene symbol. (See examples folder)
-  fasta_file: "/home/robin/Documents/Project/Samples/hg38/hg38.fa"  # genome fasta file
-  validated_results_file: "/home/robin/Documents/Project/Samples/validatedresults/ICR96_validated_regions38_filter.txt"    # file containing results obtained using a orthogonal method (MLPA or aCGH) (See examples folder)
-  validated_results_file_format: "icr"   # format of validated results file: icr or panelcn
-  read_length: 101   # read length used when sequencing
-
 datasetsingle:
   include: true   # true to include this dataset in the analysis, false otherwise
   bams_dir: "/home/robin/Documents/Project/Samples/bam/single" # folder where bams files (.bai indexes) are stored
@@ -28,17 +19,26 @@ datasetsingle:
   validated_results_file_format: "icr"   # format of validated results file: icr or panelcn
   read_length: 101   # read length used when sequencing
 
-datasetsinglefilter:
-  include: false   # true to include this dataset in the analysis, false otherwise
-  bams_dir: "/home/robin/Documents/Project/Samples/bam/single" # folder where bams files (.bai indexes) are stored
-  bed_file: "/home/robin/Documents/Project/Samples/bedfiles/ICR96_hg38_noSNP_filter.bed" # bed file defining ROIs. It must be sortered by chr and start position, and 4th column must contain only gene symbol. (See examples folder)
+datasetclinic:
+  include: true   # true to include this dataset in the analysis, false otherwise
+  bams_dir: "/home/robin/Documents/Project/Samples/bam/all" # folder where bams files (.bai indexes) are stored
+  bed_file: "/home/robin/Documents/Project/Samples/bedfiles/ICR96_hg38_noSNP_clinic.bed" # bed file defining ROIs. It must be sortered by chr and start position, and 4th column must contain only gene symbol. (See examples folder)
   fasta_file: "/home/robin/Documents/Project/Samples/hg38/hg38.fa"  # genome fasta file
-  validated_results_file: "/home/robin/Documents/Project/Samples/validatedresults/ICR96_validated_regions38_filter_single.txt"    # file containing results obtained using a orthogonal method (MLPA or aCGH) (See examples folder)
+  validated_results_file: "/home/robin/Documents/Project/Samples/validatedresults/ICR96_validated_regions38_clinic.txt"    # file containing results obtained using a orthogonal method (MLPA or aCGH) (See examples folder)
   validated_results_file_format: "icr"   # format of validated results file: icr or panelcn
   read_length: 101   # read length used when sequencing
 
-datasetclinic:
-  include: true   # true to include this dataset in the analysis, false otherwise
+datasetmanta:
+  include: false   # true to include this dataset in the analysis, false otherwise
+  bams_dir: "/home/robin/Documents/Project/Samples/bam/manta" # folder where bams files (.bai indexes) are stored
+  bed_file: "/home/robin/Documents/Project/Samples/bedfiles/ICR96_hg38_noSNP.bed" # bed file defining ROIs. It must be sortered by chr and start position, and 4th column must contain only gene symbol. (See examples folder)
+  fasta_file: "/home/robin/Documents/Project/Samples/hg38/hg38.fa"  # genome fasta file
+  validated_results_file: "/home/robin/Documents/Project/Samples/validatedresults/ICR96_validated_regions38.txt"    # file containing results obtained using a orthogonal method (MLPA or aCGH) (See examples folder)
+  validated_results_file_format: "icr"   # format of validated results file: icr or panelcn
+  read_length: 101   # read length used when sequencing
+
+datasettest:
+  include: false   # true to include this dataset in the analysis, false otherwise
   bams_dir: "/home/robin/Documents/Project/Samples/bam/all" # folder where bams files (.bai indexes) are stored
   bed_file: "/home/robin/Documents/Project/Samples/bedfiles/ICR96_hg38_noSNP_clinic.bed" # bed file defining ROIs. It must be sortered by chr and start position, and 4th column must contain only gene symbol. (See examples folder)
   fasta_file: "/home/robin/Documents/Project/Samples/hg38/hg38.fa"  # genome fasta file

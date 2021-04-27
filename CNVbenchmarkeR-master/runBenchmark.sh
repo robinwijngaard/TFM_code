@@ -36,15 +36,20 @@ eval $(parse_yaml algorithms.yaml "pars_")
 #	Rscript ./algorithms/convading/runConvading.r ./algorithms/convading/convadingParams.yaml datasets.yaml  > logs/convading.log 2>&1
 #fi
 
-#if [ "$pars_algorithms_manta" == "true" ]; then
-#    echo "[$(date)] Executing Manta"
-#    Rscript ./algorithms/manta/runManta.r ./algorithms/manta/mantaParams.yaml datasets.yaml  > logs/manta.log 2>&1
-#fi
+if [ "$pars_algorithms_manta" == "true" ]; then
+    echo "[$(date)] Executing Manta"
+    Rscript ./algorithms/manta/runManta.r ./algorithms/manta/mantaParams.yaml datasets.yaml  > logs/manta.log 2>&1
+fi
 
-#if [ "$pars_algorithms_cnvkit" == "true" ]; then
-#    echo "[$(date)] Executing CNVkit"
-#    Rscript ./algorithms/cnvkit/runCNVkit.r ./algorithms/cnvkit/cnvkitParams.yaml datasets.yaml  > logs/cnvkit.log 2>&1
-#fi
+if [ "$pars_algorithms_cnvkit" == "true" ]; then
+    echo "[$(date)] Executing CNVkit"
+    Rscript ./algorithms/cnvkit/runCNVkit.r ./algorithms/cnvkit/cnvkitParams.yaml datasets.yaml  > logs/cnvkit.log 2>&1
+fi
+
+if [ "$pars_algorithms_cnvkit2" == "true" ]; then
+    echo "[$(date)] Executing CNVkit"
+    Rscript ./algorithms/cnvkit2/runCNVkit2.r ./algorithms/cnvkit2/cnvkitParams2.yaml datasets.yaml  > logs/cnvkit2.log 2>&1
+fi
 
 
 #Generate summary file

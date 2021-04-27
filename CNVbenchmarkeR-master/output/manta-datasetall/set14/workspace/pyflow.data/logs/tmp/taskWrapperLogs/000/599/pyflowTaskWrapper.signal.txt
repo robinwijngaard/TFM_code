@@ -1,0 +1,4 @@
+[2021-04-26T13:12:33.513242Z] [fritz] [138703_1] [pyflowTaskWrapper:removeTmpDir] [wrapperSignal] wrapperStart
+[2021-04-26T13:12:33.521756Z] [fritz] [138703_1] [pyflowTaskWrapper:removeTmpDir] [wrapperSignal] taskStart
+[2021-04-26T13:12:33.535632Z] [fritz] [138703_1] [pyflowTaskWrapper:removeTmpDir] [wrapperSignal] taskExitCode 0
+[2021-04-26T13:12:33.551084Z] [fritz] [138703_1] [pyflowTaskWrapper:removeTmpDir] [wrapperSignal] taskElapsedSec 0

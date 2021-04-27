@@ -1,4 +1,5 @@
 mantaFolder: "/home/robin/Documents/Project/manta/Install/bin"
+svTools: "/home/robin/Documents/Project/TFM_code/Files/svtools-master"
 
 referenceFasta: "/home/robin/Documents/Project/Samples/hg38/hg38.fa"
 minCandidateVariantSize: 8
@@ -6,7 +7,7 @@ rnaMinCandidateVariantSize: 1000
 minEdgeObservations: 2
 graphNodeMaxEdgeCount: 10
 minCandidateSpanningCount: 2
-minScoredVariantSize: 50
+minScoredVariantSize: 30
 minDiploidVariantScore: 10
 minPassDiploidVariantScore: 20
 minPassDiploidGTScore: 15

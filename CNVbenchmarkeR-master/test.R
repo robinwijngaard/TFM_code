@@ -23,4 +23,4 @@ svTools <- "/home/robin/Documents/Project/TFM_code/Files/svtools-master/"
 system(paste("gzip -d", file.path(resultDir, "diploidSV.vcf.gz")))
 system(paste("python", file.path(svTools, "vcfToBedpe"), "-i diploidSV.vcf -o bedpeSV"))
 
-system(paste("vcftools --vcf", file.path(resultDir, "diploidSV.vcf"), "--keep-only-indels > indels.vcf")) 
+system(paste("vcftools --vcf", file.path(resultDir, "diploidSV.vcf"), "--recode --keep-only-indels")) 

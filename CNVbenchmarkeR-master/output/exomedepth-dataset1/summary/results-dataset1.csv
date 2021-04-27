@@ -1,5 +1,0 @@
-TP	TN	FP	FN	total	no_calls	no_call_rate	sensitivity	specificity	PPV	NPV	F1	MCC	kappa	accuracy	algorithm	level
-27	28160	2	269	28458	0	0	0.0912	0.9999	0.931	0.9905	0.1662	0.2898	0.1666	0.9905	exomedepth	roi
-27	28160	2	269	28473	0	0	0.0912	0.9999	0.931	0.9905	0.1662	0.2898	0.1666	0.9905	exomedepth	roi_incNoCall
-8	1750	2	60	1820	0	0	0.1176	0.9989	0.8	0.9669	0.2051	0.2989	0.1966	0.9659	exomedepth	gene
-8	1750	2	60	1820	0	0	0.1176	0.9989	0.8	0.9669	0.2051	0.2989	0.1966	0.9659	exomedepth	whole_strategy

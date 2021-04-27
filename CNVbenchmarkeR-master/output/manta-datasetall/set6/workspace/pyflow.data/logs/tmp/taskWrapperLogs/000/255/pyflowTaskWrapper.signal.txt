@@ -1,0 +1,4 @@
+[2021-04-26T12:45:07.312862Z] [fritz] [112646_1] [pyflowTaskWrapper:makeLocusGraph_chromId_123_8_KI270819v1_alt_0000_to_chromId_124_8_KI270820v1_alt_0000] [wrapperSignal] wrapperStart
+[2021-04-26T12:45:07.320445Z] [fritz] [112646_1] [pyflowTaskWrapper:makeLocusGraph_chromId_123_8_KI270819v1_alt_0000_to_chromId_124_8_KI270820v1_alt_0000] [wrapperSignal] taskStart
+[2021-04-26T12:45:07.426952Z] [fritz] [112646_1] [pyflowTaskWrapper:makeLocusGraph_chromId_123_8_KI270819v1_alt_0000_to_chromId_124_8_KI270820v1_alt_0000] [wrapperSignal] taskExitCode 0
+[2021-04-26T12:45:07.430596Z] [fritz] [112646_1] [pyflowTaskWrapper:makeLocusGraph_chromId_123_8_KI270819v1_alt_0000_to_chromId_124_8_KI270820v1_alt_0000] [wrapperSignal] taskElapsedSec 0

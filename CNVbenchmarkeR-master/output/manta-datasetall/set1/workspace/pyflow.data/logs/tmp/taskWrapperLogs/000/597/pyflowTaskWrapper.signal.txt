@@ -1,0 +1,4 @@
+[2021-04-26T12:35:03.040518Z] [fritz] [96570_1] [pyflowTaskWrapper:mergeLocusGraph] [wrapperSignal] wrapperStart
+[2021-04-26T12:35:03.046574Z] [fritz] [96570_1] [pyflowTaskWrapper:mergeLocusGraph] [wrapperSignal] taskStart
+[2021-04-26T12:35:03.141087Z] [fritz] [96570_1] [pyflowTaskWrapper:mergeLocusGraph] [wrapperSignal] taskExitCode 0
+[2021-04-26T12:35:03.152906Z] [fritz] [96570_1] [pyflowTaskWrapper:mergeLocusGraph] [wrapperSignal] taskElapsedSec 0

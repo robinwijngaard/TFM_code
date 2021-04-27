@@ -1,5 +1,0 @@
-TP	TN	FP	FN	total	no_calls	no_call_rate	sensitivity	specificity	PPV	NPV	F1	MCC	kappa	accuracy	algorithm	level
-0	28162	0	296	28458	0	0	0	1	NA	0.9896	0	NA	1e-04	0.9896	decon	roi
-0	28162	0	296	28473	0	0	0	1	NA	0.9896	0	NA	1e-04	0.9896	decon	roi_incNoCall
-0	1752	0	68	1820	0	0	0	1	NA	0.9626	0	NA	-0.001	0.9626	decon	gene
-0	1752	0	68	1820	0	0	0	1	NA	0.9626	0	NA	-0.001	0.9626	decon	whole_strategy

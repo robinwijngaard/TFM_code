@@ -1,0 +1,342 @@
+
+
+decon results on dataset datasetsingle 
+	Stats per ROI: 
+		Sensitivity: 0.875 
+		Specificity: 0.9991 
+		No-call rate: 2.3376 %  from a total of 17582 ROIs 
+	Stats per gene: 
+		Sensitivity: 0.875 
+		Specificity: 0.9882 
+		No-call rate: 2.5709 %  from a total of 1128 genes 
+		F1 Score: 0.7241 
+		Positive Predictive Value: 0.6176 
+		Negative Predictive Value: 0.9973 
+		Matthews correlation coefficient: 0.7286 
+		Cohen's kappa: 0.7168 
+	Stats at whole strategy level (per gene and including no-calls): 
+		Sensitivity: 0.9167 
+		Specificity: 0.9647  ->  39 extra gene(s) have to be covered by MLPA, 1065 genes saved 
+
+	False Negatives per gene: 
+		Sample 17298 1 false negative(s) 
+		Sample 17364 1 false negative(s) 
+		Sample 17403 1 false negative(s) 
+
+	False Positives per gene: 
+		Sample 17398 1 false positives(s) 
+		Sample 17301 2 false positives(s) 
+		Sample 17356 8 false positives(s) 
+		Sample 17368 1 false positives(s) 
+		Sample 17371 1 false positives(s) 
+
+	False Negatives at whole strategy level: 
+		Sample 17298 1 false negative(s) 
+		Sample 17364 1 false negative(s) 
+
+	False Positives at whole strategy level: 
+		Sample 17398 1 false positives(s) 
+		Sample 17339 26 false positives(s) 
+		Sample 17301 2 false positives(s) 
+		Sample 17356 8 false positives(s) 
+		Sample 17368 1 false positives(s) 
+		Sample 17371 1 false positives(s)
+
+panelcn results on dataset datasetsingle 
+	Stats per ROI: 
+		Sensitivity: 1 
+		Specificity: 0.984 
+		No-call rate: 1.183 %  from a total of 17582 ROIs 
+	Stats per gene: 
+		Sensitivity: 1 
+		Specificity: 0.9647 
+		No-call rate: 11.2589 %  from a total of 1128 genes 
+		F1 Score: 0.5517 
+		Positive Predictive Value: 0.381 
+		Negative Predictive Value: 1 
+		Matthews correlation coefficient: 0.6062 
+		Cohen's kappa: 0.5371 
+	Stats at whole strategy level (per gene and including no-calls): 
+		Sensitivity: 1 
+		Specificity: 0.894  ->  117 extra gene(s) have to be covered by MLPA, 987 genes saved 
+
+	False Negatives per gene: 
+
+	False Positives per gene: 
+		Sample 17398 3 false positives(s) 
+		Sample 17339 26 false positives(s) 
+		Sample 17315 1 false positives(s) 
+		Sample 17298 2 false positives(s) 
+		Sample 17356 5 false positives(s) 
+		Sample 17370 2 false positives(s) 
+
+	False Negatives at whole strategy level: 
+
+	False Positives at whole strategy level: 
+		Sample 17327 3 false positives(s) 
+		Sample 17328 3 false positives(s) 
+		Sample 17329 3 false positives(s) 
+		Sample 17330 1 false positives(s) 
+		Sample 17398 3 false positives(s) 
+		Sample 17299 1 false positives(s) 
+		Sample 17308 2 false positives(s) 
+		Sample 17304 3 false positives(s) 
+		Sample 17305 3 false positives(s) 
+		Sample 17306 2 false positives(s) 
+		Sample 17339 26 false positives(s) 
+		Sample 17310 3 false positives(s) 
+		Sample 17311 3 false positives(s) 
+		Sample 17312 3 false positives(s) 
+		Sample 17313 3 false positives(s) 
+		Sample 17314 1 false positives(s) 
+		Sample 17315 1 false positives(s) 
+		Sample 17317 1 false positives(s) 
+		Sample 17301 2 false positives(s) 
+		Sample 17309 3 false positives(s) 
+		Sample 17300 3 false positives(s) 
+		Sample 17387 5 false positives(s) 
+		Sample 17298 3 false positives(s) 
+		Sample 17360 4 false positives(s) 
+		Sample 17361 9 false positives(s) 
+		Sample 17356 13 false positives(s) 
+		Sample 17370 2 false positives(s) 
+		Sample 17369 1 false positives(s) 
+		Sample 17316 1 false positives(s) 
+		Sample 17371 6 false positives(s)
+
+convading results on dataset datasetsingle 
+	Stats per ROI: 
+		Sensitivity: 0.9167 
+		Specificity: 0.9827 
+		No-call rate: 10.4311 %  from a total of 17582 ROIs 
+	Stats per gene: 
+		Sensitivity: 0.9167 
+		Specificity: 0.952 
+		No-call rate: 73.7589 %  from a total of 1128 genes 
+		F1 Score: 0.4444 
+		Positive Predictive Value: 0.2933 
+		Negative Predictive Value: 0.9981 
+		Matthews correlation coefficient: 0.5031 
+		Cohen's kappa: 0.4255 
+	Stats at whole strategy level (per gene and including no-calls): 
+		Sensitivity: 0.9583 
+		Specificity: 0.298  ->  775 extra gene(s) have to be covered by MLPA, 329 genes saved 
+
+	False Negatives per gene: 
+		Sample 17301 1 false negative(s) 
+		Sample 17298 1 false negative(s) 
+
+	False Positives per gene: 
+		Sample 17304 1 false positives(s) 
+		Sample 17339 26 false positives(s) 
+		Sample 17311 1 false positives(s) 
+		Sample 17312 1 false positives(s) 
+		Sample 17301 2 false positives(s) 
+		Sample 17298 2 false positives(s) 
+		Sample 17360 1 false positives(s) 
+		Sample 17361 4 false positives(s) 
+		Sample 17356 11 false positives(s) 
+		Sample 17370 1 false positives(s) 
+		Sample 17371 3 false positives(s) 
+
+	False Negatives at whole strategy level: 
+		Sample 17298 1 false negative(s) 
+
+	False Positives at whole strategy level: 
+		Sample 17327 15 false positives(s) 
+		Sample 17328 15 false positives(s) 
+		Sample 17329 15 false positives(s) 
+		Sample 17330 15 false positives(s) 
+		Sample 17398 15 false positives(s) 
+		Sample 17299 16 false positives(s) 
+		Sample 17308 15 false positives(s) 
+		Sample 17304 15 false positives(s) 
+		Sample 17305 15 false positives(s) 
+		Sample 17306 15 false positives(s) 
+		Sample 17339 26 false positives(s) 
+		Sample 17310 16 false positives(s) 
+		Sample 17311 15 false positives(s) 
+		Sample 17312 16 false positives(s) 
+		Sample 17313 15 false positives(s) 
+		Sample 17314 16 false positives(s) 
+		Sample 17315 15 false positives(s) 
+		Sample 17317 14 false positives(s) 
+		Sample 17301 14 false positives(s) 
+		Sample 17309 15 false positives(s) 
+		Sample 17300 15 false positives(s) 
+		Sample 17387 22 false positives(s) 
+		Sample 17402 20 false positives(s) 
+		Sample 17298 14 false positives(s) 
+		Sample 17373 22 false positives(s) 
+		Sample 17376 21 false positives(s) 
+		Sample 17382 21 false positives(s) 
+		Sample 17397 21 false positives(s) 
+		Sample 17360 22 false positives(s) 
+		Sample 17399 21 false positives(s) 
+		Sample 17392 20 false positives(s) 
+		Sample 17361 21 false positives(s) 
+		Sample 17356 21 false positives(s) 
+		Sample 17386 21 false positives(s) 
+		Sample 17401 17 false positives(s) 
+		Sample 17370 21 false positives(s) 
+		Sample 17391 21 false positives(s) 
+		Sample 17389 22 false positives(s) 
+		Sample 17367 22 false positives(s) 
+		Sample 17368 21 false positives(s) 
+		Sample 17369 21 false positives(s) 
+		Sample 17316 14 false positives(s) 
+		Sample 17371 21 false positives(s)
+
+exomedepth results on dataset datasetsingle 
+	Stats per ROI: 
+		Sensitivity: 0.875 
+		Specificity: 0.9995 
+		No-call rate: 0.0057 %  from a total of 17582 ROIs 
+	Stats per gene: 
+		Sensitivity: 0.875 
+		Specificity: 0.9937 
+		No-call rate: 0.0887 %  from a total of 1128 genes 
+		F1 Score: 0.8077 
+		Positive Predictive Value: 0.75 
+		Negative Predictive Value: 0.9973 
+		Matthews correlation coefficient: 0.8057 
+		Cohen's kappa: 0.8024 
+	Stats at whole strategy level (per gene and including no-calls): 
+		Sensitivity: 0.875 
+		Specificity: 0.9937  ->  7 extra gene(s) have to be covered by MLPA, 1097 genes saved 
+
+	False Negatives per gene: 
+		Sample 17296 1 false negative(s) 
+		Sample 17298 1 false negative(s) 
+		Sample 17364 1 false negative(s) 
+
+	False Positives per gene: 
+		Sample 17301 1 false positives(s) 
+		Sample 17356 4 false positives(s) 
+		Sample 17368 1 false positives(s) 
+		Sample 17371 1 false positives(s) 
+
+	False Negatives at whole strategy level: 
+		Sample 17296 1 false negative(s) 
+		Sample 17298 1 false negative(s) 
+		Sample 17364 1 false negative(s) 
+
+	False Positives at whole strategy level: 
+		Sample 17301 1 false positives(s) 
+		Sample 17356 4 false positives(s) 
+		Sample 17368 1 false positives(s) 
+		Sample 17371 1 false positives(s)
+
+cnvkit results on dataset datasetsingle 
+	Stats per ROI: 
+		Sensitivity: 1 
+		Specificity: 0.9418 
+		No-call rate: 0.0057 %  from a total of 17582 ROIs 
+	Stats per gene: 
+		Sensitivity: 1 
+		Specificity: 0.577 
+		No-call rate: 0.0887 %  from a total of 1128 genes 
+		F1 Score: 0.0932 
+		Positive Predictive Value: 0.0489 
+		Negative Predictive Value: 1 
+		Matthews correlation coefficient: 0.1679 
+		Cohen's kappa: 0.0549 
+	Stats at whole strategy level (per gene and including no-calls): 
+		Sensitivity: 1 
+		Specificity: 0.577  ->  467 extra gene(s) have to be covered by MLPA, 637 genes saved 
+
+	False Negatives per gene: 
+
+	False Positives per gene: 
+		Sample 17327 5 false positives(s) 
+		Sample 17328 12 false positives(s) 
+		Sample 17329 6 false positives(s) 
+		Sample 17330 7 false positives(s) 
+		Sample 17398 14 false positives(s) 
+		Sample 17299 17 false positives(s) 
+		Sample 17308 3 false positives(s) 
+		Sample 17304 9 false positives(s) 
+		Sample 17305 8 false positives(s) 
+		Sample 17306 11 false positives(s) 
+		Sample 17339 26 false positives(s) 
+		Sample 17310 11 false positives(s) 
+		Sample 17311 10 false positives(s) 
+		Sample 17312 7 false positives(s) 
+		Sample 17313 8 false positives(s) 
+		Sample 17314 15 false positives(s) 
+		Sample 17315 19 false positives(s) 
+		Sample 17317 14 false positives(s) 
+		Sample 17301 7 false positives(s) 
+		Sample 17309 9 false positives(s) 
+		Sample 17300 6 false positives(s) 
+		Sample 17387 14 false positives(s) 
+		Sample 17402 6 false positives(s) 
+		Sample 17298 23 false positives(s) 
+		Sample 17373 7 false positives(s) 
+		Sample 17376 3 false positives(s) 
+		Sample 17382 3 false positives(s) 
+		Sample 17397 4 false positives(s) 
+		Sample 17360 13 false positives(s) 
+		Sample 17399 9 false positives(s) 
+		Sample 17392 10 false positives(s) 
+		Sample 17361 23 false positives(s) 
+		Sample 17356 26 false positives(s) 
+		Sample 17386 6 false positives(s) 
+		Sample 17401 15 false positives(s) 
+		Sample 17370 7 false positives(s) 
+		Sample 17391 14 false positives(s) 
+		Sample 17389 3 false positives(s) 
+		Sample 17367 6 false positives(s) 
+		Sample 17368 3 false positives(s) 
+		Sample 17369 13 false positives(s) 
+		Sample 17316 16 false positives(s) 
+		Sample 17371 19 false positives(s) 
+
+	False Negatives at whole strategy level: 
+
+	False Positives at whole strategy level: 
+		Sample 17327 5 false positives(s) 
+		Sample 17328 12 false positives(s) 
+		Sample 17329 6 false positives(s) 
+		Sample 17330 7 false positives(s) 
+		Sample 17398 14 false positives(s) 
+		Sample 17299 17 false positives(s) 
+		Sample 17308 3 false positives(s) 
+		Sample 17304 9 false positives(s) 
+		Sample 17305 8 false positives(s) 
+		Sample 17306 11 false positives(s) 
+		Sample 17339 26 false positives(s) 
+		Sample 17310 11 false positives(s) 
+		Sample 17311 10 false positives(s) 
+		Sample 17312 7 false positives(s) 
+		Sample 17313 8 false positives(s) 
+		Sample 17314 15 false positives(s) 
+		Sample 17315 19 false positives(s) 
+		Sample 17317 14 false positives(s) 
+		Sample 17301 7 false positives(s) 
+		Sample 17309 9 false positives(s) 
+		Sample 17300 6 false positives(s) 
+		Sample 17387 14 false positives(s) 
+		Sample 17402 6 false positives(s) 
+		Sample 17298 23 false positives(s) 
+		Sample 17373 7 false positives(s) 
+		Sample 17376 3 false positives(s) 
+		Sample 17382 3 false positives(s) 
+		Sample 17397 4 false positives(s) 
+		Sample 17360 13 false positives(s) 
+		Sample 17399 9 false positives(s) 
+		Sample 17392 10 false positives(s) 
+		Sample 17361 23 false positives(s) 
+		Sample 17356 26 false positives(s) 
+		Sample 17386 6 false positives(s) 
+		Sample 17401 15 false positives(s) 
+		Sample 17370 7 false positives(s) 
+		Sample 17391 14 false positives(s) 
+		Sample 17389 3 false positives(s) 
+		Sample 17367 6 false positives(s) 
+		Sample 17368 3 false positives(s) 
+		Sample 17369 13 false positives(s) 
+		Sample 17316 16 false positives(s) 
+		Sample 17371 19 false positives(s) 
+
+Summary file generated at 2021-04-14 09:05:21
