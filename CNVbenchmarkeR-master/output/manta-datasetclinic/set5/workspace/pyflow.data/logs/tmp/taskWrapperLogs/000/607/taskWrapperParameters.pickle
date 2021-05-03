@@ -1,0 +1,26 @@
+(dp0
+S'isShellCmd'
+p1
+I01
+sS'cmd'
+p2
+S'"/home/robin/anaconda3/envs/mantaenv/bin/python" "/home/robin/Documents/Project/manta/Install/libexec/vcfCmdlineSwapper.py" "/home/robin/Documents/Project/manta/Install/bin/configManta.py --bam=/home/robin/Documents/Project/Samples/bam/all/17320.bam --bam=/home/robin/Documents/Project/Samples/bam/all/17321.bam --bam=/home/robin/Documents/Project/Samples/bam/all/17322.bam --bam=/home/robin/Documents/Project/Samples/bam/all/17323.bam --bam=/home/robin/Documents/Project/Samples/bam/all/17324.bam --bam=/home/robin/Documents/Project/Samples/bam/all/17325.bam --referenceFasta=/home/robin/Documents/Project/Samples/hg38/hg38.fa --config=/home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/manta-datasetclinic/configManta.py.ini --exome --runDir=/home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/manta-datasetclinic/set5" < "/home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/manta-datasetclinic/set5/workspace/svHyGen/diploidSV.0000.vcf" > "/home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/manta-datasetclinic/set5/workspace/svHyGen/diploidSV.0000.vcf.reheader.tmp" && mv "/home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/manta-datasetclinic/set5/workspace/svHyGen/diploidSV.0000.vcf.reheader.tmp" "/home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/manta-datasetclinic/set5/workspace/svHyGen/diploidSV.0000.vcf"'
+p3
+sS'errFile'
+p4
+S'/home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/manta-datasetclinic/set5/workspace/pyflow.data/logs/pyflow_tasks_stderr_log.txt'
+p5
+sS'outFile'
+p6
+S'/home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/manta-datasetclinic/set5/workspace/pyflow.data/logs/pyflow_tasks_stdout_log.txt'
+p7
+sS'env'
+p8
+NsS'nCores'
+p9
+I1
+sS'cwd'
+p10
+S''
+p11
+s.

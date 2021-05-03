@@ -1,0 +1,4 @@
+[2021-05-02T15:47:35.672712Z] [fritz] [214096_1] [pyflowTaskWrapper:getAlignmentStats_removeTmpDir] [wrapperSignal] wrapperStart
+[2021-05-02T15:47:35.681019Z] [fritz] [214096_1] [pyflowTaskWrapper:getAlignmentStats_removeTmpDir] [wrapperSignal] taskStart
+[2021-05-02T15:47:35.687700Z] [fritz] [214096_1] [pyflowTaskWrapper:getAlignmentStats_removeTmpDir] [wrapperSignal] taskExitCode 0
+[2021-05-02T15:47:35.698063Z] [fritz] [214096_1] [pyflowTaskWrapper:getAlignmentStats_removeTmpDir] [wrapperSignal] taskElapsedSec 0

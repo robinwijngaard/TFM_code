@@ -1,0 +1,26 @@
+(dp0
+S'isShellCmd'
+p1
+I01
+sS'cmd'
+p2
+S'"/home/robin/anaconda3/envs/mantaenv/bin/python" "/home/robin/Documents/Project/manta/Install/libexec/sortVcf.py" -f "/home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/manta-datasetclinic/set10/workspace/svHyGen/list.sortCandidateSV.txt" -a | "/home/robin/Documents/Project/manta/Install/libexec/bgzip" -c > "/home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/manta-datasetclinic/set10/results/variants/candidateSV.vcf.gz"'
+p3
+sS'errFile'
+p4
+S'/home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/manta-datasetclinic/set10/workspace/pyflow.data/logs/pyflow_tasks_stderr_log.txt'
+p5
+sS'outFile'
+p6
+S'/home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/manta-datasetclinic/set10/workspace/pyflow.data/logs/pyflow_tasks_stdout_log.txt'
+p7
+sS'env'
+p8
+NsS'nCores'
+p9
+I1
+sS'cwd'
+p10
+S''
+p11
+s.

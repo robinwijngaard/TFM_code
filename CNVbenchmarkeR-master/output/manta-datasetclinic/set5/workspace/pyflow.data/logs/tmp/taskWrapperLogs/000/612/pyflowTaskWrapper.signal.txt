@@ -1,0 +1,4 @@
+[2021-05-02T16:00:21.399322Z] [fritz] [229659_1] [pyflowTaskWrapper:extractSmallIndels_tabix] [wrapperSignal] wrapperStart
+[2021-05-02T16:00:21.405656Z] [fritz] [229659_1] [pyflowTaskWrapper:extractSmallIndels_tabix] [wrapperSignal] taskStart
+[2021-05-02T16:00:21.418567Z] [fritz] [229659_1] [pyflowTaskWrapper:extractSmallIndels_tabix] [wrapperSignal] taskExitCode 0
+[2021-05-02T16:00:21.422339Z] [fritz] [229659_1] [pyflowTaskWrapper:extractSmallIndels_tabix] [wrapperSignal] taskElapsedSec 0

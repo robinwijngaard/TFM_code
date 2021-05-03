@@ -1,0 +1,194 @@
+GraphBuildTime	0.0692h wall, 0.0650h user + 0.0023h system = 0.0673h CPU (97.34%)
+GraphMergeTime	0.0000h wall, 0.0000h user + 0.0000h system = 0.0000h CPU (92.97%)
+disjointSubgraphs	2792
+nodes	6057
+directedEdges	9862
+selfEdges	3204
+totalGraphEvidence	213240
+totalCleaned	81717
+highestSearchCount	211
+isMaxSearchCount	0
+highestSearchDensity	0.179286
+isMaxSearchDensity	0
+
+[Sample0]
+Source	/home/robin/Documents/Project/Samples/bam/single/17330.bam
+MinMapqFiltered	525783	0.0546
+NotFiltered	9096481	0.9454
+NotFilteredAndIgnored	8867040	0.9215
+NotFilteredAndAnomalousPair	222539	0.0231
+NotFilteredAndAnomalousPairRemotes	2958	0.0003
+NotFilteredAndSplitRead	1886	0.0002
+NotFilteredAndSplitReadInAnomalousPair	283	0.0000
+NotFilteredAndSplitReadSupplementarySegments	1075	N/A
+NotFilteredAndLargeIndel	3073	0.0003
+NotFilteredAndSemiAligned	2488	0.0003
+EvidenceType_pair	0	0.0000
+EvidenceType_local_pair	4561	0.3714
+EvidenceType_cigar	3077	0.2506
+EvidenceType_softclip	0	0.0000
+EvidenceType_semialign	2494	0.2031
+EvidenceType_shadow	0	0.0000
+EvidenceType_split_align	2148	0.1749
+EvidenceType_unknown	0	0.0000
+ClosePairs	884
+
+[Sample1]
+Source	/home/robin/Documents/Project/Samples/bam/single/17333.bam
+MinMapqFiltered	850223	0.0537
+NotFiltered	14989333	0.9463
+NotFilteredAndIgnored	14690586	0.9275
+NotFilteredAndAnomalousPair	289148	0.0183
+NotFilteredAndAnomalousPairRemotes	4555	0.0003
+NotFilteredAndSplitRead	2811	0.0002
+NotFilteredAndSplitReadInAnomalousPair	408	0.0000
+NotFilteredAndSplitReadSupplementarySegments	1464	N/A
+NotFilteredAndLargeIndel	3580	0.0002
+NotFilteredAndSemiAligned	3947	0.0002
+EvidenceType_pair	0	0.0000
+EvidenceType_local_pair	6117	0.3691
+EvidenceType_cigar	3582	0.2161
+EvidenceType_softclip	0	0.0000
+EvidenceType_semialign	3957	0.2387
+EvidenceType_shadow	0	0.0000
+EvidenceType_split_align	2918	0.1761
+EvidenceType_unknown	0	0.0000
+ClosePairs	802
+
+[Sample2]
+Source	/home/robin/Documents/Project/Samples/bam/single/17339.bam
+MinMapqFiltered	590585	0.0584
+NotFiltered	9530645	0.9416
+NotFilteredAndIgnored	9283597	0.9172
+NotFilteredAndAnomalousPair	233933	0.0231
+NotFilteredAndAnomalousPairRemotes	6720	0.0007
+NotFilteredAndSplitRead	8413	0.0008
+NotFilteredAndSplitReadInAnomalousPair	2776	0.0003
+NotFilteredAndSplitReadSupplementarySegments	6983	N/A
+NotFilteredAndLargeIndel	2784	0.0003
+NotFilteredAndSemiAligned	6606	0.0007
+EvidenceType_pair	0	0.0000
+EvidenceType_local_pair	16005	0.4066
+EvidenceType_cigar	2786	0.0708
+EvidenceType_softclip	0	0.0000
+EvidenceType_semialign	6612	0.1680
+EvidenceType_shadow	0	0.0000
+EvidenceType_split_align	13960	0.3546
+EvidenceType_unknown	0	0.0000
+ClosePairs	645
+
+[Sample3]
+Source	/home/robin/Documents/Project/Samples/bam/single/17356.bam
+MinMapqFiltered	448833	0.0424
+NotFiltered	10125722	0.9576
+NotFilteredAndIgnored	10020268	0.9476
+NotFilteredAndAnomalousPair	98855	0.0093
+NotFilteredAndAnomalousPairRemotes	4901	0.0005
+NotFilteredAndSplitRead	1582	0.0001
+NotFilteredAndSplitReadInAnomalousPair	240	0.0000
+NotFilteredAndSplitReadSupplementarySegments	602	N/A
+NotFilteredAndLargeIndel	2338	0.0002
+NotFilteredAndSemiAligned	3122	0.0003
+EvidenceType_pair	0	0.0000
+EvidenceType_local_pair	5409	0.4477
+EvidenceType_cigar	2340	0.1937
+EvidenceType_softclip	0	0.0000
+EvidenceType_semialign	3142	0.2600
+EvidenceType_shadow	0	0.0000
+EvidenceType_split_align	1192	0.0987
+EvidenceType_unknown	0	0.0000
+ClosePairs	257
+
+[Sample4]
+Source	/home/robin/Documents/Project/Samples/bam/single/17360.bam
+MinMapqFiltered	406805	0.0497
+NotFiltered	7779271	0.9503
+NotFilteredAndIgnored	7684761	0.9388
+NotFilteredAndAnomalousPair	88911	0.0109
+NotFilteredAndAnomalousPairRemotes	3489	0.0004
+NotFilteredAndSplitRead	1235	0.0002
+NotFilteredAndSplitReadInAnomalousPair	149	0.0000
+NotFilteredAndSplitReadSupplementarySegments	436	N/A
+NotFilteredAndLargeIndel	2571	0.0003
+NotFilteredAndSemiAligned	2115	0.0003
+EvidenceType_pair	0	0.0000
+EvidenceType_local_pair	3989	0.4173
+EvidenceType_cigar	2573	0.2692
+EvidenceType_softclip	0	0.0000
+EvidenceType_semialign	2130	0.2228
+EvidenceType_shadow	0	0.0000
+EvidenceType_split_align	866	0.0906
+EvidenceType_unknown	0	0.0000
+ClosePairs	324
+
+[Sample5]
+Source	/home/robin/Documents/Project/Samples/bam/single/17361.bam
+MinMapqFiltered	449945	0.0464
+NotFiltered	9242750	0.9536
+NotFilteredAndIgnored	9137119	0.9427
+NotFilteredAndAnomalousPair	99763	0.0103
+NotFilteredAndAnomalousPairRemotes	4603	0.0005
+NotFilteredAndSplitRead	1529	0.0002
+NotFilteredAndSplitReadInAnomalousPair	216	0.0000
+NotFilteredAndSplitReadSupplementarySegments	598	N/A
+NotFilteredAndLargeIndel	2120	0.0002
+NotFilteredAndSemiAligned	2643	0.0003
+EvidenceType_pair	0	0.0000
+EvidenceType_local_pair	5264	0.4681
+EvidenceType_cigar	2125	0.1890
+EvidenceType_softclip	0	0.0000
+EvidenceType_semialign	2663	0.2368
+EvidenceType_shadow	0	0.0000
+EvidenceType_split_align	1194	0.1062
+EvidenceType_unknown	0	0.0000
+ClosePairs	316
+
+NodeRegionSizequantile:
+0.25	52
+0.5	179
+0.75	254
+0.9	387
+0.95	562
+0.99	1113
+NodeEdgeCount:
+0	0
+1	4425
+2	871
+3	329
+4	180
+5	104
+6	53
+7	24
+8	19
+9+	52
+NodeObservationCount:
+0	573
+1	0
+2	0
+3	0
+4	0
+5	0
+6	2174
+7	27
+8	5
+9	565
+10	10
+11	0
+12	710
+13	14
+14	1
+15	219
+16	3
+17	0
+18	267
+19	8
+20	1
+21	143
+22	6
+23	0
+24	134
+25	4
+26	0
+27	87
+28	3
+29+	1103

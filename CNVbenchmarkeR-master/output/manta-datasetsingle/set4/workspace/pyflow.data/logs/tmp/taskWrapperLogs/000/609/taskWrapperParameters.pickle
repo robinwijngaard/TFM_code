@@ -1,0 +1,26 @@
+(dp0
+S'isShellCmd'
+p1
+I01
+sS'cmd'
+p2
+S'"/home/robin/anaconda3/envs/mantaenv/bin/python" "/home/robin/Documents/Project/manta/Install/libexec/sortVcf.py" -f "/home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/manta-datasetsingle/set4/workspace/svHyGen/list.sortDiploidSV.txt" > "/home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/manta-datasetsingle/set4/workspace/svHyGen/diploidSV.vcf.temp" && "/home/robin/anaconda3/envs/mantaenv/bin/python" "/home/robin/Documents/Project/manta/Install/libexec/ploidyFilter.py" "/home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/manta-datasetsingle/set4/workspace/svHyGen/diploidSV.vcf.temp" | "/home/robin/Documents/Project/manta/Install/libexec/bgzip" -c > "/home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/manta-datasetsingle/set4/results/variants/diploidSV.vcf.gz" && rm -f "/home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/manta-datasetsingle/set4/workspace/svHyGen/diploidSV.vcf.temp"'
+p3
+sS'errFile'
+p4
+S'/home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/manta-datasetsingle/set4/workspace/pyflow.data/logs/pyflow_tasks_stderr_log.txt'
+p5
+sS'outFile'
+p6
+S'/home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/manta-datasetsingle/set4/workspace/pyflow.data/logs/pyflow_tasks_stdout_log.txt'
+p7
+sS'env'
+p8
+NsS'nCores'
+p9
+I1
+sS'cwd'
+p10
+S''
+p11
+s.

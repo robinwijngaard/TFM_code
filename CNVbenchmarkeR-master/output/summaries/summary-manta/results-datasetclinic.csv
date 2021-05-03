@@ -1,0 +1,5 @@
+TP	TN	FP	FN	total	no_calls	no_call_rate	sensitivity	specificity	PPV	NPV	F1	MCC	kappa	accuracy	algorithm	level
+19	25349	5	217	25590	0	0	0.0805	0.9998	0.7917	0.9915	0.1462	0.2508	0.1423	0.9913	manta	roi
+19	25349	5	217	25605	0	0	0.0805	0.9998	0.7917	0.9915	0.1462	0.2508	0.1423	0.9913	manta	roi_incNoCall
+7	1474	2	52	1535	0	0	0.1186	0.9986	0.7778	0.9659	0.2059	0.2953	0.1972	0.9648	manta	gene
+7	1474	2	52	1535	0	0	0.1186	0.9986	0.7778	0.9659	0.2059	0.2953	0.1972	0.9648	manta	whole_strategy

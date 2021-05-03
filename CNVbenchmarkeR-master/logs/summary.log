@@ -6,16 +6,48 @@ Warning message:
 In readLines(con) : incomplete final line found on 'datasets.yaml'
 
 Loading datasetall Dataset validated results
+  Loading decon results for datasetall dataset
+[1] "ROI in chr 7 and starting at 5973398  for sample 17371 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+  Loading panelcn results for datasetall dataset
+  Loading convading results for datasetall dataset
+  Loading exomedepth results for datasetall dataset
+[1] "ROI in chr 7 and starting at 5973398  for sample 17371 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+  Loading manta results for datasetall dataset
+  Loading cnvkit results for datasetall dataset
   Loading cnvkit2 results for datasetall dataset
+  Loading cnvkit3 results for datasetall dataset
+  Loading cnvkit4 results for datasetall dataset
   Generating summary file at /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/summary/summary-datasetall.txt 
   Generating CSV results file at /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/summary/results-datasetall.csv 
 
 Loading datasetsingle Dataset validated results
+  Loading decon results for datasetsingle dataset
+[1] "ROI in chr 7 and starting at 5973398  for sample 17371 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 17 and starting at 43067607  for sample 17403 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+  Loading panelcn results for datasetsingle dataset
+  Loading convading results for datasetsingle dataset
+  Loading exomedepth results for datasetsingle dataset
+[1] "ROI in chr 7 and starting at 5973398  for sample 17371 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+  Loading manta results for datasetsingle dataset
+  Loading cnvkit results for datasetsingle dataset
   Loading cnvkit2 results for datasetsingle dataset
+  Loading cnvkit3 results for datasetsingle dataset
+  Loading cnvkit4 results for datasetsingle dataset
   Generating summary file at /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/summary/summary-datasetsingle.txt 
   Generating CSV results file at /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/summary/results-datasetsingle.csv 
 
 Loading datasetclinic Dataset validated results
+  Loading decon results for datasetclinic dataset
+[1] "ROI in chr 7 and starting at 5973398  for sample 17371 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+  Loading panelcn results for datasetclinic dataset
+  Loading convading results for datasetclinic dataset
+  Loading exomedepth results for datasetclinic dataset
+[1] "ROI in chr 7 and starting at 5973398  for sample 17371 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+  Loading manta results for datasetclinic dataset
+  Loading cnvkit results for datasetclinic dataset
   Loading cnvkit2 results for datasetclinic dataset
+  Loading cnvkit3 results for datasetclinic dataset
+  Loading cnvkit4 results for datasetclinic dataset
   Generating summary file at /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/summary/summary-datasetclinic.txt 
   Generating CSV results file at /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/summary/results-datasetclinic.csv 
+There were 50 or more warnings (use warnings() to see the first 50)

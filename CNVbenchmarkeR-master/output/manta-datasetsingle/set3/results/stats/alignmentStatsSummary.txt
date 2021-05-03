@@ -1,0 +1,108 @@
+group:	/home/robin/Documents/Project/Samples/bam/single/17312.bam
+fragment length observations:	337435
+fragment length quantiles:
+0.01	49
+0.05	75
+0.1	94
+0.25	128
+0.5	177
+0.75	246
+0.9	327
+0.95	382
+0.99	497
+Total sampled reads:	5976594
+Total sampled paired reads:	5976594
+Total sampled unpaired reads:	0
+Total sampled paired reads with low MAPQ:	292367
+Total sampled high-confidence read pairs passing all filters:	339254
+
+group:	/home/robin/Documents/Project/Samples/bam/single/17313.bam
+fragment length observations:	355945
+fragment length quantiles:
+0.01	49
+0.05	73
+0.1	91
+0.25	125
+0.5	172
+0.75	238
+0.9	316
+0.95	372
+0.99	484
+Total sampled reads:	7371564
+Total sampled paired reads:	7371564
+Total sampled unpaired reads:	0
+Total sampled paired reads with low MAPQ:	371749
+Total sampled high-confidence read pairs passing all filters:	358056
+
+group:	/home/robin/Documents/Project/Samples/bam/single/17314.bam
+fragment length observations:	323865
+fragment length quantiles:
+0.01	48
+0.05	71
+0.1	88
+0.25	120
+0.5	163
+0.75	222
+0.9	294
+0.95	345
+0.99	453
+Total sampled reads:	6636136
+Total sampled paired reads:	6636136
+Total sampled unpaired reads:	0
+Total sampled paired reads with low MAPQ:	359010
+Total sampled high-confidence read pairs passing all filters:	325882
+
+group:	/home/robin/Documents/Project/Samples/bam/single/17315.bam
+fragment length observations:	337251
+fragment length quantiles:
+0.01	53
+0.05	80
+0.1	99
+0.25	130
+0.5	174
+0.75	234
+0.9	306
+0.95	356
+0.99	462
+Total sampled reads:	7607931
+Total sampled paired reads:	7607931
+Total sampled unpaired reads:	0
+Total sampled paired reads with low MAPQ:	384168
+Total sampled high-confidence read pairs passing all filters:	339043
+
+group:	/home/robin/Documents/Project/Samples/bam/single/17316.bam
+fragment length observations:	362363
+fragment length quantiles:
+0.01	50
+0.05	77
+0.1	96
+0.25	130
+0.5	175
+0.75	238
+0.9	313
+0.95	365
+0.99	473
+Total sampled reads:	7839252
+Total sampled paired reads:	7839252
+Total sampled unpaired reads:	0
+Total sampled paired reads with low MAPQ:	400158
+Total sampled high-confidence read pairs passing all filters:	364303
+
+group:	/home/robin/Documents/Project/Samples/bam/single/17317.bam
+fragment length observations:	369801
+fragment length quantiles:
+0.01	48
+0.05	72
+0.1	90
+0.25	123
+0.5	168
+0.75	227
+0.9	300
+0.95	351
+0.99	461
+Total sampled reads:	8585764
+Total sampled paired reads:	8585764
+Total sampled unpaired reads:	0
+Total sampled paired reads with low MAPQ:	456963
+Total sampled high-confidence read pairs passing all filters:	372049
+

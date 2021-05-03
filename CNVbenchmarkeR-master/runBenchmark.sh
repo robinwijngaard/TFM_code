@@ -6,8 +6,8 @@ source ./utils/parse_yaml.sh
 eval $(parse_yaml algorithms.yaml "pars_")
 
 # create logs/output folder if not exists
-#mkdir -p logs
-#mkdir -p output
+mkdir -p logs
+mkdir -p output
 
 #Execute algorithms over selected datasets
 #if [ "$pars_algorithms_panelcn" == "true" ]; then
@@ -36,20 +36,30 @@ eval $(parse_yaml algorithms.yaml "pars_")
 #	Rscript ./algorithms/convading/runConvading.r ./algorithms/convading/convadingParams.yaml datasets.yaml  > logs/convading.log 2>&1
 #fi
 
-if [ "$pars_algorithms_manta" == "true" ]; then
-    echo "[$(date)] Executing Manta"
-    Rscript ./algorithms/manta/runManta.r ./algorithms/manta/mantaParams.yaml datasets.yaml  > logs/manta.log 2>&1
-fi
+#if [ "$pars_algorithms_manta" == "true" ]; then
+#    echo "[$(date)] Executing Manta"
+#    Rscript ./algorithms/manta/runManta.r ./algorithms/manta/mantaParams.yaml datasets.yaml  > logs/manta.log 2>&1
+#fi
 
-if [ "$pars_algorithms_cnvkit" == "true" ]; then
-    echo "[$(date)] Executing CNVkit"
-    Rscript ./algorithms/cnvkit/runCNVkit.r ./algorithms/cnvkit/cnvkitParams.yaml datasets.yaml  > logs/cnvkit.log 2>&1
-fi
+#if [ "$pars_algorithms_cnvkit" == "true" ]; then
+#    echo "[$(date)] Executing CNVkit1"
+#    Rscript ./algorithms/cnvkit/runCNVkit.r ./algorithms/cnvkit/cnvkitParams.yaml datasets.yaml  > logs/cnvkit.log 2>&1
+#fi
 
-if [ "$pars_algorithms_cnvkit2" == "true" ]; then
-    echo "[$(date)] Executing CNVkit"
-    Rscript ./algorithms/cnvkit2/runCNVkit2.r ./algorithms/cnvkit2/cnvkitParams2.yaml datasets.yaml  > logs/cnvkit2.log 2>&1
-fi
+#if [ "$pars_algorithms_cnvkit2" == "true" ]; then
+#    echo "[$(date)] Executing CNVkit2"
+#    Rscript ./algorithms/cnvkit2/runCNVkit2.r ./algorithms/cnvkit2/cnvkitParams2.yaml datasets.yaml  > logs/cnvkit2.log 2>&1
+#fi
+
+#if [ "$pars_algorithms_cnvkit3" == "true" ]; then
+#    echo "[$(date)] Executing CNVkit3"
+#    Rscript ./algorithms/cnvkit3/runCNVkit3.r ./algorithms/cnvkit3/cnvkitParams3.yaml datasets.yaml  > logs/cnvkit3.log 2>&1
+#fi
+
+#if [ "$pars_algorithms_cnvkit4" == "true" ]; then
+#    echo "[$(date)] Executing CNVkit4"
+#    Rscript ./algorithms/cnvkit4/runCNVkit4.r ./algorithms/cnvkit4/cnvkitParams4.yaml datasets.yaml  > logs/cnvkit4.log 2>&1
+#fi
 
 
 #Generate summary file

@@ -176,6 +176,7 @@ for (name in names(datasets)) {
         saveResultsFileToGR(outputFolder, "cnvFounds.txt")
         
         print(paste("panelcn.mops for", name, "dataset finished", sep=" "))
+        print(paste("Finishing at", Sys.time()))
         cat("\n\n\n")
     }
 }

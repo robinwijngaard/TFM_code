@@ -1,0 +1,133 @@
+
+
+manta results on dataset datasetclinic 
+	Stats per ROI: 
+		Sensitivity: 0.0805 
+		Specificity: 0.9998 
+		No-call rate: 0 %  from a total of 25590 ROIs 
+	Stats per gene: 
+		Sensitivity: 0.1186 
+		Specificity: 0.9986 
+		No-call rate: 0 %  from a total of 1535 genes 
+		F1 Score: 0.2059 
+		Positive Predictive Value: 0.7778 
+		Negative Predictive Value: 0.9659 
+		Matthews correlation coefficient: 0.2953 
+		Cohen's kappa: 0.1972 
+	Stats at whole strategy level (per gene and including no-calls): 
+		Sensitivity: 0.1186 
+		Specificity: 0.9986  ->  2 extra gene(s) have to be covered by MLPA, 1474 genes saved 
+
+	False Negatives per gene: 
+		Sample 17358 1 false negative(s) 
+		Sample 17296 1 false negative(s) 
+		Sample 17398 1 false negative(s) 
+		Sample 17334 1 false negative(s) 
+		Sample 17341 1 false negative(s) 
+		Sample 17375 1 false negative(s) 
+		Sample 17304 1 false negative(s) 
+		Sample 17343 1 false negative(s) 
+		Sample 17305 1 false negative(s) 
+		Sample 17306 1 false negative(s) 
+		Sample 17337 1 false negative(s) 
+		Sample 17332 1 false negative(s) 
+		Sample 17340 1 false negative(s) 
+		Sample 17324 1 false negative(s) 
+		Sample 17335 1 false negative(s) 
+		Sample 17317 1 false negative(s) 
+		Sample 17331 1 false negative(s) 
+		Sample 17303 1 false negative(s) 
+		Sample 17307 1 false negative(s) 
+		Sample 17301 1 false negative(s) 
+		Sample 17302 1 false negative(s) 
+		Sample 17388 1 false negative(s) 
+		Sample 17400 1 false negative(s) 
+		Sample 17392 1 false negative(s) 
+		Sample 17342 1 false negative(s) 
+		Sample 17377 1 false negative(s) 
+		Sample 17386 1 false negative(s) 
+		Sample 17390 2 false negative(s) 
+		Sample 17378 1 false negative(s) 
+		Sample 17379 1 false negative(s) 
+		Sample 17393 1 false negative(s) 
+		Sample 17359 1 false negative(s) 
+		Sample 17394 1 false negative(s) 
+		Sample 17369 1 false negative(s) 
+		Sample 17316 1 false negative(s) 
+		Sample 17371 1 false negative(s) 
+		Sample 17366 2 false negative(s) 
+		Sample 17319 1 false negative(s) 
+		Sample 17380 1 false negative(s) 
+		Sample 17322 1 false negative(s) 
+		Sample 17357 1 false negative(s) 
+		Sample 17336 1 false negative(s) 
+		Sample 17365 1 false negative(s) 
+		Sample 17338 1 false negative(s) 
+		Sample 17320 1 false negative(s) 
+		Sample 17326 1 false negative(s) 
+		Sample 17403 1 false negative(s) 
+		Sample 17362 1 false negative(s) 
+		Sample 17333 1 false negative(s) 
+		Sample 17363 1 false negative(s) 
+
+	False Positives per gene: 
+		Sample 17340 1 false positives(s) 
+		Sample 17342 1 false positives(s) 
+
+	False Negatives at whole strategy level: 
+		Sample 17358 1 false negative(s) 
+		Sample 17296 1 false negative(s) 
+		Sample 17398 1 false negative(s) 
+		Sample 17334 1 false negative(s) 
+		Sample 17341 1 false negative(s) 
+		Sample 17375 1 false negative(s) 
+		Sample 17304 1 false negative(s) 
+		Sample 17343 1 false negative(s) 
+		Sample 17305 1 false negative(s) 
+		Sample 17306 1 false negative(s) 
+		Sample 17337 1 false negative(s) 
+		Sample 17332 1 false negative(s) 
+		Sample 17340 1 false negative(s) 
+		Sample 17324 1 false negative(s) 
+		Sample 17335 1 false negative(s) 
+		Sample 17317 1 false negative(s) 
+		Sample 17331 1 false negative(s) 
+		Sample 17303 1 false negative(s) 
+		Sample 17307 1 false negative(s) 
+		Sample 17301 1 false negative(s) 
+		Sample 17302 1 false negative(s) 
+		Sample 17388 1 false negative(s) 
+		Sample 17400 1 false negative(s) 
+		Sample 17392 1 false negative(s) 
+		Sample 17342 1 false negative(s) 
+		Sample 17377 1 false negative(s) 
+		Sample 17386 1 false negative(s) 
+		Sample 17390 2 false negative(s) 
+		Sample 17378 1 false negative(s) 
+		Sample 17379 1 false negative(s) 
+		Sample 17393 1 false negative(s) 
+		Sample 17359 1 false negative(s) 
+		Sample 17394 1 false negative(s) 
+		Sample 17369 1 false negative(s) 
+		Sample 17316 1 false negative(s) 
+		Sample 17371 1 false negative(s) 
+		Sample 17366 2 false negative(s) 
+		Sample 17319 1 false negative(s) 
+		Sample 17380 1 false negative(s) 
+		Sample 17322 1 false negative(s) 
+		Sample 17357 1 false negative(s) 
+		Sample 17336 1 false negative(s) 
+		Sample 17365 1 false negative(s) 
+		Sample 17338 1 false negative(s) 
+		Sample 17320 1 false negative(s) 
+		Sample 17326 1 false negative(s) 
+		Sample 17403 1 false negative(s) 
+		Sample 17362 1 false negative(s) 
+		Sample 17333 1 false negative(s) 
+		Sample 17363 1 false negative(s) 
+
+	False Positives at whole strategy level: 
+		Sample 17340 1 false positives(s) 
+		Sample 17342 1 false positives(s) 
+
+Summary file generated at 2021-05-02 18:37:22

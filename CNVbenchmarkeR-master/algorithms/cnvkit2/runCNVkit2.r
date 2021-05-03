@@ -48,9 +48,6 @@ processCNVkitBody <- function(launchFile, bedFile, outputFolder,bamsDir, params,
   } 
 }
   
-
-
-
 # Read args
 args <- commandArgs(TRUE)
 print(args)
@@ -104,11 +101,7 @@ for (name in names(datasets)) {
     
     cnvFounds <- data.frame(matrix(ncol = 8, nrow = 0)) 
     colnames(cnvFounds) <- c("Sample","Gene", "Chr", "Start", "End", "log2", "CN", "CNV.type")
-    
-    refData <- read.table(file.path(outputFolder, "reference.cnn"), sep = "\t", stringsAsFactors=FALSE, header = TRUE)
-    refData <- refData[, 1:4]
-    colnames(refData) <- c("Chr", "Start", "End", "Gene")
-    
+
     # Obtain failedcalls and cnv
     for (call in calls){
       sample <- sub(".bintest.call.cns", "", call)
@@ -137,7 +130,7 @@ for (name in names(datasets)) {
       failedcall <- failedData[, 1:4]
       colnames(failedcall) <- c("Chr", "Start", "End", "Gene")
       
-      failedcall <- anti_join(refData, failedcall, by=c("Chr", "Start", "End", "Gene"))
+      failedcall <- anti_join(bedData, failedcall, by=c("Chr", "Start", "End", "Gene"))
       
       # Add sample ID column
       SampleID <- rep(sample, nrow(failedcall))

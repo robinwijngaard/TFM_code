@@ -214,6 +214,7 @@ for (name in names(datasets)) {
     write.table(fr, failedRegionsFile, sep="\t", row.names=FALSE, quote = FALSE)
     
     print(paste("ExomeDepth for", name, "dataset finished", sep=" "))
+    print(paste("Finishing at", Sys.time()))
     cat("\n\n\n")   
   }
 }

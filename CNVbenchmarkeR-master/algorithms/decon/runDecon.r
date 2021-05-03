@@ -134,6 +134,7 @@ for (name in names(datasets)) {
         saveExonFailures(file.path(outputFolder, "failures_Failures.txt"), bedFile, bamsDir, outputFolder)
 
         print(paste("DECoN for", name, "dataset finished", sep=" "))
+        print(paste("Finishing at", Sys.time()))
         cat("\n\n\n")
     }
 }

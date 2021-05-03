@@ -20,55 +20,21 @@ processCNVkitBody <- function(launchFile, bedFile, outputFolder,bamsDir, params,
   # create antitarget (empty doc)
   system(paste("touch", file.path(outputFolder, "MT")))
   mtFile <- file.path(outputFolder, "MT")
-  
-  # obtain reference
-  refFolder <- file.path(outputFolder, "reference")
-  dir.create(refFolder)
-  
+
   # load bams
-  
   bamFiles <- list.files(bamsDir)
   bamFiles <- bamFiles[!grepl(".bai", bamFiles)]
   
-  if(params$refFile){ # reffile already exists
-    refFile <- file.path(outputFolder, "ref-tas.cnn")
-    
-    # create cnn files for bams
-    #for(bam in bamFiles){
-    #  system(paste("python", launchFile, "coverage", file.path(bamsDir, bam), bedFile, "-o", file.path(outputFolder, paste0(bam, ".targetcoverage.cnn"))))
-    #}
-    
-  } else if (params$refBams){ # create new reffile from refbams
-    refbamsFiles <- list.files(refbamsDir)
-    refbamsFiles <- refbamsFiles[!grepl(".bai", refbamsFiles)]
-    for(refbam in refbamsFiles){
-      system(paste("python", launchFile, "coverage", file.path(refbamsDir, refbam), bedFile, "-o", file.path(refFolder, paste0(refbam, ".targetcoverage.cnn"))))
-    }
-    
-    refcoverageFiles <- list.files(refFolder, pattern = ".targetcoverage.cnn")
-    refcoverageFilesPath <- file.path(refFolder, refcoverageFiles)
-    refcoverageFilesList <- paste(refcoverageFilesPath, collapse = " ")
-    
-    system(paste("python", launchFile, "reference", refcoverageFilesList, "-f", fastaFile, "--no-edge -o", file.path(outputFolder, "ref-tas.cnn")))
-    refFile <- file.path(outputFolder, "ref-tas.cnn")
-  
-    # create cnn files for bams
-    for(bam in bamFiles){
-      system(paste("python", launchFile, "coverage", file.path(bamsDir, bam), bedFile, "-o", file.path(outputFolder, paste0(bam, ".targetcoverage.cnn"))))
-    }
-    
-  } else { # create reffile from normal input samples
-    for(bam in bamFiles){
-      system(paste("python", launchFile, "coverage", file.path(bamsDir, bam), bedFile, "-o", file.path(outputFolder, paste0(bam, ".targetcoverage.cnn"))))
-    }
-    
-    coverageFiles <- list.files(outputFolder, pattern = ".targetcoverage.cnn")
-    coverageFilesPath <- file.path(outputFolder, coverageFiles)
-    coverageFilesList <- paste(coverageFilesPath, collapse = " ")
-    
-    system(paste("python", launchFile, "reference", coverageFilesList, "-f", fastaFile, "--no-edge -o", file.path(outputFolder, "ref-tas.cnn")))
-    refFile <- file.path(outputFolder, "ref-tas.cnn")
+  for(bam in bamFiles){
+    system(paste("python", launchFile, "coverage", file.path(bamsDir, bam), bedFile, "-o", file.path(outputFolder, paste0(bam, ".targetcoverage.cnn"))))
   }
+    
+  coverageFiles <- list.files(outputFolder, pattern = ".targetcoverage.cnn")
+  coverageFilesPath <- file.path(outputFolder, coverageFiles)
+  coverageFilesList <- paste(coverageFilesPath, collapse = " ")
+    
+  system(paste("python", launchFile, "reference", coverageFilesList, "-f", fastaFile, "--no-edge -o", file.path(outputFolder, "ref-tas.cnn")))
+  refFile <- file.path(outputFolder, "ref-tas.cnn")  
 
   # analyse bam samples
   coverageFiles <- list.files(outputFolder, pattern = ".targetcoverage.cnn")
@@ -86,13 +52,8 @@ processCNVkitBody <- function(launchFile, bedFile, outputFolder,bamsDir, params,
     sampleName <- sub("_ci.cns", "", cnsFile)
     system(paste("python", launchFile, "call", file.path(outputFolder, cnsFile), "-m threshold --filter ci -o", file.path(outputFolder, paste0(sampleName, "_ci.call.cns"))))
   }
-  
-  cnrFiles <- list.files(outputFolder, pattern = ".cnr")
-  for (cnrFile in cnrFiles){
-    sampleName <- sub(".cnr", "", cnrFile)
-    system(paste("python", launchFile, "call", file.path(outputFolder, cnrFile), "-m threshold -o", file.path(outputFolder, paste0(sampleName, ".call.cnr"))))
-  }
 }
+
 
 
 
@@ -143,28 +104,17 @@ for (name in names(datasets)) {
     calls <- list.files(outputFolder, pattern = "_ci.call.cns")
     
     # Create main files
-    #failedROIs <- data.frame(matrix(ncol = 5, nrow = 0))
-    #colnames(failedROIs) <- c("SampleID", "Chr", "Start", "End", "Gene")
+    failedROIs <- data.frame(matrix(ncol = 5, nrow = 0))
+    colnames(failedROIs) <- c("SampleID", "Chr", "Start", "End", "Gene")
     
     cnvFounds <- data.frame(matrix(ncol = 8, nrow = 0)) 
     colnames(cnvFounds) <- c("Sample","Gene", "Chr", "Start", "End", "log2", "CN", "CNV.type")
-    
+
     # Obtain failedcalls and cnv
     for (call in calls){
       sample <- sub("_ci.call.cns", "", call)
       callPath <- file.path(outputFolder, call)
       callData <-  read.table(callPath, sep="\t", stringsAsFactors=FALSE, header = TRUE)
-      
-      #failedcall <- callData[, 1:4]
-      #colnames(failedcall) <- c("Chr", "Start", "End", "Gene")
-      #failedcall <- anti_join(bedData, failedcall, by=c("Chr", "Start", "End", "Gene"))
-      
-      # Add sample ID column
-      #SampleID <- rep(sample, nrow(failedcall))
-      #failedcall <- cbind(SampleID, failedcall)
-      
-      # Add to main file
-      #failedROIs <- rbind(failedROIs, failedcall)
       
       # delete normal (cn = 2)
       cnvCall <- subset(callData, callData$cn != 2)
@@ -179,10 +129,28 @@ for (name in names(datasets)) {
       colnames(cnvCall) <- c("Sample","Gene", "Chr", "Start", "End", "log2", "CN", "CNV.type") 
       
       cnvFounds <- rbind(cnvFounds, cnvCall)
+      
+      #failed calls
+      failedFile <- paste0(sample, ".cnr")
+      failedPath <- file.path(outputFolder, failedFile)
+      failedData <-  read.table(failedPath, sep="\t", stringsAsFactors=FALSE, header = TRUE)
+      
+      failedcall <- failedData[, 1:4]
+      colnames(failedcall) <- c("Chr", "Start", "End", "Gene")
+      
+      failedcall <- anti_join(bedData, failedcall, by=c("Chr", "Start", "End", "Gene"))
+      
+      # Add sample ID column
+      SampleID <- rep(sample, nrow(failedcall))
+      failedcall <- cbind(SampleID, failedcall)
+      
+      # Add to main file
+      failedROIs <- rbind(failedROIs, failedcall)
+      
     }
     
     #Write failedROIs
-    #write.table(failedROIs, file.path(outputFolder, "failedROIs.csv"), sep="\t", row.names=FALSE, quote = FALSE)
+    write.table(failedROIs, file.path(outputFolder, "failedROIs.csv"), sep="\t", row.names=FALSE, quote = FALSE)
     
     # Write result table
     cnvFounds$CNV.type <- as.character(cnvFounds$CNV.type)
@@ -193,6 +161,7 @@ for (name in names(datasets)) {
     saveResultsFileToGR(outputFolder, "cnvFounds.txt")
     
     print(paste("cnvkit for", name, "dataset finished", sep=" "))
+    print(paste("Finishing at", Sys.time()))
     cat("\n\n\n")
   }
 }

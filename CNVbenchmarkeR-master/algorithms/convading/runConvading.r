@@ -211,6 +211,30 @@ for (name in names(datasets)) {
           write.table(data, file, sep="\t", row.names=FALSE, quote = FALSE)
         }
         
+        # Export results
+        calls <- list.files(outputFolder, pattern = ".best.score.longlist.txt")
+        cnvFounds <- data.frame(matrix(ncol = 8, nrow = 0)) 
+        colnames(cnvFounds) <- c("Sample","Gene", "Chr", "Start", "End", "CNV.type")
+        
+        # Obtain failedcalls and cnv
+        for (call in calls){
+          sample <- sub(".best.score.longlist.txt", "", call)
+          callPath <- file.path(outputFolder, call)
+          callData <-  read.table(callPath, sep="\t", stringsAsFactors=FALSE, header = TRUE)
+
+          #Add sampleID column
+          Sample <- rep(sample, nrow(callData))
+          cnvCall <- cbind(Sample, callData)
+          
+          #Reorder and delete non-necessary colums
+          cnvCall <- cnvCall[, c(1, 5, 2, 3, 4, 9)]
+          colnames(cnvCall) <- c("Sample","Gene", "Chr", "Start", "End","CNV.type") 
+          
+          cnvFounds <- rbind(cnvFounds, cnvCall)
+        }
+        cnvFounds$CNV.type <- as.character(cnvFounds$CNV.type)
+        write.table(cnvFounds, file.path(outputFolder, "cnvFounds.txt"), sep="\t", row.names=FALSE, quote = FALSE)  
+        
         # Save results in GRanges format
         message("Saving GenomicRanges results")
         saveResultsFolderToGR(outputFolder, "best.score.longlist.txt", chrColumn = "CHR", startColumn = "START", endColumn = "STOP")
@@ -219,6 +243,7 @@ for (name in names(datasets)) {
         saveFailedROIs(outputFolder)
         
         print(paste("convading for", name, "dataset finished", sep=" "))
+        print(paste("Finishing at", Sys.time()))
         cat("\n\n\n")
     }
 }
