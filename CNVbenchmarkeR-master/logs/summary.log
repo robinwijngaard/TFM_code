@@ -17,6 +17,7 @@ Loading datasetall Dataset validated results
   Loading cnvkit2 results for datasetall dataset
   Loading cnvkit3 results for datasetall dataset
   Loading cnvkit4 results for datasetall dataset
+  Loading cnvkit5 results for datasetall dataset
   Generating summary file at /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/summary/summary-datasetall.txt 
   Generating CSV results file at /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/summary/results-datasetall.csv 
 
@@ -33,6 +34,7 @@ Loading datasetsingle Dataset validated results
   Loading cnvkit2 results for datasetsingle dataset
   Loading cnvkit3 results for datasetsingle dataset
   Loading cnvkit4 results for datasetsingle dataset
+  Loading cnvkit5 results for datasetsingle dataset
   Generating summary file at /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/summary/summary-datasetsingle.txt 
   Generating CSV results file at /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/summary/results-datasetsingle.csv 
 
@@ -48,6 +50,7 @@ Loading datasetclinic Dataset validated results
   Loading cnvkit2 results for datasetclinic dataset
   Loading cnvkit3 results for datasetclinic dataset
   Loading cnvkit4 results for datasetclinic dataset
+  Loading cnvkit5 results for datasetclinic dataset
   Generating summary file at /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/summary/summary-datasetclinic.txt 
   Generating CSV results file at /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/output/summary/results-datasetclinic.csv 
 There were 50 or more warnings (use warnings() to see the first 50)

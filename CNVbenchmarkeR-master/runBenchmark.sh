@@ -61,6 +61,10 @@ mkdir -p output
 #    Rscript ./algorithms/cnvkit4/runCNVkit4.r ./algorithms/cnvkit4/cnvkitParams4.yaml datasets.yaml  > logs/cnvkit4.log 2>&1
 #fi
 
+#if [ "$pars_algorithms_cnvkit5" == "true" ]; then
+#    echo "[$(date)] Executing CNVkit5"
+#    Rscript ./algorithms/cnvkit5/runCNVkit5.r ./algorithms/cnvkit5/cnvkitParams5.yaml datasets.yaml  > logs/cnvkit5.log 2>&1
+#fi
 
 #Generate summary file
 echo "[$(date)] Generating summary file"

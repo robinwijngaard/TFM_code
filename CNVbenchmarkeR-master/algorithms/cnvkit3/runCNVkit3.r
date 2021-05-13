@@ -107,12 +107,12 @@ for (name in names(datasets)) {
     failedROIs <- data.frame(matrix(ncol = 5, nrow = 0))
     colnames(failedROIs) <- c("SampleID", "Chr", "Start", "End", "Gene")
     
-    cnvFounds <- data.frame(matrix(ncol = 8, nrow = 0)) 
-    colnames(cnvFounds) <- c("Sample","Gene", "Chr", "Start", "End", "log2", "CN", "CNV.type")
+    cnvFounds <- data.frame(matrix(ncol = 9, nrow = 0)) 
+    colnames(cnvFounds) <- c("Sample","Gene", "Chr", "Start", "End", "log2", "CN", "CNV.type", "Weight")
     
     # Obtain failedcalls and cnv
     for (call in calls){
-      sample <- sub("call.cnr", "", call)
+      sample <- sub(".call.cnr", "", call)
       callPath <- file.path(outputFolder, call)
       callData <-  read.table(callPath, sep="\t", stringsAsFactors=FALSE, header = TRUE)
       
@@ -136,8 +136,8 @@ for (name in names(datasets)) {
       cnvCall <- cbind(Sample, cnvCall)
       
       #Reorder and delete non-necessary colums
-      cnvCall <- cnvCall[, c(1, 5, 2, 3, 4, 6, 7, 10)]
-      colnames(cnvCall) <- c("Sample","Gene", "Chr", "Start", "End", "log2", "CN", "CNV.type") 
+      cnvCall <- cnvCall[, c(1, 5, 2, 3, 4, 6, 7, 10, 9)]
+      colnames(cnvCall) <- c("Sample","Gene", "Chr", "Start", "End", "log2", "CN", "CNV.type", "Weight") 
       
       cnvFounds <- rbind(cnvFounds, cnvCall)
     }

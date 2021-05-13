@@ -54,6 +54,8 @@ write.table(singleNormal, file.path(tempDir, "singleNormal.bed"), sep="\t", row.
 
 TP_all <- data.frame(matrix(ncol = 15, nrow = 0))
 FP_all <- data.frame(matrix(ncol = 13, nrow = 0))
+FN_all <- data.frame(matrix(ncol = 11, nrow = 0))
+
 
 # All
 cnvFiles <- list.files(allDir, pattern = ".txt")
@@ -94,11 +96,13 @@ for (cnvFile in cnvFiles){
     setwd(tempDir)
     system(paste("bedtools intersect -wa -wb -a", sampleBed, "-b", allBed, "> TP.bed"))
     system(paste("bedtools intersect -wa -wb -a", sampleBed, "-b", allNormalbed, "> FP.bed"))
+    system(paste("bedtools intersect -wa -v -a", allBed, "-b", sampleBed, "> FN.bed"))
     
     # read files
     if (file.size("TP.bed") != 0) {TPsample <- read.table("TP.bed", sep = "\t", stringsAsFactors=FALSE)} else {TPsample <- NULL}
     if (file.size("FP.bed") != 0) {FPsample <- read.table("FP.bed", sep = "\t", stringsAsFactors=FALSE)} else {FPsample <- NULL}
-
+    if (file.size("FN.bed") != 0) {FNsample <- read.table("FN.bed", sep = "\t", stringsAsFactors=FALSE)} else {FNsample <- NULL}
+    
     # Edit files
     if(!is.null(TPsample)){
       n <- nrow(TPsample)
@@ -115,12 +119,21 @@ for (cnvFile in cnvFiles){
       FPsample <- cbind(sampleID, algorithmID, FPsample)
       FP_all <- rbind(FP_all, FPsample)
     }
+    
+    if(!is.null(FNsample)){
+      n <- nrow(FNsample)
+      sampleID <- rep(sample, n)
+      algorithmID <- rep(algorithm, n)
+      FNsample <- cbind(sampleID, algorithmID, FNsample)
+      FN_all <- rbind(FN_all, FNsample)
+    }
   }
 }
 
 
 TP_single <- data.frame(matrix(ncol = 15, nrow = 0))
 FP_single <- data.frame(matrix(ncol = 13, nrow = 0))
+FN_single <- data.frame(matrix(ncol = 11, nrow = 0))
 
 # All
 cnvFiles <- list.files(singleDir, pattern = ".txt")
@@ -161,10 +174,12 @@ for (cnvFile in cnvFiles){
     setwd(tempDir)
     system(paste("bedtools intersect -wa -wb -a", sampleBed, "-b", singleBed, "> TP.bed"))
     system(paste("bedtools intersect -wa -wb -a", sampleBed, "-b", singleNormalbed, "> FP.bed"))
+    system(paste("bedtools intersect -wa -v -a", allBed, "-b", sampleBed, "> FN.bed"))
     
     # read files
     if (file.size("TP.bed") != 0) {TPsample <- read.table("TP.bed", sep = "\t", stringsAsFactors=FALSE)} else {TPsample <- NULL}
     if (file.size("FP.bed") != 0) {FPsample <- read.table("FP.bed", sep = "\t", stringsAsFactors=FALSE)} else {FPsample <- NULL}
+    if (file.size("FN.bed") != 0) {FNsample <- read.table("FN.bed", sep = "\t", stringsAsFactors=FALSE)} else {FNsample <- NULL}
     
     # Edit files
     if(!is.null(TPsample)){
@@ -188,6 +203,7 @@ for (cnvFile in cnvFiles){
 
 TP_clinic <- data.frame(matrix(ncol = 15, nrow = 0))
 FP_clinic <- data.frame(matrix(ncol = 13, nrow = 0))
+FN_clinic <- data.frame(matrix(ncol = 11, nrow = 0))
 
 cnvFiles <- list.files(singleDir, pattern = ".txt")
 for (cnvFile in cnvFiles){
@@ -227,10 +243,12 @@ for (cnvFile in cnvFiles){
     setwd(tempDir)
     system(paste("bedtools intersect -wa -wb -a", sampleBed, "-b", clinicBed, "> TP.bed"))
     system(paste("bedtools intersect -wa -wb -a", sampleBed, "-b", clinicNormalbed, "> FP.bed"))
+    system(paste("bedtools intersect -wa -v -a", allBed, "-b", sampleBed, "> FN.bed"))
     
     # read files
     if (file.size("TP.bed") != 0) {TPsample <- read.table("TP.bed", sep = "\t", stringsAsFactors=FALSE)} else {TPsample <- NULL}
     if (file.size("FP.bed") != 0) {FPsample <- read.table("FP.bed", sep = "\t", stringsAsFactors=FALSE)} else {FPsample <- NULL}
+    if (file.size("FN.bed") != 0) {FNsample <- read.table("FN.bed", sep = "\t", stringsAsFactors=FALSE)} else {FNsample <- NULL}
     
     # Edit files
     if(!is.null(TPsample)){
@@ -268,10 +286,7 @@ c <- which(TP_single$V4 != TP_single$V12)
 TP_single[c, ]
 
 # FInal data frame
-allData$cnvkit <- 0
-allData$cnvkit2 <- 0
-allData$cnvkit3 <- 0
-allData$cnvkit4 <- 0
+allData$cnvkit5 <- 0
 allData$convading <- 0
 allData$decon <- 0
 allData$exomedepth <- 0
@@ -290,10 +305,7 @@ for(i in 1:nrow(allData)){
 }
 
 # FInal data frame Single
-singleData$cnvkit <- 0
-singleData$cnvkit2 <- 0
-singleData$cnvkit3 <- 0
-singleData$cnvkit4 <- 0
+singleData$cnvkit5 <- 0
 singleData$convading <- 0
 singleData$decon <- 0
 singleData$exomedepth <- 0
@@ -312,10 +324,7 @@ for(i in 1:nrow(singleData)){
 }
 
 # FInal data frame clinic
-clinicData$cnvkit <- 0
-clinicData$cnvkit2 <- 0
-clinicData$cnvkit3 <- 0
-clinicData$cnvkit4 <- 0
+clinicData$cnvkit5 <- 0
 clinicData$convading <- 0
 clinicData$decon <- 0
 clinicData$exomedepth <- 0
@@ -342,10 +351,7 @@ write.table(singleData, file.path(resultDir, "single.bed"), sep="\t", row.names=
 # False positives
 
 # FInal data frame
-allNormal$cnvkit <- 0
-allNormal$cnvkit2 <- 0
-allNormal$cnvkit3 <- 0
-allNormal$cnvkit4 <- 0
+allNormal$cnvkit5 <- 0
 allNormal$convading <- 0
 allNormal$decon <- 0
 allNormal$exomedepth <- 0
@@ -364,10 +370,7 @@ for(i in 1:nrow(allNormal)){
 }
 
 # FInal data frame Single
-singleNormal$cnvkit <- 0
-singleNormal$cnvkit2 <- 0
-singleNormal$cnvkit3 <- 0
-singleNormal$cnvkit4 <- 0
+singleNormal$cnvkit5 <- 0
 singleNormal$convading <- 0
 singleNormal$decon <- 0
 singleNormal$exomedepth <- 0
@@ -386,10 +389,7 @@ for(i in 1:nrow(singleNormal)){
 }
 
 # FInal data frame clinic
-clinicNormal$cnvkit <- 0
-clinicNormal$cnvkit2 <- 0
-clinicNormal$cnvkit3 <- 0
-clinicNormal$cnvkit4 <- 0
+clinicNormal$cnvkit5 <- 0
 clinicNormal$convading <- 0
 clinicNormal$decon <- 0
 clinicNormal$exomedepth <- 0
@@ -412,3 +412,255 @@ resultDir <- file.path(analysisDir, "results")
 write.table(allNormal, file.path(resultDir, "allNormal.bed"), sep="\t", row.names=FALSE, quote = FALSE, col.names = FALSE)  
 write.table(clinicNormal, file.path(resultDir, "clinicNormal.bed"), sep="\t", row.names=FALSE, quote = FALSE, col.names = FALSE)  
 write.table(singleNormal, file.path(resultDir, "singleNormal.bed"), sep="\t", row.names=FALSE, quote = FALSE, col.names = FALSE)  
+
+# VennDiagram
+setwd(resultDir)
+
+## All calls
+all_venn <- rbind(allData[, 9:15], allNormal[, 7:13])
+all_venn$ID <- as.character(all_venn$ID)
+all_venn <- all_venn[, -6]
+
+venn_list <- list()
+
+for(i in 2:6){
+  algo <- names(all_venn)[i]
+  all_venn_algo <- all_venn[, c(1, i)]
+  all_venn_algo <- subset(all_venn_algo, all_venn_algo[,2] != 0)
+  venn_list[[algo]] <- all_venn_algo[,1]
+}
+
+library("VennDiagram")
+
+venn.diagram(venn_list, filename = "venn_allcalls.tiff", col = "black",fill = c("dodgerblue", "goldenrod1", "darkorange1", "seagreen3", "orchid3"),alpha = 0.50,cat.col = c("dodgerblue", "goldenrod1", "darkorange1", "seagreen3", "orchid3"),cat.cex = 1.5,cat.fontface = "bold",margin = 0.2)
+
+
+## TP
+tp_venn <- rbind(allData[, 9:15])
+tp_venn$ID <- as.character(tp_venn$ID)
+tp_venn <- tp_venn[, -6]
+
+venn_list <- list()
+
+for(i in 2:6){
+  algo <- names(tp_venn)[i]
+  tp_venn_algo <- tp_venn[, c(1, i)]
+  tp_venn_algo <- subset(tp_venn_algo, tp_venn_algo[,2] != 0)
+  venn_list[[algo]] <- tp_venn_algo[,1]
+}
+
+venn.diagram(venn_list, filename = "venn_tp.tiff", col = "black",fill = c("dodgerblue", "goldenrod1", "darkorange1", "seagreen3", "orchid3"),alpha = 0.50,cat.col = c("dodgerblue", "goldenrod1", "darkorange1", "seagreen3", "orchid3"),cat.cex = 1.5,cat.fontface = "bold",margin = 0.2)
+
+## FN
+fn_venn <- rbind(allData[, 9:15])
+fn_venn$ID <- as.character(fn_venn$ID)
+fn_venn <- fn_venn[, -6]
+
+venn_list <- list()
+
+for(i in 2:6){
+  algo <- names(fn_venn)[i]
+  fn_venn_algo <- fn_venn[, c(1, i)]
+  fn_venn_algo <- subset(fn_venn_algo, fn_venn_algo[,2] == 0)
+  venn_list[[algo]] <- fn_venn_algo[,1]
+}
+
+venn.diagram(venn_list, filename = "venn_fn.tiff", col = "black",fill = c("dodgerblue", "goldenrod1", "darkorange1", "seagreen3", "orchid3"),alpha = 0.50,cat.col = c("dodgerblue", "goldenrod1", "darkorange1", "seagreen3", "orchid3"),cat.cex = 1.5,cat.fontface = "bold",margin = 0.2)
+
+
+## FP
+fp_venn <- rbind(allNormal[, 7:13])
+fp_venn$ID <- as.character(fp_venn$ID)
+fp_venn <- fp_venn[, -6]
+
+venn_list <- list()
+
+for(i in 2:6){
+  algo <- names(fp_venn)[i]
+  fp_venn_algo <- fp_venn[, c(1, i)]
+  fp_venn_algo <- subset(fp_venn_algo, fp_venn_algo[,2] != 0)
+  venn_list[[algo]] <- fp_venn_algo[,1]
+}
+
+venn.diagram(venn_list, filename = "venn_fp.tiff", col = "black",fill = c("dodgerblue", "goldenrod1", "darkorange1", "seagreen3", "orchid3"),alpha = 0.50,cat.col = c("dodgerblue", "goldenrod1", "darkorange1", "seagreen3", "orchid3"),cat.cex = 1.5,cat.fontface = "bold",margin = 0.2)
+
+# MDS
+## All
+library("MASS")
+all_mds <- rbind(allData[, 9:15], allNormal[, 7:13])
+all_mds <- all_mds[, c(-1,-6)]
+
+d <- dist(t(all_mds), method = "euclidean")
+MDS <- isoMDS(d)
+
+plot(MDS$points, pch = 16, col = c("dodgerblue", "goldenrod1", "darkorange1", "seagreen3", "orchid3"), cex = 1.5)
+labels <- names(all_mds)
+legend(13, 13, legend=labels, col = c("dodgerblue", "goldenrod1", "darkorange1", "seagreen3", "orchid3"), pch = 16)
+
+## Positives
+TP_mds <- rbind(allData[, 9:15])
+TP_mds <- TP_mds[, c(-1,-6)]
+
+d <- dist(t(TP_mds), method = "euclidean")
+MDS <- isoMDS(d)
+
+plot(MDS$points, pch = 16, col = c("dodgerblue", "goldenrod1", "darkorange1", "seagreen3", "orchid3"), cex = 1.5)
+labels <- names(all_mds)
+legend(1.5, 2, legend=labels, col = c("dodgerblue", "goldenrod1", "darkorange1", "seagreen3", "orchid3"), pch = 16)
+
+##Normal
+TN_mds <- rbind(allNormal[, 7:13])
+TN_mds <- TN_mds[, c(-1,-6)]
+
+d <- dist(t(TN_mds), method = "euclidean")
+MDS <- isoMDS(d)
+
+plot(MDS$points, pch = 16, col = c("dodgerblue", "goldenrod1", "darkorange1", "seagreen3", "orchid3"), cex = 1.5)
+labels <- names(all_mds)
+legend(13, 12, legend=labels, col = c("dodgerblue", "goldenrod1", "darkorange1", "seagreen3", "orchid3"), pch = 16)
+
+
+# Corplot
+library(corrplot)
+corr.all <- rbind(allData[, 10:15], allNormal[, 8:13])
+corr.all <- corr.all[, -5]
+
+cor.data <- cor(corr.all)
+corrplot(cor.data, method = "number", cl.lim = c(0,1))
+
+# Cluster
+clust <- rbind(allData[, 9:15], allNormal[, 7:13])
+clust <- clust[, c(-1,-6)]
+
+d <- dist(t(clust), method = "euclidean")
+all.hc <- hclust(d, method = "ward.D2")
+plot(all.hc)
+
+
+# ROIS per gene
+
+rois_gene <- data.frame(genes = c(allData[, 4], allNormal[, 4]))
+rois_gene_count <- rois_gene %>% group_by(genes) %>% summarise(n=n())
+
+FP_analysis <- FP_all %>% group_by(V8, algorithmID) %>% summarize(n=n())
+FN_analysis <- FN_all %>% group_by(V4, algorithmID) %>% summarize(n=n())
+
+FP_analysis$roicount <- NA
+
+for(i in 1:nrow(FP_analysis)){
+  for(j in 1:nrow(rois_gene_count)){
+    if(FP_analysis$V8[i] == rois_gene_count$genes[j]){
+      FP_analysis$roicount[i] <- rois_gene_count$n[j]
+    }
+  }
+}
+
+FN_analysis$roicount <- NA
+
+for(i in 1:nrow(FN_analysis)){
+  for(j in 1:nrow(rois_gene_count)){
+    if(FN_analysis$V4[i] == rois_gene_count$genes[j]){
+      FN_analysis$roicount[i] <- rois_gene_count$n[j]
+    }
+  }
+}
+
+FP_analysis$perc <- FP_analysis$n/FP_analysis$roicount * 100
+FN_analysis$perc <- FN_analysis$n/FN_analysis$roicount * 100
+
+write.table(FP_analysis, file.path(resultDir, "FP_analysis.txt"), sep="\t", row.names=FALSE, quote = FALSE, col.names = TRUE)  
+write.table(FN_analysis, file.path(resultDir, "FN_analysis.txt"), sep="\t", row.names=FALSE, quote = FALSE, col.names = TRUE)
+
+# Search for specific ROIs frequently FP / FN
+
+FP_analysis <- FP_all %>% group_by(V11, V8) %>% summarize(n=n())
+FN_analysis <- FN_all %>% group_by(V9, V4) %>% summarize(n=n())
+
+write.table(FP_analysis, file.path(resultDir, "FP_analysis_ROI.txt"), sep="\t", row.names=FALSE, quote = FALSE, col.names = TRUE)  
+write.table(FN_analysis, file.path(resultDir, "FN_analysis_ROI.txt"), sep="\t", row.names=FALSE, quote = FALSE, col.names = TRUE)
+
+
+# Failed ROIS vs FP
+
+deconFailedFile <- file.path(analysisDir, "all", "failedROIs_decon.csv")
+deconFailed <- read.table(deconFailedFile, sep = "\t", stringsAsFactors=FALSE, header = TRUE)
+deconFailed <- deconFailed[, c(2:4,1)]
+
+samples <- sort(unique(deconFailed$SampleID)) 
+
+Failed_all <- data.frame(matrix(ncol = 10, nrow = 0))
+
+for(sample in samples){
+  s <- which(deconFailed$SampleID == sample)
+  sampleData <- deconFailed[s, ]
+  sampleBed <- file.path(tempDir, paste0("deconfailed_", sample, ".bed"))
+  write.table(sampleData, sampleBed, sep="\t", row.names=FALSE, quote = FALSE, col.names = FALSE)  
+  
+  # Prepare sample bed file, filter by sample
+  allSample <- subset(allData[, c(1:5,9)], allData$V4 == sample)
+  allNormalsample <- subset(allNormal[, c(1:5, 7)], allNormal$V4== sample)
+  colnames(allSample) <- c("chr", "start", "end", "gene", "sample", "ID")
+  colnames(allNormalsample) <- c("chr", "start", "end", "gene", "sample", "ID")
+  
+  allcompletesample <- rbind(allSample, allNormalsample)
+  
+  allBed <- file.path(tempDir, "all.bed")
+  write.table(allcompletesample, allBed, sep="\t", row.names=FALSE, quote = FALSE, col.names = FALSE) 
+  
+  # intersect
+  setwd(tempDir)
+  system(paste("bedtools intersect -wb -a", sampleBed, "-b", allBed, "> failed.bed"))
+  
+  if (file.size("failed.bed") != 0) {FailedSample <- read.table("failed.bed", sep = "\t", stringsAsFactors=FALSE)} else {FailedSample <- NULL}
+  
+  # Edit files
+  if(!is.null(FailedSample)){
+    Failed_all <- rbind(Failed_all, FailedSample)
+  }
+}
+
+Failed_all <- Failed_all[, 5:10]
+length(Failed_all$V10[Failed_all$V10 < 292])
+
+FP_cnvkit <- subset(FP_all, FP_all$algorithmID == "cnvkit5")
+FP_cnvkit <- FP_cnvkit[, c(3:6,1, 13)]
+
+write.table(Failed_all, file.path(resultDir, "failed_decon.bed"), sep="\t", row.names=FALSE, quote = FALSE, col.names = FALSE) 
+write.table(FP_cnvkit, file.path(resultDir, "fp_cnvkit.bed"), sep="\t", row.names=FALSE, quote = FALSE, col.names = FALSE) 
+
+setwd(tempDir)
+
+Failed_FP.df <- data.frame(matrix(ncol = 12, nrow = 0))
+
+for(sample in samples){
+  s <- which(Failed_all$V9 == sample)
+  sampleFailed <- Failed_all[s, ]
+  sampleBed <- file.path(tempDir, paste0("deconfailed_", sample, ".bed"))
+  write.table(sampleFailed, sampleBed, sep="\t", row.names=FALSE, quote = FALSE, col.names = FALSE)  
+  
+  # Prepare sample FP cnvkit
+  fpSample <- subset(FP_cnvkit, FP_cnvkit$sampleID == sample)
+  
+  fpBed <- file.path(tempDir, paste0("cnvkitfp_", sample, ".bed"))
+  write.table(fpSample, fpBed, sep="\t", row.names=FALSE, quote = FALSE, col.names = FALSE) 
+  
+  # intersect
+  setwd(tempDir)
+  system(paste("bedtools intersect -wb -wa -a", sampleBed, "-b", fpBed, "> failed_fp.bed"))
+  
+  if (file.size("failed_fp.bed") != 0) {FailedFPSample <- read.table("failed_fp.bed", sep = "\t", stringsAsFactors=FALSE)} else {FailedFPSample <- NULL}
+  
+  # Edit files
+  if(!is.null(FailedFPSample)){
+    Failed_FP.df <- rbind(Failed_FP.df, FailedFPSample)
+  }
+}
+
+## Venn
+venn_list <- list(Failed_decon = as.character(sort(unique(Failed_all$V10))),
+                  FP_cnvkit = as.character(sort(unique(FP_cnvkit$V11))))
+
+venn.diagram(venn_list, filename = "venn_failed_fp.tiff", col = "black",fill = c("dodgerblue", "goldenrod1"),alpha = 0.50,cat.col = c("dodgerblue", "goldenrod1"),cat.cex = 1.5,cat.fontface = "bold",margin = 0.2)
+
+write.table(Failed_all %>% group_by(V9) %>% summarize(n=n()), file.path(resultDir, "Failed_samples.txt"), sep="\t", row.names=FALSE, quote = FALSE, col.names = FALSE) 
+write.table(FP_cnvkit %>% group_by(sampleID) %>% summarize(n=n()), file.path(resultDir, "FP_samples.txt"), sep="\t", row.names=FALSE, quote = FALSE, col.names = FALSE) 
