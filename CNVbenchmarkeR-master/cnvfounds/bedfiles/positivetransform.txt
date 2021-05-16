@@ -1,0 +1,22 @@
+Recorda de borrar el header dels bed files
+
+
+# For all
+bedtools intersect -wb -wa -a ICR96_all_positives.txt -b ICR96_hg38_noSNP.bed > all_positives.bed
+
+# For single
+bedtools intersect -wb -wa -a ICR96_single_positives.txt -b ICR96_hg38_noSNP.bed > single_positives.bed
+
+# For clinic
+bedtools intersect -wb -wa -a ICR96_clinic_positives.txt -b ICR96_hg38_noSNP_clinic.bed > clinic_positives.bed
+
+
+
+# For all_normal
+bedtools intersect -wb -wa -a ICR96_all_normal.txt -b ICR96_hg38_noSNP.bed > all_normal.bed
+
+# For single normal
+bedtools intersect -wb -wa -a ICR96_single_normal.txt -b ICR96_hg38_noSNP.bed > single_normal.bed
+
+# For clinic normal
+bedtools intersect -wb -wa -a ICR96_clinic_normal.txt -b ICR96_hg38_noSNP_clinic.bed > clinic_normal.bed
