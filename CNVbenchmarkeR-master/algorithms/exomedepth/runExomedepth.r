@@ -24,10 +24,12 @@ processExomedepthBody <- function(testCountsDF, controlCountsDF, countsDef, para
     
     # build necessary matrix
     sampleName = colnames(testCountsDF)[i]
+    
     if (sampleName %in% colnames(controlCountsDF)){
       controlCounts <- as.matrix(controlCountsDF)[, -i]
     } else 
       controlCounts <- as.matrix(controlCountsDF)
+    
     testCounts <- as.matrix(testCountsDF)[,i]
     
     # define final controls set
@@ -52,8 +54,11 @@ processExomedepthBody <- function(testCountsDF, controlCountsDF, countsDef, para
                          end = countsDef$end,
                          name = countsDef$exon)
     
+    saveRDS(all_exons, file = file.path(outputFolder, paste0("all_exons_", sampleName, ".RDS")))
+    
     if (nrow(all_exons@CNV.calls) > 0){
       # add sample column: remove first char "X"
+      sampleName <-  sub("X", "", sampleName)
       all_exons@CNV.calls$sample <- sampleName
       
       # add gene column

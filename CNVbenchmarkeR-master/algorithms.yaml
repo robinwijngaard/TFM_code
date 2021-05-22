@@ -1,13 +1,13 @@
 # define which algorithms will be run in the benchmark. Set 'true to be included', 'false' to omit
 algorithms:
-  decon: true
-  panelcn: true
-  convading: true
+  decon: false
+  panelcn: false
+  convading: false
   exomedepth: true
   codex2: false
-  manta: true
-  cnvkit: true
-  cnvkit2: true
-  cnvkit3: true
-  cnvkit4: true
-  cnvkit5: true
+  manta: false
+  cnvkit: false
+  cnvkit2: false
+  cnvkit3: false
+  cnvkit4: false
+  cnvkit5: false

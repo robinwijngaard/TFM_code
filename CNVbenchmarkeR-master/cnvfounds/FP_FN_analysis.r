@@ -505,9 +505,9 @@ for(i in 1:nrow(clinicData)){
 
 resultDir <- file.path(analysisDir, "results")
 
-write.table(allData, file.path(resultDir, "allData.txt"), sep="\t", row.names=FALSE, quote = FALSE, col.names = FALSE)  
-write.table(clinicData, file.path(resultDir, "clinicData.txt"), sep="\t", row.names=FALSE, quote = FALSE, col.names = FALSE)  
-write.table(singleData, file.path(resultDir, "singleData.txt"), sep="\t", row.names=FALSE, quote = FALSE, col.names = FALSE)  
+write.table(allData, file.path(resultDir, "allData.txt"), sep="\t", row.names=FALSE, quote = FALSE, col.names = TRUE)  
+write.table(clinicData, file.path(resultDir, "clinicData.txt"), sep="\t", row.names=FALSE, quote = FALSE, col.names = TRUE)  
+write.table(singleData, file.path(resultDir, "singleData.txt"), sep="\t", row.names=FALSE, quote = FALSE, col.names = TRUE)  
 
 
 colSums(allData[, 10:15])
@@ -574,11 +574,9 @@ for(i in 1:nrow(clinicNormal)){
 
 resultDir <- file.path(analysisDir, "results")
 
-write.table(allNormal, file.path(resultDir, "allNormal.txt"), sep="\t", row.names=FALSE, quote = FALSE, col.names = FALSE)  
-write.table(clinicNormal, file.path(resultDir, "clinicNormal.txt"), sep="\t", row.names=FALSE, quote = FALSE, col.names = FALSE)  
-write.table(singleNormal, file.path(resultDir, "singleNormal.txt"), sep="\t", row.names=FALSE, quote = FALSE, col.names = FALSE)  
-
-
+write.table(allNormal, file.path(resultDir, "allNormal.txt"), sep="\t", row.names=FALSE, quote = FALSE, col.names = TRUE)  
+write.table(clinicNormal, file.path(resultDir, "clinicNormal.txt"), sep="\t", row.names=FALSE, quote = FALSE, col.names = TRUE)  
+write.table(singleNormal, file.path(resultDir, "singleNormal.txt"), sep="\t", row.names=FALSE, quote = FALSE, col.names = TRUE)  
 
 
 write.table(FN_all, file.path(resultDir, "FN_all.txt"), sep="\t", row.names=FALSE, quote = FALSE, col.names = FALSE)  
@@ -1047,25 +1045,6 @@ clust <- clust[, c(-1,-6)]
 d <- dist(t(clust), method = "euclidean")
 all.hc <- hclust(d, method = "ward.D2")
 plot(all.hc)
-
-
-# Model hibdrid
-
-allData$hibrid <- 0
-which(sum(allData[, 9:13] >= 3) & (allData$exomedepth == 1 | allData$decon == 1))
-which(sum(allData[, 9:13] >= 3) & (allData$exomedepth == 1 | allData$decon == 1))
-
-read.table(file.path())
-ICR96bed <- read.table(file.path(analysisDir, "bedfiles", "ICR96_hg38_noSNP_"), sep = "\t", stringsAsFactors=FALSE)
-
-
-
-
-
-
-
-
-
 
 
 

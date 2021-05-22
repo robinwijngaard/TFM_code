@@ -20,10 +20,10 @@ mkdir -p output
 #	Rscript ./algorithms/decon/runDecon.r ./algorithms/decon/deconParams.yaml datasets.yaml  > logs/decon.log 2>&1
 #fi
 
-#if [ "$pars_algorithms_exomedepth" == "true" ]; then
-#    echo "[$(date)] Executing ExomeDepth"
-#	Rscript ./algorithms/exomedepth/runExomedepth.r ./algorithms/exomedepth/exomedepthParams.yaml datasets.yaml  > logs/exomedepth.log 2>&1
-#fi
+if [ "$pars_algorithms_exomedepth" == "true" ]; then
+    echo "[$(date)] Executing ExomeDepth"
+	Rscript ./algorithms/exomedepth/runExomedepth.r ./algorithms/exomedepth/exomedepthParams.yaml datasets.yaml  > logs/exomedepth.log 2>&1
+fi
 
 #if [ "$pars_algorithms_codex2" == "true" ]; then
 #    echo "[$(date)] Executing CODEX2"
