@@ -1,0 +1,98 @@
+---
+title: "Sample Report"
+
+output: html_document
+params:
+  sample: NULL
+  panell: NULL
+---
+
+Sample: `r params$sample`
+Panell: `r params$panell`
+
+```{r, echo = FALSE, message = FALSE, warning = FALSE, results = 'asis'}
+samplecnv <- subset(cnvFounds_exomedepth, cnvFounds_exomedepth$sample == params$sample)
+panelannotated <- subset(annotatedFile, annotatedFile$panell == params$panell)
+
+setwd(reportDir)
+write.table(samplecnv, file.path(reportDir, "samplecnv.bed"), sep="\t", row.names=FALSE, quote = FALSE, col.names = FALSE)  
+
+write.table(panelannotated, file.path(reportDir, "panelannotated.bed"), sep="\t", row.names=FALSE, quote = FALSE, col.names = FALSE)  
+
+system("bedtools intersect -wao -a panelannotated.bed -b samplecnv.bed > cnv.bed")
+  
+cnvbed <- read.table("cnv.bed", sep = "\t", stringsAsFactors = FALSE)
+colnames(cnvbed) <- c(names(panelannotated), names(samplecnv), "overlap")
+cnvbed <- cnvbed[, -c(17, 18, 20, 21)]
+
+cnvbed$type[which(cnvbed$overlap == 0)] <- "normal"
+cnvbed$type <- factor(cnvbed$type, levels = c( "deletion", "normal","duplication"))
+
+cnvbed$reads.ratio[which(cnvbed$overlap == 0)] <- 1
+```
+
+```{r dinamictable, echo = FALSE}
+newsample <- data.frame(matrix(ncol = 10, nrow = 0))
+newnames <- c("Gene", "NM", "Chr", "Start", "End", "Size", "Exons", "Type", "BF", "read.ratio")
+colnames(newsample) <- newnames
+
+for (cnvtype in levels(cnvbed$type)){
+  sampletype <- subset(cnvbed, cnvbed$type == cnvtype)
+  sampleNM <- unique(sampletype$nm)
+  for(i in sampleNM){
+    dfNM <- subset(sampletype, sampletype$nm == i)
+    if(nrow(dfNM) > 1){
+      Gene <- unique(dfNM$gene)
+      NM <- i
+      Chr <- unique(dfNM$chr)
+      Start <- min(dfNM$start, dfNM$end)
+      End <- max(dfNM$start, dfNM$end)
+      Size <- End - Start
+      Exons <- paste(min(dfNM$rank), "-", max(dfNM$rank))
+      Type <- cnvtype
+      BF <- unique(dfNM$BF)
+      ratio <- unique(dfNM$reads.ratio)
+      newline <- c(Gene, NM, Chr, Start, End, Size, Exons, Type, BF, ratio)
+      newsample <- rbind(newsample, newline)
+    } else if(nrow(dfNM) == 1){
+      Gene <- dfNM$gene
+      NM <- i
+      Chr <- dfNM$chr
+      Start <- min(dfNM$start, dfNM$end)
+      End <- max(dfNM$start, dfNM$end)
+      Size <- End - Start
+      Exons <- dfNM$rank
+      Type <- cnvtype
+      BF <- dfNM$BF
+      ratio <- dfNM$reads.ratio
+      newline <- c(Gene, NM, Chr, Start, End, Size, Exons, Type, BF, ratio)
+      newsample <- rbind(newsample, newline)
+    }
+  }
+}
+
+colnames(newsample) <- newnames
+
+newsample %>% 
+  datatable(extensions = "Buttons",
+            options = list(dom = "Blfrtip", 
+                           buttons = c("csv", "excel", "pdf")))
+```
+
+```{r,echo=FALSE}
+len = length(unique(cnvbed$gene))*0.3
+```
+
+```{r, echo = FALSE, message = FALSE, warning = FALSE, results = 'asis', out.width="100%", fig.height=len}
+p <- ggplot(cnvbed, aes(xmin = newstart, xmax = newend, y = gene, fill = type, label = rank)) +
+    geom_gene_arrow(arrowhead_height = unit(4, "mm"),arrow_body_height = unit(4, "mm"), arrowhead_width = unit(0.2, "mm")) +
+    geom_gene_label(align = "left") +
+    facet_wrap(~ gene, scales = "free", ncol = 1) +
+    scale_fill_brewer(palette = "Set3") +
+    theme_genes() +
+    theme(axis.text.x=element_blank(),
+          axis.ticks.x=element_blank())
+
+p
+```
+
