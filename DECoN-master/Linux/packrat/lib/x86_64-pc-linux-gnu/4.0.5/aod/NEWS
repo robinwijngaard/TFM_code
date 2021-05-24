@@ -1,0 +1,396 @@
+      ====================================================
+      CHANGES IN aod VERSION 1.3 (released on 10 Apr 2012)
+      ====================================================
+
+Changes
+
+    o Changes in the code for iccbin to reflect changes in package lme4.
+
+    o Function .First.lib (defunct) was removed.
+
+    o File DESCRIPTION was changed.
+
+    o File NAMESPACE was added (default setting).
+
+====================================================
+      CHANGES IN aod VERSION 1.2 (released on 08 Oct 2010)
+      ====================================================
+
+Changes
+
+    o Function icc was removed and replaced with function iccbin, with
+      several computations methods for the intra-class correlation 
+      coefficient in the case of binomial data.
+
+    o Help pages were changed accordingly.
+
+      ========================================================
+      CHANGES IN aod VERSION 1.1-35 (released on 04 Oct 2010)
+      ========================================================
+
+Changes
+
+    o Corrects code in betabin and quasibin to avoid a note in package
+      building.
+
+      ========================================================
+      CHANGES IN aod VERSION 1.1-34 (released on 03 Oct 2010)
+      ========================================================
+
+Changes
+
+    o Corrects a bug in the shwo method for objects of class icc
+      (error in the computation of the F test).
+
+    o Improved description of the icc function (help page).
+
+
+      ==========================================================
+      CHANGES IN aod VERSION 1.1-33 (released on 13 April 2010)
+      ==========================================================
+
+Changes
+
+    o Synchronise version of splitbin and its help page with version available
+      in package tdisplay http://forums.cirad.fr/logiciel-R/viewforum.php?f=5.
+
+    o Internal changes in function icc to reflect changes in splitbin.
+
+
+      ==========================================================
+      CHANGES IN aod VERSION 1.1-32 (released on 2nd April 2010)
+      ==========================================================
+
+Bug
+
+    o Corrected a bug in the print method for Wald test objects.
+
+New feature
+
+    o df.residual method for objects of class glimQL, and corresponding
+    changes in the documentation.
+
+
+      ============================================================
+      CHANGES IN aod VERSION 1.1-29 (released on 10th October 2008)
+      ============================================================
+
+Bug
+
+    o Corrected a bug in the predict method for objects of classe glimML and
+    glimQL, and its documentation.
+
+
+      ============================================================
+      CHANGES IN aod VERSION 1.1-27 (released on 25th August 2008)
+      ============================================================
+
+New
+
+    o CITATION file.
+
+Changes
+
+    o Alter the functions to compute AIC and AICc to avoid redefining standard
+      generic functions from the stats package, after a bug report on R-Help and
+      suggestions by P Dalgaard and M Maechler.
+
+    o Alter functions betabin and negbin to better manage the case when the Hessian
+      matrix is singular.
+
+    o Many invisible changes in documentation to comply with more stringent checks
+      during package installation and building.
+
+      ==============================================================
+      CHANGES IN aod VERSION 1.1-24 (released on 30th September 2007)
+      ==============================================================
+
+
+Changes
+
+    o Maintenance change in the file dja.Rd to comply with new recommandations
+      as from 2.6.0.
+
+
+       ==============================================================
+      CHANGES IN aod VERSION 1.1-23 (released on 29th September 2007)
+      ==============================================================
+
+
+Changes
+
+    o Maintenance change in the file DESCRIPTION to comply with new recommandations
+      as from 2.6.0.
+
+
+      =========================================================
+      CHANGES IN aod VERSION 1.1-22 (released on 23rd May 2007)
+      =========================================================
+
+New
+
+    o The cloglog link was missing for quasibin models (though it was
+      indicated in the documentation).
+
+
+      =========================================================
+      CHANGES IN aod VERSION 1.1-21 (released on 7th April 2007)
+      =========================================================
+
+DOCUMENTATION
+
+    o Mismatches were fixed between arguments in the code and documentation
+      (predict methods for objects of classes glimML and glimPQL).
+
+
+      =========================================================
+      CHANGES IN aod VERSION 1.1-20 (released on 4th April 2007)
+      =========================================================
+
+DOCUMENTATION
+
+    o Mismatches were fixed between arguments in the code and documentation
+      (residuals methods for objects of classes glimML and glimPQL).
+
+
+      ==========================================================
+      CHANGES IN aod VERSION 1.1-19 (released on 1st April 2007)
+      ==========================================================
+
+NEW FEATURES
+
+    o	In negbin and betabin, the (default) maximum number of iterations was set
+      to 2000 in the call to optim. A new argument "control" was introduces in
+      the 2 functions and their help pages were amended.
+
+BUGS
+
+    o	A bug was corrected in the residuals method for S4 objects of class glimML
+     (incorrect use of the extractor function "$" instead of "@").
+
+
+      =============================================================
+      CHANGES IN aod VERSION 1.1-18 (released on 13th January 2007)
+      =============================================================
+
+NEW FEATURES
+
+    o	In negbin and betabin, display was switched to 4 digits in scientific notation.
+
+BUGS
+
+    o	No warning was issued when convergence was not obtained after optim iterations.
+    A slot "msg" was added to fitted objects of class "glimML" to store the message
+    returned by optim.
+
+    o	An error occurred when model was fitted with hessian = FALSE.
+
+DOCUMENTATION
+
+    o Documentation was changed to reflect these modifications. Some messages released
+    by negbin and betabin were corrected.
+
+
+      ============================================================
+      CHANGES IN aod VERSION 1.1-14 (released on 9th January 2007)
+      ============================================================
+
+BUGS
+
+    o	A bug occurred when the hessian matrix was singular (overpameterized model)
+    in models fitted with betabin or negbin. This was fixed. A new slot "singular.hessian"
+    was added to fitted objects of class "glimML".
+
+    o	There was a bug in the coef method for objects of class glimML when at least
+    one of the explanatory variable was a factor had unused levels. To overcome
+    this problem, new slots "fixed.param" and "random.param" were added to fitted
+    objects of class "glimML".
+
+DOCUMENTATION
+
+    o Documentation was changed to reflect these modifications.
+
+
+      ============================================================
+      CHANGES IN aod VERSION 1.1-13 (released on 15th October 2006)
+      ============================================================
+
+DOCUMENTATION
+
+    o	The help page for the package (?aod) was out of date.
+
+
+      ===========================================================
+      CHANGES IN aod VERSION 1.1-12 (released on 7th October 2006)
+      ===========================================================
+
+INSTALLATION
+
+    o	The package "boot" is now suggested to remove a warning during package installation.
+
+      ========================================================
+      CHANGES IN aod VERSION 1.1-11 (released on 1st July 2006)
+      ========================================================
+
+NEW FEATURES
+
+    o	The display of wald.test()'s output was slightly changed.
+
+
+      =======================================================
+      CHANGES IN aod VERSION 1.1-10 (released on 5th May 2006)
+      =======================================================
+
+
+BUGS
+
+    o	The code of the log-likelihood function was changed in betabin and negbin to avoid
+        warnings when a covariate was used to model the within-group correlation, and one of the
+        "random" coeffcient was set to 0 (warnings were related to the use of ifelse).
+        These warnings caused a very slow execution with R 2.3.0, probably because of some
+        changes in the functions handling warnings and errors (tryCatch, etc.).
+
+
+      =======================================================
+      CHANGES IN aod VERSION 1.1-9 (released on 1st May 2006)
+      =======================================================
+
+
+NEW FEATURES
+
+    o	In function splitbin(), any variable of mode character is now transformed into a factor
+        before data processing.
+
+
+DOCUMENTATION
+
+    o	New help page describing the package.
+
+
+      ========================================================
+      CHANGES IN aod VERSION 1.1-8 (released on 20th July 2005)
+      ========================================================
+
+
+NEW FEATURES
+
+    o	The number of observations was added as an attribute of the number
+		returned by "logLik".
+
+    o	The corrected AIC (AICc) was added to the output of the function "AIC" and
+		included in the comparison statistics of the anova method for objects of
+		formal class "glimML".
+
+    o	A new formal class "aic" was created, with a summary method to compute
+		Akaike difference and Akaike weights from a list of models to be compared.
+
+    o	A control was added in "betabin" and "negbin" to check the presence of
+		lines with null weight (thanks to Jérémy Bouyer).
+
+    o	The show method for objects of formal class "glimML" was slightly altered:
+		AICc was added to the output and a new presentation was adopted for log-
+		likelihood and related statistics.
+
+
+DOCUMENTATION
+
+    o	The documentation of functions "AIC", "anova" and "logLik" was revised to
+		reflect the changes in these functions.
+
+
+      =======================================================
+      CHANGES IN aod VERSION 1.1-4 (released on 9th July 2005)
+      =======================================================
+
+
+BUGS
+
+    o	The name of the first model was always "object" in the anova method for
+		objects of formal class glimML.
+
+
+NEW FEATURES
+
+    o	The slot "digits" was removed for objects of formal class anova.glimML.
+
+
+      =======================================================
+      CHANGES IN aod VERSION 1.1-3 (released on 1st July 2005)
+      =======================================================
+
+
+DOCUMENTATION
+
+    o	Minor revisions of help pages: spelling in different places and reference
+		change for fonction negbin.
+
+
+      =======================================================
+      CHANGES IN aod VERSION 1.1-2 (released on 8th June 2005)
+      =======================================================
+
+
+DOCUMENTATION
+
+    o	Minor revisions of help pages.
+
+
+BUGS
+
+    o A wrong title line was removed in the display of models of class "glimML".
+
+
+      =======================================================
+      CHANGES IN aod VERSION 1.1-1 (released on 7th June 2005)
+      =======================================================
+
+
+NEW FEATURES
+
+    o Revision of code and help in the S4 framework.
+
+    o Add packages "methods" and "stats" in the "Depends" field of the file
+		DESCRIPTION (thanks to Kurt Hornik).
+
+    o "logLik" and "AIC" methods for objects of formal class "glimML".
+
+    o New "summary" method for objects of class "glimML".
+
+    o New formal class "summary.glimML" to represent the summary of objects of
+		formal class "glimML".
+
+
+BUGS
+
+    o Fixed a lot of missing links and undocumented classes and objects, thanks
+		to Kurt Hornik.
+
+
+      =======================================================
+      CHANGES IN aod VERSION 1.0-2 (released on 5th June 2005)
+      =======================================================
+
+
+NEW FEATURES
+
+    o S4 generic functions are now explicitely defined.
+
+
+BUGS
+
+    o In anova.glimML(), arguments digits now works.
+
+
+DOCUMENTATION
+
+    o	Help pages for classes icc and varbin.
+
+
+      =======================================================
+      CHANGES IN aod VERSION 1.0-1 (released on 4th June 2005)
+      =======================================================
+
+
+DOCUMENTATION
+
+    o	Minor changes in documentation.

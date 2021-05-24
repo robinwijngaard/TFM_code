@@ -1,0 +1,57 @@
+AIC,glimML-method       Akaike Information Criteria
+aic-class               Representation of Objects of Formal Class "aic"
+anova,glimML-method     Likelihood-Ratio Tests for Nested ML Models
+antibio                 Antibiotics against Shipping Fever in Calves
+aod-pkg                 Analysis of Overdispersed Data
+betabin                 Beta-Binomial Model for Proportions
+coef,glimML-method      Methods for Function "coef" in Package "aod"
+cohorts                 Age, Period and Cohort Effects for Vital Rates
+deviance,glimML-method
+                        Methods for Function "deviance" in Package
+                        "aod"
+df.residual,glimML-method
+                        Methods for Function "df.residual" in Package
+                        "aod"
+dja                     Mortality of Djallonke Lambs in Senegal
+donner                  Test of Proportion Homogeneity using Donner's
+                        Adjustment
+drs-class               Representation of Objects of Formal Class "drs"
+fitted,glimML-method    Methods for Function "fitted" in Package "aod"
+glimML-class            Representation of Models of Formal Class
+                        "glimML"
+glimQL-class            Representation of Models of Formal Class
+                        "glimQL"
+iccbin                  Intra-Cluster Correlation for Binomial Data
+iccbin-class            Representation of Objects of Formal Class
+                        "iccbin"
+invlink                 Transformation from the Link Scale to the
+                        Observation Scale
+link                    Transformation from the Observation Scale to
+                        the Link Scale
+lizards                 A Comparison of Site Preferences of Two Species
+                        of Lizard
+logLik,glimML-method    Methods for Functions "logLik" in Package "aod"
+mice                    Pregnant Female Mice Experiment
+negbin                  Negative-Binomial Model for Counts
+orob1                   Germination Data
+orob2                   Germination Data
+predict-methods         Methods for Function "predict" in Package "aod"
+quasibin                Quasi-Likelihood Model for Proportions
+quasipois               Quasi-Likelihood Model for Counts
+rabbits                 Rabbits Foetuses Survival Experiment
+raoscott                Test of Proportion Homogeneity using Rao and
+                        Scott's Adjustment
+rats                    Rats Diet Experiment
+residuals,glimML-method
+                        Residuals for Maximum-Likelihood and
+                        Quasi-Likelihood Models
+salmonella              Salmonella Reverse Mutagenicity Assay
+splitbin                Split Grouped Data Into Individual Data
+summary,aic-method      Akaike Information Statistics
+summary.glimML-class    Summary of Objects of Class "summary.glimML"
+varbin                  Mean, Variance and Confidence Interval of a
+                        Proportion
+varbin-class            Representation of Objects of Formal Class
+                        "varbin"
+vcov,glimML-method      Methods for Function "vcov" in Package "aod"
+wald.test               Wald Test for Model Coefficients
