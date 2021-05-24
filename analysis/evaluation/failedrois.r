@@ -1,97 +1,125 @@
-
-
 # Failed ROIs
+analysisDir <- "~/Dropbox/Master_UOC/TFM/TFM_code/analysis"
+bedDir <- file.path(analysisDir, "bedfiles")
+evaluationDir <- file.path(analysisDir, "evaluation")
+tempDir <- file.path(evaluationDir, "temp")
+resultDir <- file.path(evaluationDir, "results")
+graphsDir <- file.path(evaluationDir, "graphs")
 
-## allDataset
-
-csvFiles <- list.files(allDir, pattern = ".csv")
-
-allFailed <- data.frame(matrix(ncol = 11, nrow = 0))
-
-for (csvFile in csvFiles){
-  algorithm <- sub("failedROIs_", "", csvFile)
-  algorithm <- sub(".csv", "", algorithm)
+for (dataset in c("all", "single")){
+  csvDir <- file.path(analysisDir, "cnvfounds", dataset)
+  csvFiles <- list.files(csvDir, pattern = ".csv")
   
-  # Import and adapt algorithm data (cnvFounds file)
-  algorithmData <- read.table(file.path(allDir, csvFile), sep = "\t", stringsAsFactors=FALSE, header = TRUE)
-  algorithmData <- algorithmData[, c(2:5, 1)]
-  algorithmData$SampleID <- sub("X", "", algorithmData$SampleID)
+  allFailed <- data.frame()
   
-  samples <- sort(unique(algorithmData$SampleID))
+  # Read bedFile
+  bedFile <- file.path(bedDir, paste0(dataset, "_rois.bed"))
+  bedData <- read.table(bedFile, sep = "\t", stringsAsFactors=FALSE, header = TRUE)
   
-  for (sample in samples){
-    s <- which(algorithmData$SampleID == sample)
-    sampleData <- algorithmData[s, ]
-    sampleBed <- file.path(tempDir, paste0(algorithm,"_failed_", sample, ".bed"))
+  # Loop over algorithms
+  for (csvFile in csvFiles){
+    algorithm <- sub("failedROIs_", "", csvFile)
+    algorithm <- sub(".csv", "", algorithm)
     
-    write.table(sampleData, sampleBed, sep="\t", row.names=FALSE, quote = FALSE, col.names = FALSE)  
+    # Import and adapt algorithm data (cnvFounds file)
+    algorithmData <- read.table(file.path(csvDir, csvFile), sep = "\t", stringsAsFactors=FALSE, header = TRUE)
+    algorithmData <- algorithmData[, c(2:5, 1)]
+    algorithmData$SampleID <- sub("X", "", algorithmData$SampleID)
     
-    # Prepare sample bed file, filter by sample
-    alldsSample <- subset(allDatasetBed, allDatasetBed$V4 == sample)
-    alldsSampleBed <- file.path(tempDir, "allsample.bed")
-    write.table(alldsSample, alldsSampleBed, sep="\t", row.names=FALSE, quote = FALSE, col.names = FALSE) 
-    
-    # intersect
-    setwd(tempDir)
-    system(paste("bedtools intersect -wa -wb -a",sampleBed , "-b", alldsSampleBed, "> Failed_included.bed"))
-    
-    # read files
-    if (file.size("Failed_included.bed") != 0) {FailedIncluded <- read.table("Failed_included.bed", sep = "\t", stringsAsFactors=FALSE)} else {FailedIncluded <- NULL}
-    
-    # Edit files
-    if(!is.null(FailedIncluded)){
-      n <- nrow(FailedIncluded)
-      algorithmID <- rep(algorithm, n)
-      FailedAlgorithm <- cbind(algorithmID, FailedIncluded)
-      allFailed <- rbind(allFailed, FailedAlgorithm)
-    } 
+    # Loop over samples
+    samples <- sort(unique(algorithmData$SampleID))
+    for (sample in samples){
+      
+      # Prepare sample failedRois
+      s <- which(algorithmData$SampleID == sample)
+      sampleData <- algorithmData[s, ]
+      sampleBed <- file.path(tempDir, "failed.bed")
+      write.table(sampleData, sampleBed, sep="\t", row.names=FALSE, quote = FALSE, col.names = FALSE)  
+      
+      # Subset bedfile for sample
+      bedSample <- subset(bedData, bedData$sampleID == sample)
+      bedSampleFile <- file.path(tempDir, "roisample.bed")
+      write.table(bedSample, bedSampleFile, sep="\t", row.names=FALSE, quote = FALSE, col.names = FALSE) 
+      
+      # intersect
+      setwd(tempDir)
+      system(paste("bedtools intersect -wa -wb -a",sampleBed , "-b", bedSampleFile, "> Failed_included.bed"))
+      
+      # read files
+      if (file.size("Failed_included.bed") != 0) {FailedIncluded <- read.table("Failed_included.bed", sep = "\t", stringsAsFactors=FALSE)} else {FailedIncluded <- NULL}
+      
+      # Edit files
+      if(!is.null(FailedIncluded)){
+        n <- nrow(FailedIncluded)
+        algorithmID <- rep(algorithm, n)
+        FailedAlgorithm <- cbind(FailedIncluded, algorithmID)
+        allFailed <- rbind(allFailed, FailedAlgorithm)
+      } 
+    }
   }
+  allFailed <- allFailed[, c(6:16)]
+  colnames(allFailed) <- c(colnames(bedSample), "algorithmID")
+  
+  write.table(allFailed, file.path(resultDir, paste0(dataset, "_failedrois.txt")), sep="\t", row.names = FALSE, quote = FALSE, col.names = TRUE)  
+  assign(paste0(dataset, "_failedRois"), allFailed)
+  
+  # number of failedRois per algorithm
+  n_failed <- summary(as.factor(allFailed$algorithmID))
+  write.table(n_failed, file.path(resultDir, paste0(dataset, "_nfailedrois.txt")), sep="\t", row.names = FALSE, quote = FALSE, col.names = TRUE)  
 }
 
+# Failed ROIs at gene level
 
+comment(all_failedRois) <- "all"
+comment(single_failedRois) <- "single"
 
+for (dataset in list(all_failedRois, single_failedRois)){
+  datasetName <- comment(dataset)
+  
+  # Read bedFile
+  bedFile <- file.path(bedDir, paste0(datasetName, "_rois.bed"))
+  bedData <- read.table(bedFile, sep = "\t", stringsAsFactors=FALSE, header = TRUE)
+  
+  # Extract number of ROIs per gene
+  rois_gene <- data.frame(gene = c(bedData$gene))
+  rois_gene_count <- rois_gene %>% group_by(gene) %>% summarise(n=n())
 
+  # Obtain failed ROI at gene level
+  dataset$gene <- factor(dataset$gene, levels = unique(dataset$gene))
+  dataset$algorithmID <- factor(dataset$algorithmID, levels = unique(dataset$algorithmID))
+  
+  # Summary by gene
+  failed_gene <- dataset %>% group_by(gene, algorithmID, .drop = FALSE) %>% summarize(n=n())
+  failed_gene <- cast(failed_gene, gene ~ algorithmID)
+  failed_gene <- merge(failed_gene, rois_gene_count, by = "gene")
+  
+  failed_gene_perc <- failed_gene
+  failed_gene_perc[, 2:5] <- round(failed_gene_perc[, 2:5]/ failed_gene_perc[, 6] * 100, 4)
+  
+  # Export summary by gene
+  write.table(failed_gene, file.path(resultDir, paste0(datasetName, "_failedgene.txt")), sep="\t", row.names=FALSE, quote = FALSE, col.names = TRUE)  
+  write.table(failed_gene_perc, file.path(resultDir, paste0(datasetName, "_failedgene_perc.txt")), sep="\t", row.names=FALSE, quote = FALSE, col.names = TRUE)  
 
-
-# Failed ROIs
-
-rois_gene <- data.frame(genes = c(allData[, 4], allNormal[, 4]))
-rois_gene_count <- rois_gene %>% group_by(genes) %>% summarise(n=n())
-
-FailedROIs_df <- allFailed[, c(1, 5, 6)]
-FailedROIs_df$V4 <- factor(FailedROIs_df$V4, levels = unique(FailedROIs_df$V4))
-FailedROIs_df$algorithmID <- factor(FailedROIs_df$algorithmID)
-
-FailedROIs_summary <- FailedROIs_df %>% group_by(V4, algorithmID, .drop = FALSE) %>% summarize(n=n())
-FailedROIs_summary <- cast(FailedROIs_summary, V4 ~ algorithmID)
-
-names(FailedROIs_summary)[1] <- "genes"
-FailedROIs_summary <- merge(FailedROIs_summary, rois_gene_count, by = "genes")
-
-FailedROIs_summary_perc <- FailedROIs_summary
-FailedROIs_summary_perc[, 2:5] <- round(FailedROIs_summary_perc[, 2:5]/ FailedROIs_summary_perc[, 6] * 100, 4)
-
-write.table(FailedROIs_summary, file.path(resultDir, "FailedROIS.txt"), sep="\t", row.names=FALSE, quote = FALSE, col.names = TRUE)  
-write.table(FailedROIs_summary_perc, file.path(resultDir, "FailedROIS_perc.txt"), sep="\t", row.names=FALSE, quote = FALSE, col.names = TRUE)  
-
-
-
-FailedROIs_df$V5 <- factor(FailedROIs_df$V5, levels = unique(FailedROIs_df$V5))
-
-FailedROIs_samples <- FailedROIs_df %>% group_by(V5, algorithmID, .drop = FALSE) %>% summarize(n=n())
-FailedROIs_samples <- cast(FailedROIs_samples, V5 ~ algorithmID)
-
-write.table(FailedROIs_samples, file.path(resultDir, "FailedROIs_samples.txt"), sep="\t", row.names=FALSE, quote = FALSE, col.names = TRUE)  
-
-
-
-
-
-
-
-
-
-
-all_failedRois <- summary(as.factor(allFailed$algorithmID))
-single_failedRois <- summary(as.factor(singleFailed$algorithmID))
-clinic_failedRois <- summary(as.factor(clinicFailed$algorithmID))
+  # Summary by sample
+  dataset$sampleID <- factor(dataset$sampleID)
+  rois_sample <- data.frame(sampleID = c(bedData$sampleID))
+  rois_sample_count <- rois_sample %>% group_by(sampleID) %>% summarise(n=n())
+  
+  failed_sample <- dataset %>% group_by(sampleID, algorithmID, .drop = FALSE) %>% summarize(n=n())
+  failed_sample <- cast(failed_sample, sampleID ~ algorithmID)
+  failed_sample <- merge(failed_sample, rois_sample_count, by = "sampleID")
+  
+  failed_sample_perc <- failed_sample
+  failed_sample_perc[, 2:5] <- round(failed_sample_perc[, 2:5]/ failed_sample_perc[, 6] * 100, 4)
+  
+  # Export summary by gene
+  write.table(failed_sample, file.path(resultDir, paste0(datasetName, "_failedsample.txt")), sep="\t", row.names=FALSE, quote = FALSE, col.names = TRUE)  
+  write.table(failed_sample_perc, file.path(resultDir, paste0(datasetName, "_failedsample_perc.txt")), sep="\t", row.names=FALSE, quote = FALSE, col.names = TRUE)  
+  
+  # Failed ROIs included ExonCNV
+  exoncnv_failed <- subset(dataset, dataset$cnv == "ExonCNV")
+  exoncnv_summary <- exoncnv_failed %>%  group_by(algorithmID) %>% summarize(n=n())
+  
+  # Export failed exoncnv
+  write.table(exoncnv_summary, file.path(resultDir, paste0(datasetName, "_exoncnvfailed.txt")), sep="\t", row.names=FALSE, quote = FALSE, col.names = TRUE)  
+}

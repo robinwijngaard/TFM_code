@@ -1,27 +1,31 @@
 ---
 title: "Sample Report"
-
+subtitle: "CNV detection"
+date: '`r format(Sys.Date(),"%e de %B, %Y")`'
 output: html_document
 params:
-  sample: NULL
-  panell: NULL
+  sample: "17296"
+  panell: "endocri"
 ---
 
-Sample: `r params$sample`
-Panell: `r params$panell`
+### Sample: `r params$sample`
+### Panell: `r params$panell`
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE, results = 'asis'}
-samplecnv <- subset(cnvFounds_exomedepth, cnvFounds_exomedepth$sample == params$sample)
+rdsfile <- readRDS(file.path(exomedepthDir, paste0("all_exons_", params$sample, ".RDS")))
+
+samplecnv <- rdsfile@CNV.calls
 panelannotated <- subset(annotatedFile, annotatedFile$panell == params$panell)
 
-setwd(reportDir)
-write.table(samplecnv, file.path(reportDir, "samplecnv.bed"), sep="\t", row.names=FALSE, quote = FALSE, col.names = FALSE)  
+write.table(samplecnv, file.path(tempDir, "samplecnv.bed"), sep="\t", row.names=FALSE, quote = FALSE, col.names = FALSE)  
 
-write.table(panelannotated, file.path(reportDir, "panelannotated.bed"), sep="\t", row.names=FALSE, quote = FALSE, col.names = FALSE)  
+write.table(panelannotated, file.path(tempDir, "panelannotated.bed"), sep="\t", row.names=FALSE, quote = FALSE, col.names = FALSE)  
 
+setwd(tempDir)
 system("bedtools intersect -wao -a panelannotated.bed -b samplecnv.bed > cnv.bed")
   
-cnvbed <- read.table("cnv.bed", sep = "\t", stringsAsFactors = FALSE)
+cnvbed <- read.table(file.path(tempDir, "cnv.bed"), sep = "\t", stringsAsFactors = FALSE)
+
 colnames(cnvbed) <- c(names(panelannotated), names(samplecnv), "overlap")
 cnvbed <- cnvbed[, -c(17, 18, 20, 21)]
 

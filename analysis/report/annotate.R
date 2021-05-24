@@ -4,19 +4,28 @@ library(dplyr)
 library(readxl)
 
 # mama, colon, melanoma o endocri
+analysisDir <- "~/Dropbox/Master_UOC/TFM/TFM_code/analysis"
+reportDir <- file.path(analysisDir, "report")
+bedDir <- file.path(analysisDir, "bedfiles")
+tempDir <- file.path(reportDir, "temp")
 
-setwd("~/Dropbox/Master UOC/TFM/Report")
+# load panell names
 panells <- c("mama", "colon", "melanoma", "endocri")
 
-reportDir <- "~/Dropbox/Master UOC/TFM/Report"
+# load bedfile
+bedFile <- read.delim(file.path(bedDir, "ICR96_hg38_noSNP.bed"), header=FALSE)
 
+# load ensamble
 ensembl = useMart("ensembl",dataset="hsapiens_gene_ensembl")
-bedFile <- read.delim("~/Dropbox/Master UOC/TFM/Genes/BED files/hg38/ICR96_hg38_noSNP.txt", header=FALSE)
 
+# run over panells to annotate genes included
 for (panell in panells){
-  genes_panell <- read_excel("gens_nm_panell.xlsx", sheet = panell, col_names = FALSE)
+  
+  # Read genes included in panell
+  genes_panell <- read_excel(file.path(reportDir, "gens_nm_panell.xlsx"), sheet = panell, col_names = FALSE)
   colnames(genes_panell) <- c("gene", "refseq_id")
   
+  # annotate for given genes
   my_attribute <- c('chromosome_name',
                   'refseq_mrna',
                   'external_gene_name',
@@ -41,33 +50,50 @@ for (panell in panells){
            filters = c('refseq_mrna'),
            values = list(refseq_mrna=genes_panell$refseq_id),
            mart = ensembl)
-
-  genes_info <- merge(a,b)
+  
+  # merge both annotation tables
+  genes_info <- merge(a, b)
   genes_info <- genes_info[, c(2, 6, 7, 4, 3, 5, 8:10)]
   colnames(genes_info) <- c("chr", "start", "end", "gene", "nm","strand", "rank", "cds_start", "cds_end")
-  write.table(genes_info, file.path(reportDir, "genes_info.bed"), sep="\t", row.names=FALSE, quote = FALSE, col.names = FALSE)  
+  write.table(genes_info, file.path(tempDir, "genes_info.bed"), sep="\t", row.names=FALSE, quote = FALSE, col.names = FALSE)  
   
-  # Load bedFile
+  # Load bedFile and subset on genes in panell
   bedFilePanel <- subset(bedFile, bedFile$V4 %in% genes_panell$gene)
   colnames(bedFilePanel) <- c("chr", "start", "end", "gene")
 
   # Give ID to region in bed
   bedFilePanel$ID <- 1:nrow(bedFilePanel)
-  write.table(bedFilePanel, file.path(reportDir, "bedFilePanel.bed"), sep="\t", row.names=FALSE, quote = FALSE, col.names = FALSE)  
+  write.table(bedFilePanel, file.path(tempDir, "bedFilePanel.bed"), sep="\t", row.names=FALSE, quote = FALSE, col.names = FALSE)  
   
-  setwd(reportDir)
+  # Intersect bedfile and annotated information
+  setwd(tempDir)
   system(paste("bedtools intersect -wao -a bedFilePanel.bed -b genes_info.bed >", paste0(panell, "_annotated.bed")))
   system(paste("bedtools intersect -wao -a bedFilePanel.bed -b genes_info.bed -v >", paste0(panell, "_notpresent.bed")))
 }
 
-colonFile <- read.delim("colon_annotated.bed", header = FALSE)[c(1:5,10:14)]
-mamaFile <- read.delim("mama_annotated.bed", header = FALSE)[c(1:5,10:14)]
-melanomaFile <- read.delim("melanoma_annotated.bed", header = FALSE)[c(1:5,10:14)]
-endocriFile <- read.delim("endocri_annotated.bed", header = FALSE)[c(1:5,10:14)]
+# Read annotated bed files for each panel
+colonFile <- read.delim(file.path(tempDir, "colon_annotated.bed"), header = FALSE)[c(1:5,10:14)]
+mamaFile <- read.delim(file.path(tempDir, "mama_annotated.bed"), header = FALSE)[c(1:5,10:14)]
+melanomaFile <- read.delim(file.path(tempDir, "melanoma_annotated.bed"), header = FALSE)[c(1:5,10:14)]
+endocriFile <- read.delim(file.path(tempDir, "endocri_annotated.bed"), header = FALSE)[c(1:5,10:14)]
 
 newnames <- c("chr", "start", "end", "gene","id", "nm","strand", "rank", "cds_start", "cds_end")
 names(colonFile) <- names(mamaFile) <- names(melanomaFile) <- names(endocriFile) <- newnames
 
+# Delete rois outside NM transcript
+delRoi <- function(dataFile){
+  if(length(which(dataFile$nm == ".")) > 0){
+    dataFile <- dataFile[- which(dataFile$nm == "."), ]
+  }
+  return(dataFile)
+}
+
+colonFile <- delRoi(colonFile)
+mamaFile <- delRoi(mamaFile)
+melanomaFile <- delRoi(melanomaFile)
+endocriFile <- delRoi(endocriFile)
+
+# Add new start and end for figure of report
 NewExonStart <- function(file){
   file <- file[order(file$gene, file$rank), ]
   file$exonpb <- file$end - file$start
@@ -97,6 +123,7 @@ mamaFile <- NewExonStart(mamaFile)
 endocriFile <- NewExonStart(endocriFile)
 melanomaFile <- NewExonStart(melanomaFile) 
 
+# rbind all annotated files and write out table
 annotatedFile <- data.frame(rbind(colonFile, mamaFile, melanomaFile, endocriFile), panell = c(rep("colon", nrow(colonFile)), rep("mama", nrow(mamaFile)), rep("melanoma", nrow(melanomaFile)), rep("endocri", nrow(endocriFile)))) 
 write.table(annotatedFile, file.path(reportDir, "annotatedFile.bed"), sep="\t", row.names=FALSE, quote = FALSE, col.names = TRUE)  
 
