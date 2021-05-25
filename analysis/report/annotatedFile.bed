@@ -1,4 +1,4 @@
-chr	start	end	gene	id	nm	strand	rank	cds_start	cds_end	exonpb	intropb	newstart	newend	panell
+chr	start	end	gene	roi_id	nm	strand	rank	cds_start	cds_end	exonpb	intropb	newstart	newend	panell
 5	112737876	112737937	APC	71	NM_000038	1	1	NA	NA	61	17	0	61	colon
 5	112754890	112755026	APC	72	NM_000038	1	2	1	135	136	11	78	214	colon
 5	112766325	112766411	APC	73	NM_000038	1	3	136	220	86	1	225	311	colon

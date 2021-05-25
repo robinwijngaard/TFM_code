@@ -1,5 +1,7 @@
 # Obtain ROI files for datasets
 
+## Comment to myself: I have corrected the EZH2 gene in validated results since it is an exon 1-20 deletion however only one exon was included in the deletion region.
+
 # Define dir
 #analysisDir <- "/home/robin/Documents/Project/TFM_code/CNVbenchmarkeR-master/cnvfounds"
 analysisDir <- "~/Dropbox/Master_UOC/TFM/TFM_code/analysis"

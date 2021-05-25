@@ -2,6 +2,11 @@ library(gggenes)
 library(ggplot2)
 library(rmarkdown)
 library(DT)
+library(ExomeDepth)
+library(dplyr)
+library(tiff)
+library(patchwork)
+library(RColorBrewer)
 
 # mama, colon, melanoma o endocri
 analysisDir <- "~/Dropbox/Master_UOC/TFM/TFM_code/analysis"
@@ -10,13 +15,7 @@ bedDir <- file.path(analysisDir, "bedfiles")
 tempDir <- file.path(reportDir, "temp")
 exomedepthDir <- file.path(reportDir, "exomedepth")
 outputDir <- file.path(reportDir, "output")
-
-# Read cnvFounds file and list .RDS files
-cnvFounds_exomedepth <- read.delim(file.path(exomedepthDir, "cnvFounds_exomedepth.txt"))[, c(7,5,6,3,13,14,9,12)]
-cnvNames <- colnames(cnvFounds_exomedepth)
-
-# Correct "X" in sample Name
-cnvFounds_exomedepth$sample <- as.character(sub("X", "", cnvFounds_exomedepth$sample))
+graphsDir <- file.path(reportDir, "graphs")
 
 # Read annotatedFile
 annotatedFile <- read.delim(file.path(reportDir, "annotatedFile.bed"), sep="\t", header = TRUE)  

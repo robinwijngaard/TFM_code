@@ -62,7 +62,7 @@ for (panell in panells){
   colnames(bedFilePanel) <- c("chr", "start", "end", "gene")
 
   # Give ID to region in bed
-  bedFilePanel$ID <- 1:nrow(bedFilePanel)
+  bedFilePanel$roiID <- 1:nrow(bedFilePanel)
   write.table(bedFilePanel, file.path(tempDir, "bedFilePanel.bed"), sep="\t", row.names=FALSE, quote = FALSE, col.names = FALSE)  
   
   # Intersect bedfile and annotated information
@@ -77,7 +77,7 @@ mamaFile <- read.delim(file.path(tempDir, "mama_annotated.bed"), header = FALSE)
 melanomaFile <- read.delim(file.path(tempDir, "melanoma_annotated.bed"), header = FALSE)[c(1:5,10:14)]
 endocriFile <- read.delim(file.path(tempDir, "endocri_annotated.bed"), header = FALSE)[c(1:5,10:14)]
 
-newnames <- c("chr", "start", "end", "gene","id", "nm","strand", "rank", "cds_start", "cds_end")
+newnames <- c("chr", "start", "end", "gene","roi_id", "nm","strand", "rank", "cds_start", "cds_end")
 names(colonFile) <- names(mamaFile) <- names(melanomaFile) <- names(endocriFile) <- newnames
 
 # Delete rois outside NM transcript

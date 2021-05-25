@@ -100,9 +100,9 @@ for (dataset in c("all", "single")){
   }
   
   # Delete redundant columns
-  FPdata <- FPdata[, c(6:17)]
-  TPdata <- TPdata[, c(6:17)]
-  colnames(FPdata) <- colnames(TPdata) <- c(colnames(bedData), "roiID", "algorithmID")
+  FPdata <- FPdata[, c(6:17, 5)]
+  TPdata <- TPdata[, c(6:17, 5)]
+  colnames(FPdata) <- colnames(TPdata) <- c(colnames(bedData), "roiID", "algorithmID", "detected_cnv")
   PosData <- rbind(TPdata, FPdata)
   
   # Make final result dataframe
@@ -125,10 +125,42 @@ for (dataset in c("all", "single")){
     }
   }
   
+  # For hybdrid model
+  HybridDataframe <- rbind(positiveData, negativeData)
+  HybridDataframe$cnvkit5 <- 0
+  HybridDataframe$convading <- 0
+  HybridDataframe$decon <- 0
+  HybridDataframe$exomedepth <- 0
+  HybridDataframe$manta <- 0
+  HybridDataframe$panelcn <- 0
+  
+  algorithms <- unique(c(TPdata$algorithmID, FPdata$algorithmID))
+  
+  # There is one ROI for DeCON (FP) where both DEL and DUP is predicted. This ROI is considered as normal for the hybrid model
+  for(i in 1:nrow(HybridDataframe)){
+    for(j in algorithms){
+      a <- which(PosData$algorithmID == j & PosData$roiID == i)
+      if(length(a) == 1){
+        if(PosData$detected_cnv[a] == "deletion") {
+          HybridDataframe[i, j] <- -1
+      }
+        else if(PosData$detected_cnv[a] == "duplication") {
+          HybridDataframe[i, j] <- 1
+        }
+      }
+    }
+  }
+  
   # Save and assign results to dataframe for dataset
   write.table(ResultsDataframe, file.path(resultDir, paste0(dataset, "results.txt")), sep="\t", row.names = FALSE, quote = FALSE, col.names = TRUE)  
+  write.table(HybridDataframe, file.path(resultDir, paste0(dataset, "hybridresults.txt")), sep="\t", row.names = FALSE, quote = FALSE, col.names = TRUE)  
   assign(paste0(dataset, "Results"), ResultsDataframe)
 }
+
+
+PosDataFail <- PosData[, c("algorithmID", "roiID")]
+PosDataFail_algo <- subset(PosDataFail, PosDataFail$algorithmID == "decon")
+nrow(unique(PosDataFail_algo))
 
 # Result table
 
