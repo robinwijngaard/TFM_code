@@ -1,0 +1,4 @@
+[2021-05-30T08:33:20.046641Z] [fritz] [345725_1] [pyflowTaskWrapper:getAlignmentStats_makeTmpDir] [wrapperSignal] wrapperStart
+[2021-05-30T08:33:20.055122Z] [fritz] [345725_1] [pyflowTaskWrapper:getAlignmentStats_makeTmpDir] [wrapperSignal] taskStart
+[2021-05-30T08:33:20.062842Z] [fritz] [345725_1] [pyflowTaskWrapper:getAlignmentStats_makeTmpDir] [wrapperSignal] taskExitCode 0
+[2021-05-30T08:33:20.070582Z] [fritz] [345725_1] [pyflowTaskWrapper:getAlignmentStats_makeTmpDir] [wrapperSignal] taskElapsedSec 0

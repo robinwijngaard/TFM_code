@@ -1,0 +1,4 @@
+[2021-05-30T08:01:25.528044Z] [fritz] [213359_1] [pyflowTaskWrapper:summarizeStats] [wrapperSignal] wrapperStart
+[2021-05-30T08:01:25.563702Z] [fritz] [213359_1] [pyflowTaskWrapper:summarizeStats] [wrapperSignal] taskStart
+[2021-05-30T08:01:25.598411Z] [fritz] [213359_1] [pyflowTaskWrapper:summarizeStats] [wrapperSignal] taskExitCode 0
+[2021-05-30T08:01:25.634026Z] [fritz] [213359_1] [pyflowTaskWrapper:summarizeStats] [wrapperSignal] taskElapsedSec 0

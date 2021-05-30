@@ -1,0 +1,4 @@
+[2021-05-30T07:37:00.720251Z] [fritz] [124114_1] [pyflowTaskWrapper:fixVcfHeader_sortDiploidSV] [wrapperSignal] wrapperStart
+[2021-05-30T07:37:00.726943Z] [fritz] [124114_1] [pyflowTaskWrapper:fixVcfHeader_sortDiploidSV] [wrapperSignal] taskStart
+[2021-05-30T07:37:00.739003Z] [fritz] [124114_1] [pyflowTaskWrapper:fixVcfHeader_sortDiploidSV] [wrapperSignal] taskExitCode 0
+[2021-05-30T07:37:00.746451Z] [fritz] [124114_1] [pyflowTaskWrapper:fixVcfHeader_sortDiploidSV] [wrapperSignal] taskElapsedSec 0

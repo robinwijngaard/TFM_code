@@ -1,0 +1,4 @@
+[2021-05-30T08:01:03.553962Z] [fritz] [210279_1] [pyflowTaskWrapper:tabix_sortCandidateSV] [wrapperSignal] wrapperStart
+[2021-05-30T08:01:03.569929Z] [fritz] [210279_1] [pyflowTaskWrapper:tabix_sortCandidateSV] [wrapperSignal] taskStart
+[2021-05-30T08:01:03.599274Z] [fritz] [210279_1] [pyflowTaskWrapper:tabix_sortCandidateSV] [wrapperSignal] taskExitCode 0
+[2021-05-30T08:01:03.602918Z] [fritz] [210279_1] [pyflowTaskWrapper:tabix_sortCandidateSV] [wrapperSignal] taskElapsedSec 0

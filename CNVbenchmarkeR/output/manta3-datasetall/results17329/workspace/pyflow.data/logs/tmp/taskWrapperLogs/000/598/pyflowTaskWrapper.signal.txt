@@ -1,0 +1,4 @@
+[2021-05-30T07:51:04.739210Z] [fritz] [179506_1] [pyflowTaskWrapper:fixVcfHeader_sortCandidateSV] [wrapperSignal] wrapperStart
+[2021-05-30T07:51:04.746155Z] [fritz] [179506_1] [pyflowTaskWrapper:fixVcfHeader_sortCandidateSV] [wrapperSignal] taskStart
+[2021-05-30T07:51:04.757283Z] [fritz] [179506_1] [pyflowTaskWrapper:fixVcfHeader_sortCandidateSV] [wrapperSignal] taskExitCode 0
+[2021-05-30T07:51:04.764354Z] [fritz] [179506_1] [pyflowTaskWrapper:fixVcfHeader_sortCandidateSV] [wrapperSignal] taskElapsedSec 0

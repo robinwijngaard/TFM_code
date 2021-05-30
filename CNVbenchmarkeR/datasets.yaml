@@ -11,7 +11,7 @@ datasetall:
   read_length: 101   # read length used when sequencing
 
 datasetsingle:
-  include: true   # true to include this dataset in the analysis, false otherwise
+  include: false   # true to include this dataset in the analysis, false otherwise
   bams_dir: "/home/robin/Documents/Project/Samples/bam/single" # folder where bams files (.bai indexes) are stored
   bed_file: "/home/robin/Documents/Project/Samples/bedfiles/ICR96_hg38_noSNP.bed" # bed file defining ROIs. It must be sortered by chr and start position, and 4th column must contain only gene symbol. (See examples folder)
   fasta_file: "/home/robin/Documents/Project/Samples/hg38/hg38.fa"  # genome fasta file
@@ -20,7 +20,7 @@ datasetsingle:
   read_length: 101   # read length used when sequencing
 
 datasetclinic:
-  include: true   # true to include this dataset in the analysis, false otherwise
+  include: false   # true to include this dataset in the analysis, false otherwise
   bams_dir: "/home/robin/Documents/Project/Samples/bam/all" # folder where bams files (.bai indexes) are stored
   bed_file: "/home/robin/Documents/Project/Samples/bedfiles/ICR96_hg38_noSNP_clinic.bed" # bed file defining ROIs. It must be sortered by chr and start position, and 4th column must contain only gene symbol. (See examples folder)
   fasta_file: "/home/robin/Documents/Project/Samples/hg38/hg38.fa"  # genome fasta file

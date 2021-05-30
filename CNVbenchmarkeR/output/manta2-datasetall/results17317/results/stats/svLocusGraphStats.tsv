@@ -1,0 +1,84 @@
+GraphBuildTime	0.0336h wall, 0.0321h user + 0.0004h system = 0.0325h CPU (96.69%)
+GraphMergeTime	0.0000h wall, 0.0000h user + 0.0000h system = 0.0000h CPU (91.16%)
+disjointSubgraphs	478
+nodes	629
+directedEdges	705
+selfEdges	403
+totalGraphEvidence	15765
+totalCleaned	9272
+highestSearchCount	48
+isMaxSearchCount	0
+highestSearchDensity	0.0625
+isMaxSearchDensity	0
+
+[Sample0]
+Source	/home/robin/Documents/Project/Samples/bam/all/17317.bam
+MinMapqFiltered	466191	0.0543
+NotFiltered	8114379	0.9457
+NotFilteredAndIgnored	7863740	0.9165
+NotFilteredAndAnomalousPair	245244	0.0286
+NotFilteredAndAnomalousPairRemotes	2386	0.0003
+NotFilteredAndSplitRead	1289	0.0002
+NotFilteredAndSplitReadInAnomalousPair	132	0.0000
+NotFilteredAndSplitReadSupplementarySegments	539	N/A
+NotFilteredAndLargeIndel	2826	0.0003
+NotFilteredAndSemiAligned	1600	0.0002
+EvidenceType_pair	0	0.0000
+EvidenceType_local_pair	3456	0.3855
+EvidenceType_cigar	2827	0.3153
+EvidenceType_softclip	0	0.0000
+EvidenceType_semialign	1609	0.1795
+EvidenceType_shadow	0	0.0000
+EvidenceType_split_align	1074	0.1198
+EvidenceType_unknown	0	0.0000
+ClosePairs	932
+
+NodeRegionSizequantile:
+0.25	40
+0.5	60
+0.75	131
+0.9	165
+0.95	195
+0.99	300
+NodeEdgeCount:
+0	0
+1	593
+2	24
+3	4
+4	4
+5	0
+6	1
+7	0
+8	0
+9+	3
+NodeObservationCount:
+0	79
+1	0
+2	0
+3	0
+4	0
+5	0
+6	314
+7	0
+8	0
+9	65
+10	0
+11	0
+12	62
+13	0
+14	0
+15	17
+16	0
+17	0
+18	21
+19	0
+20	0
+21	12
+22	0
+23	0
+24	8
+25	0
+26	0
+27	2
+28	0
+29+	49

@@ -6,51 +6,132 @@ Warning message:
 In readLines(con) : incomplete final line found on 'datasets.yaml'
 
 Loading datasetall Dataset validated results
-  Loading decon results for datasetall dataset
-[1] "ROI in chr 7 and starting at 5973398  for sample 17371 was labeled as failed region because was defined by the algorithm as deletion and duplication."
-  Loading panelcn results for datasetall dataset
-  Loading convading results for datasetall dataset
-  Loading exomedepth results for datasetall dataset
-[1] "ROI in chr 7 and starting at 5973398  for sample 17371 was labeled as failed region because was defined by the algorithm as deletion and duplication."
-  Loading manta results for datasetall dataset
-  Loading cnvkit results for datasetall dataset
-  Loading cnvkit2 results for datasetall dataset
-  Loading cnvkit3 results for datasetall dataset
-  Loading cnvkit4 results for datasetall dataset
-  Loading cnvkit5 results for datasetall dataset
+  Loading manta3 results for datasetall dataset
+[1] "ROI in chr 5 and starting at 112837552  for sample 17398 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 16 and starting at 23629639  for sample 17398 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 17 and starting at 43091434  for sample 17398 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 2 and starting at 47798610  for sample 17334 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 5 and starting at 112837552  for sample 17334 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 11 and starting at 108321300  for sample 17334 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 13 and starting at 32336264  for sample 17334 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 8 and starting at 89946139  for sample 17341 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 8 and starting at 89970363  for sample 17341 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 13 and starting at 32336264  for sample 17341 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 3 and starting at 52403415  for sample 17343 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 5 and starting at 112837552  for sample 17343 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 11 and starting at 108252816  for sample 17343 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 12 and starting at 57751206  for sample 17343 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 1 and starting at 45332573  for sample 17339 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 1 and starting at 45333412  for sample 17339 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 2 and starting at 47408400  for sample 17339 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 2 and starting at 214728664  for sample 17339 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 2 and starting at 214730399  for sample 17339 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 2 and starting at 214745055  for sample 17339 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 2 and starting at 214745710  for sample 17339 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 2 and starting at 214752435  for sample 17339 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 2 and starting at 214767470  for sample 17339 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 2 and starting at 214769220  for sample 17339 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 2 and starting at 214780548  for sample 17339 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 2 and starting at 214792285  for sample 17339 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 2 and starting at 214797049  for sample 17339 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 2 and starting at 214809400  for sample 17339 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 3 and starting at 52407957  for sample 17339 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 5 and starting at 112837552  for sample 17339 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 8 and starting at 89937025  for sample 17339 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 8 and starting at 89946139  for sample 17339 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 11 and starting at 108222820  for sample 17339 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 11 and starting at 108229177  for sample 17339 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 11 and starting at 108235669  for sample 17339 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 11 and starting at 108250700  for sample 17339 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 11 and starting at 108257480  for sample 17339 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 11 and starting at 108258985  for sample 17339 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 12 and starting at 57751206  for sample 17339 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 16 and starting at 68810196  for sample 17339 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 16 and starting at 68811683  for sample 17339 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 17 and starting at 35100952  for sample 17339 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 17 and starting at 35101200  for sample 17339 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 17 and starting at 35103253  for sample 17339 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 17 and starting at 35103453  for sample 17339 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 17 and starting at 35106385  for sample 17339 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 17 and starting at 35106987  for sample 17339 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 17 and starting at 35107365  for sample 17339 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 17 and starting at 35118500  for sample 17339 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 17 and starting at 35119110  for sample 17339 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 17 and starting at 35119531  for sample 17339 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 17 and starting at 43045677  for sample 17339 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 17 and starting at 43047642  for sample 17339 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 17 and starting at 43049120  for sample 17339 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 17 and starting at 43051062  for sample 17339 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 17 and starting at 43057051  for sample 17339 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 17 and starting at 43063332  for sample 17339 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 17 and starting at 43063873  for sample 17339 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 17 and starting at 43067607  for sample 17339 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 17 and starting at 43070927  for sample 17339 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 17 and starting at 43074330  for sample 17339 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 17 and starting at 43076487  for sample 17339 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 17 and starting at 43082403  for sample 17339 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 17 and starting at 43090943  for sample 17339 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 17 and starting at 43091434  for sample 17339 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 17 and starting at 43095845  for sample 17339 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 17 and starting at 43097243  for sample 17339 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 17 and starting at 43099774  for sample 17339 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 17 and starting at 43104121  for sample 17339 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 17 and starting at 43104867  for sample 17339 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 18 and starting at 51030201  for sample 17339 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 18 and starting at 51058124  for sample 17339 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 18 and starting at 51058339  for sample 17339 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 19 and starting at 1227581  for sample 17339 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 22 and starting at 28687896  for sample 17339 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 1 and starting at 45334390  for sample 17340 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 2 and starting at 47410093  for sample 17340 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 2 and starting at 47798610  for sample 17340 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 5 and starting at 112780789  for sample 17340 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 5 and starting at 112837552  for sample 17340 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 11 and starting at 108248932  for sample 17340 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 11 and starting at 108271250  for sample 17340 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 13 and starting at 32332271  for sample 17340 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 13 and starting at 32336264  for sample 17340 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 16 and starting at 23629639  for sample 17340 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 16 and starting at 23634861  for sample 17340 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 17 and starting at 7674180  for sample 17340 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 17 and starting at 43091434  for sample 17340 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 17 and starting at 61799099  for sample 17340 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 22 and starting at 28696900  for sample 17340 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 17 and starting at 43070927  for sample 17335 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 17 and starting at 43091434  for sample 17335 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 13 and starting at 32316460  for sample 17402 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 16 and starting at 23634861  for sample 17402 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 13 and starting at 32336264  for sample 17400 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 13 and starting at 32332271  for sample 17373 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 13 and starting at 32336264  for sample 17373 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 5 and starting at 112837552  for sample 17397 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 2 and starting at 47445547  for sample 17360 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 3 and starting at 37014431  for sample 17399 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 3 and starting at 37020309  for sample 17399 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 3 and starting at 52403137  for sample 17399 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 3 and starting at 52403415  for sample 17399 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 17 and starting at 43091434  for sample 17399 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 5 and starting at 112837552  for sample 17392 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 2 and starting at 47478271  for sample 17393 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 3 and starting at 36993547  for sample 17393 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 3 and starting at 37014431  for sample 17393 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 3 and starting at 37020309  for sample 17393 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 3 and starting at 37025636  for sample 17393 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 3 and starting at 37047518  for sample 17393 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 3 and starting at 52409553  for sample 17393 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 5 and starting at 112837552  for sample 17393 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 11 and starting at 108244787  for sample 17393 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 13 and starting at 32332271  for sample 17393 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 13 and starting at 32336264  for sample 17393 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 17 and starting at 43091434  for sample 17393 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 10 and starting at 87894024  for sample 17385 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 10 and starting at 87957852  for sample 17385 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 11 and starting at 108299713  for sample 17385 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 16 and starting at 23614003  for sample 17385 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 13 and starting at 32336264  for sample 17391 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 16 and starting at 68810196  for sample 17391 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 5 and starting at 177209635  for sample 17323 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 5 and starting at 177209635  for sample 17383 was labeled as failed region because was defined by the algorithm as deletion and duplication."
+[1] "ROI in chr 17 and starting at 43091434  for sample 17333 was labeled as failed region because was defined by the algorithm as deletion and duplication."
   Generating summary file at /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR/output/summary/summary-datasetall.txt 
   Generating CSV results file at /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR/output/summary/results-datasetall.csv 
-
-Loading datasetsingle Dataset validated results
-  Loading decon results for datasetsingle dataset
-[1] "ROI in chr 7 and starting at 5973398  for sample 17371 was labeled as failed region because was defined by the algorithm as deletion and duplication."
-[1] "ROI in chr 17 and starting at 43067607  for sample 17403 was labeled as failed region because was defined by the algorithm as deletion and duplication."
-  Loading panelcn results for datasetsingle dataset
-  Loading convading results for datasetsingle dataset
-  Loading exomedepth results for datasetsingle dataset
-[1] "ROI in chr 7 and starting at 5973398  for sample 17371 was labeled as failed region because was defined by the algorithm as deletion and duplication."
-  Loading manta results for datasetsingle dataset
-  Loading cnvkit results for datasetsingle dataset
-  Loading cnvkit2 results for datasetsingle dataset
-  Loading cnvkit3 results for datasetsingle dataset
-  Loading cnvkit4 results for datasetsingle dataset
-  Loading cnvkit5 results for datasetsingle dataset
-  Generating summary file at /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR/output/summary/summary-datasetsingle.txt 
-  Generating CSV results file at /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR/output/summary/results-datasetsingle.csv 
-
-Loading datasetclinic Dataset validated results
-  Loading decon results for datasetclinic dataset
-[1] "ROI in chr 7 and starting at 5973398  for sample 17371 was labeled as failed region because was defined by the algorithm as deletion and duplication."
-  Loading panelcn results for datasetclinic dataset
-  Loading convading results for datasetclinic dataset
-  Loading exomedepth results for datasetclinic dataset
-[1] "ROI in chr 7 and starting at 5973398  for sample 17371 was labeled as failed region because was defined by the algorithm as deletion and duplication."
-  Loading manta results for datasetclinic dataset
-  Loading cnvkit results for datasetclinic dataset
-  Loading cnvkit2 results for datasetclinic dataset
-  Loading cnvkit3 results for datasetclinic dataset
-  Loading cnvkit4 results for datasetclinic dataset
-  Loading cnvkit5 results for datasetclinic dataset
-  Generating summary file at /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR/output/summary/summary-datasetclinic.txt 
-  Generating CSV results file at /home/robin/Documents/Project/TFM_code/CNVbenchmarkeR/output/summary/results-datasetclinic.csv 
-There were 50 or more warnings (use warnings() to see the first 50)

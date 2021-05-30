@@ -125,43 +125,44 @@ for (name in names(datasets)) {
       
       # Read bed Result File
       resultFile <- file.path(resultFolder, "diploidSV.bedpe")
-      resultData <- read.table(resultFile, sep="\t", stringsAsFactors=FALSE, comment.char = "", header = TRUE)
+      if (file.size(resultFile) != 0) {
+        resultData <- read.table(resultFile, sep="\t", stringsAsFactors=FALSE, comment.char = "", header = TRUE)
       
-      # Only DUP and DEL and filter useless columns
-      resultData <- subset(resultData, resultData$TYPE == "DUP" | resultData$TYPE == "DEL")
-      ncols <- ncol(resultData)
-      resultData <- resultData[, c(1, 2, 5, 11, 12, 15:ncols)]
+        # Only DUP and DEL and filter useless columns
+        resultData <- subset(resultData, resultData$TYPE == "DUP" | resultData$TYPE == "DEL")
+        ncols <- ncol(resultData)
+        resultData <- resultData[, c(1, 2, 5, 11, 12, 15:ncols)]
       
-      # Add 1 to start.A and start.B 
-      resultData$START_A <- resultData$START_A + 1
-      resultData$START_B <- resultData$START_B + 1
+        # Add 1 to start.A and start.B 
+        resultData$START_A <- resultData$START_A + 1
+        resultData$START_B <- resultData$START_B + 1
       
-      # Edit col names
-      sampleNames <- sub(".bam", "", bamFiles[inici:final])
-      colnames(resultData) <- c("Chr", "Start", "End", "CNV.type", "Filter", sampleNames)
+        # Edit col names
+        sampleNames <- sub(".bam", "", bamFiles[inici:final])
+        colnames(resultData) <- c("Chr", "Start", "End", "CNV.type", "Filter", sampleNames)
       
-      # Add CNV to cnvFounds per sample
-      for (sample in sampleNames){
-        sampleData <- resultData[, c(1:5)]
-        sampleData <- cbind(sampleData, resultData[, sample])
-        colnames(sampleData)[6] <- sample
+        # Add CNV to cnvFounds per sample
+        for (sample in sampleNames){
+          sampleData <- resultData[, c(1:5)]
+          sampleData <- cbind(sampleData, resultData[, sample])
+          colnames(sampleData)[6] <- sample
         
-        # Select positive cases
-        positivePattern <- c("0/1", "1/1")
-        positiveCases <- grep(paste(positivePattern, collapse = "|"), sampleData[, 6])
-        sampleData <- sampleData[positiveCases, ]
+          # Select positive cases
+          positivePattern <- c("0/1", "1/1")
+          positiveCases <- grep(paste(positivePattern, collapse = "|"), sampleData[, 6])
+          sampleData <- sampleData[positiveCases, ]
         
-        # Add lines to CNVfound
-        sampleID <- rep(sample, nrow(sampleData))
-        cnvSample <- cbind(sampleID, sampleData)
+          # Add lines to CNVfound
+          sampleID <- rep(sample, nrow(sampleData))
+          cnvSample <- cbind(sampleID, sampleData)
         
-        # Rename colnames
-        colnames(cnvSample) <- c("Sample", "Chr", "Start", "End", "CNV.type", "Filter", "SampleFilter")
+          # Rename colnames
+          colnames(cnvSample) <- c("Sample", "Chr", "Start", "End", "CNV.type", "Filter", "SampleFilter")
         
-        #Add CNVs to CNVfound files
-        cnvFounds <- rbind(cnvFounds, cnvSample)
+          #Add CNVs to CNVfound files
+          cnvFounds <- rbind(cnvFounds, cnvSample)
+        }
       }
-      
     } 
     
     # Convert CNVtype

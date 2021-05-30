@@ -1,0 +1,18 @@
+group:	/home/robin/Documents/Project/Samples/bam/all/17385.bam
+fragment length observations:	457253
+fragment length quantiles:
+0.01	61
+0.05	98
+0.1	119
+0.25	158
+0.5	213
+0.75	294
+0.9	392
+0.95	459
+0.99	589
+Total sampled reads:	8940843
+Total sampled paired reads:	8940843
+Total sampled unpaired reads:	0
+Total sampled paired reads with low MAPQ:	405091
+Total sampled high-confidence read pairs passing all filters:	458685
+

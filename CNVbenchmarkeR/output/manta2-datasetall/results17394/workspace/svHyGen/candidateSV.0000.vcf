@@ -1,0 +1,1063 @@
+##fileformat=VCFv4.1
+##fileDate=20210530
+##source=GenerateSVCandidates 1.6.0
+##reference=file:///home/robin/Documents/Project/Samples/hg38/hg38.fa
+##contig=<ID=1,length=248956422>
+##contig=<ID=1_KI270706v1_random,length=175055>
+##contig=<ID=1_KI270707v1_random,length=32032>
+##contig=<ID=1_KI270708v1_random,length=127682>
+##contig=<ID=1_KI270709v1_random,length=66860>
+##contig=<ID=1_KI270710v1_random,length=40176>
+##contig=<ID=1_KI270711v1_random,length=42210>
+##contig=<ID=1_KI270712v1_random,length=176043>
+##contig=<ID=1_KI270713v1_random,length=40745>
+##contig=<ID=1_KI270714v1_random,length=41717>
+##contig=<ID=1_GL383518v1_alt,length=182439>
+##contig=<ID=1_GL383519v1_alt,length=110268>
+##contig=<ID=1_GL383520v2_alt,length=366580>
+##contig=<ID=1_KI270759v1_alt,length=425601>
+##contig=<ID=1_KI270760v1_alt,length=109528>
+##contig=<ID=1_KI270761v1_alt,length=165834>
+##contig=<ID=1_KI270762v1_alt,length=354444>
+##contig=<ID=1_KI270763v1_alt,length=911658>
+##contig=<ID=1_KI270764v1_alt,length=50258>
+##contig=<ID=1_KI270765v1_alt,length=185285>
+##contig=<ID=1_KI270766v1_alt,length=256271>
+##contig=<ID=1_KI270892v1_alt,length=162212>
+##contig=<ID=2,length=242193529>
+##contig=<ID=2_KI270715v1_random,length=161471>
+##contig=<ID=2_KI270716v1_random,length=153799>
+##contig=<ID=2_GL383521v1_alt,length=143390>
+##contig=<ID=2_GL383522v1_alt,length=123821>
+##contig=<ID=2_GL582966v2_alt,length=96131>
+##contig=<ID=2_KI270767v1_alt,length=161578>
+##contig=<ID=2_KI270768v1_alt,length=110099>
+##contig=<ID=2_KI270769v1_alt,length=120616>
+##contig=<ID=2_KI270770v1_alt,length=136240>
+##contig=<ID=2_KI270771v1_alt,length=110395>
+##contig=<ID=2_KI270772v1_alt,length=133041>
+##contig=<ID=2_KI270773v1_alt,length=70887>
+##contig=<ID=2_KI270774v1_alt,length=223625>
+##contig=<ID=2_KI270775v1_alt,length=138019>
+##contig=<ID=2_KI270776v1_alt,length=174166>
+##contig=<ID=2_KI270893v1_alt,length=161218>
+##contig=<ID=2_KI270894v1_alt,length=214158>
+##contig=<ID=3,length=198295559>
+##contig=<ID=3_GL000221v1_random,length=155397>
+##contig=<ID=3_GL383526v1_alt,length=180671>
+##contig=<ID=3_JH636055v2_alt,length=173151>
+##contig=<ID=3_KI270777v1_alt,length=173649>
+##contig=<ID=3_KI270778v1_alt,length=248252>
+##contig=<ID=3_KI270779v1_alt,length=205312>
+##contig=<ID=3_KI270780v1_alt,length=224108>
+##contig=<ID=3_KI270781v1_alt,length=113034>
+##contig=<ID=3_KI270782v1_alt,length=162429>
+##contig=<ID=3_KI270783v1_alt,length=109187>
+##contig=<ID=3_KI270784v1_alt,length=184404>
+##contig=<ID=3_KI270895v1_alt,length=162896>
+##contig=<ID=3_KI270924v1_alt,length=166540>
+##contig=<ID=3_KI270934v1_alt,length=163458>
+##contig=<ID=3_KI270935v1_alt,length=197351>
+##contig=<ID=3_KI270936v1_alt,length=164170>
+##contig=<ID=3_KI270937v1_alt,length=165607>
+##contig=<ID=4,length=190214555>
+##contig=<ID=4_GL000008v2_random,length=209709>
+##contig=<ID=4_GL000257v2_alt,length=586476>
+##contig=<ID=4_GL383527v1_alt,length=164536>
+##contig=<ID=4_GL383528v1_alt,length=376187>
+##contig=<ID=4_KI270785v1_alt,length=119912>
+##contig=<ID=4_KI270786v1_alt,length=244096>
+##contig=<ID=4_KI270787v1_alt,length=111943>
+##contig=<ID=4_KI270788v1_alt,length=158965>
+##contig=<ID=4_KI270789v1_alt,length=205944>
+##contig=<ID=4_KI270790v1_alt,length=220246>
+##contig=<ID=4_KI270896v1_alt,length=378547>
+##contig=<ID=4_KI270925v1_alt,length=555799>
+##contig=<ID=5,length=181538259>
+##contig=<ID=5_GL000208v1_random,length=92689>
+##contig=<ID=5_GL339449v2_alt,length=1612928>
+##contig=<ID=5_GL383530v1_alt,length=101241>
+##contig=<ID=5_GL383531v1_alt,length=173459>
+##contig=<ID=5_GL383532v1_alt,length=82728>
+##contig=<ID=5_GL949742v1_alt,length=226852>
+##contig=<ID=5_KI270791v1_alt,length=195710>
+##contig=<ID=5_KI270792v1_alt,length=179043>
+##contig=<ID=5_KI270793v1_alt,length=126136>
+##contig=<ID=5_KI270794v1_alt,length=164558>
+##contig=<ID=5_KI270795v1_alt,length=131892>
+##contig=<ID=5_KI270796v1_alt,length=172708>
+##contig=<ID=5_KI270897v1_alt,length=1144418>
+##contig=<ID=5_KI270898v1_alt,length=130957>
+##contig=<ID=6,length=170805979>
+##contig=<ID=6_GL000250v2_alt,length=4672374>
+##contig=<ID=6_GL000251v2_alt,length=4795265>
+##contig=<ID=6_GL000252v2_alt,length=4604811>
+##contig=<ID=6_GL000253v2_alt,length=4677643>
+##contig=<ID=6_GL000254v2_alt,length=4827813>
+##contig=<ID=6_GL000255v2_alt,length=4606388>
+##contig=<ID=6_GL000256v2_alt,length=4929269>
+##contig=<ID=6_GL383533v1_alt,length=124736>
+##contig=<ID=6_KB021644v2_alt,length=185823>
+##contig=<ID=6_KI270758v1_alt,length=76752>
+##contig=<ID=6_KI270797v1_alt,length=197536>
+##contig=<ID=6_KI270798v1_alt,length=271782>
+##contig=<ID=6_KI270799v1_alt,length=152148>
+##contig=<ID=6_KI270800v1_alt,length=175808>
+##contig=<ID=6_KI270801v1_alt,length=870480>
+##contig=<ID=6_KI270802v1_alt,length=75005>
+##contig=<ID=7,length=159345973>
+##contig=<ID=7_GL383534v2_alt,length=119183>
+##contig=<ID=7_KI270803v1_alt,length=1111570>
+##contig=<ID=7_KI270804v1_alt,length=157952>
+##contig=<ID=7_KI270805v1_alt,length=209988>
+##contig=<ID=7_KI270806v1_alt,length=158166>
+##contig=<ID=7_KI270807v1_alt,length=126434>
+##contig=<ID=7_KI270808v1_alt,length=271455>
+##contig=<ID=7_KI270809v1_alt,length=209586>
+##contig=<ID=7_KI270899v1_alt,length=190869>
+##contig=<ID=8,length=145138636>
+##contig=<ID=8_KI270810v1_alt,length=374415>
+##contig=<ID=8_KI270811v1_alt,length=292436>
+##contig=<ID=8_KI270812v1_alt,length=282736>
+##contig=<ID=8_KI270813v1_alt,length=300230>
+##contig=<ID=8_KI270814v1_alt,length=141812>
+##contig=<ID=8_KI270815v1_alt,length=132244>
+##contig=<ID=8_KI270816v1_alt,length=305841>
+##contig=<ID=8_KI270817v1_alt,length=158983>
+##contig=<ID=8_KI270818v1_alt,length=145606>
+##contig=<ID=8_KI270819v1_alt,length=133535>
+##contig=<ID=8_KI270820v1_alt,length=36640>
+##contig=<ID=8_KI270821v1_alt,length=985506>
+##contig=<ID=8_KI270822v1_alt,length=624492>
+##contig=<ID=8_KI270900v1_alt,length=318687>
+##contig=<ID=8_KI270901v1_alt,length=136959>
+##contig=<ID=8_KI270926v1_alt,length=229282>
+##contig=<ID=9,length=138394717>
+##contig=<ID=9_KI270717v1_random,length=40062>
+##contig=<ID=9_KI270718v1_random,length=38054>
+##contig=<ID=9_KI270719v1_random,length=176845>
+##contig=<ID=9_KI270720v1_random,length=39050>
+##contig=<ID=9_GL383539v1_alt,length=162988>
+##contig=<ID=9_GL383540v1_alt,length=71551>
+##contig=<ID=9_GL383541v1_alt,length=171286>
+##contig=<ID=9_GL383542v1_alt,length=60032>
+##contig=<ID=9_KI270823v1_alt,length=439082>
+##contig=<ID=10,length=133797422>
+##contig=<ID=10_GL383545v1_alt,length=179254>
+##contig=<ID=10_GL383546v1_alt,length=309802>
+##contig=<ID=10_KI270824v1_alt,length=181496>
+##contig=<ID=10_KI270825v1_alt,length=188315>
+##contig=<ID=11,length=135086622>
+##contig=<ID=11_KI270721v1_random,length=100316>
+##contig=<ID=11_GL383547v1_alt,length=154407>
+##contig=<ID=11_JH159136v1_alt,length=200998>
+##contig=<ID=11_JH159137v1_alt,length=191409>
+##contig=<ID=11_KI270826v1_alt,length=186169>
+##contig=<ID=11_KI270827v1_alt,length=67707>
+##contig=<ID=11_KI270829v1_alt,length=204059>
+##contig=<ID=11_KI270830v1_alt,length=177092>
+##contig=<ID=11_KI270831v1_alt,length=296895>
+##contig=<ID=11_KI270832v1_alt,length=210133>
+##contig=<ID=11_KI270902v1_alt,length=106711>
+##contig=<ID=11_KI270903v1_alt,length=214625>
+##contig=<ID=11_KI270927v1_alt,length=218612>
+##contig=<ID=12,length=133275309>
+##contig=<ID=12_GL383549v1_alt,length=120804>
+##contig=<ID=12_GL383550v2_alt,length=169178>
+##contig=<ID=12_GL383551v1_alt,length=184319>
+##contig=<ID=12_GL383552v1_alt,length=138655>
+##contig=<ID=12_GL383553v2_alt,length=152874>
+##contig=<ID=12_GL877875v1_alt,length=167313>
+##contig=<ID=12_GL877876v1_alt,length=408271>
+##contig=<ID=12_KI270833v1_alt,length=76061>
+##contig=<ID=12_KI270834v1_alt,length=119498>
+##contig=<ID=12_KI270835v1_alt,length=238139>
+##contig=<ID=12_KI270836v1_alt,length=56134>
+##contig=<ID=12_KI270837v1_alt,length=40090>
+##contig=<ID=12_KI270904v1_alt,length=572349>
+##contig=<ID=13,length=114364328>
+##contig=<ID=13_KI270838v1_alt,length=306913>
+##contig=<ID=13_KI270839v1_alt,length=180306>
+##contig=<ID=13_KI270840v1_alt,length=191684>
+##contig=<ID=13_KI270841v1_alt,length=169134>
+##contig=<ID=13_KI270842v1_alt,length=37287>
+##contig=<ID=13_KI270843v1_alt,length=103832>
+##contig=<ID=14,length=107043718>
+##contig=<ID=14_GL000009v2_random,length=201709>
+##contig=<ID=14_GL000194v1_random,length=191469>
+##contig=<ID=14_GL000225v1_random,length=211173>
+##contig=<ID=14_KI270722v1_random,length=194050>
+##contig=<ID=14_KI270723v1_random,length=38115>
+##contig=<ID=14_KI270724v1_random,length=39555>
+##contig=<ID=14_KI270725v1_random,length=172810>
+##contig=<ID=14_KI270726v1_random,length=43739>
+##contig=<ID=14_KI270844v1_alt,length=322166>
+##contig=<ID=14_KI270845v1_alt,length=180703>
+##contig=<ID=14_KI270846v1_alt,length=1351393>
+##contig=<ID=14_KI270847v1_alt,length=1511111>
+##contig=<ID=15,length=101991189>
+##contig=<ID=15_KI270727v1_random,length=448248>
+##contig=<ID=15_GL383554v1_alt,length=296527>
+##contig=<ID=15_GL383555v2_alt,length=388773>
+##contig=<ID=15_KI270848v1_alt,length=327382>
+##contig=<ID=15_KI270849v1_alt,length=244917>
+##contig=<ID=15_KI270850v1_alt,length=430880>
+##contig=<ID=15_KI270851v1_alt,length=263054>
+##contig=<ID=15_KI270852v1_alt,length=478999>
+##contig=<ID=15_KI270905v1_alt,length=5161414>
+##contig=<ID=15_KI270906v1_alt,length=196384>
+##contig=<ID=16,length=90338345>
+##contig=<ID=16_KI270728v1_random,length=1872759>
+##contig=<ID=16_GL383556v1_alt,length=192462>
+##contig=<ID=16_GL383557v1_alt,length=89672>
+##contig=<ID=16_KI270853v1_alt,length=2659700>
+##contig=<ID=16_KI270854v1_alt,length=134193>
+##contig=<ID=16_KI270855v1_alt,length=232857>
+##contig=<ID=16_KI270856v1_alt,length=63982>
+##contig=<ID=17,length=83257441>
+##contig=<ID=17_GL000205v2_random,length=185591>
+##contig=<ID=17_KI270729v1_random,length=280839>
+##contig=<ID=17_KI270730v1_random,length=112551>
+##contig=<ID=17_GL000258v2_alt,length=1821992>
+##contig=<ID=17_GL383563v3_alt,length=375691>
+##contig=<ID=17_GL383564v2_alt,length=133151>
+##contig=<ID=17_GL383565v1_alt,length=223995>
+##contig=<ID=17_GL383566v1_alt,length=90219>
+##contig=<ID=17_JH159146v1_alt,length=278131>
+##contig=<ID=17_JH159147v1_alt,length=70345>
+##contig=<ID=17_JH159148v1_alt,length=88070>
+##contig=<ID=17_KI270857v1_alt,length=2877074>
+##contig=<ID=17_KI270858v1_alt,length=235827>
+##contig=<ID=17_KI270859v1_alt,length=108763>
+##contig=<ID=17_KI270860v1_alt,length=178921>
+##contig=<ID=17_KI270861v1_alt,length=196688>
+##contig=<ID=17_KI270862v1_alt,length=391357>
+##contig=<ID=17_KI270907v1_alt,length=137721>
+##contig=<ID=17_KI270908v1_alt,length=1423190>
+##contig=<ID=17_KI270909v1_alt,length=325800>
+##contig=<ID=17_KI270910v1_alt,length=157099>
+##contig=<ID=18,length=80373285>
+##contig=<ID=18_GL383567v1_alt,length=289831>
+##contig=<ID=18_GL383568v1_alt,length=104552>
+##contig=<ID=18_GL383569v1_alt,length=167950>
+##contig=<ID=18_GL383570v1_alt,length=164789>
+##contig=<ID=18_GL383571v1_alt,length=198278>
+##contig=<ID=18_GL383572v1_alt,length=159547>
+##contig=<ID=18_KI270863v1_alt,length=167999>
+##contig=<ID=18_KI270864v1_alt,length=111737>
+##contig=<ID=18_KI270911v1_alt,length=157710>
+##contig=<ID=18_KI270912v1_alt,length=174061>
+##contig=<ID=19,length=58617616>
+##contig=<ID=19_GL000209v2_alt,length=177381>
+##contig=<ID=19_GL383573v1_alt,length=385657>
+##contig=<ID=19_GL383574v1_alt,length=155864>
+##contig=<ID=19_GL383575v2_alt,length=170222>
+##contig=<ID=19_GL383576v1_alt,length=188024>
+##contig=<ID=19_GL949746v1_alt,length=987716>
+##contig=<ID=19_GL949747v2_alt,length=729520>
+##contig=<ID=19_GL949748v2_alt,length=1064304>
+##contig=<ID=19_GL949749v2_alt,length=1091841>
+##contig=<ID=19_GL949750v2_alt,length=1066390>
+##contig=<ID=19_GL949751v2_alt,length=1002683>
+##contig=<ID=19_GL949752v1_alt,length=987100>
+##contig=<ID=19_GL949753v2_alt,length=796479>
+##contig=<ID=19_KI270865v1_alt,length=52969>
+##contig=<ID=19_KI270866v1_alt,length=43156>
+##contig=<ID=19_KI270867v1_alt,length=233762>
+##contig=<ID=19_KI270868v1_alt,length=61734>
+##contig=<ID=19_KI270882v1_alt,length=248807>
+##contig=<ID=19_KI270883v1_alt,length=170399>
+##contig=<ID=19_KI270884v1_alt,length=157053>
+##contig=<ID=19_KI270885v1_alt,length=171027>
+##contig=<ID=19_KI270886v1_alt,length=204239>
+##contig=<ID=19_KI270887v1_alt,length=209512>
+##contig=<ID=19_KI270888v1_alt,length=155532>
+##contig=<ID=19_KI270889v1_alt,length=170698>
+##contig=<ID=19_KI270890v1_alt,length=184499>
+##contig=<ID=19_KI270891v1_alt,length=170680>
+##contig=<ID=19_KI270914v1_alt,length=205194>
+##contig=<ID=19_KI270915v1_alt,length=170665>
+##contig=<ID=19_KI270916v1_alt,length=184516>
+##contig=<ID=19_KI270917v1_alt,length=190932>
+##contig=<ID=19_KI270918v1_alt,length=123111>
+##contig=<ID=19_KI270919v1_alt,length=170701>
+##contig=<ID=19_KI270920v1_alt,length=198005>
+##contig=<ID=19_KI270921v1_alt,length=282224>
+##contig=<ID=19_KI270922v1_alt,length=187935>
+##contig=<ID=19_KI270923v1_alt,length=189352>
+##contig=<ID=19_KI270929v1_alt,length=186203>
+##contig=<ID=19_KI270930v1_alt,length=200773>
+##contig=<ID=19_KI270931v1_alt,length=170148>
+##contig=<ID=19_KI270932v1_alt,length=215732>
+##contig=<ID=19_KI270933v1_alt,length=170537>
+##contig=<ID=19_KI270938v1_alt,length=1066800>
+##contig=<ID=20,length=64444167>
+##contig=<ID=20_GL383577v2_alt,length=128386>
+##contig=<ID=20_KI270869v1_alt,length=118774>
+##contig=<ID=20_KI270870v1_alt,length=183433>
+##contig=<ID=20_KI270871v1_alt,length=58661>
+##contig=<ID=21,length=46709983>
+##contig=<ID=21_GL383578v2_alt,length=63917>
+##contig=<ID=21_GL383579v2_alt,length=201197>
+##contig=<ID=21_GL383580v2_alt,length=74653>
+##contig=<ID=21_GL383581v2_alt,length=116689>
+##contig=<ID=21_KI270872v1_alt,length=82692>
+##contig=<ID=21_KI270873v1_alt,length=143900>
+##contig=<ID=21_KI270874v1_alt,length=166743>
+##contig=<ID=22,length=50818468>
+##contig=<ID=22_KI270731v1_random,length=150754>
+##contig=<ID=22_KI270732v1_random,length=41543>
+##contig=<ID=22_KI270733v1_random,length=179772>
+##contig=<ID=22_KI270734v1_random,length=165050>
+##contig=<ID=22_KI270735v1_random,length=42811>
+##contig=<ID=22_KI270736v1_random,length=181920>
+##contig=<ID=22_KI270737v1_random,length=103838>
+##contig=<ID=22_KI270738v1_random,length=99375>
+##contig=<ID=22_KI270739v1_random,length=73985>
+##contig=<ID=22_GL383582v2_alt,length=162811>
+##contig=<ID=22_GL383583v2_alt,length=96924>
+##contig=<ID=22_KB663609v1_alt,length=74013>
+##contig=<ID=22_KI270875v1_alt,length=259914>
+##contig=<ID=22_KI270876v1_alt,length=263666>
+##contig=<ID=22_KI270877v1_alt,length=101331>
+##contig=<ID=22_KI270878v1_alt,length=186262>
+##contig=<ID=22_KI270879v1_alt,length=304135>
+##contig=<ID=22_KI270928v1_alt,length=176103>
+##contig=<ID=X,length=156040895>
+##contig=<ID=X_KI270880v1_alt,length=284869>
+##contig=<ID=X_KI270881v1_alt,length=144206>
+##contig=<ID=X_KI270913v1_alt,length=274009>
+##contig=<ID=Y,length=57227415>
+##contig=<ID=Y_KI270740v1_random,length=37240>
+##contig=<ID=M,length=16569>
+##contig=<ID=Un_GL000195v1,length=182896>
+##contig=<ID=Un_GL000213v1,length=164239>
+##contig=<ID=Un_GL000214v1,length=137718>
+##contig=<ID=Un_GL000216v2,length=176608>
+##contig=<ID=Un_GL000218v1,length=161147>
+##contig=<ID=Un_GL000219v1,length=179198>
+##contig=<ID=Un_GL000220v1,length=161802>
+##contig=<ID=Un_GL000224v1,length=179693>
+##contig=<ID=Un_GL000226v1,length=15008>
+##contig=<ID=Un_KI270302v1,length=2274>
+##contig=<ID=Un_KI270303v1,length=1942>
+##contig=<ID=Un_KI270304v1,length=2165>
+##contig=<ID=Un_KI270305v1,length=1472>
+##contig=<ID=Un_KI270310v1,length=1201>
+##contig=<ID=Un_KI270311v1,length=12399>
+##contig=<ID=Un_KI270312v1,length=998>
+##contig=<ID=Un_KI270315v1,length=2276>
+##contig=<ID=Un_KI270316v1,length=1444>
+##contig=<ID=Un_KI270317v1,length=37690>
+##contig=<ID=Un_KI270320v1,length=4416>
+##contig=<ID=Un_KI270322v1,length=21476>
+##contig=<ID=Un_KI270329v1,length=1040>
+##contig=<ID=Un_KI270330v1,length=1652>
+##contig=<ID=Un_KI270333v1,length=2699>
+##contig=<ID=Un_KI270334v1,length=1368>
+##contig=<ID=Un_KI270335v1,length=1048>
+##contig=<ID=Un_KI270336v1,length=1026>
+##contig=<ID=Un_KI270337v1,length=1121>
+##contig=<ID=Un_KI270338v1,length=1428>
+##contig=<ID=Un_KI270340v1,length=1428>
+##contig=<ID=Un_KI270362v1,length=3530>
+##contig=<ID=Un_KI270363v1,length=1803>
+##contig=<ID=Un_KI270364v1,length=2855>
+##contig=<ID=Un_KI270366v1,length=8320>
+##contig=<ID=Un_KI270371v1,length=2805>
+##contig=<ID=Un_KI270372v1,length=1650>
+##contig=<ID=Un_KI270373v1,length=1451>
+##contig=<ID=Un_KI270374v1,length=2656>
+##contig=<ID=Un_KI270375v1,length=2378>
+##contig=<ID=Un_KI270376v1,length=1136>
+##contig=<ID=Un_KI270378v1,length=1048>
+##contig=<ID=Un_KI270379v1,length=1045>
+##contig=<ID=Un_KI270381v1,length=1930>
+##contig=<ID=Un_KI270382v1,length=4215>
+##contig=<ID=Un_KI270383v1,length=1750>
+##contig=<ID=Un_KI270384v1,length=1658>
+##contig=<ID=Un_KI270385v1,length=990>
+##contig=<ID=Un_KI270386v1,length=1788>
+##contig=<ID=Un_KI270387v1,length=1537>
+##contig=<ID=Un_KI270388v1,length=1216>
+##contig=<ID=Un_KI270389v1,length=1298>
+##contig=<ID=Un_KI270390v1,length=2387>
+##contig=<ID=Un_KI270391v1,length=1484>
+##contig=<ID=Un_KI270392v1,length=971>
+##contig=<ID=Un_KI270393v1,length=1308>
+##contig=<ID=Un_KI270394v1,length=970>
+##contig=<ID=Un_KI270395v1,length=1143>
+##contig=<ID=Un_KI270396v1,length=1880>
+##contig=<ID=Un_KI270411v1,length=2646>
+##contig=<ID=Un_KI270412v1,length=1179>
+##contig=<ID=Un_KI270414v1,length=2489>
+##contig=<ID=Un_KI270417v1,length=2043>
+##contig=<ID=Un_KI270418v1,length=2145>
+##contig=<ID=Un_KI270419v1,length=1029>
+##contig=<ID=Un_KI270420v1,length=2321>
+##contig=<ID=Un_KI270422v1,length=1445>
+##contig=<ID=Un_KI270423v1,length=981>
+##contig=<ID=Un_KI270424v1,length=2140>
+##contig=<ID=Un_KI270425v1,length=1884>
+##contig=<ID=Un_KI270429v1,length=1361>
+##contig=<ID=Un_KI270435v1,length=92983>
+##contig=<ID=Un_KI270438v1,length=112505>
+##contig=<ID=Un_KI270442v1,length=392061>
+##contig=<ID=Un_KI270448v1,length=7992>
+##contig=<ID=Un_KI270465v1,length=1774>
+##contig=<ID=Un_KI270466v1,length=1233>
+##contig=<ID=Un_KI270467v1,length=3920>
+##contig=<ID=Un_KI270468v1,length=4055>
+##contig=<ID=Un_KI270507v1,length=5353>
+##contig=<ID=Un_KI270508v1,length=1951>
+##contig=<ID=Un_KI270509v1,length=2318>
+##contig=<ID=Un_KI270510v1,length=2415>
+##contig=<ID=Un_KI270511v1,length=8127>
+##contig=<ID=Un_KI270512v1,length=22689>
+##contig=<ID=Un_KI270515v1,length=6361>
+##contig=<ID=Un_KI270516v1,length=1300>
+##contig=<ID=Un_KI270517v1,length=3253>
+##contig=<ID=Un_KI270518v1,length=2186>
+##contig=<ID=Un_KI270519v1,length=138126>
+##contig=<ID=Un_KI270521v1,length=7642>
+##contig=<ID=Un_KI270522v1,length=5674>
+##contig=<ID=Un_KI270528v1,length=2983>
+##contig=<ID=Un_KI270529v1,length=1899>
+##contig=<ID=Un_KI270530v1,length=2168>
+##contig=<ID=Un_KI270538v1,length=91309>
+##contig=<ID=Un_KI270539v1,length=993>
+##contig=<ID=Un_KI270544v1,length=1202>
+##contig=<ID=Un_KI270548v1,length=1599>
+##contig=<ID=Un_KI270579v1,length=31033>
+##contig=<ID=Un_KI270580v1,length=1553>
+##contig=<ID=Un_KI270581v1,length=7046>
+##contig=<ID=Un_KI270582v1,length=6504>
+##contig=<ID=Un_KI270583v1,length=1400>
+##contig=<ID=Un_KI270584v1,length=4513>
+##contig=<ID=Un_KI270587v1,length=2969>
+##contig=<ID=Un_KI270588v1,length=6158>
+##contig=<ID=Un_KI270589v1,length=44474>
+##contig=<ID=Un_KI270590v1,length=4685>
+##contig=<ID=Un_KI270591v1,length=5796>
+##contig=<ID=Un_KI270593v1,length=3041>
+##contig=<ID=Un_KI270741v1,length=157432>
+##contig=<ID=Un_KI270742v1,length=186739>
+##contig=<ID=Un_KI270743v1,length=210658>
+##contig=<ID=Un_KI270744v1,length=168472>
+##contig=<ID=Un_KI270745v1,length=41891>
+##contig=<ID=Un_KI270746v1,length=66486>
+##contig=<ID=Un_KI270747v1,length=198735>
+##contig=<ID=Un_KI270748v1,length=93321>
+##contig=<ID=Un_KI270749v1,length=158759>
+##contig=<ID=Un_KI270750v1,length=148850>
+##contig=<ID=Un_KI270751v1,length=150742>
+##contig=<ID=Un_KI270752v1,length=27745>
+##contig=<ID=Un_KI270753v1,length=62944>
+##contig=<ID=Un_KI270754v1,length=40191>
+##contig=<ID=Un_KI270755v1,length=36723>
+##contig=<ID=Un_KI270756v1,length=79590>
+##contig=<ID=Un_KI270757v1,length=71251>
+##INFO=<ID=IMPRECISE,Number=0,Type=Flag,Description="Imprecise structural variation">
+##INFO=<ID=SVTYPE,Number=1,Type=String,Description="Type of structural variant">
+##INFO=<ID=SVLEN,Number=.,Type=Integer,Description="Difference in length between REF and ALT alleles">
+##INFO=<ID=END,Number=1,Type=Integer,Description="End position of the variant described in this record">
+##INFO=<ID=CIPOS,Number=2,Type=Integer,Description="Confidence interval around POS">
+##INFO=<ID=CIEND,Number=2,Type=Integer,Description="Confidence interval around END">
+##INFO=<ID=CIGAR,Number=A,Type=String,Description="CIGAR alignment for each alternate indel allele">
+##INFO=<ID=MATEID,Number=.,Type=String,Description="ID of mate breakend">
+##INFO=<ID=EVENT,Number=1,Type=String,Description="ID of event associated to breakend">
+##INFO=<ID=HOMLEN,Number=.,Type=Integer,Description="Length of base pair identical homology at event breakpoints">
+##INFO=<ID=HOMSEQ,Number=.,Type=String,Description="Sequence of base pair identical homology at event breakpoints">
+##INFO=<ID=SVINSLEN,Number=.,Type=Integer,Description="Length of insertion">
+##INFO=<ID=SVINSSEQ,Number=.,Type=String,Description="Sequence of insertion">
+##INFO=<ID=LEFT_SVINSSEQ,Number=.,Type=String,Description="Known left side of insertion for an insertion of unknown length">
+##INFO=<ID=RIGHT_SVINSSEQ,Number=.,Type=String,Description="Known right side of insertion for an insertion of unknown length">
+##INFO=<ID=PAIR_COUNT,Number=1,Type=Integer,Description="Read pairs supporting this variant where both reads are confidently mapped">
+##INFO=<ID=BND_PAIR_COUNT,Number=1,Type=Integer,Description="Confidently mapped reads supporting this variant at this breakend (mapping may not be confident at remote breakend)">
+##INFO=<ID=UPSTREAM_PAIR_COUNT,Number=1,Type=Integer,Description="Confidently mapped reads supporting this variant at the upstream breakend (mapping may not be confident at downstream breakend)">
+##INFO=<ID=DOWNSTREAM_PAIR_COUNT,Number=1,Type=Integer,Description="Confidently mapped reads supporting this variant at this downstream breakend (mapping may not be confident at upstream breakend)">
+##ALT=<ID=DEL,Description="Deletion">
+##ALT=<ID=INS,Description="Insertion">
+##ALT=<ID=DUP:TANDEM,Description="Tandem Duplication">
+##cmdline=/home/robin/Documents/Project/manta/Install/bin/configManta.py --bam=/home/robin/Documents/Project/Samples/bam/all/17394.bam --referenceFasta=/home/robin/Documents/Project/Samples/hg38/hg38.fa --config=/home/robin/Documents/Project/TFM_code/CNVbenchmarkeR/output/manta2-datasetall/configManta.py.ini --exome --runDir=/home/robin/Documents/Project/TFM_code/CNVbenchmarkeR/output/manta2-datasetall/results17394
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+1	14478249	MantaINS:4:0:0:0:0:0	A	AGAAGGAAG	.	.	END=14478249;SVTYPE=INS;SVLEN=8;CIGAR=1M8I;CIPOS=0,24;HOMLEN=24;HOMSEQ=GAAGGAAGGAAGGAAGGAAGGAAG;UPSTREAM_PAIR_COUNT=0;DOWNSTREAM_PAIR_COUNT=0;PAIR_COUNT=0
+8	31083834	MantaBND:0:1:2:0:0:0:0	T	T]1:28228347]	.	.	SVTYPE=BND;MATEID=MantaBND:0:1:2:0:0:0:1;IMPRECISE;CIPOS=-62,63;BND_PAIR_COUNT=3;PAIR_COUNT=3
+1	28228347	MantaBND:0:1:2:0:0:0:1	T	T]8:31083834]	.	.	SVTYPE=BND;MATEID=MantaBND:0:1:2:0:0:0:0;IMPRECISE;CIPOS=-62,63;BND_PAIR_COUNT=3;PAIR_COUNT=3
+8	8345831	MantaDEL:16:1:2:0:0:0	T	<DEL>	.	.	END=89970440;SVTYPE=DEL;SVLEN=-81624609;IMPRECISE;CIPOS=-58,58;CIEND=-58,58;UPSTREAM_PAIR_COUNT=2;DOWNSTREAM_PAIR_COUNT=2;PAIR_COUNT=2
+17	31170222	MantaBND:15:0:1:0:0:0:0	T	]1:28839003]T	.	.	SVTYPE=BND;MATEID=MantaBND:15:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+1	28839003	MantaBND:15:0:1:0:0:0:1	C	C[17:31170222[	.	.	SVTYPE=BND;MATEID=MantaBND:15:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+1	17395785	MantaDUP:TANDEM:7:0:1:0:0:0	A	<DUP:TANDEM>	.	.	END=17397093;SVTYPE=DUP;SVLEN=1308;IMPRECISE;CIPOS=-57,57;CIEND=-57,57;UPSTREAM_PAIR_COUNT=3;DOWNSTREAM_PAIR_COUNT=3;PAIR_COUNT=3
+8	89970368	MantaBND:16:0:1:0:0:0:0	G	[1:39833886[G	.	.	SVTYPE=BND;MATEID=MantaBND:16:0:1:0:0:0:1;IMPRECISE;CIPOS=-63,64;BND_PAIR_COUNT=2;PAIR_COUNT=2
+1	39833886	MantaBND:16:0:1:0:0:0:1	T	[8:89970368[T	.	.	SVTYPE=BND;MATEID=MantaBND:16:0:1:0:0:0:0;IMPRECISE;CIPOS=-63,64;BND_PAIR_COUNT=2;PAIR_COUNT=2
+1	45331156	MantaDEL:20:0:0:0:0:0	TACAACAAAG	T	.	.	END=45331165;SVTYPE=DEL;SVLEN=-9;CIGAR=1M9D;CIPOS=0,9;HOMLEN=9;HOMSEQ=ACAACAAAG;UPSTREAM_PAIR_COUNT=0;DOWNSTREAM_PAIR_COUNT=0;PAIR_COUNT=0
+1	22441839	MantaBND:11:0:1:0:0:0:0	T	T[13:32356607[	.	.	SVTYPE=BND;MATEID=MantaBND:11:0:1:0:0:0:1;IMPRECISE;CIPOS=-55,56;BND_PAIR_COUNT=3;PAIR_COUNT=3
+13	32356607	MantaBND:11:0:1:0:0:0:1	C	]1:22441839]C	.	.	SVTYPE=BND;MATEID=MantaBND:11:0:1:0:0:0:0;IMPRECISE;CIPOS=-55,56;BND_PAIR_COUNT=3;PAIR_COUNT=3
+8	89970419	MantaBND:16:1:3:0:0:0:0	A	]19:43787632]A	.	.	SVTYPE=BND;MATEID=MantaBND:16:1:3:0:0:0:1;IMPRECISE;CIPOS=-55,55;BND_PAIR_COUNT=2;PAIR_COUNT=2
+19	43787632	MantaBND:16:1:3:0:0:0:1	G	G[8:89970419[	.	.	SVTYPE=BND;MATEID=MantaBND:16:1:3:0:0:0:0;IMPRECISE;CIPOS=-55,55;BND_PAIR_COUNT=2;PAIR_COUNT=2
+1	95028302	MantaBND:29:0:1:0:0:0:0	C	[13:102958484[C	.	.	SVTYPE=BND;MATEID=MantaBND:29:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+13	102958484	MantaBND:29:0:1:0:0:0:1	T	[1:95028302[T	.	.	SVTYPE=BND;MATEID=MantaBND:29:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+6	86973432	MantaBND:3:1:2:0:0:0:0	T	[14:95099825[T	.	.	SVTYPE=BND;MATEID=MantaBND:3:1:2:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=3;PAIR_COUNT=3
+14	95099825	MantaBND:3:1:2:0:0:0:1	T	[6:86973432[T	.	.	SVTYPE=BND;MATEID=MantaBND:3:1:2:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=3;PAIR_COUNT=3
+1	14427348	MantaBND:3:0:1:0:0:0:0	T	T[14:95099825[	.	.	SVTYPE=BND;MATEID=MantaBND:3:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=3;PAIR_COUNT=3
+14	95099825	MantaBND:3:0:1:0:0:0:1	T	]1:14427348]T	.	.	SVTYPE=BND;MATEID=MantaBND:3:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=3;PAIR_COUNT=3
+13	48379648	MantaBND:13:0:1:0:0:0:0	T	T[1:26865651[	.	.	SVTYPE=BND;MATEID=MantaBND:13:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+1	26865651	MantaBND:13:0:1:0:0:0:1	G	]13:48379648]G	.	.	SVTYPE=BND;MATEID=MantaBND:13:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+15	83005258	MantaBND:32:0:1:0:0:0:0	A	]1:150888068]A	.	.	SVTYPE=BND;MATEID=MantaBND:32:0:1:0:0:0:1;IMPRECISE;CIPOS=-68,69;BND_PAIR_COUNT=2;PAIR_COUNT=2
+1	150888068	MantaBND:32:0:1:0:0:0:1	T	T[15:83005258[	.	.	SVTYPE=BND;MATEID=MantaBND:32:0:1:0:0:0:0;IMPRECISE;CIPOS=-68,69;BND_PAIR_COUNT=2;PAIR_COUNT=2
+9	5070807	MantaBND:39:0:2:0:0:0:0	A	[1:171104771[A	.	.	SVTYPE=BND;MATEID=MantaBND:39:0:2:0:0:0:1;IMPRECISE;CIPOS=-63,63;BND_PAIR_COUNT=2;PAIR_COUNT=2
+1	171104771	MantaBND:39:0:2:0:0:0:1	G	[9:5070807[G	.	.	SVTYPE=BND;MATEID=MantaBND:39:0:2:0:0:0:0;IMPRECISE;CIPOS=-63,63;BND_PAIR_COUNT=2;PAIR_COUNT=2
+2	214780217	MantaDUP:TANDEM:27:1:2:0:0:0	A	<DUP:TANDEM>	.	.	END=214780983;SVTYPE=DUP;SVLEN=766;CIPOS=0,4;CIEND=0,4;HOMLEN=4;HOMSEQ=ACTT;UPSTREAM_PAIR_COUNT=0;DOWNSTREAM_PAIR_COUNT=0;PAIR_COUNT=0
+1	152002494	MantaBND:31:0:1:0:0:0:0	A	]2:58198586]A	.	.	SVTYPE=BND;MATEID=MantaBND:31:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+2	58198645	MantaBND:31:1:2:0:0:0:0	T	T[3:48455851[	.	.	SVTYPE=BND;MATEID=MantaBND:31:1:2:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+2	58198586	MantaBND:31:0:1:0:0:0:1	G	G[1:152002494[	.	.	SVTYPE=BND;MATEID=MantaBND:31:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+3	48455851	MantaBND:31:1:2:0:0:0:1	T	]2:58198645]T	.	.	SVTYPE=BND;MATEID=MantaBND:31:1:2:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+9	121596326	MantaBND:37:0:1:0:0:0:0	C	C[1:161340508[	.	.	SVTYPE=BND;MATEID=MantaBND:37:0:1:0:0:0:1;IMPRECISE;CIPOS=-55,55;BND_PAIR_COUNT=2;PAIR_COUNT=2
+1	161340508	MantaBND:37:0:1:0:0:0:1	A	]9:121596326]A	.	.	SVTYPE=BND;MATEID=MantaBND:37:0:1:0:0:0:0;IMPRECISE;CIPOS=-55,55;BND_PAIR_COUNT=2;PAIR_COUNT=2
+1	45331156	MantaDEL:21:0:0:0:0:0	TACAACAAAG	T	.	.	END=45331165;SVTYPE=DEL;SVLEN=-9;CIGAR=1M9D;CIPOS=0,9;HOMLEN=9;HOMSEQ=ACAACAAAG;UPSTREAM_PAIR_COUNT=0;DOWNSTREAM_PAIR_COUNT=0;PAIR_COUNT=0
+1	193249490	MantaBND:44:0:1:0:0:0:0	T	T[2:60397475[	.	.	SVTYPE=BND;MATEID=MantaBND:44:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+2	60397475	MantaBND:44:0:1:0:0:0:1	A	]1:193249490]A	.	.	SVTYPE=BND;MATEID=MantaBND:44:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+1	161356727	MantaDUP:TANDEM:36:0:1:0:0:0	T	<DUP:TANDEM>	.	.	END=238664924;SVTYPE=DUP;SVLEN=77308197;IMPRECISE;CIPOS=-50,51;CIEND=-50,51;UPSTREAM_PAIR_COUNT=2;DOWNSTREAM_PAIR_COUNT=2;PAIR_COUNT=2
+6	35455737	MantaBND:40:0:1:0:0:0:0	T	[1:173439284[T	.	.	SVTYPE=BND;MATEID=MantaBND:40:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+1	173439284	MantaBND:40:0:1:0:0:0:1	T	[6:35455737[T	.	.	SVTYPE=BND;MATEID=MantaBND:40:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+16	23634896	MantaBND:12:0:2:0:0:0:0	T	]1:23472514]T	.	.	SVTYPE=BND;MATEID=MantaBND:12:0:2:0:0:0:1;IMPRECISE;CIPOS=-68,69;BND_PAIR_COUNT=2;PAIR_COUNT=2
+1	23472514	MantaBND:12:0:2:0:0:0:1	G	G[16:23634896[	.	.	SVTYPE=BND;MATEID=MantaBND:12:0:2:0:0:0:0;IMPRECISE;CIPOS=-68,69;BND_PAIR_COUNT=2;PAIR_COUNT=2
+16	9635454	MantaBND:47:0:1:0:0:0:0	T	[1:193130094[T	.	.	SVTYPE=BND;MATEID=MantaBND:47:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+1	193130094	MantaBND:47:0:1:0:0:0:1	T	[16:9635454[T	.	.	SVTYPE=BND;MATEID=MantaBND:47:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+1	193130115	MantaBND:47:0:2:0:0:0:0	T	[2:170268182[T	.	.	SVTYPE=BND;MATEID=MantaBND:47:0:2:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+2	170268182	MantaBND:47:0:2:0:0:0:1	G	[1:193130115[G	.	.	SVTYPE=BND;MATEID=MantaBND:47:0:2:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+1	193232963	MantaBND:46:0:2:0:0:0:0	T	[3:89219266[T	.	.	SVTYPE=BND;MATEID=MantaBND:46:0:2:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+3	89219266	MantaBND:46:0:2:0:0:0:1	T	[1:193232963[T	.	.	SVTYPE=BND;MATEID=MantaBND:46:0:2:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+9	35185872	MantaBND:46:0:3:0:0:0:0	C	C[1:193232974[	.	.	SVTYPE=BND;MATEID=MantaBND:46:0:3:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=3;PAIR_COUNT=3
+1	193232974	MantaBND:46:0:3:0:0:0:1	C	]9:35185872]C	.	.	SVTYPE=BND;MATEID=MantaBND:46:0:3:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=3;PAIR_COUNT=3
+1	193138194	MantaDEL:49:0:0:0:0:0	GAAAGTAGGTAGTTTAGATATATGTA	G	.	.	END=193138219;SVTYPE=DEL;SVLEN=-25;CIGAR=1M25D;CIPOS=0,6;HOMLEN=6;HOMSEQ=AAAGTA;UPSTREAM_PAIR_COUNT=0;DOWNSTREAM_PAIR_COUNT=0;PAIR_COUNT=0
+2	180638425	MantaBND:46:0:4:0:0:0:0	G	[1:193232974[G	.	.	SVTYPE=BND;MATEID=MantaBND:46:0:4:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+1	193232974	MantaBND:46:0:4:0:0:0:1	C	[2:180638425[C	.	.	SVTYPE=BND;MATEID=MantaBND:46:0:4:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+3	10090233	MantaBND:41:0:1:0:0:0:0	C	C[1:178348561[	.	.	SVTYPE=BND;MATEID=MantaBND:41:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+3	10146622	MantaBND:33:0:1:0:0:0:0	A	A[1:154488267[	.	.	SVTYPE=BND;MATEID=MantaBND:33:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+1	178348561	MantaBND:41:0:1:0:0:0:1	A	]3:10090233]A	.	.	SVTYPE=BND;MATEID=MantaBND:41:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+1	154488267	MantaBND:33:0:1:0:0:0:1	T	]3:10146622]T	.	.	SVTYPE=BND;MATEID=MantaBND:33:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+17	31095137	MantaBND:66:9:11:0:0:0:0	C	[2:32916350[C	.	.	SVTYPE=BND;MATEID=MantaBND:66:9:11:0:0:0:1;IMPRECISE;CIPOS=-139,139;BND_PAIR_COUNT=21;PAIR_COUNT=4
+2	32916350	MantaBND:66:9:11:0:0:0:1	G	[17:31095137[G	.	.	SVTYPE=BND;MATEID=MantaBND:66:9:11:0:0:0:0;IMPRECISE;CIPOS=-208,209;BND_PAIR_COUNT=4;PAIR_COUNT=4
+11	95813353	MantaBND:55:0:1:0:0:0:0	A	]1:197237475]A	.	.	SVTYPE=BND;MATEID=MantaBND:55:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+1	197237475	MantaBND:55:0:1:0:0:0:1	C	C[11:95813353[	.	.	SVTYPE=BND;MATEID=MantaBND:55:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+1	241500384	MantaBND:63:0:1:0:0:0:0	T	T[5:32370364[	.	.	SVTYPE=BND;MATEID=MantaBND:63:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+5	32370364	MantaBND:63:0:1:0:0:0:1	A	]1:241500384]A	.	.	SVTYPE=BND;MATEID=MantaBND:63:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+1	215560498	MantaBND:54:0:1:0:0:0:0	T	[1:193150186[T	.	.	SVTYPE=BND;MATEID=MantaBND:54:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=3;PAIR_COUNT=3
+1	193150186	MantaBND:54:0:1:0:0:0:1	A	[1:215560498[A	.	.	SVTYPE=BND;MATEID=MantaBND:54:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=3;PAIR_COUNT=3
+19	30944368	MantaBND:61:0:1:0:0:0:0	G	G]1:241504092]	.	.	SVTYPE=BND;MATEID=MantaBND:61:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+1	241504092	MantaBND:61:0:1:0:0:0:1	A	A]19:30944368]	.	.	SVTYPE=BND;MATEID=MantaBND:61:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+X	133657968	MantaBND:66:14:15:0:0:0:0	G	[X:133661723[G	.	.	SVTYPE=BND;MATEID=MantaBND:66:14:15:0:0:0:1;IMPRECISE;CIPOS=-159,160;BND_PAIR_COUNT=8;PAIR_COUNT=8
+X	133661723	MantaBND:66:14:15:0:0:0:1	C	[X:133657968[C	.	.	SVTYPE=BND;MATEID=MantaBND:66:14:15:0:0:0:0;IMPRECISE;CIPOS=-105,105;BND_PAIR_COUNT=8;PAIR_COUNT=8
+3	142463403	MantaBND:67:0:1:0:0:0:0	G	]2:15589803]G	.	.	SVTYPE=BND;MATEID=MantaBND:67:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=3;PAIR_COUNT=3
+2	15589803	MantaBND:67:0:1:0:0:0:1	G	G[3:142463403[	.	.	SVTYPE=BND;MATEID=MantaBND:67:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=3;PAIR_COUNT=3
+17	58703122	MantaBND:65:0:1:0:0:0:0	A	]2:13998842]A	.	.	SVTYPE=BND;MATEID=MantaBND:65:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+2	13998842	MantaBND:65:0:1:0:0:0:1	C	C[17:58703122[	.	.	SVTYPE=BND;MATEID=MantaBND:65:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+2	26958585	MantaBND:69:0:1:0:0:0:0	C	C[X:14850750[	.	.	SVTYPE=BND;MATEID=MantaBND:69:0:1:0:0:0:1;IMPRECISE;CIPOS=-59,60;BND_PAIR_COUNT=2;PAIR_COUNT=2
+X	14850750	MantaBND:69:0:1:0:0:0:1	A	]2:26958585]A	.	.	SVTYPE=BND;MATEID=MantaBND:69:0:1:0:0:0:0;IMPRECISE;CIPOS=-59,60;BND_PAIR_COUNT=2;PAIR_COUNT=2
+1	195271016	MantaBND:53:0:1:0:0:0:0	C	C]17:43096010]	.	.	SVTYPE=BND;MATEID=MantaBND:53:0:1:0:0:0:1;IMPRECISE;CIPOS=-52,53;BND_PAIR_COUNT=2;PAIR_COUNT=2
+17	43096010	MantaBND:53:0:1:0:0:0:1	T	T]1:195271016]	.	.	SVTYPE=BND;MATEID=MantaBND:53:0:1:0:0:0:0;IMPRECISE;CIPOS=-52,53;BND_PAIR_COUNT=2;PAIR_COUNT=2
+2	29232035	MantaINS:75:0:0:0:0:0	G	GCAAGTTGGTAAAACC	.	.	END=29232035;SVTYPE=INS;SVLEN=15;CIGAR=1M15I;CIPOS=0,2;HOMLEN=2;HOMSEQ=CA;UPSTREAM_PAIR_COUNT=0;DOWNSTREAM_PAIR_COUNT=0;PAIR_COUNT=0
+19	46401997	MantaBND:76:0:1:0:0:0:0	A	A[2:29209562[	.	.	SVTYPE=BND;MATEID=MantaBND:76:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+2	29209562	MantaBND:76:0:1:0:0:0:1	A	]19:46401997]A	.	.	SVTYPE=BND;MATEID=MantaBND:76:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+2	29531786	MantaDUP:TANDEM:79:1:2:0:0:0	C	<DUP:TANDEM>	.	.	END=29533419;SVTYPE=DUP;SVLEN=1633;IMPRECISE;CIPOS=-70,71;CIEND=-70,71;UPSTREAM_PAIR_COUNT=2;DOWNSTREAM_PAIR_COUNT=2;PAIR_COUNT=2
+2	29919922	MantaDEL:83:0:0:0:0:0	TTATTTAATGGTTGC	T	.	.	END=29919936;SVTYPE=DEL;SVLEN=-14;CIGAR=1M14D;UPSTREAM_PAIR_COUNT=0;DOWNSTREAM_PAIR_COUNT=0;PAIR_COUNT=0
+19	45361401	MantaBND:50:0:1:0:0:0:0	C	[1:193141969[C	.	.	SVTYPE=BND;MATEID=MantaBND:50:0:1:0:0:0:1;IMPRECISE;CIPOS=-58,59;BND_PAIR_COUNT=2;PAIR_COUNT=2
+1	193141969	MantaBND:50:0:1:0:0:0:1	G	[19:45361401[G	.	.	SVTYPE=BND;MATEID=MantaBND:50:0:1:0:0:0:0;IMPRECISE;CIPOS=-58,59;BND_PAIR_COUNT=2;PAIR_COUNT=2
+2	29197621	MantaDEL:85:0:0:0:0:0	TGGGGTATG	T	.	.	END=29197629;SVTYPE=DEL;SVLEN=-8;CIGAR=1M8D;CIPOS=0,1;HOMLEN=1;HOMSEQ=G;UPSTREAM_PAIR_COUNT=0;DOWNSTREAM_PAIR_COUNT=0;PAIR_COUNT=0
+11	108353932	MantaBND:92:0:1:0:0:0:0	T	T[2:48373867[	.	.	SVTYPE=BND;MATEID=MantaBND:92:0:1:0:0:0:1;IMPRECISE;CIPOS=-60,61;BND_PAIR_COUNT=2;PAIR_COUNT=2
+2	48373867	MantaBND:92:0:1:0:0:0:1	C	]11:108353932]C	.	.	SVTYPE=BND;MATEID=MantaBND:92:0:1:0:0:0:0;IMPRECISE;CIPOS=-60,61;BND_PAIR_COUNT=2;PAIR_COUNT=2
+12	94767697	MantaBND:93:0:1:0:0:0:0	T	[2:47385535[T	.	.	SVTYPE=BND;MATEID=MantaBND:93:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+2	47385535	MantaBND:93:0:1:0:0:0:1	G	[12:94767697[G	.	.	SVTYPE=BND;MATEID=MantaBND:93:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+X	51498829	MantaBND:95:0:1:0:0:0:0	C	]2:49888165]C	.	.	SVTYPE=BND;MATEID=MantaBND:95:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=5;PAIR_COUNT=5
+2	49888165	MantaBND:95:0:1:0:0:0:1	A	A[X:51498829[	.	.	SVTYPE=BND;MATEID=MantaBND:95:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=5;PAIR_COUNT=5
+X	51497300	MantaDUP:TANDEM:95:1:2:0:0:0	C	<DUP:TANDEM>	.	.	END=51498912;SVTYPE=DUP;SVLEN=1612;IMPRECISE;CIPOS=-50,51;CIEND=-50,51;UPSTREAM_PAIR_COUNT=3;DOWNSTREAM_PAIR_COUNT=3;PAIR_COUNT=3
+9	86029942	MantaBND:94:0:1:0:0:0:0	T	]2:47380073]T	.	.	SVTYPE=BND;MATEID=MantaBND:94:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+2	47380073	MantaBND:94:0:1:0:0:0:1	T	T[9:86029942[	.	.	SVTYPE=BND;MATEID=MantaBND:94:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+2	47412341	MantaBND:104:0:0:0:0:0:0	A	[2:47412353[A	.	.	SVTYPE=BND;MATEID=MantaBND:104:0:0:0:0:0:1;CIPOS=0,3;HOMLEN=3;HOMSEQ=ATG;BND_PAIR_COUNT=0;PAIR_COUNT=0
+2	47412350	MantaBND:104:0:0:0:0:0:1	A	[2:47412344[A	.	.	SVTYPE=BND;MATEID=MantaBND:104:0:0:0:0:0:0;CIPOS=0,3;HOMLEN=3;HOMSEQ=TTT;BND_PAIR_COUNT=0;PAIR_COUNT=0
+2	47478591	MantaBND:102:0:1:0:0:0:0	A	]12:60131545]A	.	.	SVTYPE=BND;MATEID=MantaBND:102:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+12	60131545	MantaBND:102:0:1:0:0:0:1	T	T[2:47478591[	.	.	SVTYPE=BND;MATEID=MantaBND:102:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+4	25689490	MantaBND:81:1:4:0:0:0:0	T	T[13:48380257[	.	.	SVTYPE=BND;MATEID=MantaBND:81:1:4:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+13	48380257	MantaBND:81:1:4:0:0:0:1	A	]4:25689490]A	.	.	SVTYPE=BND;MATEID=MantaBND:81:1:4:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+3	9994481	MantaBND:104:0:1:0:0:0:0	A	[2:47412329[A	.	.	SVTYPE=BND;MATEID=MantaBND:104:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+2	47412329	MantaBND:104:0:1:0:0:0:1	A	[3:9994481[A	.	.	SVTYPE=BND;MATEID=MantaBND:104:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+2	57950996	MantaBND:113:0:1:0:0:0:0	G	G[22:28687663[	.	.	SVTYPE=BND;MATEID=MantaBND:113:0:1:0:0:0:1;IMPRECISE;CIPOS=-52,53;BND_PAIR_COUNT=2;PAIR_COUNT=2
+22	28687663	MantaBND:113:0:1:0:0:0:1	C	]2:57950996]C	.	.	SVTYPE=BND;MATEID=MantaBND:113:0:1:0:0:0:0;IMPRECISE;CIPOS=-52,53;BND_PAIR_COUNT=2;PAIR_COUNT=2
+16	69587122	MantaBND:122:0:1:0:0:0:0	G	[2:60839658[G	.	.	SVTYPE=BND;MATEID=MantaBND:122:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+2	60839658	MantaBND:122:0:1:0:0:0:1	G	[16:69587122[G	.	.	SVTYPE=BND;MATEID=MantaBND:122:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+4	153708473	MantaBND:106:0:1:0:0:0:0	C	]2:47800404]C	.	.	SVTYPE=BND;MATEID=MantaBND:106:0:1:0:0:0:1;IMPRECISE;CIPOS=-65,65;BND_PAIR_COUNT=2;PAIR_COUNT=2
+2	47805434	MantaBND:105:0:1:0:0:0:0	T	]14:51594624]T	.	.	SVTYPE=BND;MATEID=MantaBND:105:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+2	47800404	MantaBND:106:0:1:0:0:0:1	A	A[4:153708473[	.	.	SVTYPE=BND;MATEID=MantaBND:106:0:1:0:0:0:0;IMPRECISE;CIPOS=-65,65;BND_PAIR_COUNT=2;PAIR_COUNT=2
+14	51594624	MantaBND:105:0:1:0:0:0:1	T	T[2:47805434[	.	.	SVTYPE=BND;MATEID=MantaBND:105:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+6	38581099	MantaBND:119:0:1:0:0:0:0	G	]2:58162943]G	.	.	SVTYPE=BND;MATEID=MantaBND:119:0:1:0:0:0:1;IMPRECISE;CIPOS=-65,65;BND_PAIR_COUNT=2;PAIR_COUNT=2
+2	58162943	MantaBND:119:0:1:0:0:0:1	G	G[6:38581099[	.	.	SVTYPE=BND;MATEID=MantaBND:119:0:1:0:0:0:0;IMPRECISE;CIPOS=-65,65;BND_PAIR_COUNT=2;PAIR_COUNT=2
+15	40213238	MantaBND:118:1:1:0:0:0:0	G	[15:40213248[G	.	.	SVTYPE=BND;MATEID=MantaBND:118:1:1:0:0:0:1;CIPOS=0,1;HOMLEN=1;HOMSEQ=G;BND_PAIR_COUNT=0;PAIR_COUNT=0
+15	40213247	MantaBND:118:1:1:0:0:0:1	C	[15:40213239[C	.	.	SVTYPE=BND;MATEID=MantaBND:118:1:1:0:0:0:0;CIPOS=0,1;HOMLEN=1;HOMSEQ=A;BND_PAIR_COUNT=0;PAIR_COUNT=0
+15	40213297	MantaBND:118:0:1:0:0:0:0	G	G[2:60887975[	.	.	SVTYPE=BND;MATEID=MantaBND:118:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+2	60887975	MantaBND:118:0:1:0:0:0:1	T	]15:40213297]T	.	.	SVTYPE=BND;MATEID=MantaBND:118:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+2	74668816	MantaBND:127:0:1:0:0:0:0	G	G[3:170412245[	.	.	SVTYPE=BND;MATEID=MantaBND:127:0:1:0:0:0:1;IMPRECISE;CIPOS=-59,60;BND_PAIR_COUNT=2;PAIR_COUNT=2
+3	170412245	MantaBND:127:0:1:0:0:0:1	G	]2:74668816]G	.	.	SVTYPE=BND;MATEID=MantaBND:127:0:1:0:0:0:0;IMPRECISE;CIPOS=-59,60;BND_PAIR_COUNT=2;PAIR_COUNT=2
+2	75591002	MantaBND:128:0:1:0:0:0:0	T	T[8:99983100[	.	.	SVTYPE=BND;MATEID=MantaBND:128:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+8	99983100	MantaBND:128:0:1:0:0:0:1	C	]2:75591002]C	.	.	SVTYPE=BND;MATEID=MantaBND:128:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+5	169691953	MantaBND:129:0:1:0:0:0:0	T	]2:85567224]T	.	.	SVTYPE=BND;MATEID=MantaBND:129:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+2	85567224	MantaBND:129:0:1:0:0:0:1	T	T[5:169691953[	.	.	SVTYPE=BND;MATEID=MantaBND:129:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+11	42648955	MantaBND:131:0:1:0:0:0:0	G	]2:91957671]G	.	.	SVTYPE=BND;MATEID=MantaBND:131:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+2	91957671	MantaBND:131:0:1:0:0:0:1	T	T[11:42648955[	.	.	SVTYPE=BND;MATEID=MantaBND:131:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+2	47805541	MantaBND:111:0:1:0:0:0:0	C	]18:26329315]C	.	.	SVTYPE=BND;MATEID=MantaBND:111:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+18	26329315	MantaBND:111:0:1:0:0:0:1	C	C[2:47805541[	.	.	SVTYPE=BND;MATEID=MantaBND:111:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+2	101558335	MantaBND:134:0:1:0:0:0:0	C	C]2:101555666]	.	.	SVTYPE=BND;MATEID=MantaBND:134:0:1:0:0:0:1;IMPRECISE;CIPOS=-59,59;BND_PAIR_COUNT=2;PAIR_COUNT=2
+2	101555666	MantaBND:134:0:1:0:0:0:1	T	T]2:101558335]	.	.	SVTYPE=BND;MATEID=MantaBND:134:0:1:0:0:0:0;IMPRECISE;CIPOS=-59,59;BND_PAIR_COUNT=2;PAIR_COUNT=2
+15	89273511	MantaDEL:126:1:1:0:6:0	TAAAAAAAA	T	.	.	END=89273519;SVTYPE=DEL;SVLEN=-8;CIGAR=1M8D;CIPOS=0,16;HOMLEN=16;HOMSEQ=AAAAAAAAAAAAAAAA;UPSTREAM_PAIR_COUNT=0;DOWNSTREAM_PAIR_COUNT=0;PAIR_COUNT=0
+3	10036294	MantaBND:123:0:1:0:0:0:0	T	T[2:68145922[	.	.	SVTYPE=BND;MATEID=MantaBND:123:0:1:0:0:0:1;IMPRECISE;CIPOS=-55,56;BND_PAIR_COUNT=2;PAIR_COUNT=2
+2	68145922	MantaBND:123:0:1:0:0:0:1	T	]3:10036294]T	.	.	SVTYPE=BND;MATEID=MantaBND:123:0:1:0:0:0:0;IMPRECISE;CIPOS=-55,56;BND_PAIR_COUNT=2;PAIR_COUNT=2
+2	29193227	MantaBND:70:0:1:0:3:0:0	G	[2:29193579[G	.	.	SVTYPE=BND;MATEID=MantaBND:70:0:1:0:3:0:1;CIPOS=0,1;HOMLEN=1;HOMSEQ=G;BND_PAIR_COUNT=0;PAIR_COUNT=0
+2	29193578	MantaBND:70:0:1:0:3:0:1	C	[2:29193228[C	.	.	SVTYPE=BND;MATEID=MantaBND:70:0:1:0:3:0:0;CIPOS=0,1;HOMLEN=1;HOMSEQ=C;BND_PAIR_COUNT=0;PAIR_COUNT=0
+2	127292581	MantaBND:138:0:0:0:1:0:0	T	[2:127292598[T	.	.	SVTYPE=BND;MATEID=MantaBND:138:0:0:0:1:0:1;CIPOS=0,2;HOMLEN=2;HOMSEQ=GG;BND_PAIR_COUNT=0;PAIR_COUNT=0
+2	127292596	MantaBND:138:0:0:0:1:0:1	C	[2:127292583[C	.	.	SVTYPE=BND;MATEID=MantaBND:138:0:0:0:1:0:0;CIPOS=0,2;HOMLEN=2;HOMSEQ=AG;BND_PAIR_COUNT=0;PAIR_COUNT=0
+2	154274682	MantaBND:151:0:1:0:0:0:0	C	C]9:97793942]	.	.	SVTYPE=BND;MATEID=MantaBND:151:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+9	97793942	MantaBND:151:0:1:0:0:0:1	G	G]2:154274682]	.	.	SVTYPE=BND;MATEID=MantaBND:151:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+2	104330652	MantaBND:136:0:1:0:0:0:0	A	A]15:90811315]	.	.	SVTYPE=BND;MATEID=MantaBND:136:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+15	90811315	MantaBND:136:0:1:0:0:0:1	A	A]2:104330652]	.	.	SVTYPE=BND;MATEID=MantaBND:136:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+2	184576087	MantaBND:156:0:1:0:0:0:0	A	[8:127180739[A	.	.	SVTYPE=BND;MATEID=MantaBND:156:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+8	127180739	MantaBND:156:0:1:0:0:0:1	A	[2:184576087[A	.	.	SVTYPE=BND;MATEID=MantaBND:156:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+5	1308442	MantaBND:153:0:1:0:0:0:0	T	]2:164978645]T	.	.	SVTYPE=BND;MATEID=MantaBND:153:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+2	164978645	MantaBND:153:0:1:0:0:0:1	C	C[5:1308442[	.	.	SVTYPE=BND;MATEID=MantaBND:153:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+16	22032436	MantaBND:143:0:2:0:0:0:0	C	]2:127280587]C	.	.	SVTYPE=BND;MATEID=MantaBND:143:0:2:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+2	127280587	MantaBND:143:0:2:0:0:0:1	T	T[16:22032436[	.	.	SVTYPE=BND;MATEID=MantaBND:143:0:2:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+15	40169889	MantaBND:154:0:1:0:0:0:0	A	]2:168407630]A	.	.	SVTYPE=BND;MATEID=MantaBND:154:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+2	168407630	MantaBND:154:0:1:0:0:0:1	A	A[15:40169889[	.	.	SVTYPE=BND;MATEID=MantaBND:154:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+2	189791643	MantaBND:160:0:1:0:0:0:0	C	]14:43078357]C	.	.	SVTYPE=BND;MATEID=MantaBND:160:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=3;PAIR_COUNT=3
+14	43078357	MantaBND:160:0:1:0:0:0:1	A	A[2:189791643[	.	.	SVTYPE=BND;MATEID=MantaBND:160:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=3;PAIR_COUNT=3
+2	189861591	MantaBND:161:0:1:0:0:0:0	A	[2:189863777[A	.	.	SVTYPE=BND;MATEID=MantaBND:161:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+2	189863777	MantaBND:161:0:1:0:0:0:1	T	[2:189861591[T	.	.	SVTYPE=BND;MATEID=MantaBND:161:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+2	189795750	MantaBND:162:0:0:0:0:0:0	G	[2:189795762[G	.	.	SVTYPE=BND;MATEID=MantaBND:162:0:0:0:0:0:1;BND_PAIR_COUNT=0;PAIR_COUNT=0
+2	189795762	MantaBND:162:0:0:0:0:0:1	T	[2:189795750[T	.	.	SVTYPE=BND;MATEID=MantaBND:162:0:0:0:0:0:0;BND_PAIR_COUNT=0;PAIR_COUNT=0
+15	89273459	MantaBND:126:1:3:0:0:0:0	T	[17:10958543[T	.	.	SVTYPE=BND;MATEID=MantaBND:126:1:3:0:0:0:1;IMPRECISE;CIPOS=-60,61;BND_PAIR_COUNT=4;PAIR_COUNT=4
+17	10958543	MantaBND:126:1:3:0:0:0:1	T	[15:89273459[T	.	.	SVTYPE=BND;MATEID=MantaBND:126:1:3:0:0:0:0;IMPRECISE;CIPOS=-60,61;BND_PAIR_COUNT=4;PAIR_COUNT=4
+2	189863851	MantaBND:161:1:4:0:0:0:0	A	[12:101378407[A	.	.	SVTYPE=BND;MATEID=MantaBND:161:1:4:0:0:0:1;IMPRECISE;CIPOS=-63,63;BND_PAIR_COUNT=2;PAIR_COUNT=2
+12	101378407	MantaBND:161:1:4:0:0:0:1	T	[2:189863851[T	.	.	SVTYPE=BND;MATEID=MantaBND:161:1:4:0:0:0:0;IMPRECISE;CIPOS=-63,63;BND_PAIR_COUNT=2;PAIR_COUNT=2
+2	189853875	MantaBND:163:0:1:0:0:0:0	T	[22:23306307[T	.	.	SVTYPE=BND;MATEID=MantaBND:163:0:1:0:0:0:1;IMPRECISE;CIPOS=-52,52;BND_PAIR_COUNT=2;PAIR_COUNT=2
+22	23306307	MantaBND:163:0:1:0:0:0:1	A	[2:189853875[A	.	.	SVTYPE=BND;MATEID=MantaBND:163:0:1:0:0:0:0;IMPRECISE;CIPOS=-52,52;BND_PAIR_COUNT=2;PAIR_COUNT=2
+2	189864088	MantaBND:165:0:1:0:0:0:0	T	]8:55657581]T	.	.	SVTYPE=BND;MATEID=MantaBND:165:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+8	55657581	MantaBND:165:0:1:0:0:0:1	G	G[2:189864088[	.	.	SVTYPE=BND;MATEID=MantaBND:165:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+10	16562255	MantaBND:174:0:1:0:0:0:0	T	]2:214769269]T	.	.	SVTYPE=BND;MATEID=MantaBND:174:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+2	214769269	MantaBND:174:0:1:0:0:0:1	T	T[10:16562255[	.	.	SVTYPE=BND;MATEID=MantaBND:174:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+6	11969784	MantaBND:174:0:2:0:0:0:0	T	]2:214769282]T	.	.	SVTYPE=BND;MATEID=MantaBND:174:0:2:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+2	214769282	MantaBND:174:0:2:0:0:0:1	G	G[6:11969784[	.	.	SVTYPE=BND;MATEID=MantaBND:174:0:2:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+3	2041505	MantaBND:159:1:2:0:0:0:0	C	C]16:13930735]	.	.	SVTYPE=BND;MATEID=MantaBND:159:1:2:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=4;PAIR_COUNT=4
+16	13930735	MantaBND:159:1:2:0:0:0:1	T	T]3:2041505]	.	.	SVTYPE=BND;MATEID=MantaBND:159:1:2:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=4;PAIR_COUNT=4
+2	214745016	MantaBND:172:0:1:0:0:0:0	A	]4:171789916]A	.	.	SVTYPE=BND;MATEID=MantaBND:172:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+2	214807737	MantaINS:171:0:0:0:0:0	T	TGAGGCTCA	.	.	END=214807737;SVTYPE=INS;SVLEN=8;CIGAR=1M8I;CIPOS=0,3;HOMLEN=3;HOMSEQ=GAG;UPSTREAM_PAIR_COUNT=0;DOWNSTREAM_PAIR_COUNT=0;PAIR_COUNT=0
+4	171789916	MantaBND:172:0:1:0:0:0:1	A	A[2:214745016[	.	.	SVTYPE=BND;MATEID=MantaBND:172:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+2	214782047	MantaBND:169:0:1:0:0:0:0	A	A]2:214780828]	.	.	SVTYPE=BND;MATEID=MantaBND:169:0:1:0:0:0:1;IMPRECISE;CIPOS=-78,79;BND_PAIR_COUNT=2;PAIR_COUNT=2
+2	214780828	MantaBND:169:0:1:0:0:0:1	T	T]2:214782047]	.	.	SVTYPE=BND;MATEID=MantaBND:169:0:1:0:0:0:0;IMPRECISE;CIPOS=-68,69;BND_PAIR_COUNT=2;PAIR_COUNT=2
+2	222981118	MantaDEL:176:0:0:0:0:0	CCACACACACACACACA	C	.	.	END=222981134;SVTYPE=DEL;SVLEN=-16;CIGAR=1M16D;CIPOS=0,39;HOMLEN=39;HOMSEQ=CACACACACACACACACACACACACACACACACACACAC;UPSTREAM_PAIR_COUNT=0;DOWNSTREAM_PAIR_COUNT=0;PAIR_COUNT=0
+2	230226555	MantaBND:177:0:2:0:0:0:0	G	G[8:73018492[	.	.	SVTYPE=BND;MATEID=MantaBND:177:0:2:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+8	73018492	MantaBND:177:0:2:0:0:0:1	A	]2:230226555]A	.	.	SVTYPE=BND;MATEID=MantaBND:177:0:2:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+2	47800985	MantaDEL:109:0:0:0:1:0	AGGGCTGTAAACGATACTGGACCAAAACTATT	A	.	.	END=47801016;SVTYPE=DEL;SVLEN=-31;CIGAR=1M31D;CIPOS=0,1;HOMLEN=1;HOMSEQ=G;UPSTREAM_PAIR_COUNT=0;DOWNSTREAM_PAIR_COUNT=0;PAIR_COUNT=0
+3	10032746	MantaDEL:185:0:0:0:0:0	TTCCTCTCATG	T	.	.	END=10032756;SVTYPE=DEL;SVLEN=-10;CIGAR=1M10D;UPSTREAM_PAIR_COUNT=0;DOWNSTREAM_PAIR_COUNT=0;PAIR_COUNT=0
+3	10072716	MantaBND:184:0:2:0:0:0:0	A	[12:56904936[A	.	.	SVTYPE=BND;MATEID=MantaBND:184:0:2:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+12	56904936	MantaBND:184:0:2:0:0:0:1	G	[3:10072716[G	.	.	SVTYPE=BND;MATEID=MantaBND:184:0:2:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+22	21005074	MantaBND:196:0:1:0:0:0:0	T	T[3:10046730[	.	.	SVTYPE=BND;MATEID=MantaBND:196:0:1:0:0:0:1;IMPRECISE;CIPOS=-64,64;BND_PAIR_COUNT=2;PAIR_COUNT=2
+3	10046730	MantaBND:196:0:1:0:0:0:1	G	]22:21005074]G	.	.	SVTYPE=BND;MATEID=MantaBND:196:0:1:0:0:0:0;IMPRECISE;CIPOS=-64,64;BND_PAIR_COUNT=2;PAIR_COUNT=2
+3	10067118	MantaBND:193:0:2:0:0:0:0	T	T[10:57882400[	.	.	SVTYPE=BND;MATEID=MantaBND:193:0:2:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+10	57882400	MantaBND:193:0:2:0:0:0:1	T	]3:10067118]T	.	.	SVTYPE=BND;MATEID=MantaBND:193:0:2:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+6	119117787	MantaBND:149:0:1:0:0:0:0	T	T[2:127289615[	.	.	SVTYPE=BND;MATEID=MantaBND:149:0:1:0:0:0:1;CIPOS=0,4;HOMLEN=4;HOMSEQ=GGTT;BND_PAIR_COUNT=0;PAIR_COUNT=0
+2	127289615	MantaBND:149:0:1:0:0:0:1	G	]6:119117787]G	.	.	SVTYPE=BND;MATEID=MantaBND:149:0:1:0:0:0:0;CIPOS=0,4;HOMLEN=4;HOMSEQ=GTTA;BND_PAIR_COUNT=0;PAIR_COUNT=0
+15	78513619	MantaBND:208:0:1:0:0:0:0	A	A[3:11986778[	.	.	SVTYPE=BND;MATEID=MantaBND:208:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+3	11986778	MantaBND:208:0:1:0:0:0:1	T	]15:78513619]T	.	.	SVTYPE=BND;MATEID=MantaBND:208:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+17	43074374	MantaBND:133:0:1:0:0:0:0	T	[2:96254062[T	.	.	SVTYPE=BND;MATEID=MantaBND:133:0:1:0:0:0:1;CIPOS=0,8;HOMLEN=8;HOMSEQ=GGCCCAGA;BND_PAIR_COUNT=1;PAIR_COUNT=1
+2	96254054	MantaBND:133:0:1:0:0:0:1	C	[17:43074382[C	.	.	SVTYPE=BND;MATEID=MantaBND:133:0:1:0:0:0:0;CIPOS=0,8;HOMLEN=8;HOMSEQ=TGGGCCAA;BND_PAIR_COUNT=1;PAIR_COUNT=1
+3	10065074	MantaBND:193:0:3:0:0:0:0	A	[3:10067194[A	.	.	SVTYPE=BND;MATEID=MantaBND:193:0:3:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+3	10067194	MantaBND:193:0:3:0:0:0:1	A	[3:10065074[A	.	.	SVTYPE=BND;MATEID=MantaBND:193:0:3:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+3	32048045	MantaBND:217:0:1:0:0:0:0	C	C]14:45188002]	.	.	SVTYPE=BND;MATEID=MantaBND:217:0:1:0:0:0:1;IMPRECISE;CIPOS=-78,79;BND_PAIR_COUNT=2;PAIR_COUNT=2
+14	45188002	MantaBND:217:0:1:0:0:0:1	C	C]3:32048045]	.	.	SVTYPE=BND;MATEID=MantaBND:217:0:1:0:0:0:0;IMPRECISE;CIPOS=-68,69;BND_PAIR_COUNT=2;PAIR_COUNT=2
+5	127468372	MantaBND:217:1:2:0:0:0:0	G	]14:45187920]G	.	.	SVTYPE=BND;MATEID=MantaBND:217:1:2:0:0:0:1;IMPRECISE;CIPOS=-56,57;BND_PAIR_COUNT=3;PAIR_COUNT=3
+14	45187920	MantaBND:217:1:2:0:0:0:1	T	T[5:127468372[	.	.	SVTYPE=BND;MATEID=MantaBND:217:1:2:0:0:0:0;IMPRECISE;CIPOS=-56,57;BND_PAIR_COUNT=3;PAIR_COUNT=3
+3	10074521	MantaBND:201:1:2:0:0:0:0	T	]8:105400113]T	.	.	SVTYPE=BND;MATEID=MantaBND:201:1:2:0:0:0:1;IMPRECISE;CIPOS=-66,67;BND_PAIR_COUNT=2;PAIR_COUNT=2
+8	105400113	MantaBND:201:1:2:0:0:0:1	A	A[3:10074521[	.	.	SVTYPE=BND;MATEID=MantaBND:201:1:2:0:0:0:0;IMPRECISE;CIPOS=-66,67;BND_PAIR_COUNT=2;PAIR_COUNT=2
+3	37047770	MantaBND:219:1:5:0:0:0:0	C	C]X:70917988]	.	.	SVTYPE=BND;MATEID=MantaBND:219:1:5:0:0:0:1;IMPRECISE;CIPOS=-52,53;BND_PAIR_COUNT=2;PAIR_COUNT=2
+X	70917988	MantaBND:219:1:5:0:0:0:1	T	T]3:37047770]	.	.	SVTYPE=BND;MATEID=MantaBND:219:1:5:0:0:0:0;IMPRECISE;CIPOS=-52,53;BND_PAIR_COUNT=2;PAIR_COUNT=2
+3	40475228	MantaDEL:223:0:0:0:0:0	TTTTCCTTTCC	T	.	.	END=40475238;SVTYPE=DEL;SVLEN=-10;CIGAR=1M10D;CIPOS=0,29;HOMLEN=29;HOMSEQ=TTTCCTTTCCTTTCCTTTCCTTTCCTTTC;UPSTREAM_PAIR_COUNT=0;DOWNSTREAM_PAIR_COUNT=0;PAIR_COUNT=0
+6	119117787	MantaBND:149:1:2:0:0:0:0	T	T[2:127289615[	.	.	SVTYPE=BND;MATEID=MantaBND:149:1:2:0:0:0:1;CIPOS=0,4;HOMLEN=4;HOMSEQ=GGTT;BND_PAIR_COUNT=2;PAIR_COUNT=2
+2	127289615	MantaBND:149:1:2:0:0:0:1	G	]6:119117787]G	.	.	SVTYPE=BND;MATEID=MantaBND:149:1:2:0:0:0:0;CIPOS=0,4;HOMLEN=4;HOMSEQ=GTTA;BND_PAIR_COUNT=2;PAIR_COUNT=2
+3	41883768	MantaDEL:221:0:0:0:0:0	CAGAGAAAAAACAAGTGA	C	.	.	END=41883785;SVTYPE=DEL;SVLEN=-17;CIGAR=1M17D;CIPOS=0,2;HOMLEN=2;HOMSEQ=AG;UPSTREAM_PAIR_COUNT=0;DOWNSTREAM_PAIR_COUNT=0;PAIR_COUNT=0
+3	37046854	MantaBND:219:0:1:0:0:0:0	T	T]3:37047781]	.	.	SVTYPE=BND;MATEID=MantaBND:219:0:1:0:0:0:1;CIPOS=0,26;HOMLEN=26;HOMSEQ=AGCCTCCCAAAGTGCTGGGATTACAG;BND_PAIR_COUNT=4;PAIR_COUNT=4
+3	37047755	MantaBND:219:0:1:0:0:0:1	G	G]3:37046880]	.	.	SVTYPE=BND;MATEID=MantaBND:219:0:1:0:0:0:0;CIPOS=0,26;HOMLEN=26;HOMSEQ=CTGTAATCCCAGCACTTTGGGAGGCT;BND_PAIR_COUNT=4;PAIR_COUNT=4
+3	37006951	MantaBND:220:0:1:0:0:0:0	T	[6:155688322[T	.	.	SVTYPE=BND;MATEID=MantaBND:220:0:1:0:0:0:1;IMPRECISE;CIPOS=-53,53;BND_PAIR_COUNT=2;PAIR_COUNT=2
+6	155688322	MantaBND:220:0:1:0:0:0:1	T	[3:37006951[T	.	.	SVTYPE=BND;MATEID=MantaBND:220:0:1:0:0:0:0;IMPRECISE;CIPOS=-53,53;BND_PAIR_COUNT=2;PAIR_COUNT=2
+3	37047755	MantaBND:219:0:2:0:0:0:0	G	G]3:37046880]	.	.	SVTYPE=BND;MATEID=MantaBND:219:0:2:0:0:0:1;CIPOS=0,26;HOMLEN=26;HOMSEQ=CTGTAATCCCAGCACTTTGGGAGGCT;BND_PAIR_COUNT=3;PAIR_COUNT=3
+3	37046854	MantaBND:219:0:2:0:0:0:1	T	T]3:37047781]	.	.	SVTYPE=BND;MATEID=MantaBND:219:0:2:0:0:0:0;CIPOS=0,26;HOMLEN=26;HOMSEQ=AGCCTCCCAAAGTGCTGGGATTACAG;BND_PAIR_COUNT=3;PAIR_COUNT=3
+15	20291640	MantaBND:181:0:2:0:3:0:0	A	A[2:232136816[	.	.	SVTYPE=BND;MATEID=MantaBND:181:0:2:0:3:0:1;CIPOS=0,6;HOMLEN=6;HOMSEQ=TTTATT;BND_PAIR_COUNT=2;PAIR_COUNT=2
+2	232136816	MantaBND:181:0:2:0:3:0:1	T	]15:20291640]T	.	.	SVTYPE=BND;MATEID=MantaBND:181:0:2:0:3:0:0;CIPOS=0,6;HOMLEN=6;HOMSEQ=TTATTG;BND_PAIR_COUNT=2;PAIR_COUNT=2
+15	90751852	MantaBND:231:0:1:0:0:0:0	A	A[3:52416174[	.	.	SVTYPE=BND;MATEID=MantaBND:231:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+3	52416174	MantaBND:231:0:1:0:0:0:1	T	]15:90751852]T	.	.	SVTYPE=BND;MATEID=MantaBND:231:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+2	232136816	MantaBND:181:0:1:0:0:0:0	T	]15:20291640]T	.	.	SVTYPE=BND;MATEID=MantaBND:181:0:1:0:0:0:1;CIPOS=0,6;HOMLEN=6;HOMSEQ=TTATTG;BND_PAIR_COUNT=0;PAIR_COUNT=0
+15	20291640	MantaBND:181:0:1:0:0:0:1	A	A[2:232136816[	.	.	SVTYPE=BND;MATEID=MantaBND:181:0:1:0:0:0:0;CIPOS=0,6;HOMLEN=6;HOMSEQ=TTTATT;BND_PAIR_COUNT=0;PAIR_COUNT=0
+15	55218988	MantaBND:241:1:2:0:0:0:0	C	C[X:133692415[	.	.	SVTYPE=BND;MATEID=MantaBND:241:1:2:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+X	133692415	MantaBND:241:1:2:0:0:0:1	C	]15:55218988]C	.	.	SVTYPE=BND;MATEID=MantaBND:241:1:2:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+X	133692415	MantaBND:241:0:1:0:0:0:0	C	[3:119803144[C	.	.	SVTYPE=BND;MATEID=MantaBND:241:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+3	119803144	MantaBND:241:0:1:0:0:0:1	C	[X:133692415[C	.	.	SVTYPE=BND;MATEID=MantaBND:241:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+X	133692411	MantaBND:241:1:3:0:0:0:0	T	[18:31735220[T	.	.	SVTYPE=BND;MATEID=MantaBND:241:1:3:0:0:0:1;IMPRECISE;CIPOS=-54,55;BND_PAIR_COUNT=3;PAIR_COUNT=3
+18	31735220	MantaBND:241:1:3:0:0:0:1	T	[X:133692411[T	.	.	SVTYPE=BND;MATEID=MantaBND:241:1:3:0:0:0:0;IMPRECISE;CIPOS=-54,55;BND_PAIR_COUNT=3;PAIR_COUNT=3
+4	1390511	MantaBND:247:0:1:0:0:0:0	T	T]17:31343199]	.	.	SVTYPE=BND;MATEID=MantaBND:247:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=3;PAIR_COUNT=3
+17	31343199	MantaBND:247:0:1:0:0:0:1	T	T]4:1390511]	.	.	SVTYPE=BND;MATEID=MantaBND:247:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=3;PAIR_COUNT=3
+16	2055507	MantaBND:235:0:1:0:0:0:0	C	C[3:61143547[	.	.	SVTYPE=BND;MATEID=MantaBND:235:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+3	61143547	MantaBND:235:0:1:0:0:0:1	A	]16:2055507]A	.	.	SVTYPE=BND;MATEID=MantaBND:235:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+9	97687161	MantaBND:250:0:1:0:0:0:0	A	]4:42500093]A	.	.	SVTYPE=BND;MATEID=MantaBND:250:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=4;PAIR_COUNT=4
+4	42500093	MantaBND:250:0:1:0:0:0:1	A	A[9:97687161[	.	.	SVTYPE=BND;MATEID=MantaBND:250:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=4;PAIR_COUNT=4
+11	32789751	MantaBND:250:1:2:0:0:0:0	T	T[9:97687157[	.	.	SVTYPE=BND;MATEID=MantaBND:250:1:2:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+9	97687157	MantaBND:250:1:2:0:0:0:1	A	]11:32789751]A	.	.	SVTYPE=BND;MATEID=MantaBND:250:1:2:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+15	20285396	MantaBND:236:3:6:0:0:0:0	C	C[8:57061390[	.	.	SVTYPE=BND;MATEID=MantaBND:236:3:6:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+8	57061390	MantaBND:236:3:6:0:0:0:1	T	]15:20285396]T	.	.	SVTYPE=BND;MATEID=MantaBND:236:3:6:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+9	97687112	MantaBND:250:1:3:0:0:0:0	A	[9:110909915[A	.	.	SVTYPE=BND;MATEID=MantaBND:250:1:3:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+9	110909915	MantaBND:250:1:3:0:0:0:1	T	[9:97687112[T	.	.	SVTYPE=BND;MATEID=MantaBND:250:1:3:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+3	196547141	MantaBND:246:0:1:0:0:0:0	G	[9:132896645[G	.	.	SVTYPE=BND;MATEID=MantaBND:246:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+9	132896645	MantaBND:246:0:1:0:0:0:1	T	[3:196547141[T	.	.	SVTYPE=BND;MATEID=MantaBND:246:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+5	112828840	MantaBND:259:0:1:0:0:0:0	A	]4:80250055]A	.	.	SVTYPE=BND;MATEID=MantaBND:259:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=3;PAIR_COUNT=3
+4	80250055	MantaBND:259:0:1:0:0:0:1	T	T[5:112828840[	.	.	SVTYPE=BND;MATEID=MantaBND:259:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=3;PAIR_COUNT=3
+13	48381475	MantaBND:249:0:0:0:1:0:0	C	C]13:48381465]	.	.	SVTYPE=BND;MATEID=MantaBND:249:0:0:0:1:0:1;BND_PAIR_COUNT=0;PAIR_COUNT=0
+13	48381465	MantaBND:249:0:0:0:1:0:1	G	G]13:48381475]	.	.	SVTYPE=BND;MATEID=MantaBND:249:0:0:0:1:0:0;BND_PAIR_COUNT=0;PAIR_COUNT=0
+17	32038643	MantaBND:259:1:3:0:0:0:0	A	[5:112828746[A	.	.	SVTYPE=BND;MATEID=MantaBND:259:1:3:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+5	112828746	MantaBND:259:1:3:0:0:0:1	G	[17:32038643[G	.	.	SVTYPE=BND;MATEID=MantaBND:259:1:3:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+8	127506366	MantaBND:260:0:1:0:0:0:0	A	A[4:81594168[	.	.	SVTYPE=BND;MATEID=MantaBND:260:0:1:0:0:0:1;IMPRECISE;CIPOS=-139,140;BND_PAIR_COUNT=8;PAIR_COUNT=5
+4	81594168	MantaBND:260:0:1:0:0:0:1	A	]8:127506366]A	.	.	SVTYPE=BND;MATEID=MantaBND:260:0:1:0:0:0:0;IMPRECISE;CIPOS=-61,61;BND_PAIR_COUNT=5;PAIR_COUNT=5
+X	133692180	MantaDEL:241:4:4:0:3:0	GGTGATCTGCCCACCTCAGCCTCCCAAACTGCTGGGATTACAGGCATGAGCCACCGCATCCAGCCTCATAGATTTCTCTAGAATTTTTCTGGTGCAATTAATGGAGATAGAAGACATAATTAACTTTTATATAAACATATGACAATTATTCCTCAAATATTGCTATATGTAACTTTCAAAAAAGATCACCTCTCCAC	G	.	.	END=133692376;SVTYPE=DEL;SVLEN=-196;CIGAR=1M196D;CIPOS=0,1;HOMLEN=1;HOMSEQ=G;UPSTREAM_PAIR_COUNT=0;DOWNSTREAM_PAIR_COUNT=0;PAIR_COUNT=0
+X	133692180	MantaDEL:241:1:4:1:3:0	GGTGATCTGCCCACCTCAGCCTCCCAAACTGCTGGGATTACAGGCATGAGCCACCGCATCCAGCCTCATAGATTTCTCTAGAATTTTTCTGGTGCAATTAATGGAGATAGAAGACATAATTAACTTTTATATAAACATATGACAATTATTCCTCAAATATTGCTATATGTAACTTTCAAAAAAGATCACCTCTCCAC	G	.	.	END=133692376;SVTYPE=DEL;SVLEN=-196;CIGAR=1M196D;CIPOS=0,1;HOMLEN=1;HOMSEQ=G;UPSTREAM_PAIR_COUNT=0;DOWNSTREAM_PAIR_COUNT=0;PAIR_COUNT=0
+5	112828838	MantaBND:259:1:2:0:0:0:0	A	]7:44641060]A	.	.	SVTYPE=BND;MATEID=MantaBND:259:1:2:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+7	44641060	MantaBND:259:1:2:0:0:0:1	A	A[5:112828838[	.	.	SVTYPE=BND;MATEID=MantaBND:259:1:2:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+5	13125039	MantaDUP:TANDEM:279:0:1:0:0:0	A	<DUP:TANDEM>	.	.	END=13140771;SVTYPE=DUP;SVLEN=15732;IMPRECISE;CIPOS=-64,65;CIEND=-64,65;UPSTREAM_PAIR_COUNT=2;DOWNSTREAM_PAIR_COUNT=2;PAIR_COUNT=2
+12	16259254	MantaBND:260:11:14:0:0:0:0	C	]13:48459628]C	.	.	SVTYPE=BND;MATEID=MantaBND:260:11:14:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+13	48459628	MantaBND:260:11:14:0:0:0:1	A	A[12:16259254[	.	.	SVTYPE=BND;MATEID=MantaBND:260:11:14:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+5	177257108	MantaBND:260:6:7:0:0:0:0	A	A[18:52738842[	.	.	SVTYPE=BND;MATEID=MantaBND:260:6:7:0:0:0:1;IMPRECISE;CIPOS=-57,58;BND_PAIR_COUNT=5;PAIR_COUNT=5
+18	52738842	MantaBND:260:6:7:0:0:0:1	C	]5:177257108]C	.	.	SVTYPE=BND;MATEID=MantaBND:260:6:7:0:0:0:0;IMPRECISE;CIPOS=-60,60;BND_PAIR_COUNT=5;PAIR_COUNT=5
+5	27772102	MantaBND:280:0:1:0:0:0:0	A	[17:58733958[A	.	.	SVTYPE=BND;MATEID=MantaBND:280:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=3;PAIR_COUNT=3
+17	58733958	MantaBND:280:0:1:0:0:0:1	T	[5:27772102[T	.	.	SVTYPE=BND;MATEID=MantaBND:280:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=3;PAIR_COUNT=3
+17	58734054	MantaBND:280:1:2:0:0:0:0	A	[6:2343063[A	.	.	SVTYPE=BND;MATEID=MantaBND:280:1:2:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+6	2343063	MantaBND:280:1:2:0:0:0:1	C	[17:58734054[C	.	.	SVTYPE=BND;MATEID=MantaBND:280:1:2:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+5	39394749	MantaDEL:284:0:0:0:0:0	GGCATTATT	G	.	.	END=39394757;SVTYPE=DEL;SVLEN=-8;CIGAR=1M8D;CIPOS=0,3;HOMLEN=3;HOMSEQ=GCA;UPSTREAM_PAIR_COUNT=0;DOWNSTREAM_PAIR_COUNT=0;PAIR_COUNT=0
+18	26415799	MantaBND:236:2:3:0:3:0:0	G	]15:20285459]G	.	.	SVTYPE=BND;MATEID=MantaBND:236:2:3:0:3:0:1;CIPOS=0,2;HOMLEN=2;HOMSEQ=GC;BND_PAIR_COUNT=0;PAIR_COUNT=0
+15	20285459	MantaBND:236:2:3:0:3:0:1	G	G[18:26415799[	.	.	SVTYPE=BND;MATEID=MantaBND:236:2:3:0:3:0:0;CIPOS=0,2;HOMLEN=2;HOMSEQ=GG;BND_PAIR_COUNT=0;PAIR_COUNT=0
+5	80129575	MantaBND:288:0:1:0:0:0:0	C	C]12:46561468]	.	.	SVTYPE=BND;MATEID=MantaBND:288:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+12	46561468	MantaBND:288:0:1:0:0:0:1	G	G]5:80129575]	.	.	SVTYPE=BND;MATEID=MantaBND:288:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+6	21691127	MantaBND:260:11:23:0:0:0:0	T	]13:48459871]T	.	.	SVTYPE=BND;MATEID=MantaBND:260:11:23:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+13	48459871	MantaBND:260:11:23:0:0:0:1	C	C[6:21691127[	.	.	SVTYPE=BND;MATEID=MantaBND:260:11:23:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+4	149950137	MantaBND:270:0:1:0:0:0:0	G	]7:6746086]G	.	.	SVTYPE=BND;MATEID=MantaBND:270:0:1:0:0:0:1;IMPRECISE;CIPOS=-70,70;BND_PAIR_COUNT=2;PAIR_COUNT=2
+7	6746086	MantaBND:270:0:1:0:0:0:1	A	A[4:149950137[	.	.	SVTYPE=BND;MATEID=MantaBND:270:0:1:0:0:0:0;IMPRECISE;CIPOS=-70,70;BND_PAIR_COUNT=2;PAIR_COUNT=2
+5	112815511	MantaBND:293:0:1:0:0:0:0	T	T[9:85175844[	.	.	SVTYPE=BND;MATEID=MantaBND:293:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+9	85175844	MantaBND:293:0:1:0:0:0:1	C	]5:112815511]C	.	.	SVTYPE=BND;MATEID=MantaBND:293:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+12	61286421	MantaBND:293:0:2:0:0:0:0	T	]5:112815556]T	.	.	SVTYPE=BND;MATEID=MantaBND:293:0:2:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+5	112815556	MantaBND:293:0:2:0:0:0:1	C	C[12:61286421[	.	.	SVTYPE=BND;MATEID=MantaBND:293:0:2:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+16	69009383	MantaBND:293:0:3:0:0:0:0	A	A]5:112815595]	.	.	SVTYPE=BND;MATEID=MantaBND:293:0:3:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+5	112815595	MantaBND:293:0:3:0:0:0:1	T	T]16:69009383]	.	.	SVTYPE=BND;MATEID=MantaBND:293:0:3:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+15	89292850	MantaBND:271:0:1:0:0:0:0	G	G[4:164864545[	.	.	SVTYPE=BND;MATEID=MantaBND:271:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=3;PAIR_COUNT=3
+4	164864545	MantaBND:271:0:1:0:0:0:1	G	]15:89292850]G	.	.	SVTYPE=BND;MATEID=MantaBND:271:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=3;PAIR_COUNT=3
+5	112827781	MantaBND:299:0:1:0:0:0:0	T	T]17:16310093]	.	.	SVTYPE=BND;MATEID=MantaBND:299:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+17	16310093	MantaBND:299:0:1:0:0:0:1	A	A]5:112827781]	.	.	SVTYPE=BND;MATEID=MantaBND:299:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+5	30169255	MantaBND:281:0:1:0:0:0:0	A	[11:108271200[A	.	.	SVTYPE=BND;MATEID=MantaBND:281:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+11	108271200	MantaBND:281:0:1:0:0:0:1	T	[5:30169255[T	.	.	SVTYPE=BND;MATEID=MantaBND:281:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+16	68160508	MantaBND:301:0:1:0:0:0:0	A	A]5:112829018]	.	.	SVTYPE=BND;MATEID=MantaBND:301:0:1:0:0:0:1;IMPRECISE;CIPOS=-62,62;BND_PAIR_COUNT=3;PAIR_COUNT=3
+5	112829018	MantaBND:301:0:1:0:0:0:1	G	G]16:68160508]	.	.	SVTYPE=BND;MATEID=MantaBND:301:0:1:0:0:0:0;IMPRECISE;CIPOS=-62,62;BND_PAIR_COUNT=3;PAIR_COUNT=3
+14	45185294	MantaBND:272:0:1:0:0:0:0	T	]4:179581241]T	.	.	SVTYPE=BND;MATEID=MantaBND:272:0:1:0:0:0:1;IMPRECISE;CIPOS=-67,68;BND_PAIR_COUNT=2;PAIR_COUNT=2
+4	179581241	MantaBND:272:0:1:0:0:0:1	A	A[14:45185294[	.	.	SVTYPE=BND;MATEID=MantaBND:272:0:1:0:0:0:0;IMPRECISE;CIPOS=-67,68;BND_PAIR_COUNT=2;PAIR_COUNT=2
+13	48368508	MantaBND:305:0:1:0:0:0:0	T	T[5:115157311[	.	.	SVTYPE=BND;MATEID=MantaBND:305:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+5	115157311	MantaBND:305:0:1:0:0:0:1	C	]13:48368508]C	.	.	SVTYPE=BND;MATEID=MantaBND:305:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+3	186335131	MantaBND:244:0:1:0:0:0:0	G	]11:108257724]G	.	.	SVTYPE=BND;MATEID=MantaBND:244:0:1:0:0:0:1;IMPRECISE;CIPOS=-51,52;BND_PAIR_COUNT=3;PAIR_COUNT=3
+11	108257724	MantaBND:244:0:1:0:0:0:1	A	A[3:186335131[	.	.	SVTYPE=BND;MATEID=MantaBND:244:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=3;PAIR_COUNT=3
+5	38212622	MantaBND:283:0:2:0:0:0:0	T	T[15:89292594[	.	.	SVTYPE=BND;MATEID=MantaBND:283:0:2:0:0:0:1;IMPRECISE;CIPOS=-68,68;BND_PAIR_COUNT=2;PAIR_COUNT=2
+15	89292594	MantaBND:283:0:2:0:0:0:1	C	]5:38212622]C	.	.	SVTYPE=BND;MATEID=MantaBND:283:0:2:0:0:0:0;IMPRECISE;CIPOS=-68,68;BND_PAIR_COUNT=2;PAIR_COUNT=2
+16	89805294	MantaBND:304:0:1:0:0:0:0	C	[5:114483417[C	.	.	SVTYPE=BND;MATEID=MantaBND:304:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=3;PAIR_COUNT=3
+5	114483417	MantaBND:304:0:1:0:0:0:1	G	[16:89805294[G	.	.	SVTYPE=BND;MATEID=MantaBND:304:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=3;PAIR_COUNT=3
+X	29556542	MantaBND:304:1:2:0:0:0:0	G	G[16:89805296[	.	.	SVTYPE=BND;MATEID=MantaBND:304:1:2:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+16	89805296	MantaBND:304:1:2:0:0:0:1	G	]X:29556542]G	.	.	SVTYPE=BND;MATEID=MantaBND:304:1:2:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+5	123167749	MantaBND:305:1:2:0:0:0:0	G	G]13:48368613]	.	.	SVTYPE=BND;MATEID=MantaBND:305:1:2:0:0:0:1;IMPRECISE;CIPOS=-65,65;BND_PAIR_COUNT=2;PAIR_COUNT=2
+13	48368613	MantaBND:305:1:2:0:0:0:1	T	T]5:123167749]	.	.	SVTYPE=BND;MATEID=MantaBND:305:1:2:0:0:0:0;IMPRECISE;CIPOS=-65,65;BND_PAIR_COUNT=2;PAIR_COUNT=2
+19	32841697	MantaBND:305:1:4:0:0:0:0	A	]13:48368477]A	.	.	SVTYPE=BND;MATEID=MantaBND:305:1:4:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=3;PAIR_COUNT=3
+13	48368477	MantaBND:305:1:4:0:0:0:1	A	A[19:32841697[	.	.	SVTYPE=BND;MATEID=MantaBND:305:1:4:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=3;PAIR_COUNT=3
+5	164934035	MantaBND:309:0:1:0:0:0:0	G	[16:68808338[G	.	.	SVTYPE=BND;MATEID=MantaBND:309:0:1:0:0:0:1;IMPRECISE;CIPOS=-84,85;BND_PAIR_COUNT=2;PAIR_COUNT=2
+16	68808338	MantaBND:309:0:1:0:0:0:1	G	[5:164934035[G	.	.	SVTYPE=BND;MATEID=MantaBND:309:0:1:0:0:0:0;IMPRECISE;CIPOS=-74,75;BND_PAIR_COUNT=2;PAIR_COUNT=2
+5	177131783	MantaDUP:TANDEM:311:0:1:0:0:0	G	<DUP:TANDEM>	.	.	END=177135574;SVTYPE=DUP;SVLEN=3791;IMPRECISE;CIPOS=-51,52;CIEND=-51,52;UPSTREAM_PAIR_COUNT=2;DOWNSTREAM_PAIR_COUNT=2;PAIR_COUNT=2
+5	177210026	MantaBND:313:1:3:0:0:0:0	T	T[16:71187780[	.	.	SVTYPE=BND;MATEID=MantaBND:313:1:3:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+16	71187780	MantaBND:313:1:3:0:0:0:1	A	]5:177210026]A	.	.	SVTYPE=BND;MATEID=MantaBND:313:1:3:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+14	45153989	MantaBND:307:1:5:0:0:0:0	T	T[18:47647744[	.	.	SVTYPE=BND;MATEID=MantaBND:307:1:5:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+18	47647744	MantaBND:307:1:5:0:0:0:1	G	]14:45153989]G	.	.	SVTYPE=BND;MATEID=MantaBND:307:1:5:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+10	920452	MantaBND:307:1:6:0:0:0:0	T	]14:45154016]T	.	.	SVTYPE=BND;MATEID=MantaBND:307:1:6:0:0:0:1;IMPRECISE;CIPOS=-61,61;BND_PAIR_COUNT=2;PAIR_COUNT=2
+14	45154016	MantaBND:307:1:6:0:0:0:1	T	T[10:920452[	.	.	SVTYPE=BND;MATEID=MantaBND:307:1:6:0:0:0:0;IMPRECISE;CIPOS=-61,61;BND_PAIR_COUNT=2;PAIR_COUNT=2
+5	123500090	MantaBND:306:0:1:0:1:0:0	T	T[11:44236159[	.	.	SVTYPE=BND;MATEID=MantaBND:306:0:1:0:1:0:1;CIPOS=0,19;HOMLEN=19;HOMSEQ=GTGTGTGTGTGTGTGTGTG;BND_PAIR_COUNT=2;PAIR_COUNT=2
+11	44236159	MantaBND:306:0:1:0:1:0:1	G	]5:123500090]G	.	.	SVTYPE=BND;MATEID=MantaBND:306:0:1:0:1:0:0;CIPOS=0,19;HOMLEN=19;HOMSEQ=TGTGTGTGTGTGTGTGTGC;BND_PAIR_COUNT=2;PAIR_COUNT=2
+14	45152375	MantaBND:307:1:2:0:0:0:0	A	A]14:45153839]	.	.	SVTYPE=BND;MATEID=MantaBND:307:1:2:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+14	45153839	MantaBND:307:1:2:0:0:0:1	A	A]14:45152375]	.	.	SVTYPE=BND;MATEID=MantaBND:307:1:2:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+6	45029891	MantaBND:332:0:1:0:0:0:0	A	]17:31163174]A	.	.	SVTYPE=BND;MATEID=MantaBND:332:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+17	31163174	MantaBND:332:0:1:0:0:0:1	T	T[6:45029891[	.	.	SVTYPE=BND;MATEID=MantaBND:332:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+6	7334602	MantaBND:327:0:1:0:0:0:0	C	C]16:23622883]	.	.	SVTYPE=BND;MATEID=MantaBND:327:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+16	23622883	MantaBND:327:0:1:0:0:0:1	A	A]6:7334602]	.	.	SVTYPE=BND;MATEID=MantaBND:327:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+6	35455933	MantaBND:333:0:1:0:0:0:0	G	G[9:63818095[	.	.	SVTYPE=BND;MATEID=MantaBND:333:0:1:0:0:0:1;IMPRECISE;CIPOS=-64,65;BND_PAIR_COUNT=2;PAIR_COUNT=2
+9	63818095	MantaBND:333:0:1:0:0:0:1	T	]6:35455933]T	.	.	SVTYPE=BND;MATEID=MantaBND:333:0:1:0:0:0:0;IMPRECISE;CIPOS=-64,65;BND_PAIR_COUNT=2;PAIR_COUNT=2
+15	89273292	MantaBND:310:0:1:0:0:0:0	A	[5:166751282[A	.	.	SVTYPE=BND;MATEID=MantaBND:310:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+5	166751282	MantaBND:310:0:1:0:0:0:1	G	[15:89273292[G	.	.	SVTYPE=BND;MATEID=MantaBND:310:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+6	35457856	MantaDEL:335:0:0:1:2:0	GGCTTCAGT	G	.	.	END=35457864;SVTYPE=DEL;SVLEN=-8;CIGAR=1M8D;CIPOS=0,1;HOMLEN=1;HOMSEQ=G;UPSTREAM_PAIR_COUNT=0;DOWNSTREAM_PAIR_COUNT=0;PAIR_COUNT=0
+6	78714839	MantaDEL:336:0:0:0:1:0	AATATATATAT	A	.	.	END=78714849;SVTYPE=DEL;SVLEN=-10;CIGAR=1M10D;CIPOS=0,38;HOMLEN=38;HOMSEQ=ATATATATATATATATATATATATATATATATATATAT;UPSTREAM_PAIR_COUNT=0;DOWNSTREAM_PAIR_COUNT=0;PAIR_COUNT=0
+15	41606768	MantaDUP:TANDEM:337:1:2:0:0:0	T	<DUP:TANDEM>	.	.	END=90803563;SVTYPE=DUP;SVLEN=49196795;IMPRECISE;CIPOS=-52,52;CIEND=-52,52;UPSTREAM_PAIR_COUNT=2;DOWNSTREAM_PAIR_COUNT=2;PAIR_COUNT=2
+6	83561949	MantaBND:337:0:1:0:0:0:0	T	T[15:90803627[	.	.	SVTYPE=BND;MATEID=MantaBND:337:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+15	90803627	MantaBND:337:0:1:0:0:0:1	G	]6:83561949]G	.	.	SVTYPE=BND;MATEID=MantaBND:337:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+17	58720667	MantaBND:338:1:2:0:0:0:0	T	]13:60722069]T	.	.	SVTYPE=BND;MATEID=MantaBND:338:1:2:0:0:0:1;IMPRECISE;CIPOS=-60,61;BND_PAIR_COUNT=2;PAIR_COUNT=2
+13	60722069	MantaBND:338:1:2:0:0:0:1	T	T[17:58720667[	.	.	SVTYPE=BND;MATEID=MantaBND:338:1:2:0:0:0:0;IMPRECISE;CIPOS=-60,61;BND_PAIR_COUNT=2;PAIR_COUNT=2
+22	29642361	MantaBND:342:0:1:0:0:0:0	T	T]6:109695636]	.	.	SVTYPE=BND;MATEID=MantaBND:342:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+6	109695636	MantaBND:342:0:1:0:0:0:1	A	A]22:29642361]	.	.	SVTYPE=BND;MATEID=MantaBND:342:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+15	89268381	MantaBND:330:0:1:0:0:0:0	T	]6:36349956]T	.	.	SVTYPE=BND;MATEID=MantaBND:330:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=4;PAIR_COUNT=4
+6	36349956	MantaBND:330:0:1:0:0:0:1	G	G[15:89268381[	.	.	SVTYPE=BND;MATEID=MantaBND:330:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=4;PAIR_COUNT=4
+8	39445496	MantaBND:352:0:1:0:0:0:0	C	[6:160412505[C	.	.	SVTYPE=BND;MATEID=MantaBND:352:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+6	160412505	MantaBND:352:0:1:0:0:0:1	C	[8:39445496[C	.	.	SVTYPE=BND;MATEID=MantaBND:352:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+6	154755482	MantaBND:350:0:1:0:0:0:0	C	C[11:61437545[	.	.	SVTYPE=BND;MATEID=MantaBND:350:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=3;PAIR_COUNT=3
+11	61437545	MantaBND:350:0:1:0:0:0:1	A	]6:154755482]A	.	.	SVTYPE=BND;MATEID=MantaBND:350:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=3;PAIR_COUNT=3
+14	95116088	MantaBND:341:0:1:0:0:0:0	C	C[6:102158166[	.	.	SVTYPE=BND;MATEID=MantaBND:341:0:1:0:0:0:1;BND_PAIR_COUNT=0;PAIR_COUNT=0
+6	102158166	MantaBND:341:0:1:0:0:0:1	G	]14:95116088]G	.	.	SVTYPE=BND;MATEID=MantaBND:341:0:1:0:0:0:0;BND_PAIR_COUNT=0;PAIR_COUNT=0
+5	177209686	MantaDUP:TANDEM:313:1:2:0:3:0	A	<DUP:TANDEM>	.	.	END=177210026;SVTYPE=DUP;SVLEN=340;CIPOS=0,1;CIEND=0,1;HOMLEN=1;HOMSEQ=C;UPSTREAM_PAIR_COUNT=3;DOWNSTREAM_PAIR_COUNT=3;PAIR_COUNT=3
+5	177210614	MantaBND:322:0:1:0:1:0:0	G	[X:108921885[G	.	.	SVTYPE=BND;MATEID=MantaBND:322:0:1:0:1:0:1;CIPOS=0,1;HOMLEN=1;HOMSEQ=T;BND_PAIR_COUNT=0;PAIR_COUNT=0
+X	108921884	MantaBND:322:0:1:0:1:0:1	C	[5:177210615[C	.	.	SVTYPE=BND;MATEID=MantaBND:322:0:1:0:1:0:0;CIPOS=0,1;HOMLEN=1;HOMSEQ=T;BND_PAIR_COUNT=0;PAIR_COUNT=0
+7	5997229	MantaINS:359:0:0:0:2:0	AGACACG	AAAAAAAGA	.	.	END=5997235;SVTYPE=INS;SVLEN=8;CIGAR=1M8I6D;UPSTREAM_PAIR_COUNT=0;DOWNSTREAM_PAIR_COUNT=0;PAIR_COUNT=0
+15	90768930	MantaBND:366:0:1:0:0:0:0	T	]7:36364439]T	.	.	SVTYPE=BND;MATEID=MantaBND:366:0:1:0:0:0:1;IMPRECISE;CIPOS=-58,59;BND_PAIR_COUNT=2;PAIR_COUNT=2
+7	36364439	MantaBND:366:0:1:0:0:0:1	G	G[15:90768930[	.	.	SVTYPE=BND;MATEID=MantaBND:366:0:1:0:0:0:0;IMPRECISE;CIPOS=-58,59;BND_PAIR_COUNT=2;PAIR_COUNT=2
+5	112842819	MantaBND:302:0:1:1:0:0:0	G	[5:112843048[G	.	.	SVTYPE=BND;MATEID=MantaBND:302:0:1:1:0:0:1;BND_PAIR_COUNT=2;PAIR_COUNT=2
+5	112843048	MantaBND:302:0:1:1:0:0:1	G	[5:112842819[G	.	.	SVTYPE=BND;MATEID=MantaBND:302:0:1:1:0:0:0;BND_PAIR_COUNT=2;PAIR_COUNT=2
+7	93675476	MantaBND:384:0:1:0:0:0:0	T	]11:50499753]T	.	.	SVTYPE=BND;MATEID=MantaBND:384:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+11	50499753	MantaBND:384:0:1:0:0:0:1	G	G[7:93675476[	.	.	SVTYPE=BND;MATEID=MantaBND:384:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+15	90766762	MantaBND:369:1:2:0:0:0:0	T	[12:240965[T	.	.	SVTYPE=BND;MATEID=MantaBND:369:1:2:0:0:0:1;IMPRECISE;CIPOS=-61,62;BND_PAIR_COUNT=2;PAIR_COUNT=2
+12	240965	MantaBND:369:1:2:0:0:0:1	G	[15:90766762[G	.	.	SVTYPE=BND;MATEID=MantaBND:369:1:2:0:0:0:0;IMPRECISE;CIPOS=-61,62;BND_PAIR_COUNT=2;PAIR_COUNT=2
+15	90762952	MantaBND:325:1:2:0:0:0:0	G	[15:90762855[G	.	.	SVTYPE=BND;MATEID=MantaBND:325:1:2:0:0:0:1;CIPOS=0,1;HOMLEN=1;HOMSEQ=A;BND_PAIR_COUNT=0;PAIR_COUNT=0
+15	90762854	MantaBND:325:1:2:0:0:0:1	C	[15:90762953[C	.	.	SVTYPE=BND;MATEID=MantaBND:325:1:2:0:0:0:0;CIPOS=0,1;HOMLEN=1;HOMSEQ=T;BND_PAIR_COUNT=0;PAIR_COUNT=0
+7	48487183	MantaBND:369:0:1:0:4:0:0	G	[15:90766708[G	.	.	SVTYPE=BND;MATEID=MantaBND:369:0:1:0:4:0:1;CIPOS=0,9;HOMLEN=9;HOMSEQ=CCTGTAATG;BND_PAIR_COUNT=0;PAIR_COUNT=0
+15	90766699	MantaBND:369:0:1:0:4:0:1	A	[7:48487192[A	.	.	SVTYPE=BND;MATEID=MantaBND:369:0:1:0:4:0:0;CIPOS=0,9;HOMLEN=9;HOMSEQ=TTACAGGCG;BND_PAIR_COUNT=0;PAIR_COUNT=0
+X	49885350	MantaBND:377:0:1:0:0:0:0	A	A[7:66993435[	.	.	SVTYPE=BND;MATEID=MantaBND:377:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=3;PAIR_COUNT=3
+7	66993435	MantaBND:377:0:1:0:0:0:1	C	]X:49885350]C	.	.	SVTYPE=BND;MATEID=MantaBND:377:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=3;PAIR_COUNT=3
+7	116699279	MantaDUP:TANDEM:392:0:1:0:0:0	T	<DUP:TANDEM>	.	.	END=116700239;SVTYPE=DUP;SVLEN=960;IMPRECISE;CIPOS=-58,59;CIEND=-58,59;UPSTREAM_PAIR_COUNT=3;DOWNSTREAM_PAIR_COUNT=3;PAIR_COUNT=3
+5	112843697	MantaBND:303:0:1:0:0:0:0	G	[5:112843774[G	.	.	SVTYPE=BND;MATEID=MantaBND:303:0:1:0:0:0:1;CIPOS=0,1;HOMLEN=1;HOMSEQ=G;BND_PAIR_COUNT=0;PAIR_COUNT=0
+5	112843773	MantaBND:303:0:1:0:0:0:1	C	[5:112843698[C	.	.	SVTYPE=BND;MATEID=MantaBND:303:0:1:0:0:0:0;CIPOS=0,1;HOMLEN=1;HOMSEQ=A;BND_PAIR_COUNT=0;PAIR_COUNT=0
+7	55174413	MantaDUP:TANDEM:374:0:1:0:0:0	T	<DUP:TANDEM>	.	.	END=55174830;SVTYPE=DUP;SVLEN=417;IMPRECISE;CIPOS=-64,65;CIEND=-64,65;UPSTREAM_PAIR_COUNT=2;DOWNSTREAM_PAIR_COUNT=2;PAIR_COUNT=2
+7	148809566	MantaBND:401:0:0:0:0:0:0	C	C]7:148809557]	.	.	SVTYPE=BND;MATEID=MantaBND:401:0:0:0:0:0:1;BND_PAIR_COUNT=0;PAIR_COUNT=0
+7	148809557	MantaBND:401:0:0:0:0:0:1	A	A]7:148809566]	.	.	SVTYPE=BND;MATEID=MantaBND:401:0:0:0:0:0:0;BND_PAIR_COUNT=0;PAIR_COUNT=0
+8	126771268	MantaBND:407:1:2:0:0:0:0	T	T]14:45155343]	.	.	SVTYPE=BND;MATEID=MantaBND:407:1:2:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+14	45155343	MantaBND:407:1:2:0:0:0:1	A	A]8:126771268]	.	.	SVTYPE=BND;MATEID=MantaBND:407:1:2:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+14	45155400	MantaBND:407:0:1:0:0:0:0	G	G]8:25767558]	.	.	SVTYPE=BND;MATEID=MantaBND:407:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+8	25767558	MantaBND:407:0:1:0:0:0:1	C	C]14:45155400]	.	.	SVTYPE=BND;MATEID=MantaBND:407:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+14	45155415	MantaBND:407:1:4:0:0:0:0	A	A]12:19488469]	.	.	SVTYPE=BND;MATEID=MantaBND:407:1:4:0:0:0:1;IMPRECISE;CIPOS=-62,63;BND_PAIR_COUNT=2;PAIR_COUNT=2
+12	19488469	MantaBND:407:1:4:0:0:0:1	G	G]14:45155415]	.	.	SVTYPE=BND;MATEID=MantaBND:407:1:4:0:0:0:0;IMPRECISE;CIPOS=-62,63;BND_PAIR_COUNT=2;PAIR_COUNT=2
+7	148817328	MantaDEL:400:0:0:0:0:0	ACATTCTCAGGAGGTTCAATATTTGGCTTCAT	A	.	.	END=148817359;SVTYPE=DEL;SVLEN=-31;CIGAR=1M31D;CIPOS=0,1;HOMLEN=1;HOMSEQ=C;UPSTREAM_PAIR_COUNT=0;DOWNSTREAM_PAIR_COUNT=0;PAIR_COUNT=0
+8	31139560	MantaDUP:TANDEM:410:0:1:0:0:0	A	<DUP:TANDEM>	.	.	END=31141515;SVTYPE=DUP;SVLEN=1955;IMPRECISE;CIPOS=-73,74;CIEND=-63,64;UPSTREAM_PAIR_COUNT=2;DOWNSTREAM_PAIR_COUNT=2;PAIR_COUNT=2
+7	116778486	MantaBND:394:0:1:0:0:0:0	A	A]7:116778985]	.	.	SVTYPE=BND;MATEID=MantaBND:394:0:1:0:0:0:1;CIPOS=0,4;HOMLEN=4;HOMSEQ=CAGT;BND_PAIR_COUNT=0;PAIR_COUNT=0
+7	116778981	MantaBND:394:0:1:0:0:0:1	A	A]7:116778490]	.	.	SVTYPE=BND;MATEID=MantaBND:394:0:1:0:0:0:0;CIPOS=0,4;HOMLEN=4;HOMSEQ=ACTG;BND_PAIR_COUNT=0;PAIR_COUNT=0
+15	90766699	MantaBND:369:0:1:1:4:0:0	A	[7:48487192[A	.	.	SVTYPE=BND;MATEID=MantaBND:369:0:1:1:4:0:1;CIPOS=0,9;HOMLEN=9;HOMSEQ=TTACAGGCG;BND_PAIR_COUNT=2;PAIR_COUNT=2
+7	48487183	MantaBND:369:0:1:1:4:0:1	G	[15:90766708[G	.	.	SVTYPE=BND;MATEID=MantaBND:369:0:1:1:4:0:0;CIPOS=0,9;HOMLEN=9;HOMSEQ=CCTGTAATG;BND_PAIR_COUNT=2;PAIR_COUNT=2
+7	116778486	MantaBND:394:0:2:0:0:0:0	A	A]7:116778985]	.	.	SVTYPE=BND;MATEID=MantaBND:394:0:2:0:0:0:1;CIPOS=0,4;HOMLEN=4;HOMSEQ=CAGT;BND_PAIR_COUNT=3;PAIR_COUNT=3
+7	116778981	MantaBND:394:0:2:0:0:0:1	A	A]7:116778490]	.	.	SVTYPE=BND;MATEID=MantaBND:394:0:2:0:0:0:0;CIPOS=0,4;HOMLEN=4;HOMSEQ=ACTG;BND_PAIR_COUNT=3;PAIR_COUNT=3
+8	41809487	MantaBND:426:0:1:0:0:0:0	C	[13:32362555[C	.	.	SVTYPE=BND;MATEID=MantaBND:426:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=3;PAIR_COUNT=3
+11	108300015	MantaBND:427:0:1:0:0:0:0	T	[8:47949922[T	.	.	SVTYPE=BND;MATEID=MantaBND:427:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+13	32362555	MantaBND:426:0:1:0:0:0:1	A	[8:41809487[A	.	.	SVTYPE=BND;MATEID=MantaBND:426:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=3;PAIR_COUNT=3
+8	47949922	MantaBND:427:0:1:0:0:0:1	A	[11:108300015[A	.	.	SVTYPE=BND;MATEID=MantaBND:427:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+8	127080939	MantaBND:443:0:1:0:0:0:0	T	T]8:127081109]	.	.	SVTYPE=BND;MATEID=MantaBND:443:0:1:0:0:0:1;IMPRECISE;CIPOS=-61,61;BND_PAIR_COUNT=2;PAIR_COUNT=2
+8	127081109	MantaBND:443:0:1:0:0:0:1	T	T]8:127080939]	.	.	SVTYPE=BND;MATEID=MantaBND:443:0:1:0:0:0:0;IMPRECISE;CIPOS=-61,61;BND_PAIR_COUNT=2;PAIR_COUNT=2
+8	116618376	MantaDEL:440:0:0:0:0:0	TGACAATGTTG	T	.	.	END=116618386;SVTYPE=DEL;SVLEN=-10;CIGAR=1M10D;CIPOS=0,2;HOMLEN=2;HOMSEQ=GA;UPSTREAM_PAIR_COUNT=0;DOWNSTREAM_PAIR_COUNT=0;PAIR_COUNT=0
+8	117819576	MantaDEL:441:0:0:0:0:0	CGGGGAGCCT	C	.	.	END=117819585;SVTYPE=DEL;SVLEN=-9;CIGAR=1M9D;CIPOS=0,8;HOMLEN=8;HOMSEQ=GGGGAGCC;UPSTREAM_PAIR_COUNT=0;DOWNSTREAM_PAIR_COUNT=0;PAIR_COUNT=0
+8	128143966	MantaBND:425:0:1:0:0:0:0	A	[8:31067029[A	.	.	SVTYPE=BND;MATEID=MantaBND:425:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+8	31067029	MantaBND:425:0:1:0:0:0:1	C	[8:128143966[C	.	.	SVTYPE=BND;MATEID=MantaBND:425:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+8	31088032	MantaBND:412:0:1:0:0:0:0	A	A]8:31087842]	.	.	SVTYPE=BND;MATEID=MantaBND:412:0:1:0:0:0:1;IMPRECISE;CIPOS=-52,52;BND_PAIR_COUNT=9;PAIR_COUNT=9
+8	31087842	MantaBND:412:0:1:0:0:0:1	A	A]8:31088032]	.	.	SVTYPE=BND;MATEID=MantaBND:412:0:1:0:0:0:0;IMPRECISE;CIPOS=-52,52;BND_PAIR_COUNT=9;PAIR_COUNT=9
+8	118110138	MantaBND:442:0:1:0:0:0:0	G	G[X:109294851[	.	.	SVTYPE=BND;MATEID=MantaBND:442:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+X	109294851	MantaBND:442:0:1:0:0:0:1	A	]8:118110138]A	.	.	SVTYPE=BND;MATEID=MantaBND:442:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+8	89955065	MantaBND:438:0:0:0:0:0:0	T	[8:89955194[T	.	.	SVTYPE=BND;MATEID=MantaBND:438:0:0:0:0:0:1;IMPRECISE;CIPOS=-81,82;BND_PAIR_COUNT=2;PAIR_COUNT=2
+8	89955194	MantaBND:438:0:0:0:0:0:1	G	[8:89955065[G	.	.	SVTYPE=BND;MATEID=MantaBND:438:0:0:0:0:0:0;IMPRECISE;CIPOS=-71,72;BND_PAIR_COUNT=2;PAIR_COUNT=2
+8	78178753	MantaBND:429:0:1:0:0:0:0	A	[15:89290076[A	.	.	SVTYPE=BND;MATEID=MantaBND:429:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+15	89290076	MantaBND:429:0:1:0:0:0:1	A	[8:78178753[A	.	.	SVTYPE=BND;MATEID=MantaBND:429:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+X	14850491	MantaBND:444:0:1:0:0:0:0	T	]8:136924208]T	.	.	SVTYPE=BND;MATEID=MantaBND:444:0:1:0:0:0:1;IMPRECISE;CIPOS=-58,58;BND_PAIR_COUNT=2;PAIR_COUNT=2
+8	136924208	MantaBND:444:0:1:0:0:0:1	A	A[X:14850491[	.	.	SVTYPE=BND;MATEID=MantaBND:444:0:1:0:0:0:0;IMPRECISE;CIPOS=-58,58;BND_PAIR_COUNT=2;PAIR_COUNT=2
+11	108266978	MantaBND:456:0:1:0:0:0:0	T	[9:4694588[T	.	.	SVTYPE=BND;MATEID=MantaBND:456:0:1:0:0:0:1;IMPRECISE;CIPOS=-54,54;BND_PAIR_COUNT=2;PAIR_COUNT=2
+9	4694588	MantaBND:456:0:1:0:0:0:1	T	[11:108266978[T	.	.	SVTYPE=BND;MATEID=MantaBND:456:0:1:0:0:0:0;IMPRECISE;CIPOS=-54,54;BND_PAIR_COUNT=2;PAIR_COUNT=2
+7	55201321	MantaBND:376:0:1:0:1:0:0	C	[7:55201454[C	.	.	SVTYPE=BND;MATEID=MantaBND:376:0:1:0:1:0:1;CIPOS=0,2;HOMLEN=2;HOMSEQ=CT;BND_PAIR_COUNT=0;PAIR_COUNT=0
+7	55201452	MantaBND:376:0:1:0:1:0:1	G	[7:55201323[G	.	.	SVTYPE=BND;MATEID=MantaBND:376:0:1:0:1:0:0;CIPOS=0,2;HOMLEN=2;HOMSEQ=GA;BND_PAIR_COUNT=0;PAIR_COUNT=0
+9	863714	MantaBND:457:0:1:0:0:0:0	T	[14:37187580[T	.	.	SVTYPE=BND;MATEID=MantaBND:457:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+14	37187580	MantaBND:457:0:1:0:0:0:1	T	[9:863714[T	.	.	SVTYPE=BND;MATEID=MantaBND:457:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+9	25460124	MantaBND:461:0:1:0:0:0:0	T	T[11:108227794[	.	.	SVTYPE=BND;MATEID=MantaBND:461:0:1:0:0:0:1;IMPRECISE;CIPOS=-72,73;BND_PAIR_COUNT=2;PAIR_COUNT=2
+11	108227794	MantaBND:461:0:1:0:0:0:1	A	]9:25460124]A	.	.	SVTYPE=BND;MATEID=MantaBND:461:0:1:0:0:0:0;IMPRECISE;CIPOS=-72,73;BND_PAIR_COUNT=2;PAIR_COUNT=2
+9	95101572	MantaDUP:TANDEM:472:0:1:0:0:0	A	<DUP:TANDEM>	.	.	END=95102110;SVTYPE=DUP;SVLEN=538;IMPRECISE;CIPOS=-55,55;CIEND=-55,55;UPSTREAM_PAIR_COUNT=2;DOWNSTREAM_PAIR_COUNT=2;PAIR_COUNT=2
+9	95150043	MantaBND:483:0:1:0:0:0:0	G	]10:105863426]G	.	.	SVTYPE=BND;MATEID=MantaBND:483:0:1:0:0:0:1;IMPRECISE;CIPOS=-61,62;BND_PAIR_COUNT=6;PAIR_COUNT=2
+10	105863426	MantaBND:483:0:1:0:0:0:1	T	T[9:95150043[	.	.	SVTYPE=BND;MATEID=MantaBND:483:0:1:0:0:0:0;IMPRECISE;CIPOS=-61,62;BND_PAIR_COUNT=2;PAIR_COUNT=2
+9	95475480	MantaDUP:TANDEM:473:0:1:0:0:0	C	<DUP:TANDEM>	.	.	END=95480143;SVTYPE=DUP;SVLEN=4663;CIPOS=0,2;CIEND=0,2;HOMLEN=2;HOMSEQ=CC;UPSTREAM_PAIR_COUNT=0;DOWNSTREAM_PAIR_COUNT=0;PAIR_COUNT=0
+9	132921959	MantaBND:493:0:1:0:0:0:0	C	[10:110095684[C	.	.	SVTYPE=BND;MATEID=MantaBND:493:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+10	110095684	MantaBND:493:0:1:0:0:0:1	T	[9:132921959[T	.	.	SVTYPE=BND;MATEID=MantaBND:493:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+9	124613607	MantaBND:489:0:1:0:0:0:0	G	G[11:108248923[	.	.	SVTYPE=BND;MATEID=MantaBND:489:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+11	108248923	MantaBND:489:0:1:0:0:0:1	T	]9:124613607]T	.	.	SVTYPE=BND;MATEID=MantaBND:489:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+8	31142888	MantaBND:423:0:1:0:1:0:0	A	A]8:31142675]	.	.	SVTYPE=BND;MATEID=MantaBND:423:0:1:0:1:0:1;CIPOS=0,1;HOMLEN=1;HOMSEQ=G;BND_PAIR_COUNT=0;PAIR_COUNT=0
+8	31142674	MantaBND:423:0:1:0:1:0:1	A	A]8:31142889]	.	.	SVTYPE=BND;MATEID=MantaBND:423:0:1:0:1:0:0;CIPOS=0,1;HOMLEN=1;HOMSEQ=C;BND_PAIR_COUNT=0;PAIR_COUNT=0
+16	3590604	MantaDUP:TANDEM:334:1:2:0:1:0	T	<DUP:TANDEM>	.	.	END=3592026;SVTYPE=DUP;SVLEN=1422;CIPOS=0,4;CIEND=0,4;HOMLEN=4;HOMSEQ=GACA;UPSTREAM_PAIR_COUNT=4;DOWNSTREAM_PAIR_COUNT=4;PAIR_COUNT=4
+9	132907561	MantaDEL:499:0:0:0:0:0	CTCACTGCAACCTCCGCCTCCTGGGTTCAAGCGATTCTCCTGCCTCAGCCTCCAGAGTAGCTGGGATTACAGAAATGCACCACCACGCCTGGCTAATTTTTGTATTTTTAGTACAGACGGGGTTTCTCCACATTGGTCAGGCTGGTCACGAACTCCCAACCTCAGATGATCTGCCTGCCTCGGCCTCCCAAAGTGCTGGGACCACGCCCAGCAGCTTTCTTTATAGTCTTAAAAAATGGCTGCAGACTGGGCGTGGTGGCCCACGCCTGTAGTCCCAGCACTTTGGGAGGCCAAGGCCAGTGGATCCCTTGAGCTCAGCAGTTTGAGACTAGCCTGGGGAACATGGCAAAACCCCATCTCTACAAAAAATTTAAAAAGTAGCCGGGCATGGTGACTGGTGCTTGTAGTCCCAACTACCCAGGAGGCTGAGGTGGGAGGACCACCTGAGCCAGGGAGGTCAAGGCTGCAGAGAGCTGCAAT	C	.	.	END=132908040;SVTYPE=DEL;SVLEN=-479;CIGAR=1M479D;CIPOS=0,1;HOMLEN=1;HOMSEQ=T;UPSTREAM_PAIR_COUNT=0;DOWNSTREAM_PAIR_COUNT=0;PAIR_COUNT=0
+10	38713122	MantaDEL:506:0:0:0:0:0	CTTGTTAATT	C	.	.	END=38713131;SVTYPE=DEL;SVLEN=-9;CIGAR=1M9D;UPSTREAM_PAIR_COUNT=0;DOWNSTREAM_PAIR_COUNT=0;PAIR_COUNT=0
+9	132897720	MantaBND:497:0:0:0:0:0:0	C	C]9:132897746]	.	.	SVTYPE=BND;MATEID=MantaBND:497:0:0:0:0:0:1;CIPOS=0,2;HOMLEN=2;HOMSEQ=TG;BND_PAIR_COUNT=0;PAIR_COUNT=0
+9	132897744	MantaBND:497:0:0:0:0:0:1	A	A]9:132897722]	.	.	SVTYPE=BND;MATEID=MantaBND:497:0:0:0:0:0:0;CIPOS=0,2;HOMLEN=2;HOMSEQ=CA;BND_PAIR_COUNT=0;PAIR_COUNT=0
+10	68340162	MantaBND:515:0:1:0:0:0:0	A	A[12:57749080[	.	.	SVTYPE=BND;MATEID=MantaBND:515:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+12	57749080	MantaBND:515:0:1:0:0:0:1	C	]10:68340162]C	.	.	SVTYPE=BND;MATEID=MantaBND:515:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+10	70598225	MantaDEL:516:0:0:0:2:0	TGATCACAG	T	.	.	END=70598233;SVTYPE=DEL;SVLEN=-8;CIGAR=1M8D;CIPOS=0,1;HOMLEN=1;HOMSEQ=G;UPSTREAM_PAIR_COUNT=0;DOWNSTREAM_PAIR_COUNT=0;PAIR_COUNT=0
+10	43109094	MantaDEL:511:0:1:0:0:0	T	<DEL>	.	.	END=43110277;SVTYPE=DEL;SVLEN=-1183;IMPRECISE;CIPOS=-35,35;CIEND=-38,38;UPSTREAM_PAIR_COUNT=2;DOWNSTREAM_PAIR_COUNT=2;PAIR_COUNT=2
+18	34571530	MantaBND:469:0:1:0:0:0:0	T	[9:35078061[T	.	.	SVTYPE=BND;MATEID=MantaBND:469:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+9	35078061	MantaBND:469:0:1:0:0:0:1	T	[18:34571530[T	.	.	SVTYPE=BND;MATEID=MantaBND:469:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+10	86875635	MantaBND:521:0:1:0:0:0:0	C	[10:86875812[C	.	.	SVTYPE=BND;MATEID=MantaBND:521:0:1:0:0:0:1;IMPRECISE;CIPOS=-73,73;BND_PAIR_COUNT=2;PAIR_COUNT=2
+10	79081306	MantaDUP:TANDEM:520:0:1:0:0:0	T	<DUP:TANDEM>	.	.	END=79081832;SVTYPE=DUP;SVLEN=526;IMPRECISE;CIPOS=-74,74;CIEND=-84,84;UPSTREAM_PAIR_COUNT=2;DOWNSTREAM_PAIR_COUNT=2;PAIR_COUNT=2
+10	86875812	MantaBND:521:0:1:0:0:0:1	A	[10:86875635[A	.	.	SVTYPE=BND;MATEID=MantaBND:521:0:1:0:0:0:0;IMPRECISE;CIPOS=-73,73;BND_PAIR_COUNT=2;PAIR_COUNT=2
+10	70598225	MantaDEL:517:0:0:0:2:0	TGATCACAG	T	.	.	END=70598233;SVTYPE=DEL;SVLEN=-8;CIGAR=1M8D;CIPOS=0,1;HOMLEN=1;HOMSEQ=G;UPSTREAM_PAIR_COUNT=0;DOWNSTREAM_PAIR_COUNT=0;PAIR_COUNT=0
+9	132910498	MantaDUP:TANDEM:491:0:1:0:0:0	G	<DUP:TANDEM>	.	.	END=132911205;SVTYPE=DUP;SVLEN=707;CIPOS=0,4;CIEND=0,4;HOMLEN=4;HOMSEQ=GCTT;UPSTREAM_PAIR_COUNT=0;DOWNSTREAM_PAIR_COUNT=0;PAIR_COUNT=0
+10	118186981	MantaBND:538:0:1:0:0:0:0	T	[15:89315195[T	.	.	SVTYPE=BND;MATEID=MantaBND:538:0:1:0:0:0:1;IMPRECISE;CIPOS=-61,61;BND_PAIR_COUNT=3;PAIR_COUNT=3
+15	89315195	MantaBND:538:0:1:0:0:0:1	T	[10:118186981[T	.	.	SVTYPE=BND;MATEID=MantaBND:538:0:1:0:0:0:0;IMPRECISE;CIPOS=-61,61;BND_PAIR_COUNT=3;PAIR_COUNT=3
+11	108321281	MantaBND:531:0:1:0:0:0:0	C	C[10:100048309[	.	.	SVTYPE=BND;MATEID=MantaBND:531:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+10	100048309	MantaBND:531:0:1:0:0:0:1	T	]11:108321281]T	.	.	SVTYPE=BND;MATEID=MantaBND:531:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+19	53541809	MantaBND:545:1:3:0:0:0:0	C	]14:45151522]C	.	.	SVTYPE=BND;MATEID=MantaBND:545:1:3:0:0:0:1;IMPRECISE;CIPOS=-65,65;BND_PAIR_COUNT=2;PAIR_COUNT=2
+14	45151522	MantaBND:545:1:3:0:0:0:1	T	T[19:53541809[	.	.	SVTYPE=BND;MATEID=MantaBND:545:1:3:0:0:0:0;IMPRECISE;CIPOS=-65,65;BND_PAIR_COUNT=2;PAIR_COUNT=2
+10	43113068	MantaBND:510:0:1:0:0:0:0	C	C]10:43112857]	.	.	SVTYPE=BND;MATEID=MantaBND:510:0:1:0:0:0:1;BND_PAIR_COUNT=3;PAIR_COUNT=3
+10	43112857	MantaBND:510:0:1:0:0:0:1	C	C]10:43113068]	.	.	SVTYPE=BND;MATEID=MantaBND:510:0:1:0:0:0:0;BND_PAIR_COUNT=3;PAIR_COUNT=3
+9	95449152	MantaDEL:482:0:0:0:0:0	AGTGCCGAAGCTCCTCGCTGAGGCCTGACACTGTCGTCTGGGAACTATACTCCGAGTCGGAGGAATCAGACCCGCT	A	.	.	END=95449227;SVTYPE=DEL;SVLEN=-75;CIGAR=1M75D;CIPOS=0,4;HOMLEN=4;HOMSEQ=GTGC;UPSTREAM_PAIR_COUNT=0;DOWNSTREAM_PAIR_COUNT=0;PAIR_COUNT=0
+11	47229449	MantaDEL:550:0:1:0:0:0	G	<DEL>	.	.	END=47237910;SVTYPE=DEL;SVLEN=-8461;IMPRECISE;CIPOS=-47,48;CIEND=-47,48;UPSTREAM_PAIR_COUNT=2;DOWNSTREAM_PAIR_COUNT=2;PAIR_COUNT=2
+9	35079364	MantaDUP:TANDEM:470:0:1:0:1:0	G	<DUP:TANDEM>	.	.	END=35079601;SVTYPE=DUP;SVLEN=237;SVINSLEN=3;SVINSSEQ=TCT;UPSTREAM_PAIR_COUNT=2;DOWNSTREAM_PAIR_COUNT=2;PAIR_COUNT=2
+11	36064602	MantaBND:549:0:1:0:0:0:0	G	G[13:32336506[	.	.	SVTYPE=BND;MATEID=MantaBND:549:0:1:0:0:0:1;IMPRECISE;CIPOS=-51,52;BND_PAIR_COUNT=2;PAIR_COUNT=2
+13	32336506	MantaBND:549:0:1:0:0:0:1	T	]11:36064602]T	.	.	SVTYPE=BND;MATEID=MantaBND:549:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+11	47233773	MantaDUP:TANDEM:552:0:1:0:0:0	T	<DUP:TANDEM>	.	.	END=47234878;SVTYPE=DUP;SVLEN=1105;IMPRECISE;CIPOS=-63,63;CIEND=-63,63;UPSTREAM_PAIR_COUNT=2;DOWNSTREAM_PAIR_COUNT=2;PAIR_COUNT=2
+10	113010688	MantaBND:537:0:1:0:0:0:0	T	[15:90766989[T	.	.	SVTYPE=BND;MATEID=MantaBND:537:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+15	90766989	MantaBND:537:0:1:0:0:0:1	C	[10:113010688[C	.	.	SVTYPE=BND;MATEID=MantaBND:537:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+8	144514318	MantaDUP:TANDEM:453:0:1:0:0:0	T	<DUP:TANDEM>	.	.	END=144515514;SVTYPE=DUP;SVLEN=1196;CIPOS=0,3;CIEND=0,3;HOMLEN=3;HOMSEQ=GCC;UPSTREAM_PAIR_COUNT=1;DOWNSTREAM_PAIR_COUNT=1;PAIR_COUNT=1
+8	31142674	MantaBND:423:0:1:1:1:0:0	A	A]8:31142889]	.	.	SVTYPE=BND;MATEID=MantaBND:423:0:1:1:1:0:1;CIPOS=0,1;HOMLEN=1;HOMSEQ=C;BND_PAIR_COUNT=3;PAIR_COUNT=3
+8	31142888	MantaBND:423:0:1:1:1:0:1	A	A]8:31142675]	.	.	SVTYPE=BND;MATEID=MantaBND:423:0:1:1:1:0:0;CIPOS=0,1;HOMLEN=1;HOMSEQ=G;BND_PAIR_COUNT=3;PAIR_COUNT=3
+11	95822677	MantaINS:573:0:0:0:0:0	G	GTGCCTTTACCAGTGTGTGGATCA	.	.	END=95822677;SVTYPE=INS;SVLEN=23;CIGAR=1M23I;CIPOS=0,23;HOMLEN=23;HOMSEQ=TGCCTTTACCAGTGTGTGGATCA;UPSTREAM_PAIR_COUNT=0;DOWNSTREAM_PAIR_COUNT=0;PAIR_COUNT=0
+11	108287556	MantaDEL:575:0:0:0:0:0	CAGATATAA	C	.	.	END=108287564;SVTYPE=DEL;SVLEN=-8;CIGAR=1M8D;CIPOS=0,1;HOMLEN=1;HOMSEQ=A;UPSTREAM_PAIR_COUNT=0;DOWNSTREAM_PAIR_COUNT=0;PAIR_COUNT=0
+12	105770886	MantaBND:566:0:1:0:0:0:0	T	[11:61314456[T	.	.	SVTYPE=BND;MATEID=MantaBND:566:0:1:0:0:0:1;IMPRECISE;CIPOS=-55,55;BND_PAIR_COUNT=2;PAIR_COUNT=2
+11	61314456	MantaBND:566:0:1:0:0:0:1	G	[12:105770886[G	.	.	SVTYPE=BND;MATEID=MantaBND:566:0:1:0:0:0:0;IMPRECISE;CIPOS=-55,55;BND_PAIR_COUNT=2;PAIR_COUNT=2
+10	43111222	MantaDUP:TANDEM:512:0:1:0:0:0	G	<DUP:TANDEM>	.	.	END=43112031;SVTYPE=DUP;SVLEN=809;UPSTREAM_PAIR_COUNT=3;DOWNSTREAM_PAIR_COUNT=3;PAIR_COUNT=3
+11	108289548	MantaBND:581:0:1:0:0:0:0	T	T[15:50268421[	.	.	SVTYPE=BND;MATEID=MantaBND:581:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+15	50268421	MantaBND:581:0:1:0:0:0:1	T	]11:108289548]T	.	.	SVTYPE=BND;MATEID=MantaBND:581:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+11	108330221	MantaBND:590:0:0:1:0:0:0	G	[11:108330231[G	.	.	SVTYPE=BND;MATEID=MantaBND:590:0:0:1:0:0:1;CIPOS=0,1;HOMLEN=1;HOMSEQ=T;BND_PAIR_COUNT=0;PAIR_COUNT=0
+11	108330230	MantaBND:590:0:0:1:0:0:1	C	[11:108330222[C	.	.	SVTYPE=BND;MATEID=MantaBND:590:0:0:1:0:0:0;CIPOS=0,1;HOMLEN=1;HOMSEQ=A;BND_PAIR_COUNT=0;PAIR_COUNT=0
+11	108348969	MantaBND:591:0:1:0:0:0:0	G	G]11:108345645]	.	.	SVTYPE=BND;MATEID=MantaBND:591:0:1:0:0:0:1;IMPRECISE;CIPOS=-101,102;BND_PAIR_COUNT=4;PAIR_COUNT=4
+11	108345645	MantaBND:591:0:1:0:0:0:1	A	A]11:108348969]	.	.	SVTYPE=BND;MATEID=MantaBND:591:0:1:0:0:0:0;IMPRECISE;CIPOS=-68,68;BND_PAIR_COUNT=5;PAIR_COUNT=4
+11	108349386	MantaBND:591:2:3:0:0:0:0	C	[11:108345863[C	.	.	SVTYPE=BND;MATEID=MantaBND:591:2:3:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=3;PAIR_COUNT=3
+11	108345863	MantaBND:591:2:3:0:0:0:1	G	[11:108349386[G	.	.	SVTYPE=BND;MATEID=MantaBND:591:2:3:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=3;PAIR_COUNT=3
+11	108289415	MantaDUP:TANDEM:582:1:2:0:0:0	A	<DUP:TANDEM>	.	.	END=108290067;SVTYPE=DUP;SVLEN=652;CIPOS=0,2;CIEND=0,2;HOMLEN=2;HOMSEQ=AG;UPSTREAM_PAIR_COUNT=2;DOWNSTREAM_PAIR_COUNT=2;PAIR_COUNT=2
+11	116374042	MantaINS:610:0:0:0:0:0	T	TCCCACGATCTG	.	.	END=116374042;SVTYPE=INS;SVLEN=11;CIGAR=1M11I;CIPOS=0,13;HOMLEN=13;HOMSEQ=CCCACGATCTGCC;UPSTREAM_PAIR_COUNT=0;DOWNSTREAM_PAIR_COUNT=0;PAIR_COUNT=0
+14	45154863	MantaBND:611:0:1:0:0:0:0	C	]11:117972643]C	.	.	SVTYPE=BND;MATEID=MantaBND:611:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+11	117972643	MantaBND:611:0:1:0:0:0:1	T	T[14:45154863[	.	.	SVTYPE=BND;MATEID=MantaBND:611:0:1:0:0:0:0;IMPRECISE;CIPOS=-51,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+11	108317643	MantaDEL:603:0:0:0:0:0	ATATATATAT	ACACAC	.	.	END=108317652;SVTYPE=DEL;SVLEN=-9;CIGAR=1M5I9D;UPSTREAM_PAIR_COUNT=0;DOWNSTREAM_PAIR_COUNT=0;PAIR_COUNT=0
+11	108293640	MantaBND:595:0:1:0:2:0:0	C	C]14:94900843]	.	.	SVTYPE=BND;MATEID=MantaBND:595:0:1:0:2:0:1;CIPOS=0,17;HOMLEN=17;HOMSEQ=TTTGGGAGGCTGAGGCA;BND_PAIR_COUNT=2;PAIR_COUNT=2
+14	94900826	MantaBND:595:0:1:0:2:0:1	G	G]11:108293657]	.	.	SVTYPE=BND;MATEID=MantaBND:595:0:1:0:2:0:0;CIPOS=0,17;HOMLEN=17;HOMSEQ=TGCCTCAGCCTCCCAAA;BND_PAIR_COUNT=2;PAIR_COUNT=2
+13	96377193	MantaBND:609:0:1:0:0:0:0	T	]11:108331926]T	.	.	SVTYPE=BND;MATEID=MantaBND:609:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+11	108331926	MantaBND:609:0:1:0:0:0:1	T	T[13:96377193[	.	.	SVTYPE=BND;MATEID=MantaBND:609:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+12	120996827	MantaINS:632:1:1:0:0:0	C	CTCATTCAT	.	.	END=120996827;SVTYPE=INS;SVLEN=8;CIGAR=1M8I;CIPOS=0,16;HOMLEN=16;HOMSEQ=TCATTCATTCATTCAT;UPSTREAM_PAIR_COUNT=0;DOWNSTREAM_PAIR_COUNT=0;PAIR_COUNT=0
+22	42050407	MantaBND:638:0:1:0:0:0:0	A	A]13:32344654]	.	.	SVTYPE=BND;MATEID=MantaBND:638:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+13	32344654	MantaBND:638:0:1:0:0:0:1	G	G]22:42050407]	.	.	SVTYPE=BND;MATEID=MantaBND:638:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+12	45210376	MantaBND:619:0:1:0:0:0:0	G	G]15:40213467]	.	.	SVTYPE=BND;MATEID=MantaBND:619:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=3;PAIR_COUNT=3
+15	40213467	MantaBND:619:0:1:0:0:0:1	A	A]12:45210376]	.	.	SVTYPE=BND;MATEID=MantaBND:619:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=3;PAIR_COUNT=3
+11	108254014	MantaBND:607:0:1:0:0:0:0	A	A]15:94729581]	.	.	SVTYPE=BND;MATEID=MantaBND:607:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+15	94729581	MantaBND:607:0:1:0:0:0:1	G	G]11:108254014]	.	.	SVTYPE=BND;MATEID=MantaBND:607:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+14	45176934	MantaBND:613:0:1:0:0:0:0	A	A[11:121548547[	.	.	SVTYPE=BND;MATEID=MantaBND:613:0:1:0:0:0:1;IMPRECISE;CIPOS=-54,54;BND_PAIR_COUNT=2;PAIR_COUNT=2
+11	121548547	MantaBND:613:0:1:0:0:0:1	G	]14:45176934]G	.	.	SVTYPE=BND;MATEID=MantaBND:613:0:1:0:0:0:0;IMPRECISE;CIPOS=-54,54;BND_PAIR_COUNT=2;PAIR_COUNT=2
+11	64809817	MantaDUP:TANDEM:567:1:2:0:0:0	C	<DUP:TANDEM>	.	.	END=64810736;SVTYPE=DUP;SVLEN=919;IMPRECISE;CIPOS=-74,75;CIEND=-64,65;UPSTREAM_PAIR_COUNT=2;DOWNSTREAM_PAIR_COUNT=2;PAIR_COUNT=2
+11	108293413	MantaBND:595:0:2:0:0:0:0	T	T]11:108295903]	.	.	SVTYPE=BND;MATEID=MantaBND:595:0:2:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+11	108295903	MantaBND:595:0:2:0:0:0:1	C	C]11:108293413]	.	.	SVTYPE=BND;MATEID=MantaBND:595:0:2:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+22	28709924	MantaBND:661:0:1:0:0:0:0	C	[13:93143760[C	.	.	SVTYPE=BND;MATEID=MantaBND:661:0:1:0:0:0:1;IMPRECISE;CIPOS=-53,53;BND_PAIR_COUNT=2;PAIR_COUNT=2
+22	28709898	MantaBND:661:1:2:0:0:0:0	C	[16:12935592[C	.	.	SVTYPE=BND;MATEID=MantaBND:661:1:2:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=3;PAIR_COUNT=3
+13	93143760	MantaBND:661:0:1:0:0:0:1	A	[22:28709924[A	.	.	SVTYPE=BND;MATEID=MantaBND:661:0:1:0:0:0:0;IMPRECISE;CIPOS=-53,53;BND_PAIR_COUNT=2;PAIR_COUNT=2
+16	12935592	MantaBND:661:1:2:0:0:0:1	A	[22:28709898[A	.	.	SVTYPE=BND;MATEID=MantaBND:661:1:2:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=3;PAIR_COUNT=3
+13	32379484	MantaDUP:TANDEM:646:0:1:0:0:0	T	<DUP:TANDEM>	.	.	END=32381015;SVTYPE=DUP;SVLEN=1531;CIPOS=0,2;CIEND=0,2;HOMLEN=2;HOMSEQ=GT;UPSTREAM_PAIR_COUNT=0;DOWNSTREAM_PAIR_COUNT=0;PAIR_COUNT=0
+21	31582859	MantaBND:671:0:1:0:0:0:0	G	G]14:22941618]	.	.	SVTYPE=BND;MATEID=MantaBND:671:0:1:0:0:0:1;IMPRECISE;CIPOS=-51,52;BND_PAIR_COUNT=2;PAIR_COUNT=2
+14	22941618	MantaBND:671:0:1:0:0:0:1	C	C]21:31582859]	.	.	SVTYPE=BND;MATEID=MantaBND:671:0:1:0:0:0:0;IMPRECISE;CIPOS=-51,52;BND_PAIR_COUNT=2;PAIR_COUNT=2
+13	32336316	MantaBND:647:0:1:0:0:0:0	A	]16:61931283]A	.	.	SVTYPE=BND;MATEID=MantaBND:647:0:1:0:0:0:1;IMPRECISE;CIPOS=-70,70;BND_PAIR_COUNT=2;PAIR_COUNT=2
+16	61931283	MantaBND:647:0:1:0:0:0:1	C	C[13:32336316[	.	.	SVTYPE=BND;MATEID=MantaBND:647:0:1:0:0:0:0;IMPRECISE;CIPOS=-70,70;BND_PAIR_COUNT=2;PAIR_COUNT=2
+13	42255835	MantaBND:656:0:1:0:0:0:0	G	[13:42256874[G	.	.	SVTYPE=BND;MATEID=MantaBND:656:0:1:0:0:0:1;IMPRECISE;CIPOS=-63,64;BND_PAIR_COUNT=2;PAIR_COUNT=2
+13	42256874	MantaBND:656:0:1:0:0:0:1	T	[13:42255835[T	.	.	SVTYPE=BND;MATEID=MantaBND:656:0:1:0:0:0:0;IMPRECISE;CIPOS=-63,64;BND_PAIR_COUNT=2;PAIR_COUNT=2
+14	33681665	MantaBND:672:0:1:0:0:0:0	A	A[X:133953182[	.	.	SVTYPE=BND;MATEID=MantaBND:672:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+X	133953182	MantaBND:672:0:1:0:0:0:1	C	]14:33681665]C	.	.	SVTYPE=BND;MATEID=MantaBND:672:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+13	102862921	MantaBND:670:0:0:0:0:0:0	G	[13:102862937[G	.	.	SVTYPE=BND;MATEID=MantaBND:670:0:0:0:0:0:1;CIPOS=0,1;HOMLEN=1;HOMSEQ=T;BND_PAIR_COUNT=0;PAIR_COUNT=0
+13	102862936	MantaBND:670:0:0:0:0:0:1	C	[13:102862922[C	.	.	SVTYPE=BND;MATEID=MantaBND:670:0:0:0:0:0:0;CIPOS=0,1;HOMLEN=1;HOMSEQ=A;BND_PAIR_COUNT=0;PAIR_COUNT=0
+13	32354905	MantaBND:639:0:1:0:0:0:0	C	[16:3583125[C	.	.	SVTYPE=BND;MATEID=MantaBND:639:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=4;PAIR_COUNT=4
+16	3583125	MantaBND:639:0:1:0:0:0:1	C	[13:32354905[C	.	.	SVTYPE=BND;MATEID=MantaBND:639:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=4;PAIR_COUNT=4
+14	45164191	MantaDEL:674:0:1:0:0:0	T	<DEL>	.	.	END=45164766;SVTYPE=DEL;SVLEN=-575;IMPRECISE;CIPOS=-37,37;CIEND=-20,20;UPSTREAM_PAIR_COUNT=6;DOWNSTREAM_PAIR_COUNT=6;PAIR_COUNT=6
+11	108257553	MantaDEL:585:0:1:0:1:0	TCCTTGAGAAATATGATGCAGCTATGTACACGTTGCTTGAGCAACTGTACCAAGGTAAGATTTTCTTCTTCTTGTTTTGTTTTTTGAGATAGGATCTTTCTCTGTCACCCAGGCTGGAGTGCAGTGGGATTGTCACAACTCATTGTAGCCTTGACCTCCTGGTTTCCAGCAATTCTCCTGCCTCAGCCTCCCAAGTAATTGGGACTACAGGCATGTACCACCTAGCTAAAATTTTCTTTTTACTTGAAAGTGTAG	T	.	.	END=108257807;SVTYPE=DEL;SVLEN=-254;CIGAR=1M254D;CIPOS=0,3;HOMLEN=3;HOMSEQ=CCT;UPSTREAM_PAIR_COUNT=0;DOWNSTREAM_PAIR_COUNT=0;PAIR_COUNT=0
+19	32032082	MantaBND:681:0:1:0:0:0:0	A	]14:45183859]A	.	.	SVTYPE=BND;MATEID=MantaBND:681:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+14	45183859	MantaBND:681:0:1:0:0:0:1	C	C[19:32032082[	.	.	SVTYPE=BND;MATEID=MantaBND:681:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+14	81108501	MantaINS:687:0:0:0:1:0	T	TTTTTTTCTTTTTAC	.	.	END=81108501;SVTYPE=INS;SVLEN=14;CIGAR=1M14I;CIPOS=0,6;HOMLEN=6;HOMSEQ=TTTTTT;UPSTREAM_PAIR_COUNT=0;DOWNSTREAM_PAIR_COUNT=0;PAIR_COUNT=0
+14	104665480	MantaBND:699:0:1:0:0:0:0	C	C[17:31226441[	.	.	SVTYPE=BND;MATEID=MantaBND:699:0:1:0:0:0:1;IMPRECISE;CIPOS=-53,53;BND_PAIR_COUNT=2;PAIR_COUNT=2
+17	31226441	MantaBND:699:0:1:0:0:0:1	G	]14:104665480]G	.	.	SVTYPE=BND;MATEID=MantaBND:699:0:1:0:0:0:0;IMPRECISE;CIPOS=-53,53;BND_PAIR_COUNT=2;PAIR_COUNT=2
+15	40217569	MantaDEL:705:0:0:0:3:0	CTTAGGGTGCAGCTGGAT	C	.	.	END=40217586;SVTYPE=DEL;SVLEN=-17;CIGAR=1M17D;UPSTREAM_PAIR_COUNT=0;DOWNSTREAM_PAIR_COUNT=0;PAIR_COUNT=0
+15	92424672	MantaBND:718:0:1:0:0:0:0	G	[15:89312903[G	.	.	SVTYPE=BND;MATEID=MantaBND:718:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+15	89312903	MantaBND:718:0:1:0:0:0:1	G	[15:92424672[G	.	.	SVTYPE=BND;MATEID=MantaBND:718:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+13	32338554	MantaDUP:TANDEM:642:1:2:0:0:0	A	<DUP:TANDEM>	.	.	END=32339139;SVTYPE=DUP;SVLEN=585;IMPRECISE;CIPOS=-65,66;CIEND=-65,66;UPSTREAM_PAIR_COUNT=3;DOWNSTREAM_PAIR_COUNT=3;PAIR_COUNT=3
+14	81108501	MantaINS:688:0:0:0:1:0	T	TTTTTTTCTTTTTAC	.	.	END=81108501;SVTYPE=INS;SVLEN=14;CIGAR=1M14I;CIPOS=0,6;HOMLEN=6;HOMSEQ=TTTTTT;UPSTREAM_PAIR_COUNT=0;DOWNSTREAM_PAIR_COUNT=0;PAIR_COUNT=0
+15	56441402	MantaBND:710:0:1:0:0:0:0	G	[17:17226220[G	.	.	SVTYPE=BND;MATEID=MantaBND:710:0:1:0:0:0:1;IMPRECISE;CIPOS=-75,75;BND_PAIR_COUNT=2;PAIR_COUNT=2
+17	17226220	MantaBND:710:0:1:0:0:0:1	A	[15:56441402[A	.	.	SVTYPE=BND;MATEID=MantaBND:710:0:1:0:0:0:0;IMPRECISE;CIPOS=-67,67;BND_PAIR_COUNT=2;PAIR_COUNT=2
+15	90809135	MantaDEL:728:0:0:0:0:0	AGAATCTTTATCTTCTG	A	.	.	END=90809151;SVTYPE=DEL;SVLEN=-16;CIGAR=1M16D;UPSTREAM_PAIR_COUNT=0;DOWNSTREAM_PAIR_COUNT=0;PAIR_COUNT=0
+15	90763341	MantaBND:729:0:0:0:0:0:0	A	A]15:90763333]	.	.	SVTYPE=BND;MATEID=MantaBND:729:0:0:0:0:0:1;CIPOS=0,2;HOMLEN=2;HOMSEQ=GT;BND_PAIR_COUNT=0;PAIR_COUNT=0
+15	90763331	MantaBND:729:0:0:0:0:0:1	G	G]15:90763343]	.	.	SVTYPE=BND;MATEID=MantaBND:729:0:0:0:0:0:0;CIPOS=0,2;HOMLEN=2;HOMSEQ=AC;BND_PAIR_COUNT=0;PAIR_COUNT=0
+14	95126603	MantaBND:696:0:1:0:0:0:0	C	[14:95127011[C	.	.	SVTYPE=BND;MATEID=MantaBND:696:0:1:0:0:0:1;CIPOS=0,5;HOMLEN=5;HOMSEQ=TCTTT;BND_PAIR_COUNT=0;PAIR_COUNT=0
+14	95127006	MantaBND:696:0:1:0:0:0:1	A	[14:95126608[A	.	.	SVTYPE=BND;MATEID=MantaBND:696:0:1:0:0:0:0;CIPOS=0,5;HOMLEN=5;HOMSEQ=AGAGG;BND_PAIR_COUNT=0;PAIR_COUNT=0
+16	2053169	MantaDUP:TANDEM:733:0:1:0:0:0	T	<DUP:TANDEM>	.	.	END=2053522;SVTYPE=DUP;SVLEN=353;CIPOS=0,3;CIEND=0,3;HOMLEN=3;HOMSEQ=GTG;UPSTREAM_PAIR_COUNT=4;DOWNSTREAM_PAIR_COUNT=4;PAIR_COUNT=4
+22	33712264	MantaBND:755:1:2:0:0:0:0	G	G[16:13927952[	.	.	SVTYPE=BND;MATEID=MantaBND:755:1:2:0:0:0:1;IMPRECISE;CIPOS=-69,70;BND_PAIR_COUNT=5;PAIR_COUNT=5
+16	13927952	MantaBND:755:1:2:0:0:0:1	G	]22:33712264]G	.	.	SVTYPE=BND;MATEID=MantaBND:755:1:2:0:0:0:0;IMPRECISE;CIPOS=-69,70;BND_PAIR_COUNT=5;PAIR_COUNT=5
+16	3590001	MantaBND:747:1:2:0:0:0:0	C	]19:56021813]C	.	.	SVTYPE=BND;MATEID=MantaBND:747:1:2:0:0:0:1;IMPRECISE;CIPOS=-57,58;BND_PAIR_COUNT=3;PAIR_COUNT=3
+19	56021813	MantaBND:747:1:2:0:0:0:1	T	T[16:3590001[	.	.	SVTYPE=BND;MATEID=MantaBND:747:1:2:0:0:0:0;IMPRECISE;CIPOS=-57,58;BND_PAIR_COUNT=3;PAIR_COUNT=3
+16	23634639	MantaDEL:761:0:0:0:0:0	TTTTATTTATTTA	T	.	.	END=23634651;SVTYPE=DEL;SVLEN=-12;CIGAR=1M12D;CIPOS=0,28;HOMLEN=28;HOMSEQ=TTTATTTATTTATTTATTTATTTATTTA;UPSTREAM_PAIR_COUNT=0;DOWNSTREAM_PAIR_COUNT=0;PAIR_COUNT=0
+16	13921982	MantaDUP:TANDEM:756:0:1:0:0:0	A	<DUP:TANDEM>	.	.	END=13925257;SVTYPE=DUP;SVLEN=3275;IMPRECISE;CIPOS=-60,61;CIEND=-60,61;UPSTREAM_PAIR_COUNT=2;DOWNSTREAM_PAIR_COUNT=2;PAIR_COUNT=2
+16	50751979	MantaDEL:768:0:0:1:0:0	AACATATATATACAC	A	.	.	END=50751993;SVTYPE=DEL;SVLEN=-14;CIGAR=1M14D;CIPOS=0,24;HOMLEN=24;HOMSEQ=ACATATATATACACACATATATAT;UPSTREAM_PAIR_COUNT=0;DOWNSTREAM_PAIR_COUNT=0;PAIR_COUNT=0
+16	3591149	MantaBND:752:0:0:0:0:0:0	G	G]16:3591143]	.	.	SVTYPE=BND;MATEID=MantaBND:752:0:0:0:0:0:1;CIPOS=0,3;HOMLEN=3;HOMSEQ=CTT;BND_PAIR_COUNT=0;PAIR_COUNT=0
+16	3591140	MantaBND:752:0:0:0:0:0:1	A	A]16:3591152]	.	.	SVTYPE=BND;MATEID=MantaBND:752:0:0:0:0:0:0;CIPOS=0,3;HOMLEN=3;HOMSEQ=AAG;BND_PAIR_COUNT=0;PAIR_COUNT=0
+16	50751979	MantaDEL:768:0:0:2:0:0	AACATATATATACAC	A	.	.	END=50751993;SVTYPE=DEL;SVLEN=-14;CIGAR=1M14D;CIPOS=0,24;HOMLEN=24;HOMSEQ=ACATATATATACACACATATATAT;UPSTREAM_PAIR_COUNT=0;DOWNSTREAM_PAIR_COUNT=0;PAIR_COUNT=0
+16	68737515	MantaINS:773:0:0:0:0:0	C	CGCCCCAGCCCCGT	.	.	END=68737515;SVTYPE=INS;SVLEN=13;CIGAR=1M13I;CIPOS=0,10;HOMLEN=10;HOMSEQ=GCCCCAGCCC;UPSTREAM_PAIR_COUNT=0;DOWNSTREAM_PAIR_COUNT=0;PAIR_COUNT=0
+16	89784708	MantaDEL:784:0:0:0:0:0	TGGGGAAGGGGAA	T	.	.	END=89784720;SVTYPE=DEL;SVLEN=-12;CIGAR=1M12D;CIPOS=0,15;HOMLEN=15;HOMSEQ=GGGGAAGGGGAAGGG;UPSTREAM_PAIR_COUNT=0;DOWNSTREAM_PAIR_COUNT=0;PAIR_COUNT=0
+16	3582924	MantaDUP:TANDEM:748:0:1:0:0:0	G	<DUP:TANDEM>	.	.	END=3583270;SVTYPE=DUP;SVLEN=346;CIPOS=0,2;CIEND=0,2;HOMLEN=2;HOMSEQ=GC;UPSTREAM_PAIR_COUNT=2;DOWNSTREAM_PAIR_COUNT=2;PAIR_COUNT=2
+14	81143526	MantaDUP:TANDEM:689:0:1:0:0:0	A	<DUP:TANDEM>	.	.	END=81143704;SVTYPE=DUP;SVLEN=178;CIPOS=0,1;CIEND=0,1;HOMLEN=1;HOMSEQ=C;UPSTREAM_PAIR_COUNT=1;DOWNSTREAM_PAIR_COUNT=1;PAIR_COUNT=1
+16	2078500	MantaDUP:TANDEM:737:0:1:0:0:0	T	<DUP:TANDEM>	.	.	END=2079537;SVTYPE=DUP;SVLEN=1037;IMPRECISE;CIPOS=-59,60;CIEND=-59,60;UPSTREAM_PAIR_COUNT=2;DOWNSTREAM_PAIR_COUNT=2;PAIR_COUNT=2
+X	132633202	MantaBND:795:0:1:0:0:0:0	C	]16:89769959]C	.	.	SVTYPE=BND;MATEID=MantaBND:795:0:1:0:0:0:1;IMPRECISE;CIPOS=-52,53;BND_PAIR_COUNT=2;PAIR_COUNT=2
+16	89769959	MantaBND:795:0:1:0:0:0:1	G	G[X:132633202[	.	.	SVTYPE=BND;MATEID=MantaBND:795:0:1:0:0:0:0;IMPRECISE;CIPOS=-52,53;BND_PAIR_COUNT=2;PAIR_COUNT=2
+17	12084113	MantaBND:809:0:1:0:0:0:0	G	G]17:61780998]	.	.	SVTYPE=BND;MATEID=MantaBND:809:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+17	61780998	MantaBND:809:0:1:0:0:0:1	C	C]17:12084113]	.	.	SVTYPE=BND;MATEID=MantaBND:809:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+16	89816740	MantaINS:800:0:0:0:0:0	A	AGGCCTTGCGTCGT	.	.	END=89816740;SVTYPE=INS;SVLEN=13;CIGAR=1M13I;CIPOS=0,17;HOMLEN=17;HOMSEQ=GGCCTTGCGTCGTGGCC;UPSTREAM_PAIR_COUNT=0;DOWNSTREAM_PAIR_COUNT=0;PAIR_COUNT=0
+17	31225345	MantaBND:822:0:0:0:0:0:0	A	A]17:31225334]	.	.	SVTYPE=BND;MATEID=MantaBND:822:0:0:0:0:0:1;CIPOS=0,2;HOMLEN=2;HOMSEQ=TA;BND_PAIR_COUNT=0;PAIR_COUNT=0
+17	31225332	MantaBND:822:0:0:0:0:0:1	G	G]17:31225347]	.	.	SVTYPE=BND;MATEID=MantaBND:822:0:0:0:0:0:0;CIPOS=0,2;HOMLEN=2;HOMSEQ=TA;BND_PAIR_COUNT=0;PAIR_COUNT=0
+14	95124551	MantaDUP:TANDEM:694:0:1:0:0:0	G	<DUP:TANDEM>	.	.	END=95125008;SVTYPE=DUP;SVLEN=457;CIPOS=0,3;CIEND=0,3;HOMLEN=3;HOMSEQ=CAG;UPSTREAM_PAIR_COUNT=3;DOWNSTREAM_PAIR_COUNT=3;PAIR_COUNT=3
+16	68811861	MantaDUP:TANDEM:782:0:1:0:1:0	T	<DUP:TANDEM>	.	.	END=68813599;SVTYPE=DUP;SVLEN=1738;CIPOS=0,5;CIEND=0,5;HOMLEN=5;HOMSEQ=CAGGG;UPSTREAM_PAIR_COUNT=0;DOWNSTREAM_PAIR_COUNT=0;PAIR_COUNT=0
+17	31343060	MantaDEL:829:0:0:0:0:0	AAGCAAATGGATC	A	.	.	END=31343072;SVTYPE=DEL;SVLEN=-12;CIGAR=1M12D;CIPOS=0,1;HOMLEN=1;HOMSEQ=A;UPSTREAM_PAIR_COUNT=0;DOWNSTREAM_PAIR_COUNT=0;PAIR_COUNT=0
+16	68812199	MantaDUP:TANDEM:782:1:2:0:0:0	C	<DUP:TANDEM>	.	.	END=68813675;SVTYPE=DUP;SVLEN=1476;IMPRECISE;CIPOS=-70,70;CIEND=-70,70;UPSTREAM_PAIR_COUNT=2;DOWNSTREAM_PAIR_COUNT=2;PAIR_COUNT=2
+17	7676325	MantaDEL:807:0:0:0:0:0	CCCCCAGCCCTCCAGGT	C	.	.	END=7676341;SVTYPE=DEL;SVLEN=-16;CIGAR=1M16D;CIPOS=0,25;HOMLEN=25;HOMSEQ=CCCCAGCCCTCCAGGTCCCCAGCCC;UPSTREAM_PAIR_COUNT=0;DOWNSTREAM_PAIR_COUNT=0;PAIR_COUNT=0
+17	43060879	MantaBND:839:0:1:0:0:0:0	A	[17:43063266[A	.	.	SVTYPE=BND;MATEID=MantaBND:839:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=3;PAIR_COUNT=3
+17	43063266	MantaBND:839:0:1:0:0:0:1	G	[17:43060879[G	.	.	SVTYPE=BND;MATEID=MantaBND:839:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=3;PAIR_COUNT=3
+17	35119096	MantaBND:836:0:1:0:0:0:0	A	]X:103449039]A	.	.	SVTYPE=BND;MATEID=MantaBND:836:0:1:0:0:0:1;IMPRECISE;CIPOS=-53,54;BND_PAIR_COUNT=2;PAIR_COUNT=2
+X	103449039	MantaBND:836:0:1:0:0:0:1	T	T[17:35119096[	.	.	SVTYPE=BND;MATEID=MantaBND:836:0:1:0:0:0:0;IMPRECISE;CIPOS=-53,54;BND_PAIR_COUNT=2;PAIR_COUNT=2
+17	43063266	MantaBND:839:1:2:0:0:0:0	G	[21:19335693[G	.	.	SVTYPE=BND;MATEID=MantaBND:839:1:2:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=3;PAIR_COUNT=3
+21	19335693	MantaBND:839:1:2:0:0:0:1	A	[17:43063266[A	.	.	SVTYPE=BND;MATEID=MantaBND:839:1:2:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=3;PAIR_COUNT=3
+18	12895561	MantaBND:839:1:3:0:0:0:0	T	T[17:43063269[	.	.	SVTYPE=BND;MATEID=MantaBND:839:1:3:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+17	43063269	MantaBND:839:1:3:0:0:0:1	A	]18:12895561]A	.	.	SVTYPE=BND;MATEID=MantaBND:839:1:3:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+17	45054161	MantaBND:840:0:1:0:0:0:0	C	C]20:60388602]	.	.	SVTYPE=BND;MATEID=MantaBND:840:0:1:0:0:0:1;IMPRECISE;CIPOS=-60,60;BND_PAIR_COUNT=2;PAIR_COUNT=2
+20	60388602	MantaBND:840:0:1:0:0:0:1	G	G]17:45054161]	.	.	SVTYPE=BND;MATEID=MantaBND:840:0:1:0:0:0:0;IMPRECISE;CIPOS=-60,60;BND_PAIR_COUNT=2;PAIR_COUNT=2
+17	31252559	MantaBND:823:0:1:0:0:0:0	C	C]17:31253002]	.	.	SVTYPE=BND;MATEID=MantaBND:823:0:1:0:0:0:1;CIPOS=0,2;HOMLEN=2;HOMSEQ=AC;BND_PAIR_COUNT=3;PAIR_COUNT=3
+17	31253000	MantaBND:823:0:1:0:0:0:1	A	A]17:31252561]	.	.	SVTYPE=BND;MATEID=MantaBND:823:0:1:0:0:0:0;CIPOS=0,2;HOMLEN=2;HOMSEQ=GT;BND_PAIR_COUNT=3;PAIR_COUNT=3
+17	31330173	MantaBND:837:0:1:0:0:0:0	C	[17:31330006[C	.	.	SVTYPE=BND;MATEID=MantaBND:837:0:1:0:0:0:1;CIPOS=0,8;HOMLEN=8;HOMSEQ=ATAAAATT;BND_PAIR_COUNT=0;PAIR_COUNT=0
+17	31329998	MantaBND:837:0:1:0:0:0:1	A	[17:31330181[A	.	.	SVTYPE=BND;MATEID=MantaBND:837:0:1:0:0:0:0;CIPOS=0,8;HOMLEN=8;HOMSEQ=TTTTATGT;BND_PAIR_COUNT=0;PAIR_COUNT=0
+16	68822027	MantaDUP:TANDEM:775:0:1:0:0:0	A	<DUP:TANDEM>	.	.	END=68822259;SVTYPE=DUP;SVLEN=232;CIPOS=0,1;CIEND=0,1;HOMLEN=1;HOMSEQ=C;UPSTREAM_PAIR_COUNT=3;DOWNSTREAM_PAIR_COUNT=3;PAIR_COUNT=3
+17	43104068	MantaDEL:843:0:0:0:0:0	AAGAAAAAAAAAAGAAAAG	AGAA	.	.	END=43104086;SVTYPE=DEL;SVLEN=-18;CIGAR=1M3I18D;UPSTREAM_PAIR_COUNT=0;DOWNSTREAM_PAIR_COUNT=0;PAIR_COUNT=0
+17	61793692	MantaBND:859:0:0:0:0:0:0	C	C]17:61793817]	.	.	SVTYPE=BND;MATEID=MantaBND:859:0:0:0:0:0:1;IMPRECISE;CIPOS=-85,86;BND_PAIR_COUNT=3;PAIR_COUNT=3
+17	61793817	MantaBND:859:0:0:0:0:0:1	G	G]17:61793692]	.	.	SVTYPE=BND;MATEID=MantaBND:859:0:0:0:0:0:0;IMPRECISE;CIPOS=-89,89;BND_PAIR_COUNT=3;PAIR_COUNT=3
+20	18570679	MantaBND:866:0:1:0:0:0:0	A	A[17:61780843[	.	.	SVTYPE=BND;MATEID=MantaBND:866:0:1:0:0:0:1;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+17	61780843	MantaBND:866:0:1:0:0:0:1	A	]20:18570679]A	.	.	SVTYPE=BND;MATEID=MantaBND:866:0:1:0:0:0:0;IMPRECISE;CIPOS=-50,51;BND_PAIR_COUNT=2;PAIR_COUNT=2
+17	35103184	MantaDUP:TANDEM:827:1:2:0:0:0	G	<DUP:TANDEM>	.	.	END=35111129;SVTYPE=DUP;SVLEN=7945;UPSTREAM_PAIR_COUNT=3;DOWNSTREAM_PAIR_COUNT=3;PAIR_COUNT=3
+17	31338143	MantaDEL:834:0:1:0:0:0	C	<DEL>	.	.	END=31339172;SVTYPE=DEL;SVLEN=-1029;CIPOS=0,2;CIEND=0,2;HOMLEN=2;HOMSEQ=CT;UPSTREAM_PAIR_COUNT=2;DOWNSTREAM_PAIR_COUNT=2;PAIR_COUNT=2
+17	76480007	MantaDEL:870:1:1:0:2:0	ATGTGTGTGTGTG	A	.	.	END=76480019;SVTYPE=DEL;SVLEN=-12;CIGAR=1M12D;CIPOS=0,23;HOMLEN=23;HOMSEQ=TGTGTGTGTGTGTGTGTGTGTGT;UPSTREAM_PAIR_COUNT=0;DOWNSTREAM_PAIR_COUNT=0;PAIR_COUNT=0
+22	28694035	MantaBND:874:0:1:0:0:0:0	A	[18:12868264[A	.	.	SVTYPE=BND;MATEID=MantaBND:874:0:1:0:0:0:1;IMPRECISE;CIPOS=-53,53;BND_PAIR_COUNT=2;PAIR_COUNT=2
+18	12868264	MantaBND:874:0:1:0:0:0:1	G	[22:28694035[G	.	.	SVTYPE=BND;MATEID=MantaBND:874:0:1:0:0:0:0;IMPRECISE;CIPOS=-53,53;BND_PAIR_COUNT=2;PAIR_COUNT=2
+18	51048795	MantaBND:879:0:1:0:0:0:0	A	]X:144961414]A	.	.	SVTYPE=BND;MATEID=MantaBND:879:0:1:0:0:0:1;IMPRECISE;CIPOS=-69,69;BND_PAIR_COUNT=2;PAIR_COUNT=2
+X	144961414	MantaBND:879:0:1:0:0:0:1	T	T[18:51048795[	.	.	SVTYPE=BND;MATEID=MantaBND:879:0:1:0:0:0:0;IMPRECISE;CIPOS=-69,69;BND_PAIR_COUNT=2;PAIR_COUNT=2
+17	76481409	MantaDUP:TANDEM:871:0:1:0:0:0	T	<DUP:TANDEM>	.	.	END=76481583;SVTYPE=DUP;SVLEN=174;CIPOS=0,4;CIEND=0,4;HOMLEN=4;HOMSEQ=GGGT;UPSTREAM_PAIR_COUNT=1;DOWNSTREAM_PAIR_COUNT=1;PAIR_COUNT=1
+17	43104068	MantaDEL:843:0:0:1:0:0	AAGAAAAAAAAAAGAAAAG	AGAA	.	.	END=43104086;SVTYPE=DEL;SVLEN=-18;CIGAR=1M3I18D;UPSTREAM_PAIR_COUNT=0;DOWNSTREAM_PAIR_COUNT=0;PAIR_COUNT=0
+17	68528915	MantaDUP:TANDEM:862:0:1:0:0:0	A	<DUP:TANDEM>	.	.	END=68529121;SVTYPE=DUP;SVLEN=206;CIPOS=0,3;CIEND=0,3;HOMLEN=3;HOMSEQ=ACC;UPSTREAM_PAIR_COUNT=1;DOWNSTREAM_PAIR_COUNT=1;PAIR_COUNT=1
+17	35106983	MantaBND:825:0:1:0:0:0:0	C	C]17:35106876]	.	.	SVTYPE=BND;MATEID=MantaBND:825:0:1:0:0:0:1;BND_PAIR_COUNT=0;PAIR_COUNT=0
+17	35106876	MantaBND:825:0:1:0:0:0:1	C	C]17:35106983]	.	.	SVTYPE=BND;MATEID=MantaBND:825:0:1:0:0:0:0;BND_PAIR_COUNT=0;PAIR_COUNT=0
+17	43104068	MantaDEL:843:0:0:2:0:0	AAGAAAAAAAAAAGAAAAG	AGAA	.	.	END=43104086;SVTYPE=DEL;SVLEN=-18;CIGAR=1M3I18D;UPSTREAM_PAIR_COUNT=0;DOWNSTREAM_PAIR_COUNT=0;PAIR_COUNT=0
+17	31182598	MantaBND:827:0:1:0:3:0:0	T	[17:35103216[T	.	.	SVTYPE=BND;MATEID=MantaBND:827:0:1:0:3:0:1;CIPOS=0,4;HOMLEN=4;HOMSEQ=TATC;BND_PAIR_COUNT=2;PAIR_COUNT=2
+17	35103212	MantaBND:827:0:1:0:3:0:1	A	[17:31182602[A	.	.	SVTYPE=BND;MATEID=MantaBND:827:0:1:0:3:0:0;CIPOS=0,4;HOMLEN=4;HOMSEQ=TAAC;BND_PAIR_COUNT=2;PAIR_COUNT=2
+17	17221422	MantaDUP:TANDEM:812:0:1:0:0:0	G	<DUP:TANDEM>	.	.	END=17222549;SVTYPE=DUP;SVLEN=1127;CIPOS=0,2;CIEND=0,2;HOMLEN=2;HOMSEQ=GC;UPSTREAM_PAIR_COUNT=2;DOWNSTREAM_PAIR_COUNT=2;PAIR_COUNT=2
+17	76478870	MantaDEL:869:0:1:0:2:0	AGGTGGGAGTAGCCAGAACGGACACTGGTGAAGGAGGTGAGGGACAGGACTCCGGGGGTCAGCGGTGGGTGCGGGGCGTGGGGCCTGTCCATCTCCTCCGGGTGGCGGAAGGCCCGGCCCCGGGCCAGCGGATCCACAATCTGGAAGGGAGGGGGGCGGTAAGCAGAGCCATTAGGGTCCCCACCCCTGCCTCCTTTCCCCATGGATCCCACCTTGGGCATCTTGCAGGGCTTTGGGGACTCAGTGCCCTGGAAGGACGGTGCCTCCTGGCTGGGGAGCTCCAGGTCACGCTGGCACGAGGCCTTCAGGCGGCCGTAGCGCATGCTGCAGTGGTGCAGGCTGCGGCGCTGCCACTGCTGCCGCTGCCCCTCCCAGTCGCCGCTGACTCCAAACCACT	A	.	.	END=76479266;SVTYPE=DEL;SVLEN=-396;CIGAR=1M396D;CIPOS=0,2;HOMLEN=2;HOMSEQ=GG;UPSTREAM_PAIR_COUNT=0;DOWNSTREAM_PAIR_COUNT=0;PAIR_COUNT=0
+17	76479816	MantaDUP:TANDEM:870:0:1:0:4:0	C	<DUP:TANDEM>	.	.	END=76479988;SVTYPE=DUP;SVLEN=172;CIPOS=0,4;CIEND=0,4;HOMLEN=4;HOMSEQ=TGGA;UPSTREAM_PAIR_COUNT=1;DOWNSTREAM_PAIR_COUNT=1;PAIR_COUNT=1
+19	1222874	MantaDEL:882:0:1:0:0:0	TCCCAGCTCCTGAGTGTGTGGCAGGTACCCTGGGCCCAGAGGAGCTGGGTCGGAAAACTGGACCGCCCTGGTGCCAGCCTGACAGGCGCCACTGCTTCTGGGCGTTTGCAGCTGGTTCCGGAAGAAACATCCTCCGGCTGAAGCACCAGTGCCCATCCCACCGAGCCCAGACACCAAGGACCGGTGGCGCAGCATGACTGTGGTGCCGTACTTGGAGGACCTGCACGGCGCGGACGAGGACGAGGACCTCTTCGACATCGAGGATGACATCATCTACACTCAGGACTTCACGGTGCCCGGTGAGTCTGGCGGGGGCCCCTGCCCGGCTCTGCTGACTCGGCCAGGATGTCCCACGGGAGCAGGGTGCCTGCCTGTCTGCAACAAGGACAGCTTCTGCCCTCTGGTGGCCAATCCCACGTCCCCAAAGCCTCCAGCCCACCTGCAGGCTGCCTCCGCCCTGCGGGCCGCTGGGACATGGCTGAAAGGTGTGGGGTCAGCGGGGGCACCAGCCCAGGCCTGTCTGGCCAGGAGGGTTCCTCAGGCGTCTCTCCGGGTGCTG	T	.	.	END=1223432;SVTYPE=DEL;SVLEN=-558;CIGAR=1M558D;CIPOS=0,6;HOMLEN=6;HOMSEQ=CCCAGC;UPSTREAM_PAIR_COUNT=4;DOWNSTREAM_PAIR_COUNT=4;PAIR_COUNT=4

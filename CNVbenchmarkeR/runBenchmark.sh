@@ -41,6 +41,16 @@ mkdir -p output
 #    Rscript ./algorithms/manta/runManta.r ./algorithms/manta/mantaParams.yaml datasets.yaml  > logs/manta.log 2>&1
 #fi
 
+if [ "$pars_algorithms_manta2" == "true" ]; then
+    echo "[$(date)] Executing Manta2"
+    Rscript ./algorithms/manta2/runManta2.r ./algorithms/manta2/mantaParams2.yaml datasets.yaml  > logs/manta2.log 2>&1
+fi
+
+if [ "$pars_algorithms_manta3" == "true" ]; then
+    echo "[$(date)] Executing Manta3"
+    Rscript ./algorithms/manta3/runManta3.r ./algorithms/manta3/mantaParams3.yaml datasets.yaml  > logs/manta3.log 2>&1
+fi
+
 #if [ "$pars_algorithms_cnvkit" == "true" ]; then
 #    echo "[$(date)] Executing CNVkit1"
 #    Rscript ./algorithms/cnvkit/runCNVkit.r ./algorithms/cnvkit/cnvkitParams.yaml datasets.yaml  > logs/cnvkit.log 2>&1

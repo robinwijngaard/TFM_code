@@ -1,0 +1,4 @@
+[2021-05-30T08:34:50.623724Z] [fritz] [348801_1] [pyflowTaskWrapper:sort_sortDiploidSV] [wrapperSignal] wrapperStart
+[2021-05-30T08:34:50.629099Z] [fritz] [348801_1] [pyflowTaskWrapper:sort_sortDiploidSV] [wrapperSignal] taskStart
+[2021-05-30T08:34:50.666981Z] [fritz] [348801_1] [pyflowTaskWrapper:sort_sortDiploidSV] [wrapperSignal] taskExitCode 0
+[2021-05-30T08:34:50.670600Z] [fritz] [348801_1] [pyflowTaskWrapper:sort_sortDiploidSV] [wrapperSignal] taskElapsedSec 0
