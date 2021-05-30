@@ -239,7 +239,7 @@ for(resultframe in list(allResults, singleResults)) {
   FN_analysis <- cast(FN_analysis, gene ~ algorithmID)
   
   # Add total ROI and calculate %
-  FN_analysis <- merge(FN_analysis, rois_gene_neg_count, by = "gene")
+  FN_analysis <- merge(FN_analysis, rois_gene_pos_count, by = "gene")
   FN_analysis_perc <- FN_analysis
   FN_analysis_perc[, 2:7] <- round(FN_analysis_perc[, 2:7] / FN_analysis_perc[, 8] * 100, 4)
   
@@ -251,7 +251,7 @@ for(resultframe in list(allResults, singleResults)) {
   FP_analysis <- cast(FP_analysis, gene ~ algorithmID)
   
   # Add total ROI and calculate %
-  FP_analysis <- merge(FP_analysis, rois_gene_pos_count, by = "gene")
+  FP_analysis <- merge(FP_analysis, rois_gene_neg_count, by = "gene")
   FP_analysis_perc <- FP_analysis
   FP_analysis_perc[, 2:7] <- round(FP_analysis_perc[, 2:7] / FP_analysis_perc[, 8] * 100, 4)
   
@@ -280,6 +280,8 @@ FN_comp_exontype <- data.frame()
 FN_comp_cnvtype <- data.frame()
 
 FP_comp_length <- data.frame()
+
+algorithms <- algorithms[-5]
 
 # Loop over algorithms
 for(algorithm in algorithms){
@@ -370,17 +372,13 @@ for(algorithm in algorithms){
 setwd(graphsDir)
 tiff("BP_FP.tiff", units="in", width=7, height=5, res=150)
 
-n <- length(p_list_FP)
-nCol <- floor(sqrt(n))
-do.call("grid.arrange", c(p_list_FP, ncol=nCol))
+do.call("grid.arrange", c(p_list_FP, ncol=2))
 
 dev.off()
 
 tiff("BP_FN.tiff", units="in", width=7, height=5, res=150)
 
-n <- length(p_list_FN)
-nCol <- floor(sqrt(n))
-do.call("grid.arrange", c(p_list_FN, ncol=nCol))
+do.call("grid.arrange", c(p_list_FN, ncol=2))
 
 dev.off()
 
@@ -389,15 +387,16 @@ FN_cnv_plot <- subset(FN_comp_cnvtype, FN_comp_cnvtype$detected == "FN" & FN_com
 FN_cnv_plot$detected <- factor(FN_cnv_plot$detected)
 FN_cnv_plot$algorithm <- factor(FN_cnv_plot$algorithm)
 
-tiff("FN_cnv.tiff", units="in", width=7, height=5, res=150)
+tiff("FN_cnv.tiff", units="in", width=7, height=5, res=300)
 
-ggplot(FN_cnv_plot, aes(x=algorithm, y=freq*100, fill=cnv_type, color=cnv_type))+
+ggplot(FN_cnv_plot, aes(x=algorithm, y=n, fill=cnv_type, color=cnv_type))+
   geom_bar(stat="identity",position=position_dodge(), alpha = 0.2)+
   xlab("Algorithm")+
-  scale_y_continuous(limits = c(0,100))+
-  ylab("Frequency per type")+ 
-  geom_text(aes(label=n, fontface="bold"), position=position_dodge(width = 0.9), vjust=-0.25, size=4)+
-  theme_minimal()
+  scale_y_continuous(limits = c(0,14))+
+  ylab("Number of cases")+ 
+  geom_text(aes(label=paste0(n),  fontface="bold"), position=position_dodge(width = 0.9), vjust=-0.25, size=4)+
+  theme_minimal() +
+  theme(legend.title = element_blank(), text = element_text(size=16)) 
 
 dev.off()
 
@@ -405,15 +404,16 @@ FN_exon_plot <- subset(FN_comp_exontype, FN_comp_exontype$detected == "FN" & FN_
 FN_exon_plot$detected <- factor(FN_exon_plot$detected)
 FN_exon_plot$algorithm <- factor(FN_exon_plot$algorithm)
 
-tiff("FN_exon.tiff", units="in", width=7, height=5, res=150)
+tiff("FN_exon.tiff", units="in", width=7, height=5, res=300)
 
-ggplot(FN_exon_plot, aes(x=algorithm, y=freq*100, fill=exon_type, color=exon_type))+
+ggplot(FN_exon_plot, aes(x=algorithm, y=n, fill=exon_type, color=exon_type))+
   geom_bar(stat="identity",position=position_dodge(), alpha = 0.2) +
   xlab("Algorithm")+
-  scale_y_continuous(limits = c(0,100))+
-  ylab("Frequency per type")+ 
-  geom_text(aes(label=n, fontface="bold"), position=position_dodge(width = 0.9), vjust=-0.25, size=4)+
-  theme_minimal()
+  scale_y_continuous(limits = c(0,14))+
+  ylab("Number of cases")+ 
+  geom_text(aes(label=paste0(n), fontface="bold"), position=position_dodge(width = 0.9), vjust=-0.25, size=4)+
+  theme_minimal() +
+  theme(legend.title = element_blank(), text = element_text(size=16)) 
 
 dev.off()
 

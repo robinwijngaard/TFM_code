@@ -69,3 +69,14 @@ ann.pred <- predict(ann.mdl, newdata = NNData_1[, -1])
 ann.cm <- confusionMatrix(ann.pred, NNData_1$cnv)
 ann.cm
 
+## Random Forest
+
+set.seed(123)
+
+ctrl <- trainControl(classProbs = TRUE, method = "cv", number =  10, summaryFunction = twoClassSummary)
+grid <- expand.grid(mtry = c(50, 100))
+
+rf.mdl <- train(cnv ~ ., data = train.data, method = "rf", tuneGrid = grid, trControl = ctrl, trace = FALSE, preProcess = c("center", "scale"),
+                metric = "Sens", maximize = TRUE)
+
+rf.mdl

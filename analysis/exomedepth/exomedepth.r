@@ -1,4 +1,5 @@
 library(ggplot2)
+library(dplyr)
 
 analysisDir <- "~/Dropbox/Master_UOC/TFM/TFM_code/analysis"
 exomeDir <- file.path(analysisDir, "exomedepth")
@@ -51,7 +52,12 @@ TP_exome_annotated <- TP_exome_annotated[which(TP_exome_annotated$sampleID == TP
 FP_exome_annotated <- FP_exome_annotated[which(FP_exome_annotated$sampleID == FP_exome_annotated$sample), ]
 
 # Compare read.ratio and BF between sets
-plot.table <- data.frame(BF = c(TP_exome_annotated$BF, FP_exome_annotated$BF), reads.ratio = c(TP_exome_annotated$reads.ratio, FP_exome_annotated$reads.ratio), Group = c(rep("TP", nrow(TP_exome_annotated)), rep("FP", nrow(FP_exome_annotated))))
+plot.table <- data.frame(BF = c(TP_exome_annotated$BF, FP_exome_annotated$BF), reads.ratio = c(TP_exome_annotated$reads.ratio, FP_exome_annotated$reads.ratio), Pos = c(rep("TP", nrow(TP_exome_annotated)), rep("FP", nrow(FP_exome_annotated))), Exon = c(TP_exome_annotated$exon_type, FP_exome_annotated$exon_type))
+plot.table$Group[plot.table$Pos == "TP" & plot.table$Exon == "Single"] <- "TP single"
+plot.table$Group[plot.table$Pos == "TP" & plot.table$Exon == "Multi"] <- "TP multi"
+plot.table$Group[plot.table$Pos == "FP"] <- "FP"
+
+plot.table$Group <- factor(plot.table$Group, levels = c("TP single", "TP multi", "FP"))
 
 BF_comp <- plot.table %>% group_by(Group) %>% summarize(mean = mean(BF), 
                                                                     min = min(BF), max = max(BF),
@@ -69,14 +75,15 @@ reads.ratio_comp <- plot.table %>% group_by(Group) %>% summarize(mean = mean(rea
 write.table(BF_comp, file.path(resultsDir, "BF_comp.txt"), sep="\t", row.names=FALSE, quote = FALSE, col.names = TRUE)  
 write.table(reads.ratio_comp, file.path(resultsDir, "reads.ratio_comp.txt"), sep="\t", row.names=FALSE, quote = FALSE, col.names = TRUE)  
 
-tiff(file.path(graphsDir, "BF_comp.tiff"), units="in", width=7, height=5, res=150)
+tiff(file.path(graphsDir, "BF_comp.tiff"), units="in", width=7, height=4, res=150)
 
 ggplot(plot.table, aes(x=BF, color=Group, fill=Group)) +
-  geom_histogram(aes(y=..density..), position="identity", alpha=0.2)+
+  geom_histogram(aes(y=..density..), bins=50, position="identity", alpha=0.2)+
   geom_density(alpha=0.2)+
   facet_grid(Group ~ .) +
-  labs(title="BF score between groups",x="BF", y = "Density")+
-  theme_classic()
+  labs(x="Bayes Factor")+
+  theme_classic()+
+  theme(legend.position = "none")
 
 dev.off()
 
@@ -98,7 +105,15 @@ TP_exon.type <- TP_exome_annotated[, -c(14, 15)] %>% group_by(exon_type) %>% sum
                                                                    IQR25 = quantile(BF, 0.25), 
                                                                    IQR75 = quantile(BF, 0.75))
 
+FP_exon.type <- FP_exome_annotated[, -c(14, 15)] %>% group_by(exon_type) %>% summarize(mean = mean(BF), 
+                                                                                       min = min(BF), max = max(BF),
+                                                                                       median = median(BF),
+                                                                                       IQR25 = quantile(BF, 0.25), 
+                                                                                       IQR75 = quantile(BF, 0.75))
+
 write.table(TP_exon.type, file.path(resultsDir, "TP_exontype.txt"), sep="\t", row.names=FALSE, quote = FALSE, col.names = TRUE)  
+write.table(FP_exon.type, file.path(resultsDir, "FP_exontype.txt"), sep="\t", row.names=FALSE, quote = FALSE, col.names = TRUE)  
+
 
 
 
