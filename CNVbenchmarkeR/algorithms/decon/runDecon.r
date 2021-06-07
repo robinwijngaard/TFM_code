@@ -143,12 +143,3 @@ print(paste("Finishing at", endTime <- Sys.time()))
 cat("\nElapsed time:")
 print(endTime - startTime)
 
-
-################test
-#setwd("~/Documents/Project/TFM_code/CNVbenchmarkeR-master/algorithms/decon")
-
-#outputF
-
-#saveResultsFileToGR(outputFolder, "calls_all.txt", chrColumn = "Chromosome")
-#saveExonFailures(file.path(outputFolder, "failures_Failures.txt"), bedFile, bamsDir, outputFolder)
-

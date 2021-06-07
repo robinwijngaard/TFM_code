@@ -1,0 +1,160 @@
+---
+title: "Sample Report"
+subtitle: "CNV detection"
+date: '`r format(Sys.Date(),"%e de %B, %Y")`'
+output: html_document
+params:
+  sample: "17302"
+  panell: "colon"
+---
+
+### Sample: `r params$sample`
+### Panell: `r params$panell`
+
+```{r, echo = FALSE, message = FALSE, warning = FALSE, results = 'asis'}
+# Load sample RDS file
+rdsfile <- readRDS(file.path(RDSfolder, paste0("all_exons_", params$sample, ".RDS")))
+
+# CNVcalls from rdsfile
+samplecnv <- rdsfile@CNV.calls
+
+# Sort columns to adapt to bedfile
+samplecnv <- samplecnv[, c(7,5,6,3,4,8:12)]
+
+# Write for bedtools
+write.table(samplecnv, file.path(tempDir, "samplecnv.bed"), sep="\t", row.names=FALSE, quote = FALSE, col.names = FALSE)  
+
+# Subset panelannotated to genes in panell
+panelannotated <- subset(annotatedFile, annotatedFile$panell == params$panell)
+
+# Write for bedtools
+write.table(panelannotated, file.path(tempDir, "panelannotated.bed"), sep="\t", row.names=FALSE, quote = FALSE, col.names = FALSE)  
+
+# Intersect ROIs of interest (panelannotated) with CNV found in sample
+system(paste("bedtools intersect -wao -a", file.path(tempDir, "panelannotated.bed"), "-b", file.path(tempDir, "samplecnv.bed"), ">", file.path(tempDir, "cnv.bed")))
+  
+# Load result
+cnvbed <- read.table(file.path(tempDir, "cnv.bed"), sep = "\t", stringsAsFactors = FALSE)
+
+# Change colnames
+colnames(cnvbed) <- c(names(panelannotated), names(samplecnv), "overlap")
+names(cnvbed)[c(16, 17, 18)] <- c("chr_org", "start_org", "end_org")
+
+# Specify normal when no overlap is found
+cnvbed$type[which(cnvbed$overlap == 0)] <- "normal"
+cnvbed$BF[which(cnvbed$overlap == 0)] <- ""
+cnvbed$type <- factor(cnvbed$type, levels = c("deletion", "normal","duplication"))
+
+# Calculate reads.ratio for non CNV ROIs
+cnvreads <- data.frame(cbind(rdsfile@annotations, rdsfile@test, rdsfile@reference, rdsfile@expected))
+cnvreads$expected.reads <- round((cnvreads$rdsfile.test + cnvreads$rdsfile.reference) * cnvreads$rdsfile.expected, 0)
+cnvreads$reads.ratio.y <- round(cnvreads$rdsfile.test / cnvreads$expected.reads, 3)
+cnvreads <- cnvreads[, c(2,3,4,5,8,9)]
+names(cnvreads)[1] <- "chr"
+
+cnvbed <- merge(x=cnvbed, y=cnvreads, by = c("chr", "end"), all.x = TRUE)
+```
+
+
+
+```{r dinamictable, echo = FALSE}
+# Create interactive table for output
+newsample <- data.frame(matrix(ncol = 11, nrow = 0))
+newnames <- c("Gene", "NM", "Chr", "Start", "End",  "Size", "Strand","Exons", "Type", "BF", "read.ratio")
+colnames(newsample) <- newnames
+
+for (cnvtype in levels(cnvbed$type)){
+  sampletype <- subset(cnvbed, cnvbed$type == cnvtype)
+  sampleNM <- unique(sampletype$nm)
+  for(i in sampleNM){
+    dfNM <- subset(sampletype, sampletype$nm == i)
+    Gene <- unique(dfNM$gene)
+    NM <- i
+    Chr <- unique(dfNM$chr)
+    Start <- min(dfNM$start.x, dfNM$end)
+    End <- max(dfNM$start.x, dfNM$end)
+    Size <- End - Start
+    Strand <- if(unique(dfNM$strand) == -1){"-"} else if(unique(dfNM$strand) == 1) {"+"}
+    Type <- cnvtype
+    BF <- unique(dfNM$BF)
+    ratio <- round(mean(dfNM$reads.ratio.y), 3)
+    if(nrow(dfNM) > 1){Exons <- paste(min(dfNM$rank), "-", max(dfNM$rank))} else if(nrow(dfNM) == 1) {Exons <- dfNM$rank}
+    newline <- c(Gene, NM, Chr, Start, End, Size, Strand, Exons, Type, BF, ratio)
+    newsample <- rbind(newsample, newline)
+  }
+}
+
+colnames(newsample) <- newnames
+
+newsample <- newsample[order(newsample$BF, -rank(newsample$Gene), decreasing = TRUE), ]
+
+newsample %>% 
+  datatable(extensions = "Buttons",
+            options = list(dom = "Blfrtip", 
+                           buttons = c("csv", "excel", "pdf")))
+```
+
+```{r,echo=FALSE}
+# Set length for figures according number of figures
+len = ceiling(length(unique(cnvbed$nm))/2)*3
+```
+
+```{r, echo=FALSE, message = FALSE, warning = FALSE, results = 'asis', out.width="100%", fig.height=len}
+# Generate graphs
+
+## Obtain coordinates for all genes of interest
+gene_coord <- panelannotated %>% dplyr::select(chr, start, end, gene, nm) %>% group_by(gene) %>% mutate(genestart = min(start), geneend = max(end)) %>% dplyr::select(gene, chr, genestart, geneend, nm) %>% unique() 
+
+# Export imatges to TIFF
+for(i in 1:nrow(gene_coord)){
+  tiff(file.path(graphsDir, paste0(params$sample, as.character(gene_coord[i, 1]), ".tiff")), units="in", width=6, height=5, res=150)
+  plot(rdsfile, sequence = factor(gene_coord[i, 2], levels = levels(rdsfile@annotations$chromosome)), xlim = c(as.numeric(gene_coord[i, 3]) - 50, as.numeric(gene_coord[i, 4]) + 50), count.threshold = 20, main = paste0(gene_coord[i, 1], " gene ", "(", gene_coord[i, 5], ")"), cex.lab = 0.8, with.gene = TRUE)
+  dev.off()
+}
+
+# Load imatges
+graphs <- list.files(graphsDir, as.character(params$sample))
+graph.list <- list()
+j <- 1
+for (graphfile in graphs){
+  graph.list[[j]] <-  rasterGrob(readTIFF(file.path(graphsDir, graphfile)))
+  j <- j+1
+}
+
+grid.arrange(grobs = graph.list, ncol=2)
+
+# Delete figures from tempDir
+system(paste("find", file.path(graphsDir), "-type f -name '*.tiff' -delete"))
+```
+
+```{r,echo=FALSE}
+# Set length for figures according number of figures
+len = length(unique(cnvbed$nm))*0.3
+```
+
+```{r, echo = FALSE, message = FALSE, warning = FALSE, results = 'asis', out.width="100%", fig.height=len}
+cnvplot <- cnvbed[, c("newstart", "newend", "gene", "nm", "type", "rank")]
+cnvplot$name <- paste0(cnvplot$gene, "\n (", cnvplot$nm, ")")
+
+# Fix colors when missing levels
+colors <- brewer.pal(n = 3, name = "Set3")
+scale_fill_genes <- function(...){
+    ggplot2:::manual_scale(
+        'fill', 
+        values = setNames(colors, c("deletion", "normal","duplication")), 
+        ...
+    )
+}
+
+p <- ggplot(cnvplot, aes(xmin = newstart, xmax = newend, y = name, fill = type, label = rank)) +
+    geom_gene_arrow(arrowhead_height = unit(4, "mm"),arrow_body_height = unit(4, "mm"), arrowhead_width = unit(0.2, "mm")) +
+    geom_gene_label(align = "left") +
+    facet_wrap(~ name, scales = "free", ncol = 1) +
+    scale_fill_genes() +
+    theme_genes() +
+    theme(axis.text.x=element_blank(),
+          axis.ticks.x=element_blank())
+
+p
+```
+
