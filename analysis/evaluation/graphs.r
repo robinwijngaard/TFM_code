@@ -18,6 +18,7 @@ allResults <- read.table(file.path(resultDir, "allResults.txt"), sep = "\t",  he
 setwd(graphsDir)
 venn_graphs <- allResults[, c(7, 11:15, 17)]
 venn_graphs$ID <- as.character(venn_graphs$ID)
+names(venn_graphs)[3:7] <- c("CNVkit", "CoNVaDING", "DECoN", "ExomeDepth", "panelcn.MOPS")
 
 make_venn <- function(data, value){
   venn_list <- list()
@@ -51,6 +52,7 @@ venn.diagram(fp_venn_list, filename = "fp_venn.tiff", col = "black",fill = c("do
 
 # Multi-scale
 mds_data <- allResults[, c(12:15, 17)]
+names(mds_data) <- c("CNVkit", "CoNVaDING", "DECoN", "ExomeDepth", "panelcn.MOPS")
 d <- dist(t(mds_data), method = "euclidean")
 MDS <- isoMDS(d)
 
@@ -62,6 +64,7 @@ dev.off()
 
 # Corplot
 corData <- allResults[, c(12:15, 17)]
+names(corData) <- c("CNVkit", "CoNVaDING", "DECoN", "ExomeDepth", "panelcn.MOPS")
 corData <- cor(corData)
 
 tiff("corrplot.tiff", units="in", width=6, height=5, res=150)
@@ -70,6 +73,7 @@ dev.off()
 
 # Cluster
 clustData <- allResults[, c(12:15, 17)]
+names(clustData) <- c("CNVkit", "CoNVaDING", "DECoN", "ExomeDepth", "panelcn.MOPS")
 d <- dist(t(clustData), method = "euclidean")
 all.hc <- hclust(d, method = "ward.D2")
 

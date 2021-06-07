@@ -33,7 +33,7 @@ processCNVkitBody <- function(launchFile, bedFile, outputFolder,bamsDir, params,
   coverageFilesPath <- file.path(outputFolder, coverageFiles)
   coverageFilesList <- paste(coverageFilesPath, collapse = " ")
   
-  #system(paste("python", launchFile, "reference", coverageFilesList, "-f", fastaFile, "--no-edge -o", file.path(outputFolder, "ref-tas.cnn")))
+  system(paste("python", launchFile, "reference", coverageFilesList, "-f", fastaFile, "--no-edge -o", file.path(outputFolder, "ref-tas.cnn")))
   refFile <- file.path(outputFolder, "ref-tas.cnn")  
   
   # analyse bam samples

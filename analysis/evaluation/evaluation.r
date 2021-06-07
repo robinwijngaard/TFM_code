@@ -3,6 +3,7 @@ library(dplyr)
 library(reshape)
 library(ggplot2)
 library(gridExtra)
+library(RColorBrewer)
 
 # Define dirs
 analysisDir <- "~/Dropbox/Master_UOC/TFM/TFM_code/analysis"
@@ -13,274 +14,239 @@ resultDir <- file.path(evaluationDir, "results")
 graphsDir <- file.path(evaluationDir, "graphs")
 
 # Run over dataset and obtain list with FP, FN, TP and TN
-for (dataset in c("all", "single")){
-  bedFile <- file.path(bedDir, paste0(dataset, "_rois.bed"))
-  bedData <- read.table(bedFile, sep = "\t", stringsAsFactors=FALSE, header = TRUE)
+bedFile <- file.path(bedDir, "all_rois.bed")
+bedData <- read.table(bedFile, sep = "\t", stringsAsFactors=FALSE, header = TRUE)
   
-  # Generate separate bedfiles for positives and negatives
-  positiveData <- subset(bedData, bedData$cnv == "ExonCNV")
-  negativeData <- subset(bedData, bedData$cnv == "Normal")
+# Generate separate bedfiles for positives and negatives
+positiveData <- subset(bedData, bedData$cnv == "ExonCNV")
+negativeData <- subset(bedData, bedData$cnv == "Normal")
   
-  # Add ROI ID
-  positiveData$ID <- 1:nrow(positiveData)
-  negativeData$ID <- (1+nrow(positiveData)):nrow(bedData)
+# Add ROI ID
+positiveData$ID <- 1:nrow(positiveData)
+negativeData$ID <- (1+nrow(positiveData)):nrow(bedData)
   
-  # Import cnvfounds file
-  cnvDir <- file.path(analysisDir, "cnvfounds", dataset)
-  cnvFiles <- list.files(cnvDir, pattern = ".txt")
+# Import cnvfounds file
+cnvDir <- file.path(analysisDir, "cnvfounds", "all")
+cnvFiles <- list.files(cnvDir, pattern = ".txt")
   
-  # Create dataframes for result saving
-  FPdata <- data.frame()
-  TPdata <- data.frame()
+# Create dataframes for result saving
+FPdata <- data.frame()
+TPdata <- data.frame()
   
-  # Run over results algorithms
-  for (cnvFile in cnvFiles){
-    algorithm <- sub("cnvFounds_", "", cnvFile)
-    algorithm <- sub(".txt", "", algorithm)
+# Run over results algorithms
+for (cnvFile in cnvFiles){
+  algorithm <- sub("cnvFounds_", "", cnvFile)
+  algorithm <- sub(".txt", "", algorithm)
     
-    # Import cnvfound data from algorithm
-    algorithmData <- read.table(file.path(cnvDir, cnvFile), sep = "\t", stringsAsFactors = FALSE, header = TRUE)
+  # Import cnvfound data from algorithm
+  algorithmData <- read.table(file.path(cnvDir, cnvFile), sep = "\t", stringsAsFactors = FALSE, header = TRUE)
     
-    # Change colnames
-    names(algorithmData) <- tolower(names(algorithmData))
-    names(algorithmData) <- sub("chromosome", "chr", names(algorithmData))
-    names(algorithmData) <- sub("cnv.type", "type", names(algorithmData))
+  # Change colnames
+  names(algorithmData) <- tolower(names(algorithmData))
+  names(algorithmData) <- sub("chromosome", "chr", names(algorithmData))
+  names(algorithmData) <- sub("cnv.type", "type", names(algorithmData))
     
-    # Select columns
-    colNames <- c("chr", "start", "end", "sample","type")
-    algorithmData <- algorithmData[, colNames] 
+  # Select columns
+  colNames <- c("chr", "start", "end", "sample","type")
+  algorithmData <- algorithmData[, colNames] 
     
-    # Eliminate X in sample name
-    algorithmData$sample <- as.character(algorithmData$sample)
-    algorithmData$sample <- sub("X", "", algorithmData$sample)
+  # Eliminate X in sample name
+  algorithmData$sample <- as.character(algorithmData$sample)
+  algorithmData$sample <- sub("X", "", algorithmData$sample)
     
-    # Run of sample and check for FP, FN, TP and TN
-    samples <- unique(algorithmData$sample)
-    for (sample in samples){
+  # Run over sample and check for FP, FN, TP and TN
+  samples <- unique(algorithmData$sample)
+  for (sample in samples){
       
-      # filter cnvfounds by sample
-      s <- which(algorithmData$sample == sample)
-      sampleData <- algorithmData[s, ]
-      sampleFile <- file.path(tempDir, "sample.bed")
-      write.table(sampleData, sampleFile, sep="\t", row.names = FALSE, quote = FALSE, col.names = FALSE)  
+    # filter cnvfounds by sample
+    s <- which(algorithmData$sample == sample)
+    sampleData <- algorithmData[s, ]
+    sampleFile <- file.path(tempDir, "sample.bed")
+    write.table(sampleData, sampleFile, sep="\t", row.names = FALSE, quote = FALSE, col.names = FALSE)  
       
-      # Make positive roi and negative roi bed file for sample
-      samplepositiveData <- subset(positiveData, positiveData$sampleID == sample)
-      samplepositiveFile <- file.path(tempDir, "positive.bed")
-      write.table(samplepositiveData, samplepositiveFile, sep="\t", row.names = FALSE, quote = FALSE, col.names = FALSE)  
+    # Make positive roi and negative roi bed file for sample
+    samplepositiveData <- subset(positiveData, positiveData$sampleID == sample)
+    samplepositiveFile <- file.path(tempDir, "positive.bed")
+    write.table(samplepositiveData, samplepositiveFile, sep="\t", row.names = FALSE, quote = FALSE, col.names = FALSE)  
       
-      samplenegativeData <- subset(negativeData, negativeData$sampleID == sample)
-      samplenegativeFile <- file.path(tempDir, "negative.bed")
-      write.table(samplenegativeData, samplenegativeFile, sep="\t", row.names = FALSE, quote = FALSE, col.names = FALSE)  
+    samplenegativeData <- subset(negativeData, negativeData$sampleID == sample)
+    samplenegativeFile <- file.path(tempDir, "negative.bed")
+    write.table(samplenegativeData, samplenegativeFile, sep="\t", row.names = FALSE, quote = FALSE, col.names = FALSE)  
       
-      # Compare sampleCNVs with validated results to obtain TP and FP
-      setwd(tempDir)
-      system(paste("bedtools intersect -wa -wb -a", sampleFile, "-b", samplepositiveFile, "> TP.bed"))
-      system(paste("bedtools intersect -wa -wb -a", sampleFile, "-b", samplenegativeFile, "> FP.bed"))
+    # Compare sampleCNVs with validated results to obtain TP and FP
+    setwd(tempDir)
+    system(paste("bedtools intersect -wa -wb -a", sampleFile, "-b", samplepositiveFile, "> TP.bed"))
+    system(paste("bedtools intersect -wa -wb -a", sampleFile, "-b", samplenegativeFile, "> FP.bed"))
       
-      # read files
-      if (file.size("TP.bed") != 0) {TPsample <- read.table("TP.bed", sep = "\t", stringsAsFactors=FALSE)} else {TPsample <- NULL}
-      if (file.size("FP.bed") != 0) {FPsample <- read.table("FP.bed", sep = "\t", stringsAsFactors=FALSE)} else {FPsample <- NULL}
+    # read files
+    if (file.size("TP.bed") != 0) {TPsample <- read.table("TP.bed", sep = "\t", stringsAsFactors=FALSE)} else {TPsample <- NULL}
+    if (file.size("FP.bed") != 0) {FPsample <- read.table("FP.bed", sep = "\t", stringsAsFactors=FALSE)} else {FPsample <- NULL}
   
-      # Add found TP and FP to dataframe
-      if(!is.null(TPsample)){
-        n <- nrow(TPsample)
-        algorithmID <- rep(algorithm, n)
-        TPsample <- cbind(TPsample, algorithmID)
-        TPdata <- rbind(TPdata, TPsample)
-      }
+    # Add found TP and FP to dataframe
+    if(!is.null(TPsample)){
+      n <- nrow(TPsample)
+      algorithmID <- rep(algorithm, n)
+      TPsample <- cbind(TPsample, algorithmID)
+      TPdata <- rbind(TPdata, TPsample)
+    }
       
-      if(!is.null(FPsample)){
-        n <- nrow(FPsample)
-        algorithmID <- rep(algorithm, n)
-        FPsample <- cbind(FPsample, algorithmID)
-        FPdata <- rbind(FPdata, FPsample)
-      }
+    if(!is.null(FPsample)){
+      n <- nrow(FPsample)
+      algorithmID <- rep(algorithm, n)
+      FPsample <- cbind(FPsample, algorithmID)
+      FPdata <- rbind(FPdata, FPsample)
     }
   }
-  
-  # Delete redundant columns
-  FPdata <- FPdata[, c(6:17, 5)]
-  TPdata <- TPdata[, c(6:17, 5)]
-  colnames(FPdata) <- colnames(TPdata) <- c(colnames(bedData), "roiID", "algorithmID", "detected_cnv")
-  PosData <- rbind(TPdata, FPdata)
-  
-  # Make final result dataframe
-  ResultsDataframe <- rbind(positiveData, negativeData)
-  ResultsDataframe$cnvkit5 <- 0
-  ResultsDataframe$convading <- 0
-  ResultsDataframe$decon <- 0
-  ResultsDataframe$exomedepth <- 0
-  ResultsDataframe$manta <- 0
-  ResultsDataframe$panelcn <- 0
-  
-  algorithms <- unique(c(TPdata$algorithmID, FPdata$algorithmID))
-  
-  for(i in 1:nrow(ResultsDataframe)){
-    for(j in algorithms){
-      a <- which(PosData$algorithmID == j & PosData$roiID == i)
-      if(length(a) > 0){
-        ResultsDataframe[i, j] <- 1
-      }
-    }
-  }
-  
-  # For hybdrid model
-  HybridDataframe <- rbind(positiveData, negativeData)
-  HybridDataframe$cnvkit5 <- 0
-  HybridDataframe$convading <- 0
-  HybridDataframe$decon <- 0
-  HybridDataframe$exomedepth <- 0
-  HybridDataframe$manta <- 0
-  HybridDataframe$panelcn <- 0
-  
-  algorithms <- unique(c(TPdata$algorithmID, FPdata$algorithmID))
-  
-  # There is one ROI for DeCON (FP) where both DEL and DUP is predicted. This ROI is considered as normal for the hybrid model
-  for(i in 1:nrow(HybridDataframe)){
-    for(j in algorithms){
-      a <- which(PosData$algorithmID == j & PosData$roiID == i)
-      if(length(a) == 1){
-        if(PosData$detected_cnv[a] == "deletion") {
-          HybridDataframe[i, j] <- -1
-      }
-        else if(PosData$detected_cnv[a] == "duplication") {
-          HybridDataframe[i, j] <- 1
-        }
-      }
-    }
-  }
-  
-  # Save and assign results to dataframe for dataset
-  write.table(ResultsDataframe, file.path(resultDir, paste0(dataset, "results.txt")), sep="\t", row.names = FALSE, quote = FALSE, col.names = TRUE)  
-  write.table(HybridDataframe, file.path(resultDir, paste0(dataset, "hybridresults.txt")), sep="\t", row.names = FALSE, quote = FALSE, col.names = TRUE)  
-  assign(paste0(dataset, "Results"), ResultsDataframe)
 }
-
-
-PosDataFail <- PosData[, c("algorithmID", "roiID")]
-PosDataFail_algo <- subset(PosDataFail, PosDataFail$algorithmID == "decon")
-nrow(unique(PosDataFail_algo))
+  
+# Delete redundant columns
+FPdata <- FPdata[, c(6:17, 5)]
+TPdata <- TPdata[, c(6:17, 5)]
+colnames(FPdata) <- colnames(TPdata) <- c(colnames(bedData), "roiID", "algorithmID", "detected_cnv")
+PosData <- rbind(TPdata, FPdata)
+  
+# Make final result dataframe
+allResults <- rbind(positiveData, negativeData)
+allResults$cnvkit5 <- 0
+allResults$convading <- 0
+allResults$decon <- 0
+allResults$exomedepth <- 0
+allResults$manta <- 0
+allResults$panelcn <- 0
+  
+algorithms <- unique(c(TPdata$algorithmID, FPdata$algorithmID))
+  
+for(i in 1:nrow(allResults)){
+  for(j in algorithms){
+    a <- which(PosData$algorithmID == j & PosData$roiID == i)
+    if(length(a) > 0){
+      allResults[i, j] <- 1
+    }
+  }
+}
+  
+# For hybdrid model
+HybridResults <- rbind(positiveData, negativeData)
+HybridResults$cnvkit5 <- 0
+HybridResults$convading <- 0
+HybridResults$decon <- 0
+HybridResults$exomedepth <- 0
+HybridResults$manta <- 0
+HybridResults$panelcn <- 0
+  
+algorithms <- unique(c(TPdata$algorithmID, FPdata$algorithmID))
+  
+# There is one ROI for DeCON (FP) where both DEL and DUP is predicted. This ROI is considered as normal for the hybrid model
+for(i in 1:nrow(HybridResults)){
+  for(j in algorithms){
+    a <- which(PosData$algorithmID == j & PosData$roiID == i)
+    if(length(a) == 1){
+      if(PosData$detected_cnv[a] == "deletion") {
+        HybridResults[i, j] <- -1
+    }
+      else if(PosData$detected_cnv[a] == "duplication") {
+        HybridResults[i, j] <- 1
+      }
+    }
+  }
+}
+  
+# Save and assign results to dataframe for dataset
+write.table(allResults, file.path(resultDir, "allresults.txt"), sep="\t", row.names = FALSE, quote = FALSE, col.names = TRUE)  
+write.table(HybridResults, file.path(resultDir, "allhybridresults.txt"), sep="\t", row.names = FALSE, quote = FALSE, col.names = TRUE)  
 
 # Result table
 
-## Add identifier to result dataframes
-comment(allResults) <- "all"
-comment(singleResults) <- "single"
-
-for(resultframe in list(allResults, singleResults)) {
+# Calculate TP, FN, FP, TN
+Pos <- length(allResults$cnv[allResults$cnv == "ExonCNV"])
+TP <- as.vector(colSums(allResults[1:Pos, 12:17]))
+FN <- as.vector(nrow(allResults[1:Pos, ]) - as.vector(colSums(allResults[1:Pos, 12:17])))
+FP <- as.vector(colSums(allResults[(Pos+1):nrow(allResults), 12:17]))
+TN <- as.vector(nrow(allResults[(1+Pos):nrow(allResults), ]) - as.vector(colSums(allResults[(Pos+1):nrow(allResults), 12:17])))
   
-  # Obtain name dataframe
-  resultName <- comment(resultframe) 
+# Calculate Specificity and sensitivity
+Total <- TP + FN + FP + TN
+Spec <- round(TN / (TN + FP), 4)
+Sens <- round(TP / (TP + FN), 4)
+Accuracy <- round((TP + TN)/(Total), 4)
   
-  # Calculate TP, FN, FP, TN
-  Pos <- length(resultframe$cnv[resultframe$cnv == "ExonCNV"])
-  TP <- as.vector(colSums(resultframe[1:Pos, 12:17]))
-  FN <- as.vector(nrow(resultframe[1:Pos, ]) - as.vector(colSums(resultframe[1:Pos, 12:17])))
-  FP <- as.vector(colSums(resultframe[(Pos+1):nrow(resultframe), 12:17]))
-  TN <- as.vector(nrow(resultframe[(1+Pos):nrow(resultframe), ]) - as.vector(colSums(resultframe[(Pos+1):nrow(resultframe), 12:17])))
-  
-  # Calculate Specificity and sensitivity
-  Total <- TP + FN + FP + TN
-  Spec <- round(TN / (TN + FP), 4)
-  Sens <- round(TP / (TP + FN), 4)
-  
-  # Export result table
-  resultTable <- cbind(TP, TN, FP, FN, Total, Sens, Spec, names(resultframe[, 12:17]))
-  write.table(resultTable, file.path(resultDir, paste0("summary_", resultName, ".txt")), sep="\t", row.names=FALSE, quote = FALSE, col.names = TRUE)  
-}
+# Export result table
+resultTable <- cbind(TP, TN, FP, FN, Total, Sens, Spec, Accuracy, names(allResults[, 12:17]))
+write.table(resultTable, file.path(resultDir, "summary_all.txt"), sep="\t", row.names=FALSE, quote = FALSE, col.names = TRUE)  
 
 # Obtain the number of FP, FN ROIs at gene level
-for(resultframe in list(allResults, singleResults)) {
-  
-  # Obtain name resultframe
-  resultName <- comment(resultframe) 
-  
-  # Separate posive and negative ROIs
-  positiveData <- subset(resultframe, resultframe$cnv == "ExonCNV")
-  negativeData <- subset(resultframe, resultframe$cnv == "Normal")
-  
-  # Number of positive and negative ROIs per gene
-  rois_gene_pos <- data.frame(gene = c(positiveData$gene))
-  rois_gene_pos_count <- rois_gene_pos %>% group_by(gene) %>% summarise(n=n())
-  rois_gene_neg <- data.frame(gene = c(negativeData$gene))
-  rois_gene_neg_count <- rois_gene_neg %>% group_by(gene) %>% summarise(n=n())
-  
-  # Convert to factor
-  positiveData$gene <- factor(positiveData$gene,  levels = rois_gene_pos_count$gene)
-  negativeData$gene <- factor(negativeData$gene,  levels = rois_gene_neg_count$gene)
-  
-  # Obtain FN dataframe
-  FNdataframe <- data.frame()
-  for(algorithm in algorithms){
-    positiveAlgorithm <- cbind(positiveData[, c(1:11)], positiveData[, algorithm])
-    positiveAlgorithm <- subset(positiveAlgorithm, positiveAlgorithm[, 12] == 0)
-    positiveAlgorithm[, 12] <- rep(algorithm, nrow(positiveAlgorithm))
-    colnames(positiveAlgorithm)[12] <- "algorithmID"
-    FNdataframe <- rbind(FNdataframe, positiveAlgorithm)
-  } 
-  
-  # Obtain FP dataframe
-  FPdataframe <- data.frame()
-  for(algorithm in algorithms){
-    negativeAlgorithm <- cbind(negativeData[, c(1:11)], negativeData[, algorithm])
-    negativeAlgorithm <- subset(negativeAlgorithm, negativeAlgorithm[, 12] == 1)
-    negativeAlgorithm[, 12] <- rep(algorithm, nrow(negativeAlgorithm))
-    colnames(negativeAlgorithm)[12] <- "algorithmID"
-    FPdataframe <- rbind(FPdataframe, negativeAlgorithm)
-  } 
-  
-  # Convert algorithmID to factor
-  FNdataframe$algorithmID <- factor(FNdataframe$algorithmID, levels = algorithms)
-  FPdataframe$algorithmID <- factor(FPdataframe$algorithmID, levels = algorithms)
-  
-  # Analysis FN
-  FN_analysis <- FNdataframe %>% group_by(gene, algorithmID, .drop = FALSE) %>% summarize(n=n())
-  FN_analysis <- cast(FN_analysis, gene ~ algorithmID)
-  
-  # Add total ROI and calculate %
-  FN_analysis <- merge(FN_analysis, rois_gene_pos_count, by = "gene")
-  FN_analysis_perc <- FN_analysis
-  FN_analysis_perc[, 2:7] <- round(FN_analysis_perc[, 2:7] / FN_analysis_perc[, 8] * 100, 4)
-  
-  write.table(FN_analysis, file.path(resultDir, paste0(resultName, "_FN.txt")), sep="\t", row.names=FALSE, quote = FALSE, col.names = TRUE)  
-  write.table(FN_analysis_perc, file.path(resultDir, paste0(resultName, "_FN_perc.txt")), sep="\t", row.names=FALSE, quote = FALSE, col.names = TRUE)  
-  
-  # Analysis FP
-  FP_analysis <- FPdataframe %>% group_by(gene, algorithmID, .drop = FALSE) %>% summarize(n=n())
-  FP_analysis <- cast(FP_analysis, gene ~ algorithmID)
-  
-  # Add total ROI and calculate %
-  FP_analysis <- merge(FP_analysis, rois_gene_neg_count, by = "gene")
-  FP_analysis_perc <- FP_analysis
-  FP_analysis_perc[, 2:7] <- round(FP_analysis_perc[, 2:7] / FP_analysis_perc[, 8] * 100, 4)
-  
-  write.table(FP_analysis, file.path(resultDir, paste0(resultName, "_FP.txt")), sep="\t", row.names=FALSE, quote = FALSE, col.names = TRUE)  
-  write.table(FP_analysis_perc, file.path(resultDir, paste0(resultName, "_FP_perc.txt")), sep="\t", row.names=FALSE, quote = FALSE, col.names = TRUE)  
-  
-  # Assign results to object
-  assign(paste0(resultName, "_FN"), FN_analysis)
-  assign(paste0(resultName, "_FN_perc"), FN_analysis_perc)
-  assign(paste0(resultName, "_FP"), FP_analysis)
-  assign(paste0(resultName, "_FP_perc"), FP_analysis_perc)
-  
-  # Assign FP and FN lists to object
-  assign(paste0(resultName, "_FPlist"), FNdataframe)
-  assign(paste0(resultName, "_FNlist"), FPdataframe)
-}
 
+# Separate posive and negative ROIs
+positiveData <- subset(allResults, allResults$cnv == "ExonCNV")
+negativeData <- subset(allResults, allResults$cnv == "Normal")
+  
+# Number of positive and negative ROIs per gene
+rois_gene_pos <- data.frame(gene = c(positiveData$gene))
+rois_gene_pos_count <- rois_gene_pos %>% group_by(gene) %>% summarise(n=n())
+rois_gene_neg <- data.frame(gene = c(negativeData$gene))
+rois_gene_neg_count <- rois_gene_neg %>% group_by(gene) %>% summarise(n=n())
+  
+# Convert to factor
+positiveData$gene <- factor(positiveData$gene,  levels = rois_gene_pos_count$gene)
+negativeData$gene <- factor(negativeData$gene,  levels = rois_gene_neg_count$gene)
+  
+# Obtain FN dataframe
+FNdataframe <- data.frame()
+for(algorithm in algorithms){
+  positiveAlgorithm <- cbind(positiveData[, c(1:11)], positiveData[, algorithm])
+  positiveAlgorithm <- subset(positiveAlgorithm, positiveAlgorithm[, 12] == 0)
+  positiveAlgorithm[, 12] <- rep(algorithm, nrow(positiveAlgorithm))
+  colnames(positiveAlgorithm)[12] <- "algorithmID"
+  FNdataframe <- rbind(FNdataframe, positiveAlgorithm)
+} 
+  
+# Obtain FP dataframe
+FPdataframe <- data.frame()
+for(algorithm in algorithms){
+  negativeAlgorithm <- cbind(negativeData[, c(1:11)], negativeData[, algorithm])
+  negativeAlgorithm <- subset(negativeAlgorithm, negativeAlgorithm[, 12] == 1)
+  negativeAlgorithm[, 12] <- rep(algorithm, nrow(negativeAlgorithm))
+  colnames(negativeAlgorithm)[12] <- "algorithmID"
+  FPdataframe <- rbind(FPdataframe, negativeAlgorithm)
+} 
+  
+# Convert algorithmID to factor
+FNdataframe$algorithmID <- factor(FNdataframe$algorithmID, levels = algorithms)
+FPdataframe$algorithmID <- factor(FPdataframe$algorithmID, levels = algorithms)
+  
+# Analysis FN
+FN_analysis <- FNdataframe %>% group_by(gene, algorithmID, .drop = FALSE) %>% summarize(n=n())
+FN_analysis <- cast(FN_analysis, gene ~ algorithmID)
+  
+# Add total ROI and calculate %
+FN_analysis <- merge(FN_analysis, rois_gene_pos_count, by = "gene")
+FN_analysis_perc <- FN_analysis
+FN_analysis_perc[, 2:7] <- round(FN_analysis_perc[, 2:7] / FN_analysis_perc[, 8] * 100, 4)
 
+write.table(FN_analysis, file.path(resultDir, "all_FN.txt"), sep="\t", row.names=FALSE, quote = FALSE, col.names = TRUE)  
+write.table(FN_analysis_perc, file.path(resultDir,"all_FN_perc.txt"), sep="\t", row.names=FALSE, quote = FALSE, col.names = TRUE)  
+
+# Analysis FP
+FP_analysis <- FPdataframe %>% group_by(gene, algorithmID, .drop = FALSE) %>% summarize(n=n())
+FP_analysis <- cast(FP_analysis, gene ~ algorithmID)
+  
+# Add total ROI and calculate %
+FP_analysis <- merge(FP_analysis, rois_gene_neg_count, by = "gene")
+FP_analysis_perc <- FP_analysis
+FP_analysis_perc[, 2:7] <- round(FP_analysis_perc[, 2:7] / FP_analysis_perc[, 8] * 100, 4)
+
+write.table(FP_analysis, file.path(resultDir, "all_FP.txt"), sep="\t", row.names=FALSE, quote = FALSE, col.names = TRUE)  
+write.table(FP_analysis_perc, file.path(resultDir, "all_FP_perc.txt"), sep="\t", row.names=FALSE, quote = FALSE, col.names = TRUE)  
+  
 # Compare differences in length, single / multi and del / dup between FP and TP, and FN and TP
-
 p_list_FN <- list()
 p_list_FP <- list()
 
 FN_comp_length <- data.frame()
-FN_comp_exontype <- data.frame()
-FN_comp_cnvtype <- data.frame()
-
+FN_comp_type <- data.frame()
 FP_comp_length <- data.frame()
 
+# Delete manta
 algorithms <- algorithms[-5]
 
 # Loop over algorithms
@@ -328,19 +294,14 @@ for(algorithm in algorithms){
   
   p_list_FN[[algorithm]] <- p
   
-  ## Compare Exontype
-  comp_exontype <- positiveAlgorithm %>% group_by(detected, exon_type, .drop = FALSE) %>% summarise(n = n()) %>% mutate(freq = n / sum(n))
-  comp_exontype$algorithm <- rep(algorithm, nrow(comp_exontype))
-  
-  ## Compare cnvtype
-  comp_cnvtype <- positiveAlgorithm %>% group_by(detected, cnv_type, .drop = FALSE) %>% summarise(n = n()) %>% mutate(freq = n / sum(n))
-  comp_cnvtype$algorithm <- rep(algorithm, nrow(comp_cnvtype))
+  ## Compare type
+  comp_type <- positiveAlgorithm %>% group_by(detected, cnv_type, exon_type, .drop = FALSE) %>% summarise(n = n())
+  comp_type$algorithm <- rep(algorithm, nrow(comp_type))
   
   # Save results in common dataframe
   FN_comp_length <- rbind(FN_comp_length, comp_length)
-  FN_comp_exontype <- rbind(FN_comp_exontype, comp_exontype)
-  FN_comp_cnvtype <- rbind(FN_comp_cnvtype, comp_cnvtype)
-  
+  FN_comp_type <- rbind(FN_comp_type, comp_type)
+
   # Compare TP and FP
   
   ## Compare PB_length
@@ -383,38 +344,29 @@ do.call("grid.arrange", c(p_list_FN, ncol=2))
 dev.off()
 
 # Plots for FN per exontype and cnvtype
-FN_cnv_plot <- subset(FN_comp_cnvtype, FN_comp_cnvtype$detected == "FN" & FN_comp_cnvtype$algorithm != "manta")
+FN_cnv_plot <- subset(FN_comp_type, FN_comp_type$detected == "FN" & FN_comp_type$algorithm != "manta" & FN_comp_type$n != 0)
 FN_cnv_plot$detected <- factor(FN_cnv_plot$detected)
 FN_cnv_plot$algorithm <- factor(FN_cnv_plot$algorithm)
+FN_cnv_plot$type <- paste(FN_cnv_plot$cnv_type, FN_cnv_plot$exon_type)
 
-tiff("FN_cnv.tiff", units="in", width=7, height=5, res=300)
+tiff("FN_cnv.tiff", units="in", width=9, height=5, res=150)
 
-ggplot(FN_cnv_plot, aes(x=algorithm, y=n, fill=cnv_type, color=cnv_type))+
-  geom_bar(stat="identity",position=position_dodge(), alpha = 0.2)+
-  xlab("Algorithm")+
+colors <- brewer.pal(n = 8, name = "Spectral")[c(3,8)]
+
+algo.labs <- c("CNVkit", "CoNVaDING", "DECoN", "ExomeDepth", "panelcn.MOPS")
+names(algo.labs) <- levels(FN_cnv_plot$algorithm)
+
+ggplot(FN_cnv_plot, aes(x=cnv_type, y=n, fill=exon_type, color=exon_type))+
+  geom_bar(stat="identity",position="stack", alpha = 0.2)+
+  facet_grid( ~algorithm, labeller = labeller(algorithm = algo.labs)) +
   scale_y_continuous(limits = c(0,14))+
-  ylab("Number of cases")+ 
-  geom_text(aes(label=paste0(n),  fontface="bold"), position=position_dodge(width = 0.9), vjust=-0.25, size=4)+
-  theme_minimal() +
-  theme(legend.title = element_blank(), text = element_text(size=16)) 
+  ylab("Number of false negatives")+ 
+  scale_x_discrete(name ="CNV type", labels = c("Del", "Dup")) +
+  theme_classic() +
+  geom_text(aes(label = n), position = position_stack(vjust = 0.5)) +
+  theme(legend.title = element_blank(), text = element_text(size=16),
+          axis.text.x = element_text(size=12))+
+  scale_fill_manual(values=colors) +
+  scale_color_manual(values=colors)
 
 dev.off()
-
-FN_exon_plot <- subset(FN_comp_exontype, FN_comp_exontype$detected == "FN" & FN_comp_exontype$algorithm != "manta")
-FN_exon_plot$detected <- factor(FN_exon_plot$detected)
-FN_exon_plot$algorithm <- factor(FN_exon_plot$algorithm)
-
-tiff("FN_exon.tiff", units="in", width=7, height=5, res=300)
-
-ggplot(FN_exon_plot, aes(x=algorithm, y=n, fill=exon_type, color=exon_type))+
-  geom_bar(stat="identity",position=position_dodge(), alpha = 0.2) +
-  xlab("Algorithm")+
-  scale_y_continuous(limits = c(0,14))+
-  ylab("Number of cases")+ 
-  geom_text(aes(label=paste0(n), fontface="bold"), position=position_dodge(width = 0.9), vjust=-0.25, size=4)+
-  theme_minimal() +
-  theme(legend.title = element_blank(), text = element_text(size=16)) 
-
-dev.off()
-
-
