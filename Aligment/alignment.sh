@@ -1,15 +1,15 @@
 #!/bin/bash
 
-## Define routes
+# Define dirs
 hg38="/home/robin/Documents/Project/Samples/hg38"
 fastq="/home/robin/Documents/Project/Samples/fastq"
 bam="/home/robin/Documents/Project/Samples/bam"
 alignmdir="/home/robin/Documents/Project/TFM_code/Files/Aligment"
 
-# Obtain filelist.txt: 
+# Obtain list of fastq files
 ls "$fastq" | cat | sed 's/_.*//g' | sort | uniq > "$alignmdir"/fastqlist.txt
 
-#Obtain BAM
+# Alignment
 for file in `cat "$alignmdir"/fastqlist.txt`
 do
 	R1=`echo $file | sed 's/$/_R1.fastq.gz/g'`

@@ -108,8 +108,8 @@ for (cnvFile in cnvFiles){
 }
   
 # Delete redundant columns
-FPdata <- FPdata[, c(6:17, 5)]
-TPdata <- TPdata[, c(6:17, 5)]
+FPdata <- FPdata[, c(6:ncol(FPdata), 5)]
+TPdata <- TPdata[, c(6:ncol(TPdata), 5)]
 colnames(FPdata) <- colnames(TPdata) <- c(colnames(roisData), "roiID", "algorithmID", "detected_cnv")
 PosData <- rbind(TPdata, FPdata)
   

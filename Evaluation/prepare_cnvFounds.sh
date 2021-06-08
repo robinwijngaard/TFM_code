@@ -1,7 +1,9 @@
 #!/bin/bash
 
-## For clinic dataset
-cnvFounds=/home/robin/Documents/Project/Files/Clinic/cnvFounds #cnvFounds dir (output CNVbenchmarkeR over Clinic datasets)
+## For in-house dataset
+cnvFounds=/home/robin/Documents/Project/Files/Clinic/cnvFounds  # dir where results are exported
+outputbenchmarker=/home/robin/Documents/Project/Files/Clinic/outputbechmarker # dir of the output of the CNVbechmarkeR
 
-Rscript prepare_cnvFounds.R --cnvFounds $cnvFounds
+Rscript prepare_cnvFounds.R --cnvFounds $cnvFounds --outputbenchmarker $outputbenchmarker
+
 
