@@ -11,6 +11,18 @@ params:
 ### Sample: `r params$sample`
 ### Panell: `r params$panell`
 
+### ExomeDepth
+
+ExomeDepth is a R package designed to detect inherited copy number variants (CNVs) using whole exome data (WES) and smaller multi-gene panels. ExomeDepth uses read depth data to call CNVs i.e. it compares the number of reads for a given region with the number of reads of a an aggregate reference set. 
+
+Two parameters are provided with the CNV call:
+
+* Bayes Factor (BF): quantifies the statistical support for each CNV. There is not a specific threshold but the higher that number, the more likelihood that the CNV is real.
+
+* Reads Ratio: comparison of the number of reads of the reference set and the test sample. A read count of 1 indicates that the number of copies of the test sample is equal to the reference, thus normal. A read ratio > 1 could indicate a duplication and a read ratio < 1 could indicate a deletion.
+
+### Results
+
 ```{r, echo = FALSE, message = FALSE, warning = FALSE, results = 'asis'}
 # Load sample RDS file
 rdsfile <- readRDS(file.path(RDSfolder, paste0("all_exons_", params$sample, ".RDS")))
@@ -55,8 +67,6 @@ names(cnvreads)[1] <- "chr"
 cnvbed <- merge(x=cnvbed, y=cnvreads, by = c("chr", "end"), all.x = TRUE)
 ```
 
-
-
 ```{r dinamictable, echo = FALSE}
 # Create interactive table for output
 newsample <- data.frame(matrix(ncol = 11, nrow = 0))
@@ -96,6 +106,38 @@ newsample %>%
 
 ```{r,echo=FALSE}
 # Set length for figures according number of figures
+len = length(unique(cnvbed$nm))*0.3
+```
+
+```{r, echo = FALSE, message = FALSE, warning = FALSE, results = 'asis', out.width="100%", fig.height=len}
+cnvplot <- cnvbed[, c("newstart", "newend", "gene", "nm", "type", "rank")]
+cnvplot$name <- paste0(cnvplot$gene, "\n (", cnvplot$nm, ")")
+
+# Fix colors when missing levels
+colors <- brewer.pal(n = 3, name = "Set3")
+scale_fill_genes <- function(...){
+    ggplot2:::manual_scale(
+        'fill', 
+        values = setNames(colors, c("deletion", "normal","duplication")), 
+        ...
+    )
+}
+
+p <- ggplot(cnvplot, aes(xmin = newstart, xmax = newend, y = name, fill = type, label = rank)) +
+    geom_gene_arrow(arrowhead_height = unit(4, "mm"),arrow_body_height = unit(4, "mm"), arrowhead_width = unit(0.2, "mm")) +
+    geom_gene_label(align = "left") +
+    facet_wrap(~ name, scales = "free", ncol = 1) +
+    scale_fill_genes() +
+    theme_genes() +
+    theme(axis.text.x=element_blank(),
+          axis.ticks.x=element_blank())
+
+p
+```
+
+
+```{r,echo=FALSE}
+# Set length for figures according number of figures
 len = ceiling(length(unique(cnvbed$nm))/2)*3
 ```
 
@@ -125,36 +167,5 @@ grid.arrange(grobs = graph.list, ncol=2)
 
 # Delete figures from tempDir
 system(paste("find", file.path(graphsDir), "-type f -name '*.tiff' -delete"))
-```
-
-```{r,echo=FALSE}
-# Set length for figures according number of figures
-len = length(unique(cnvbed$nm))*0.3
-```
-
-```{r, echo = FALSE, message = FALSE, warning = FALSE, results = 'asis', out.width="100%", fig.height=len}
-cnvplot <- cnvbed[, c("newstart", "newend", "gene", "nm", "type", "rank")]
-cnvplot$name <- paste0(cnvplot$gene, "\n (", cnvplot$nm, ")")
-
-# Fix colors when missing levels
-colors <- brewer.pal(n = 3, name = "Set3")
-scale_fill_genes <- function(...){
-    ggplot2:::manual_scale(
-        'fill', 
-        values = setNames(colors, c("deletion", "normal","duplication")), 
-        ...
-    )
-}
-
-p <- ggplot(cnvplot, aes(xmin = newstart, xmax = newend, y = name, fill = type, label = rank)) +
-    geom_gene_arrow(arrowhead_height = unit(4, "mm"),arrow_body_height = unit(4, "mm"), arrowhead_width = unit(0.2, "mm")) +
-    geom_gene_label(align = "left") +
-    facet_wrap(~ name, scales = "free", ncol = 1) +
-    scale_fill_genes() +
-    theme_genes() +
-    theme(axis.text.x=element_blank(),
-          axis.ticks.x=element_blank())
-
-p
 ```
 
