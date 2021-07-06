@@ -39,7 +39,7 @@ for (sample in samples){
   
   # iterate over genes
   genes <- sort(unique(sampleData$gene))
-  if(EPCAM) {genes[genes !="EPCAM"]}
+  if(EPCAM == TRUE) {genes <- genes[genes !="EPCAM"]}
   for (gene in genes){
     
     # Generate specific sample-gene bedfiles for intersect function

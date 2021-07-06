@@ -111,7 +111,7 @@ for (cnvFile in cnvFiles){
 FPdata <- FPdata[, c(6:ncol(FPdata), 5)]
 TPdata <- TPdata[, c(6:ncol(TPdata), 5)]
 colnames(FPdata) <- colnames(TPdata) <- c(colnames(roisData), "roiID", "algorithmID", "detected_cnv")
-PosData <- rbind(TPdata, FPdata)
+PosData <- unique(rbind(TPdata, FPdata))
   
 # Make final result dataframe
 resultsData <- rbind(positiveData, negativeData)
