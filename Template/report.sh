@@ -7,4 +7,6 @@ samplesFile=/home/robin/Documents/Project/Files/Template/samples.txt #file indic
 RDSfolder=/home/robin/Documents/Project/Files/Template/RDSfiles #folder containing output RDS files from the ExomeDepth algorithm
 markdownfile=/home/robin/Documents/Project/TFM_code/Template/report.Rmd #rmarkdown file
 
+# for file in *; do mv "${file}" "${file/X/}"; done   eliminate X for .RDS file names
+
 Rscript report.R --outputDir $outputDir --annotatedFile $annotatedFile --panellsFile $panellsFile --samplesFile $samplesFile --RDSfolder $RDSfolder --markdownfile $markdownfile

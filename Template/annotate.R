@@ -102,7 +102,7 @@ endocriFile <- delRoi(endocriFile)
 
 # Add new start and end for figure of report
 NewExonStart <- function(file){
-  file <- file[order(file$gene, file$rank), ]
+  file <- file[order(file$gene, as.numeric(file$rank)), ]
   file$exonpb <- file$end - file$start
   file$intropb <- NA
   file$newstart <- NA

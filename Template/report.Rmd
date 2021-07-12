@@ -4,8 +4,8 @@ subtitle: "CNV detection"
 date: '`r format(Sys.Date(),"%e de %B, %Y")`'
 output: html_document
 params:
-  sample: "17302"
-  panell: "colon"
+  sample: "202680679"
+  panell: "melanoma"
 ---
 
 ### Sample: `r params$sample`
@@ -21,88 +21,200 @@ Two parameters are provided with the CNV call:
 
 * Reads Ratio: comparison of the number of reads of the reference set and the test sample. A read count of 1 indicates that the number of copies of the test sample is equal to the reference, thus normal. A read ratio > 1 could indicate a duplication and a read ratio < 1 could indicate a deletion.
 
-### Results
+### Result table
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE, results = 'asis'}
+# "all_exons_192549572"
 # Load sample RDS file
 rdsfile <- readRDS(file.path(RDSfolder, paste0("all_exons_", params$sample, ".RDS")))
 
 # CNVcalls from rdsfile
 samplecnv <- rdsfile@CNV.calls
 
-# Sort columns to adapt to bedfile
-samplecnv <- samplecnv[, c(7,5,6,3,4,8:12)]
-
-# Write for bedtools
-write.table(samplecnv, file.path(tempDir, "samplecnv.bed"), sep="\t", row.names=FALSE, quote = FALSE, col.names = FALSE)  
-
 # Subset panelannotated to genes in panell
 panelannotated <- subset(annotatedFile, annotatedFile$panell == params$panell)
 
-# Write for bedtools
-write.table(panelannotated, file.path(tempDir, "panelannotated.bed"), sep="\t", row.names=FALSE, quote = FALSE, col.names = FALSE)  
-
-# Intersect ROIs of interest (panelannotated) with CNV found in sample
-system(paste("bedtools intersect -wao -a", file.path(tempDir, "panelannotated.bed"), "-b", file.path(tempDir, "samplecnv.bed"), ">", file.path(tempDir, "cnv.bed")))
+# When a CNV is found
+if(nrow(samplecnv) > 0){
   
-# Load result
-cnvbed <- read.table(file.path(tempDir, "cnv.bed"), sep = "\t", stringsAsFactors = FALSE)
-
-# Change colnames
-colnames(cnvbed) <- c(names(panelannotated), names(samplecnv), "overlap")
-names(cnvbed)[c(16, 17, 18)] <- c("chr_org", "start_org", "end_org")
-
-# Specify normal when no overlap is found
-cnvbed$type[which(cnvbed$overlap == 0)] <- "normal"
-cnvbed$BF[which(cnvbed$overlap == 0)] <- ""
-cnvbed$type <- factor(cnvbed$type, levels = c("deletion", "normal","duplication"))
-
-# Calculate reads.ratio for non CNV ROIs
-cnvreads <- data.frame(cbind(rdsfile@annotations, rdsfile@test, rdsfile@reference, rdsfile@expected))
-cnvreads$expected.reads <- round((cnvreads$rdsfile.test + cnvreads$rdsfile.reference) * cnvreads$rdsfile.expected, 0)
-cnvreads$reads.ratio.y <- round(cnvreads$rdsfile.test / cnvreads$expected.reads, 3)
-cnvreads <- cnvreads[, c(2,3,4,5,8,9)]
-names(cnvreads)[1] <- "chr"
-
-cnvbed <- merge(x=cnvbed, y=cnvreads, by = c("chr", "end"), all.x = TRUE)
-```
-
-```{r dinamictable, echo = FALSE}
-# Create interactive table for output
-newsample <- data.frame(matrix(ncol = 11, nrow = 0))
-newnames <- c("Gene", "NM", "Chr", "Start", "End",  "Size", "Strand","Exons", "Type", "BF", "read.ratio")
-colnames(newsample) <- newnames
-
-for (cnvtype in levels(cnvbed$type)){
-  sampletype <- subset(cnvbed, cnvbed$type == cnvtype)
-  sampleNM <- unique(sampletype$nm)
-  for(i in sampleNM){
-    dfNM <- subset(sampletype, sampletype$nm == i)
-    Gene <- unique(dfNM$gene)
-    NM <- i
-    Chr <- unique(dfNM$chr)
-    Start <- min(dfNM$start.x, dfNM$end)
-    End <- max(dfNM$start.x, dfNM$end)
-    Size <- End - Start
-    Strand <- if(unique(dfNM$strand) == -1){"-"} else if(unique(dfNM$strand) == 1) {"+"}
-    Type <- cnvtype
-    BF <- unique(dfNM$BF)
-    ratio <- round(mean(dfNM$reads.ratio.y), 3)
-    if(nrow(dfNM) > 1){Exons <- paste(min(dfNM$rank), "-", max(dfNM$rank))} else if(nrow(dfNM) == 1) {Exons <- dfNM$rank}
-    newline <- c(Gene, NM, Chr, Start, End, Size, Strand, Exons, Type, BF, ratio)
-    newsample <- rbind(newsample, newline)
-  }
+  # Sort columns to adapt to bedfile
+  samplecnv <- samplecnv[, c(7,5,6,3,4,8:12)]
+  
+  # Eliminate chr
+  samplecnv$chromosome <- str_remove(samplecnv$chromosome, "chr")
+  
+  # Give ID to CNV
+  samplecnv$cnvID <- 1:nrow(samplecnv)
+  
+  # Write for bedtools
+  write.table(samplecnv, file.path(tempDir, "samplecnv.bed"), sep="\t", row.names=FALSE, quote = FALSE, col.names = FALSE) 
+  
+  # Write for bedtools
+  write.table(panelannotated, file.path(tempDir, "panelannotated.bed"), sep="\t", row.names=FALSE, quote = FALSE, col.names = FALSE) 
+  
+  # Intersect ROIs of interest (panelannotated) with CNV found in sample
+  system(paste("bedtools intersect -wao -a", file.path(tempDir, "panelannotated.bed"), "-b", file.path(tempDir, "samplecnv.bed"), ">", file.path(tempDir, "cnv.bed")))
+  
+  # Load result
+  cnvbed <- read.table(file.path(tempDir, "cnv.bed"), sep = "\t", stringsAsFactors = FALSE)
+  
+  # Change colnames
+  colnames(cnvbed) <- c(names(panelannotated), names(samplecnv), "overlap")
+  names(cnvbed)[c(16, 17, 18)] <- c("chr_org", "start_org", "end_org")
+  
+  # Specify normal when no overlap is found
+  cnvbed$type[which(cnvbed$overlap == 0)] <- "normal"
+  cnvbed$BF[which(cnvbed$overlap == 0)] <- ""
+  cnvbed$type <- factor(cnvbed$type, levels = c("deletion", "normal","duplication"))
 }
 
-colnames(newsample) <- newnames
+# When no CNV is found
+if(nrow(samplecnv) == 0){
+  cnvbed <- panelannotated
+  cnvbed$chr_org <- "."
+  cnvbed$start_org <- -1
+  cnvbed$end_org <- -1
+  cnvbed$type <- "normal"
+  cnvbed$nexons <- "."
+  cnvbed$id <- "."
+  cnvbed$BF <- "."
+  cnvbed$reads.expected <- "."
+  cnvbed$reads.observed <- "."
+  cnvbed$reads.ratio <- "."
+  cnvbed$cnvID <- "."
+  cnvbed$overlap <- 0
+}
 
-newsample <- newsample[order(newsample$BF, -rank(newsample$Gene), decreasing = TRUE), ]
+# Calculate reads.ratio for non CNV ROIs
+cnvreads <- data.frame(cbind(rdsfile@annotations, calculated.test = rdsfile@test, calculated.reference = rdsfile@reference, calculated.factor = rdsfile@expected))
+cnvreads$calculated.expected <- round((cnvreads$calculated.test + cnvreads$calculated.reference) * cnvreads$calculated.factor, 0)
 
-newsample %>% 
+cnvreads <- cnvreads[, c(2,4,5,8)]
+names(cnvreads)[1] <- "chr"
+cnvreads$chr <- str_remove(cnvreads$chr, "chr")
+
+# merge cnv with read information  
+cnvbed <- merge(x=cnvbed, y=cnvreads, by = c("chr", "end"), all.x = TRUE)
+
+# Fusion rank function
+fusion_ranks <- function(dataframe){
+  Gene <- unique(dataframe$Gene)
+  NM <- unique(dataframe$NM)
+  Chr <- unique(dataframe$Chr)
+  Start <- min(dataframe$Start)
+  End <- max(dataframe$End)
+  Size <- End - Start
+  Strand <- if(unique(dataframe$Strand) == -1){"-"} else if(unique(dataframe$Strand) == 1) {"+"}
+  Exons <- paste(sort(dataframe$Exons), collapse = ", ")
+  Type <- as.character(unique(dataframe$Type))
+  BF <- unique(dataframe$BF)
+  if(all(dataframe$Observed != 0 & dataframe$Expected != 0)){
+    Reads.ratio <- round(sum(dataframe$Observed) / sum(dataframe$Expected), 3)
+    Observed <- sum(dataframe$Observed)
+    Expected <- sum(dataframe$Expected)
+    outputDataframe <- cbind(Gene, NM, Chr, Start, End, Size, Strand, Exons, Type, BF, Observed, Expected, Reads.ratio)
+  } else {
+    Observed <- sum(dataframe$Observed)
+    Expected <- sum(dataframe$Expected)
+    outputDataframe <- cbind(Gene, NM, Chr, Start, End, Size, Strand, Exons, Observed, Expected)
+  }
+  return(outputDataframe)
+}
+
+# Create dataframe for datatable
+resultTable <- data.frame()
+nonconveredTable <- data.frame()
+
+# Create table for output
+for(nmsample in unique(cnvbed$nm)){
+  nmbed <- subset(cnvbed, nm == nmsample)
+
+  # Select columns
+  nmbed <- nmbed[, c(4, 6, 1, 3, 2, 11, 7, 8, 19, 22, 28, 29, 26)]
+  colnames(nmbed) <- c("Gene", "NM", "Chr", "Start", "End",  "Size", "Strand","Exons", "Type", "BF", "Observed", "Expected", "cnvID")
+  
+  # Extract exons with 0 expected or 0 reads
+  a <- which(nmbed$Observed == 0 | nmbed$Expected == 0)
+  nonconvered <- nmbed[a, ]
+  
+  # delete this rows from nmbed
+  if(length(a) > 0){
+    nmbed <- nmbed[-a, ]
+  }
+  
+  # Fusion rows by cnv type
+  
+  ## Non-convered ranks
+  if(nrow(nonconvered) > 0){
+    noncovered_fusion <- fusion_ranks(nonconvered)
+    nonconveredTable <- rbind(nonconveredTable, noncovered_fusion)
+  }
+  
+  ## normal ranks
+  normal_ranks <- subset(nmbed, Type == "normal")
+  normal_fusion <- data.frame()
+
+  if(nrow(normal_ranks) > 0){
+    normal_fusion <- fusion_ranks(normal_ranks)
+  }
+  
+  ## deletion ranks
+  deletion_ranks <- subset(nmbed, Type == "deletion")
+  deletion_fusion <- data.frame()
+  
+  if(nrow(deletion_ranks) > 0){
+    for(i in unique(deletion_ranks$cnvID)){
+      deletion_subset <- subset(deletion_ranks, cnvID == i)
+      deletion_subset <- fusion_ranks(deletion_subset)
+      deletion_fusion <- rbind(deletion_fusion, deletion_subset)
+    }
+  }
+  
+  ## duplication ranks
+  duplication_ranks <- subset(nmbed, Type == "duplication")
+  duplication_fusion <- data.frame()
+
+  if(nrow(duplication_ranks) > 0){
+    for(i in unique(duplication_ranks$cnvID)){
+      duplication_subset <- subset(duplication_ranks, cnvID == i)
+      duplication_subset <- fusion_ranks(duplication_subset)
+      duplication_fusion <- rbind(duplication_fusion, duplication_subset)
+    }
+  }
+  
+  resultTable <- rbind(resultTable, normal_fusion, deletion_fusion, duplication_fusion)
+}
+```
+
+
+```{r, echo = FALSE, message = FALSE, warning = FALSE, results = 'asis'}
+resultTable <- resultTable[order(resultTable$BF, -rank(resultTable$Gene), decreasing = TRUE), ]
+
+resultTable %>%
   datatable(extensions = "Buttons",
             options = list(dom = "Blfrtip", 
-                           buttons = c("csv", "excel", "pdf")))
+                           buttons = c("csv", "excel", "pdf")),
+            rownames=FALSE)
 ```
+
+
+#### Non-covered exons
+
+This table shows the non-covered regions: the test sample (observed) or the reference sample (expected) have 0 reads in the target region
+
+```{r, echo = FALSE, message = FALSE, warning = FALSE, results = 'asis'}
+if(nrow(nonconveredTable) > 0){
+  nonconveredTable <- nonconveredTable[order(nonconveredTable$Gene), ]
+}
+
+nonconveredTable %>% 
+  datatable(extensions = "Buttons",
+            options = list(dom = "Blfrtip", 
+                           buttons = c("csv", "excel", "pdf")),
+            rownames=FALSE)
+```
+
+#### General view 
 
 ```{r,echo=FALSE}
 # Set length for figures according number of figures
@@ -110,15 +222,19 @@ len = length(unique(cnvbed$nm))*0.3
 ```
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE, results = 'asis', out.width="100%", fig.height=len}
+# Add new type
+cnvbed$type <- factor(cnvbed$type, levels = c("deletion", "normal","duplication", "noncovered"))
+cnvbed$type[which(cnvbed$calculated.test == 0 | cnvbed$calculated.expected == 0)] <- "noncovered"
+
 cnvplot <- cnvbed[, c("newstart", "newend", "gene", "nm", "type", "rank")]
 cnvplot$name <- paste0(cnvplot$gene, "\n (", cnvplot$nm, ")")
 
 # Fix colors when missing levels
-colors <- brewer.pal(n = 3, name = "Set3")
+colors <- brewer.pal(n = 4, name = "Set3")
 scale_fill_genes <- function(...){
     ggplot2:::manual_scale(
         'fill', 
-        values = setNames(colors, c("deletion", "normal","duplication")), 
+        values = setNames(colors, c("deletion", "normal","duplication", "noncovered")), 
         ...
     )
 }
@@ -130,11 +246,13 @@ p <- ggplot(cnvplot, aes(xmin = newstart, xmax = newend, y = name, fill = type, 
     scale_fill_genes() +
     theme_genes() +
     theme(axis.text.x=element_blank(),
-          axis.ticks.x=element_blank())
+          axis.ticks.x=element_blank(),
+          axis.title.y=element_blank())
 
 p
 ```
 
+#### Reads ratio by exon and gene
 
 ```{r,echo=FALSE}
 # Set length for figures according number of figures
@@ -147,10 +265,13 @@ len = ceiling(length(unique(cnvbed$nm))/2)*3
 ## Obtain coordinates for all genes of interest
 gene_coord <- panelannotated %>% dplyr::select(chr, start, end, gene, nm) %>% group_by(gene) %>% mutate(genestart = min(start), geneend = max(end)) %>% dplyr::select(gene, chr, genestart, geneend, nm) %>% unique() 
 
+# Add chr to chromosome column (need for graph)
+gene_coord$chr <- paste0("chr", gene_coord$chr)
+
 # Export imatges to TIFF
 for(i in 1:nrow(gene_coord)){
   tiff(file.path(graphsDir, paste0(params$sample, as.character(gene_coord[i, 1]), ".tiff")), units="in", width=6, height=5, res=150)
-  plot(rdsfile, sequence = factor(gene_coord[i, 2], levels = levels(rdsfile@annotations$chromosome)), xlim = c(as.numeric(gene_coord[i, 3]) - 50, as.numeric(gene_coord[i, 4]) + 50), count.threshold = 20, main = paste0(gene_coord[i, 1], " gene ", "(", gene_coord[i, 5], ")"), cex.lab = 0.8, with.gene = TRUE)
+  plot(rdsfile, sequence = factor(gene_coord[i, 2], levels = levels(rdsfile@annotations$chromosome)), xlim = c(as.numeric(gene_coord[i, 3]) - 100, as.numeric(gene_coord[i, 4]) + 100), count.threshold = 20, main = paste0(gene_coord[i, 1], " gene ", "(", gene_coord[i, 5], ")"), cex.lab = 0.8, with.gene = TRUE)
   dev.off()
 }
 
