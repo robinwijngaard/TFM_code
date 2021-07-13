@@ -2,7 +2,7 @@
 
 # Input files
 bamsDir=/home/robin/Documents/Project/Samples/example/bam_ex
-bedFile=/home/robin/Documents/Project/Samples/bedfiles/ICR96_hg38_noSNP.bed
+bedFile=/home/robin/Documents/Project/Samples/bedfiles/ICR96_hg38_noSNP.bed # clinic.bed for clinic dataset
 fastaFile=/home/robin/Documents/Project/Samples/hg38/hg38.fa
 
 # Output dirs
@@ -18,10 +18,10 @@ transition_probability=0.0001
 expected_CNV_length=50000
 
 # For sample report
-annotatedFile=/home/robin/Documents/Project/TFM_code/Implementation/annotate/annotatedFile.bed
-panellsFile=/home/robin/Documents/Project/TFM_code/Implementation/files/gens_nm_panell_ICR96.xlsx #file idnicating genes per panell and NM
-markdownfile=/home/robin/Documents/Project/TFM_code/Implementation/scripts/report.Rmd #rmarkdown file
-samplesFile=/home/robin/Documents/Project/TFM_code/Implementation/files/samples.txt #file indicating sample and panell association
+annotatedFile=/home/robin/Documents/Project/TFM_code/Implementation/annotate/annotatedFile_ICR96.bed
+panellsFile=/home/robin/Documents/Project/TFM_code/Implementation/files/gens_nm_panell_ICR96.xlsx
+markdownfile=/home/robin/Documents/Project/TFM_code/Implementation/scripts/report.Rmd 
+samplesFile=/home/robin/Documents/Project/TFM_code/Implementation/files/samples.txt 
 
 
 cd /home/robin/Documents/Project/TFM_code/Implementation/scripts/

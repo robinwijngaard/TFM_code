@@ -266,7 +266,7 @@ len = ceiling(length(unique(cnvbed$nm))/2)*3
 gene_coord <- panelannotated %>% dplyr::select(chr, start, end, gene, nm) %>% group_by(gene) %>% mutate(genestart = min(start), geneend = max(end)) %>% dplyr::select(gene, chr, genestart, geneend, nm) %>% unique() 
 
 # Add chr to chromosome column (need for graph) !!!!!!!! activate when using clinic data
-# gene_coord$chr <- paste0("chr", gene_coord$chr)
+gene_coord$chr <- paste0("chr", gene_coord$chr)
 
 # Export imatges to TIFF
 for(i in 1:nrow(gene_coord)){
